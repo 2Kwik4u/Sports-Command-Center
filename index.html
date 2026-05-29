@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sports Weekend Planner</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">SW</div>
+          <div>
+            <h1>Sports Weekend Planner</h1>
+            <p>Major events, TV weekends, and road trip ideas.</p>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Main views">
+          <button class="nav-item active" type="button" data-view="dashboard">Dashboard</button>
+          <button class="nav-item" type="button" data-view="calendar">Calendar</button>
+          <button class="nav-item" type="button" data-view="weekends">Weekends</button>
+        </nav>
+
+        <section class="filter-panel" aria-label="Event filters">
+          <h2>Filters</h2>
+          <label>
+            Search
+            <input id="searchInput" type="search" placeholder="Event, venue, TV">
+          </label>
+          <label>
+            Sport
+            <select id="sportFilter">
+              <option value="all">All sports</option>
+            </select>
+          </label>
+          <label>
+            Minimum importance
+            <input id="importanceFilter" type="range" min="1" max="10" value="1">
+            <span id="importanceValue">1+</span>
+          </label>
+          <label class="checkbox-row">
+            <input id="roadTripFilter" type="checkbox">
+            Road trip candidates only
+          </label>
+          <button id="clearFiltersButton" class="secondary-button" type="button">Clear Filters</button>
+        </section>
+
+        <section class="data-panel" aria-label="Share event data">
+          <h2>Share data</h2>
+          <button id="exportButton" class="secondary-button" type="button">Export JSON</button>
+          <button id="importButton" class="secondary-button" type="button">Import JSON</button>
+          <input id="importFileInput" type="file" accept="application/json,.json" hidden>
+          <p id="dataStatus" class="data-status">Exports include all local events.</p>
+        </section>
+
+        <section class="settings-panel" aria-label="App settings">
+          <h2>Settings</h2>
+          <label>
+            Home base
+            <input id="homeBaseInput" placeholder="City, State">
+          </label>
+          <label>
+            Default timezone
+            <input id="defaultTimezoneInput" placeholder="ET">
+          </label>
+          <label>
+            Default TV service
+            <input id="defaultTvInput" placeholder="YouTube TV, ESPN+, Peacock">
+          </label>
+          <button id="saveSettingsButton" class="secondary-button" type="button">Save Settings</button>
+          <p id="settingsStatus" class="data-status">Settings stay on this device.</p>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Manual event database</p>
+            <h2 id="pageTitle">Sports command center</h2>
+          </div>
+          <button id="addEventButton" class="primary-button" type="button">Add Event</button>
+        </header>
+
+        <section id="dashboardView" class="view active-view">
+          <section class="stats-grid" aria-label="Event summary">
+            <article class="stat-card">
+              <span id="totalEvents">0</span>
+              <p>Total events</p>
+            </article>
+            <article class="stat-card">
+              <span id="mustWatchEvents">0</span>
+              <p>Must-watch</p>
+            </article>
+            <article class="stat-card">
+              <span id="roadTripEvents">0</span>
+              <p>Road trip ideas</p>
+            </article>
+            <article class="stat-card">
+              <span id="averageImportance">0</span>
+              <p>Avg importance</p>
+            </article>
+          </section>
+
+          <section class="dashboard-grid">
+            <div class="dashboard-stack">
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>Next Major Event</h3>
+                </div>
+                <div id="nextMajorEvent"></div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>Best Sports Weekends</h3>
+                </div>
+                <div id="bestWeekendList" class="weekend-score-list"></div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>Trip Candidates</h3>
+                  <p id="homeBaseSummary">Home base not set.</p>
+                </div>
+                <div id="tripList" class="compact-list"></div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>Sports Covered</h3>
+                </div>
+                <div id="sportSummary" class="sport-summary"></div>
+              </article>
+            </div>
+
+            <article class="panel event-list-panel">
+              <div class="panel-heading">
+                <h3>All Matching Events</h3>
+              </div>
+              <div id="eventList" class="event-list"></div>
+            </article>
+          </section>
+        </section>
+
+        <section id="calendarView" class="view">
+          <div class="calendar-toolbar">
+            <button id="previousMonthButton" class="secondary-button" type="button">Previous</button>
+            <h3 id="calendarMonthLabel">Month</h3>
+            <button id="nextMonthButton" class="secondary-button" type="button">Next</button>
+          </div>
+          <div class="calendar-weekdays" aria-hidden="true">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+          </div>
+          <div id="calendarGrid" class="calendar-grid"></div>
+        </section>
+
+        <section id="weekendsView" class="view">
+          <article class="panel">
+            <div class="panel-heading">
+              <h3>Weekend Planner</h3>
+              <p>Events grouped Friday through Sunday.</p>
+            </div>
+            <div id="weekendList" class="weekend-list"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="eventDialog" class="event-dialog">
+      <form id="eventForm" method="dialog">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow">Add manual event</p>
+            <h2 id="dialogTitle">New sports event</h2>
+          </div>
+          <button id="closeDialogButton" class="icon-button" type="button" aria-label="Close">X</button>
+        </div>
+
+        <input id="eventIdInput" type="hidden">
+
+        <div class="form-grid">
+          <div class="form-section-title span-2">Event details</div>
+
+          <label class="span-2">
+            Event title
+            <input id="titleInput" required placeholder="World Series Game 1">
+          </label>
+
+          <label>
+            Sport
+            <select id="sportInput" required>
+              <option>Soccer</option>
+              <option>Football</option>
+              <option>Racing</option>
+              <option>Baseball</option>
+              <option>Basketball</option>
+              <option>Hockey</option>
+              <option>Tennis</option>
+              <option>Golf</option>
+              <option>Combat Sports</option>
+              <option>Horse Racing</option>
+              <option>Major Events</option>
+            </select>
+          </label>
+
+          <label>
+            Competition
+            <input id="competitionInput" placeholder="MLB Playoffs">
+          </label>
+
+          <label>
+            Date
+            <input id="dateInput" type="date" required>
+          </label>
+
+          <label>
+            Start time
+            <input id="timeInput" type="time">
+          </label>
+
+          <label>
+            Timezone
+            <input id="timezoneInput" placeholder="ET">
+          </label>
+
+          <label>
+            Importance 1-10
+            <input id="importanceInput" type="number" min="1" max="10" value="7" required>
+          </label>
+
+          <label>
+            Status
+            <select id="statusInput">
+              <option>Must-watch</option>
+              <option>Good TV weekend</option>
+              <option>Possible road trip</option>
+              <option>Already attending</option>
+              <option>Skip</option>
+            </select>
+          </label>
+
+          <label>
+            Venue
+            <input id="venueInput" placeholder="Stadium or venue">
+          </label>
+
+          <label>
+            Location
+            <input id="locationInput" placeholder="City, State">
+          </label>
+
+          <label>
+            TV or streaming
+            <input id="tvInput" placeholder="ESPN, Peacock, FOX">
+          </label>
+
+          <label class="span-2">
+            Notes
+            <textarea id="notesInput" rows="3" placeholder="Why this event matters"></textarea>
+          </label>
+
+          <div class="form-section-title span-2">Trip planning</div>
+
+          <label>
+            Distance from home
+            <input id="distanceInput" placeholder="320 miles, 4.5 hours, international">
+          </label>
+
+          <label>
+            Trip status
+            <select id="tripStatusInput">
+              <option>Idea</option>
+              <option>Considering</option>
+              <option>Planning</option>
+              <option>Booked</option>
+              <option>Attended</option>
+            </select>
+          </label>
+
+          <label>
+            Hotel needed?
+            <select id="hotelInput">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+            </select>
+          </label>
+
+          <label>
+            Ticket link
+            <input id="ticketInput" type="url" placeholder="https://">
+          </label>
+
+          <label>
+            My interest 1-10
+            <input id="myInterestInput" type="number" min="1" max="10" value="7">
+          </label>
+
+          <label>
+            Friend interest 1-10
+            <input id="friendInterestInput" type="number" min="1" max="10" value="7">
+          </label>
+
+          <label class="span-2">
+            Travel notes
+            <textarea id="travelNotesInput" rows="3" placeholder="Drive time, hotel area, airport options"></textarea>
+          </label>
+        </div>
+
+        <div class="dialog-actions">
+          <button id="deleteEventButton" class="danger-button" type="button">Delete</button>
+          <div class="dialog-action-group">
+            <button id="cancelDialogButton" class="secondary-button" type="button">Cancel</button>
+            <button class="primary-button" type="submit">Save Event</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
