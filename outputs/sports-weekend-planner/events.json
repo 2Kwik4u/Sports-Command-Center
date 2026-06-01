@@ -1,0 +1,79 @@
+{
+  "app": "Sports Weekend Planner",
+  "version": 1,
+  "updatedAt": "2026-05-30",
+  "events": [
+    {
+      "id": "hosted-premier-league-opening-weekend",
+      "title": "Premier League Opening Weekend",
+      "sport": "Soccer",
+      "competition": "Premier League",
+      "date": "2026-08-15",
+      "startTime": "10:00",
+      "timezone": "ET",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "venue": "Multiple venues",
+      "location": "England",
+      "tv": "NBC / Peacock",
+      "notes": "Hosted update example. Replace with exact fixtures once the schedule is confirmed.",
+      "trip": {
+        "distanceFromHome": "International",
+        "travelNotes": "Useful as a TV weekend marker unless planning a larger England trip.",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "hosted-fa-cup-final",
+      "title": "FA Cup Final",
+      "sport": "Soccer",
+      "competition": "FA Cup",
+      "date": "2027-05-15",
+      "startTime": "10:00",
+      "timezone": "ET",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "venue": "Wembley Stadium",
+      "location": "London, England",
+      "tv": "TBD",
+      "notes": "Hosted update example. Confirm exact time and broadcaster.",
+      "trip": {
+        "distanceFromHome": "International",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "hosted-the-open-final-round",
+      "title": "The Open Championship Final Round",
+      "sport": "Golf",
+      "competition": "The Open Championship",
+      "date": "2027-07-18",
+      "startTime": "09:00",
+      "timezone": "ET",
+      "importance": 9,
+      "status": "Must-watch",
+      "venue": "TBD",
+      "location": "United Kingdom",
+      "tv": "NBC / Peacock",
+      "notes": "Hosted update example. Confirm course, start window, and broadcast details.",
+      "trip": {
+        "distanceFromHome": "International",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    }
+  ]
+}
