@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.15.0";
+const APP_VERSION = "0.15.1";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -278,6 +278,19 @@ function eventDateTime(event) {
   }
 
   return date;
+}
+
+function startOfToday() {
+  const today = new Date();
+  return new Date(today.getFullYear(), today.getMonth(), today.getDate());
+}
+
+function isUpcomingEvent(event) {
+  return parseDate(event.date) >= startOfToday();
+}
+
+function getUpcomingEvents(sourceEvents) {
+  return sourceEvents.filter(isUpcomingEvent);
 }
 
 function addDays(date, days) {
@@ -1077,16 +1090,17 @@ function handleEventDelete() {
 
 function renderAll() {
   const visibleEvents = getFilteredEvents();
+  const upcomingEvents = getUpcomingEvents(visibleEvents);
 
-  renderStats(visibleEvents);
-  renderNextMajorEvent(visibleEvents);
-  renderEvents(visibleEvents);
-  renderBestWeekends(visibleEvents);
-  renderSportSummary(visibleEvents);
-  renderPersonalWatchList(visibleEvents);
-  renderTripCandidates(visibleEvents);
+  renderStats(upcomingEvents);
+  renderNextMajorEvent(upcomingEvents);
+  renderEvents(upcomingEvents);
+  renderBestWeekends(upcomingEvents);
+  renderSportSummary(upcomingEvents);
+  renderPersonalWatchList(upcomingEvents);
+  renderTripCandidates(upcomingEvents);
   renderCalendar(visibleEvents);
-  renderWeekends(visibleEvents);
+  renderWeekends(upcomingEvents);
 }
 
 function renderSettingsForm() {

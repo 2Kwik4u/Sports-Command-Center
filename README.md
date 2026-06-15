@@ -196,7 +196,7 @@ node work/validate-events.cjs
 
 ## Current Status
 
-Current version: `0.15.0`
+Current version: `0.15.1`
 
 Sports Weekend Planner is in an early but usable prototype stage. The foundation is working: users can browse, filter, add, edit, delete, preview imports, export shared JSON, theme event data locally, personalize the calendar with favorite sports, competitions, teams, drivers, structured event tags, and personal event scores, compare weekends with preference-aware watch scoring, validate hosted event data, and export high-priority or selected-weekend events to Google Calendar-compatible `.ics` files. The project is not yet a full version 1.0 because it does not have deployed verification, shared backend storage, or real sports API integrations.
 

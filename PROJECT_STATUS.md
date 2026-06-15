@@ -6,7 +6,7 @@ The clarified product direction is closer to a personalized Sports Command Cente
 
 # Current Version
 
-Version 0.15.0
+Version 0.15.1
 
 # Completed Features
 
@@ -25,6 +25,7 @@ Version 0.15.0
 - Import preview dialog before JSON imports are merged into local storage.
 - Google Calendar-compatible `.ics` export for high-priority events in the current filtered view.
 - Selected-weekend `.ics` export controls from the dashboard and weekend planner.
+- Dashboard and weekend planner automatically hide events whose dates have already passed.
 - Local settings for home base, default timezone, default TV service, theme, auto-update preference, and hosted update source.
 - Favorite settings for sports, leagues, competitions, teams, drivers, and keywords.
 - Personal importance scoring separate from general event importance.
@@ -115,6 +116,7 @@ i-want-to-build-a-web/
 - Favorite matching is structured by category now, but still uses text matching rather than canonical team/driver IDs.
 - Weekend Score now accounts for personal preferences and gives labels/reasons, but the formula should still be tuned based on real usage.
 - Hosted updates merge into each user's local storage but do not remove stale local events.
+- Past events remain in local storage and exports; they are hidden from planning views rather than deleted.
 - `events.json` includes manual starter/update events and should not be treated as verified live schedule data.
 - Fetching `events.json` may not work from `file://` local browsing; it is intended to work once served over HTTP/HTTPS by Vercel.
 - Import conflicts are resolved by replacing events with the same `id`, with added/replaced/unchanged feedback.
@@ -143,6 +145,8 @@ i-want-to-build-a-web/
 - Added selected-weekend Google Calendar export buttons.
 - Added `work/validate-events.cjs` for validating `events.json` and personalized event fields.
 - Confirmed the project moved to `C:\Users\tookw\Documents\Codex\2026-05-29\Eric's Labs\i-want-to-build-a-web`.
+- Updated the app to version 0.15.1.
+- Changed Dashboard and Weekends rendering to use only upcoming events, while preserving the full event database.
 
 # Next Recommended Steps
 
