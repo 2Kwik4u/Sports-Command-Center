@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.1
+Version 0.16.2
 
 # Completed Features
 
@@ -119,6 +119,10 @@ i-want-to-build-a-web/
 - Updated hosted update UX with last checked, last success, merge counts, source, and auto-update state.
 - Removed Vercel as the active deployment plan in favor of GitHub Pages/static hosting.
 - Added a closer visual fidelity pass based on the Sports Command Center concept screenshot: denser sidebar, icon navigation, six scoreboard stat tiles, header update card, World Cup flag tiles, and table-style All Events list.
+- Completed Version 0.16.2 as a tighter visual fidelity pass using the generated Sports Command Center screenshot as the approved visual target.
+- Reduced header height, tightened dashboard spacing, compacted panel rows, added broadcast-style channel badges, improved Must-Watch and Watchlist rows, and expanded the All Events table with teams/participants plus sort/export controls.
+- Hid the optional Trip Candidates and Sports Covered dashboard panels from the main concept layout so the Dashboard matches the approved two-row panel grid more closely.
+- Intentional differences from the concept: stadium lights, SCC shield, sport icons, flags, and channel labels are built with CSS, emoji, and styled text rather than external image assets or copyrighted broadcast logos.
 
 # Next Recommended Steps
 

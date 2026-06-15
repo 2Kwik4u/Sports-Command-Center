@@ -141,9 +141,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.16.1`
+Current version: `0.16.2`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. It is not yet a full 1.0 because GitHub Pages publishing, mobile playtesting, and PWA installability still need to be finished.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.2 is a visual fidelity pass that treats the generated command-center screenshot as the approved visual target while preserving the existing static HTML/CSS/JS app behavior.
 
 ## Roadmap
 

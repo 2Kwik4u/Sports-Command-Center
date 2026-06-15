@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.16.2
+
+- Treated the generated Sports Command Center screenshot as the approved visual target.
+- Reduced header/banner height so the dashboard feels less like a tall landing page.
+- Tightened stat cards, quick filters, dashboard panels, and event row spacing.
+- Added broadcast-style TV/channel badges.
+- Changed Must-Watch Events from one large spotlight into compact priority rows.
+- Changed Watchlist rows to match the denser command-center style.
+- Added Teams / Participants to the All Events table.
+- Added table sort control and top-right `.ics` export action.
+- Hid optional trip/sports summary panels from the main dashboard grid to match the approved two-row concept layout.
+- Preserved existing static app functionality and event automation.
+
 ## 0.16.1
 
 - Tightened the UI toward the approved Sports Command Center concept screenshot.

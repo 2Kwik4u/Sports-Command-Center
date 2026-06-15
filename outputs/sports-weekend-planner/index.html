@@ -226,7 +226,7 @@
               <article class="panel highlight-panel today-panel">
                 <div class="panel-heading">
                   <h3>Today / Next 24 Hours</h3>
-                  <p>Immediate watch windows.</p>
+                  <p>View all</p>
                 </div>
                 <div id="todayEventList" class="compact-list"></div>
               </article>
@@ -234,7 +234,7 @@
               <article class="panel week-panel">
                 <div class="panel-heading">
                   <h3>This Week</h3>
-                  <p>Coming up before the next weekend clears.</p>
+                  <p>View all</p>
                 </div>
                 <div id="thisWeekList" class="compact-list"></div>
               </article>
@@ -242,7 +242,7 @@
               <article class="panel tournament-panel">
                 <div class="panel-heading">
                   <h3>World Cup / Active Tournaments</h3>
-                  <p id="activeTournamentSummary">Tournament tracker loading.</p>
+                  <p id="activeTournamentSummary">View all</p>
                 </div>
                 <div id="activeTournamentList" class="compact-list"></div>
               </article>
@@ -251,7 +251,7 @@
                 <div class="panel-heading">
                   <h3>Must-Watch Events</h3>
                 </div>
-                <div id="nextMajorEvent"></div>
+                <div id="mustWatchList" class="compact-list"></div>
               </article>
 
               <article class="panel keepfree-panel">
@@ -264,7 +264,7 @@
               <article class="panel watchlist-panel">
                 <div class="panel-heading">
                   <h3>Your Watchlist</h3>
-                  <p id="watchlistSummary">Favorites and personal priority.</p>
+                  <p id="watchlistSummary">View all</p>
                 </div>
                 <div id="personalWatchList" class="compact-list"></div>
               </article>
@@ -289,6 +289,16 @@
               <div class="panel-heading">
                 <h3>All Matching Events</h3>
                 <p id="eventListSummary">Showing upcoming events.</p>
+                <div class="table-actions">
+                  <label class="sort-control">Sort by
+                    <select id="eventSortInput">
+                      <option value="date">Date</option>
+                      <option value="importance">Importance</option>
+                      <option value="sport">Sport</option>
+                    </select>
+                  </label>
+                  <button id="tableCalendarExportButton" class="secondary-button compact-action" type="button">Export .ics</button>
+                </div>
               </div>
               <div id="eventList" class="event-list"></div>
             </article>
