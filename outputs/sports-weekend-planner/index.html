@@ -10,7 +10,10 @@
     <div class="app-shell">
       <aside class="sidebar">
         <div class="brand">
-          <div class="brand-mark">SW</div>
+          <div class="brand-mark">
+            <span class="brand-sports">🏈 ⚽ 🏁</span>
+            <strong>SCC</strong>
+          </div>
           <div>
             <h1>Sports Command Center</h1>
             <p>Major events, watch windows, and shared calendars.</p>
@@ -18,9 +21,11 @@
         </div>
 
         <nav class="nav-list" aria-label="Main views">
-          <button class="nav-item active" type="button" data-view="dashboard">Dashboard</button>
-          <button class="nav-item" type="button" data-view="calendar">Calendar</button>
-          <button class="nav-item" type="button" data-view="weekends">Weekends</button>
+          <button class="nav-item active" type="button" data-view="dashboard"><span>⌂</span> Dashboard</button>
+          <button class="nav-item" type="button" data-view="calendar"><span>▦</span> Calendar</button>
+          <button class="nav-item" type="button" data-view="weekends"><span>⚖</span> Weekends</button>
+          <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="all"><span>☷</span> Events</button>
+          <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="favorites"><span>☆</span> Watchlist</button>
         </nav>
 
         <section class="filter-panel" aria-label="Event filters">
@@ -33,6 +38,15 @@
             Sport
             <select id="sportFilter">
               <option value="all">All sports</option>
+            </select>
+          </label>
+          <label>
+            Status
+            <select id="statusQuickFilter">
+              <option value="all">All statuses</option>
+              <option value="Must-watch">Must-watch</option>
+              <option value="Good TV weekend">Good TV weekend</option>
+              <option value="Possible road trip">Road trip candidate</option>
             </select>
           </label>
           <label>
@@ -129,10 +143,21 @@
         <header class="page-header">
           <div>
             <p class="eyebrow">Your watch calendar</p>
-            <h2 id="pageTitle">Sports command center</h2>
+            <h2 id="pageTitle">Sports command center <span class="title-star">★</span></h2>
             <p id="pageSubtitle" class="page-subtitle">Track what matters today, this week, and on the weekends worth protecting.</p>
           </div>
-          <button id="addEventButton" class="primary-button" type="button">Add Event</button>
+          <div class="header-actions">
+            <button class="icon-action" type="button" aria-label="Search">⌕</button>
+            <button class="icon-action" type="button" aria-label="Notifications">◔</button>
+            <button class="icon-action" type="button" aria-label="Settings">⚙</button>
+            <div class="header-update-card">
+              <span>Last update</span>
+              <strong id="headerLastUpdate">Not checked yet</strong>
+              <small id="headerUpdateHealth">Ready</small>
+              <button id="headerCheckUpdatesButton" class="secondary-button compact-action" type="button">Check for Updates</button>
+            </div>
+            <button id="addEventButton" class="primary-button" type="button">Add Event</button>
+          </div>
         </header>
 
         <section id="dashboardView" class="view active-view">
@@ -159,26 +184,46 @@
 
           <section class="stats-grid" aria-label="Event summary">
             <article class="stat-card">
-              <span id="totalEvents">0</span>
-              <p>Total events</p>
+              <span class="stat-icon">▣</span>
+              <strong id="todayEvents">0</strong>
+              <p>Events today</p>
+              <small>Next 24 hours</small>
             </article>
             <article class="stat-card">
-              <span id="mustWatchEvents">0</span>
-              <p>Keep-free events</p>
+              <span class="stat-icon">★</span>
+              <strong id="thisWeekEvents">0</strong>
+              <p>This week</p>
+              <small id="thisWeekRange">Upcoming</small>
             </article>
             <article class="stat-card">
-              <span id="roadTripEvents">0</span>
-              <p>Favorite matches</p>
+              <span class="stat-icon">▱</span>
+              <strong id="keepFreeWeekends">0</strong>
+              <p>Keep-free weekends</p>
+              <small>Next 60 days</small>
             </article>
             <article class="stat-card">
-              <span id="averageImportance">0</span>
-              <p>Avg priority</p>
+              <span class="stat-icon">🏆</span>
+              <strong id="worldCupMatches">0</strong>
+              <p>World Cup matches</p>
+              <small>Loaded</small>
+            </article>
+            <article class="stat-card">
+              <span class="stat-icon">🔥</span>
+              <strong id="mustWatchEvents">0</strong>
+              <p>Must-watch events</p>
+              <small>In view</small>
+            </article>
+            <article class="stat-card">
+              <span class="stat-icon">●●</span>
+              <strong id="watchlistEvents">0</strong>
+              <p>On watchlist</p>
+              <small>For you</small>
             </article>
           </section>
 
           <section class="dashboard-grid">
             <div class="dashboard-stack">
-              <article class="panel highlight-panel">
+              <article class="panel highlight-panel today-panel">
                 <div class="panel-heading">
                   <h3>Today / Next 24 Hours</h3>
                   <p>Immediate watch windows.</p>
@@ -186,7 +231,7 @@
                 <div id="todayEventList" class="compact-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel week-panel">
                 <div class="panel-heading">
                   <h3>This Week</h3>
                   <p>Coming up before the next weekend clears.</p>
@@ -194,7 +239,7 @@
                 <div id="thisWeekList" class="compact-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel tournament-panel">
                 <div class="panel-heading">
                   <h3>World Cup / Active Tournaments</h3>
                   <p id="activeTournamentSummary">Tournament tracker loading.</p>
@@ -202,21 +247,21 @@
                 <div id="activeTournamentList" class="compact-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel mustwatch-panel">
                 <div class="panel-heading">
-                  <h3>Next Major Event</h3>
+                  <h3>Must-Watch Events</h3>
                 </div>
                 <div id="nextMajorEvent"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel keepfree-panel">
                 <div class="panel-heading">
                   <h3>Keep-Free Weekends</h3>
                 </div>
                 <div id="bestWeekendList" class="weekend-score-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel watchlist-panel">
                 <div class="panel-heading">
                   <h3>Your Watchlist</h3>
                   <p id="watchlistSummary">Favorites and personal priority.</p>
@@ -224,7 +269,7 @@
                 <div id="personalWatchList" class="compact-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel trip-panel">
                 <div class="panel-heading">
                   <h3>Optional Trip Candidates</h3>
                   <p id="homeBaseSummary">Home base not set.</p>
@@ -232,7 +277,7 @@
                 <div id="tripList" class="compact-list"></div>
               </article>
 
-              <article class="panel">
+              <article class="panel sports-panel">
                 <div class="panel-heading">
                   <h3>Sports Covered</h3>
                 </div>
@@ -243,6 +288,7 @@
             <article class="panel event-list-panel">
               <div class="panel-heading">
                 <h3>All Matching Events</h3>
+                <p id="eventListSummary">Showing upcoming events.</p>
               </div>
               <div id="eventList" class="event-list"></div>
             </article>

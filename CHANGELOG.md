@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.16.1
+
+- Tightened the UI toward the approved Sports Command Center concept screenshot.
+- Added icon-forward sidebar navigation and a larger SCC sports badge.
+- Reworked the top stats into six compact scoreboard tiles.
+- Added a header update card that matches the concept more closely.
+- Added sport icons to compact event rows.
+- Added country flags to World Cup match tiles.
+- Changed All Matching Events into a dense table-style view.
+
 ## 0.16.0
 
 - Rebranded the app direction toward Sports Command Center.

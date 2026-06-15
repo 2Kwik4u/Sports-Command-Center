@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.0";
+const APP_VERSION = "0.16.1";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -25,6 +25,71 @@ const statusStyles = {
   "Possible road trip": ["#fdba74", "rgba(251, 146, 60, 0.16)", "rgba(251, 146, 60, 0.42)"],
   "Already attending": ["#86efac", "rgba(34, 197, 94, 0.14)", "rgba(34, 197, 94, 0.42)"],
   Skip: ["#cbd5e1", "rgba(148, 163, 184, 0.12)", "rgba(148, 163, 184, 0.35)"]
+};
+
+const sportIcons = {
+  Soccer: "⚽",
+  Football: "🏈",
+  Racing: "🏁",
+  Basketball: "🏀",
+  Hockey: "🏒",
+  Tennis: "🎾",
+  Golf: "⛳",
+  Baseball: "⚾",
+  "Combat Sports": "🥊",
+  "Horse Racing": "🏇",
+  "Major Events": "🏆"
+};
+
+const countryFlags = {
+  Algeria: "🇩🇿",
+  Argentina: "🇦🇷",
+  Australia: "🇦🇺",
+  Austria: "🇦🇹",
+  Belgium: "🇧🇪",
+  "Bosnia & Herzegovina": "🇧🇦",
+  Brazil: "🇧🇷",
+  Canada: "🇨🇦",
+  "Cape Verde": "🇨🇻",
+  Colombia: "🇨🇴",
+  Croatia: "🇭🇷",
+  Curaçao: "🇨🇼",
+  "Czech Republic": "🇨🇿",
+  "DR Congo": "🇨🇩",
+  Ecuador: "🇪🇨",
+  Egypt: "🇪🇬",
+  England: "🏴",
+  France: "🇫🇷",
+  Germany: "🇩🇪",
+  Ghana: "🇬🇭",
+  Haiti: "🇭🇹",
+  Iran: "🇮🇷",
+  Iraq: "🇮🇶",
+  "Ivory Coast": "🇨🇮",
+  Japan: "🇯🇵",
+  Jordan: "🇯🇴",
+  Mexico: "🇲🇽",
+  Morocco: "🇲🇦",
+  Netherlands: "🇳🇱",
+  "New Zealand": "🇳🇿",
+  Norway: "🇳🇴",
+  Panama: "🇵🇦",
+  Paraguay: "🇵🇾",
+  Portugal: "🇵🇹",
+  Qatar: "🇶🇦",
+  "Saudi Arabia": "🇸🇦",
+  Scotland: "🏴",
+  Senegal: "🇸🇳",
+  "South Africa": "🇿🇦",
+  "South Korea": "🇰🇷",
+  Spain: "🇪🇸",
+  Sweden: "🇸🇪",
+  Switzerland: "🇨🇭",
+  Tunisia: "🇹🇳",
+  Turkey: "🇹🇷",
+  USA: "🇺🇸",
+  Uruguay: "🇺🇾",
+  Uzbekistan: "🇺🇿"
 };
 
 function starterEvent(event) {
@@ -540,6 +605,7 @@ function isRoadTripCandidate(event) {
 function getFilteredEvents() {
   const searchTerm = document.querySelector("#searchInput").value.trim().toLowerCase();
   const selectedSport = document.querySelector("#sportFilter").value;
+  const selectedStatus = document.querySelector("#statusQuickFilter").value;
   const minimumImportance = Number(document.querySelector("#importanceFilter").value);
   const minimumPersonalScore = Number(document.querySelector("#personalScoreFilter").value);
   const favoritesOnly = document.querySelector("#favoritesFilter").checked;
@@ -571,6 +637,7 @@ function getFilteredEvents() {
 
     return (!searchTerm || searchableText.includes(searchTerm)) &&
       (selectedSport === "all" || event.sport === selectedSport) &&
+      (selectedStatus === "all" || event.status === selectedStatus) &&
       event.importance >= minimumImportance &&
       event.personalImportance >= minimumPersonalScore &&
       (!favoritesOnly || hasFavoriteMatch(event)) &&
@@ -633,11 +700,17 @@ function matchupLabel(event) {
 }
 
 function compactEventCard(event) {
+  const icon = sportIcons[event.sport] || "★";
+
   return `
     <button class="mini-event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
-      <strong>${escapeHtml(event.title)}</strong>
-      <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(event.startTime || "Time TBD")} ${escapeHtml(event.timezone || "")}</span>
-      <span>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</span>
+      <span class="mini-time">${escapeHtml(event.startTime || "TBD")}<small>${escapeHtml(event.timezone || "")}</small></span>
+      <span class="sport-disc">${icon}</span>
+      <span class="mini-main">
+        <strong>${escapeHtml(event.title)}</strong>
+        <small>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</small>
+      </span>
+      <span class="mini-tv">${escapeHtml(event.tv || "TBD")}</span>
     </button>
   `;
 }
@@ -729,15 +802,23 @@ function renderNextMajorEvent(visibleEvents) {
 
 function renderStats(visibleEvents) {
   const mustWatchCount = visibleEvents.filter(isMustWatchEvent).length;
-  const favoriteMatchCount = visibleEvents.filter(hasFavoriteMatch).length;
-  const averagePriority = visibleEvents.length
-    ? visibleEvents.reduce((total, event) => total + eventWatchPriority(event), 0) / visibleEvents.length
-    : 0;
+  const watchlistCount = visibleEvents.filter((event) => isMustWatchEvent(event) || hasFavoriteMatch(event) || event.personalImportance >= 8).length;
+  const worldCupCount = visibleEvents.filter((event) => event.competition === "FIFA World Cup").length;
+  const todayCount = visibleEvents.filter((event) => isWithinDays(event, 1)).length;
+  const thisWeekCount = visibleEvents.filter((event) => isWithinDays(event, 7)).length;
+  const keepFreeCount = getWeekendGroups(visibleEvents, { startDate: startOfToday(), endDate: addDays(startOfToday(), 60) })
+    .filter((weekend) => weekend.details.score >= 25 || weekend.details.mustWatchCount > 0)
+    .length;
+  const weekStart = startOfToday();
+  const weekEnd = addDays(weekStart, 7);
 
-  document.querySelector("#totalEvents").textContent = visibleEvents.length;
+  document.querySelector("#todayEvents").textContent = todayCount;
+  document.querySelector("#thisWeekEvents").textContent = thisWeekCount;
+  document.querySelector("#keepFreeWeekends").textContent = keepFreeCount;
+  document.querySelector("#worldCupMatches").textContent = worldCupCount;
   document.querySelector("#mustWatchEvents").textContent = mustWatchCount;
-  document.querySelector("#roadTripEvents").textContent = favoriteMatchCount;
-  document.querySelector("#averageImportance").textContent = averagePriority.toFixed(1);
+  document.querySelector("#watchlistEvents").textContent = watchlistCount;
+  document.querySelector("#thisWeekRange").textContent = `${formatDateObject(weekStart)} - ${formatDateObject(weekEnd)}`;
 }
 
 function renderHeroSummary(visibleEvents) {
@@ -791,16 +872,99 @@ function renderActiveTournaments(visibleEvents) {
     ? `${worldCupEvents.length} World Cup match${worldCupEvents.length === 1 ? "" : "es"} in the upcoming planning view.`
     : "No active tournament events match the current filters.";
 
-  activeTournamentList.innerHTML = nextWorldCupEvents.map(compactEventCard).join("") ||
-    `<div class="empty-state">No World Cup or automated tournament events match the current filters.</div>`;
+  activeTournamentList.innerHTML = worldCupEvents.length
+    ? `
+      <div class="tournament-header-row">
+        <span class="trophy-mark">🏆</span>
+        <span>
+          <strong>FIFA World Cup 2026</strong>
+          <small>Jun 11 - Jul 19, 2026 - USA, Canada, Mexico</small>
+        </span>
+        <span class="match-count">${worldCupEvents.length}<small>matches</small></span>
+      </div>
+      <div class="world-cup-match-grid">
+        ${nextWorldCupEvents.slice(0, 3).map(worldCupMatchTile).join("")}
+      </div>
+      <button class="link-button" type="button" data-quick-filter="world-cup">View full World Cup schedule →</button>
+    `
+    : `<div class="empty-state">No World Cup or automated tournament events match the current filters.</div>`;
+}
+
+function worldCupMatchTile(event) {
+  return `
+    <button class="world-cup-tile event-button" type="button" data-event-id="${escapeHtml(event.id)}">
+      <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(event.startTime || "TBD")} ${escapeHtml(event.timezone || "")}</span>
+      <strong>${escapeHtml(event.group || event.round || "World Cup")}</strong>
+      <div class="flag-matchup">
+        <span>${countryFlags[event.homeTeam] || "⚽"}<small>${escapeHtml(shortTeamName(event.homeTeam))}</small></span>
+        <b>vs</b>
+        <span>${countryFlags[event.awayTeam] || "⚽"}<small>${escapeHtml(shortTeamName(event.awayTeam))}</small></span>
+      </div>
+    </button>
+  `;
+}
+
+function shortTeamName(team) {
+  const special = {
+    "South Africa": "RSA",
+    "South Korea": "KOR",
+    "Czech Republic": "CZE",
+    "New Zealand": "NZL",
+    "Saudi Arabia": "KSA",
+    "Bosnia & Herzegovina": "BIH",
+    "DR Congo": "COD",
+    "Ivory Coast": "CIV",
+    "Cape Verde": "CPV"
+  };
+
+  if (special[team]) {
+    return special[team];
+  }
+
+  return String(team || "TBD").slice(0, 3).toUpperCase();
 }
 
 function renderEvents(visibleEvents) {
   const sortedEvents = [...visibleEvents].sort((a, b) => a.date.localeCompare(b.date));
   const eventList = document.querySelector("#eventList");
+  const visibleRows = sortedEvents.slice(0, 10);
 
-  eventList.innerHTML = sortedEvents.map(eventCard).join("") ||
+  document.querySelector("#eventListSummary").textContent = sortedEvents.length
+    ? `Showing 1-${Math.min(visibleRows.length, sortedEvents.length)} of ${sortedEvents.length} events`
+    : "No events match this view";
+  eventList.innerHTML = visibleRows.length
+    ? `
+      <div class="events-table">
+        <div class="events-table-head">
+          <span>Date</span>
+          <span>Time</span>
+          <span>Sport</span>
+          <span>Competition</span>
+          <span>Event</span>
+          <span>TV / Streaming</span>
+          <span>Importance</span>
+          <span>Status</span>
+        </div>
+        ${visibleRows.map(eventRow).join("")}
+      </div>
+    `
+    :
     `<div class="empty-state">No events match the current filters.</div>`;
+}
+
+function eventRow(event) {
+  return `
+    <button class="event-row event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+      <span>${escapeHtml(formatDate(event.date))}</span>
+      <span>${escapeHtml(event.startTime || "TBD")}</span>
+      <span><span class="row-icon">${sportIcons[event.sport] || "★"}</span>${escapeHtml(event.sport)}</span>
+      <span>${escapeHtml(event.competition || "Open")}${event.group ? ` <small>${escapeHtml(event.group)}</small>` : ""}</span>
+      <span>${escapeHtml(event.title)}</span>
+      <span>${escapeHtml(event.tv || "TBD")}</span>
+      <span class="row-importance">★ ${escapeHtml(event.importance)}</span>
+      <span>${statusTag(event.status)}</span>
+    </button>
+  `;
 }
 
 function renderSportSummary(visibleEvents) {
@@ -1333,11 +1497,13 @@ function renderUpdateStatus() {
   document.querySelector("#lastSuccessStatus").textContent = `Last success: ${formatTimestamp(updateStats.lastSuccessAt)}`;
   document.querySelector("#lastMergeStatus").textContent = updateStats.lastMessage ||
     `Last merge: ${updateStats.lastAdded || 0} added, ${updateStats.lastReplaced || 0} replaced, ${updateStats.lastUnchanged || 0} unchanged`;
+  document.querySelector("#headerLastUpdate").textContent = formatTimestamp(updateStats.lastSuccessAt || updateStats.lastCheckedAt);
+  document.querySelector("#headerUpdateHealth").textContent = updateStats.lastMessage || "Ready to check";
 }
 
-function setActiveView(viewName) {
+function setActiveView(viewName, activeButton = null) {
   document.querySelectorAll(".nav-item").forEach((button) => {
-    button.classList.toggle("active", button.dataset.view === viewName);
+    button.classList.toggle("active", activeButton ? button === activeButton : button.dataset.view === viewName);
   });
 
   document.querySelectorAll(".view").forEach((view) => {
@@ -1352,12 +1518,20 @@ function setActiveView(viewName) {
     weekends: "Weekend planner"
   };
 
-  document.querySelector("#pageTitle").textContent = titles[viewName];
+  document.querySelector("#pageTitle").innerHTML = `${titles[viewName]} <span class="title-star">★</span>`;
 }
 
 function wireNavigation() {
   document.querySelectorAll(".nav-item").forEach((button) => {
-    button.addEventListener("click", () => setActiveView(button.dataset.view));
+    button.addEventListener("click", () => {
+      if (button.dataset.navFilter) {
+        activeQuickFilter = button.dataset.navFilter;
+        renderQuickFilters();
+      }
+
+      setActiveView(button.dataset.view, button);
+      renderAll();
+    });
   });
 
   document.querySelector("#previousMonthButton").addEventListener("click", () => {
@@ -1391,6 +1565,7 @@ function renderSportFilterOptions() {
 function clearFilters() {
   document.querySelector("#searchInput").value = "";
   document.querySelector("#sportFilter").value = "all";
+  document.querySelector("#statusQuickFilter").value = "all";
   document.querySelector("#importanceFilter").value = "1";
   document.querySelector("#importanceValue").textContent = "1+";
   document.querySelector("#personalScoreFilter").value = "1";
@@ -1773,6 +1948,7 @@ function wireImportExport() {
 
   document.querySelector("#exportButton").addEventListener("click", exportEvents);
   document.querySelector("#calendarExportButton").addEventListener("click", exportCalendarEvents);
+  document.querySelector("#headerCheckUpdatesButton").addEventListener("click", () => checkHostedUpdates({ showStatus: true }));
   document.querySelector("#importButton").addEventListener("click", () => importFileInput.click());
   importFileInput.addEventListener("change", () => importEventsFromFile(importFileInput.files[0]));
   document.querySelector("#closeImportPreviewButton").addEventListener("click", closeImportPreview);
@@ -1819,6 +1995,7 @@ function wireFilters() {
   const filterControls = [
     document.querySelector("#searchInput"),
     document.querySelector("#sportFilter"),
+    document.querySelector("#statusQuickFilter"),
     document.querySelector("#importanceFilter"),
     document.querySelector("#personalScoreFilter"),
     document.querySelector("#favoritesFilter"),
@@ -1829,14 +2006,6 @@ function wireFilters() {
     control.addEventListener("input", () => {
       document.querySelector("#importanceValue").textContent = `${document.querySelector("#importanceFilter").value}+`;
       document.querySelector("#personalScoreValue").textContent = `${document.querySelector("#personalScoreFilter").value}+`;
-      renderAll();
-    });
-  });
-
-  document.querySelectorAll("[data-quick-filter]").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeQuickFilter = button.dataset.quickFilter || "all";
-      renderQuickFilters();
       renderAll();
     });
   });
@@ -1852,6 +2021,15 @@ function wireEventForm() {
   document.querySelector("#eventForm").addEventListener("submit", handleEventSubmit);
 
   document.body.addEventListener("click", (event) => {
+    const quickFilterButton = event.target.closest("[data-quick-filter]");
+
+    if (quickFilterButton) {
+      activeQuickFilter = quickFilterButton.dataset.quickFilter || "all";
+      renderQuickFilters();
+      renderAll();
+      return;
+    }
+
     const weekendExportButton = event.target.closest("[data-export-weekend]");
 
     if (weekendExportButton) {

@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.0
+Version 0.16.1
 
 # Completed Features
 
@@ -118,6 +118,7 @@ i-want-to-build-a-web/
 - Improved validation for stable IDs, duplicate detection, metadata fields, and auto-imported source fields.
 - Updated hosted update UX with last checked, last success, merge counts, source, and auto-update state.
 - Removed Vercel as the active deployment plan in favor of GitHub Pages/static hosting.
+- Added a closer visual fidelity pass based on the Sports Command Center concept screenshot: denser sidebar, icon navigation, six scoreboard stat tiles, header update card, World Cup flag tiles, and table-style All Events list.
 
 # Next Recommended Steps
 
