@@ -1,8 +1,6080 @@
 {
-  "app": "Sports Weekend Planner",
-  "version": 1,
-  "updatedAt": "2026-05-30",
+  "app": "Sports Command Center",
+  "version": 2,
+  "updatedAt": "2026-06-15T22:21:36.541Z",
   "events": [
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
+      "title": "Mexico vs South Africa",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-11",
+      "startTime": "13:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Mexico City",
+      "location": "Mexico City",
+      "tv": "TBD",
+      "notes": "Matchday 1, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Mexico",
+        "South Africa"
+      ],
+      "participants": [
+        "Mexico",
+        "South Africa"
+      ],
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 1"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 1"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 1",
+      "round": "Matchday 1",
+      "group": "Group A",
+      "resultStatus": "Final",
+      "score": "2-0",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-1-south-korea-v-czech-republic-2026-06-11",
+      "title": "South Korea vs Czech Republic",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-11",
+      "startTime": "20:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Guadalajara (Zapopan)",
+      "location": "Guadalajara (Zapopan)",
+      "tv": "TBD",
+      "notes": "Matchday 1, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "South Korea",
+        "Czech Republic"
+      ],
+      "participants": [
+        "South Korea",
+        "Czech Republic"
+      ],
+      "homeTeam": "South Korea",
+      "awayTeam": "Czech Republic",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 1"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 1"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-1-south-korea-v-czech-republic-2026-06-11",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 1",
+      "round": "Matchday 1",
+      "group": "Group A",
+      "resultStatus": "Final",
+      "score": "2-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-2-canada-v-bosnia-and-herzegovina-2026-06-12",
+      "title": "Canada vs Bosnia & Herzegovina",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-12",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Matchday 2, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Canada",
+        "Bosnia & Herzegovina"
+      ],
+      "participants": [
+        "Canada",
+        "Bosnia & Herzegovina"
+      ],
+      "homeTeam": "Canada",
+      "awayTeam": "Bosnia & Herzegovina",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 2"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 2"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-2-canada-v-bosnia-and-herzegovina-2026-06-12",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 2",
+      "round": "Matchday 2",
+      "group": "Group B",
+      "resultStatus": "Final",
+      "score": "1-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-2-usa-v-paraguay-2026-06-12",
+      "title": "USA vs Paraguay",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-12",
+      "startTime": "18:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Matchday 2, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "USA",
+        "Paraguay"
+      ],
+      "participants": [
+        "USA",
+        "Paraguay"
+      ],
+      "homeTeam": "USA",
+      "awayTeam": "Paraguay",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 2"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 2"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-2-usa-v-paraguay-2026-06-12",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 2",
+      "round": "Matchday 2",
+      "group": "Group D",
+      "resultStatus": "Final",
+      "score": "4-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-3-australia-v-turkey-2026-06-13",
+      "title": "Australia vs Turkey",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-13",
+      "startTime": "21:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Matchday 3, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Australia",
+        "Turkey"
+      ],
+      "participants": [
+        "Australia",
+        "Turkey"
+      ],
+      "homeTeam": "Australia",
+      "awayTeam": "Turkey",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 3"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 3"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-3-australia-v-turkey-2026-06-13",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 3",
+      "round": "Matchday 3",
+      "group": "Group D",
+      "resultStatus": "Final",
+      "score": "2-0",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-3-brazil-v-morocco-2026-06-13",
+      "title": "Brazil vs Morocco",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-13",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Matchday 3, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Brazil",
+        "Morocco"
+      ],
+      "participants": [
+        "Brazil",
+        "Morocco"
+      ],
+      "homeTeam": "Brazil",
+      "awayTeam": "Morocco",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 3"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 3"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-3-brazil-v-morocco-2026-06-13",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 3",
+      "round": "Matchday 3",
+      "group": "Group C",
+      "resultStatus": "Final",
+      "score": "1-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-3-haiti-v-scotland-2026-06-13",
+      "title": "Haiti vs Scotland",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-13",
+      "startTime": "21:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Matchday 3, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Haiti",
+        "Scotland"
+      ],
+      "participants": [
+        "Haiti",
+        "Scotland"
+      ],
+      "homeTeam": "Haiti",
+      "awayTeam": "Scotland",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 3"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 3"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-3-haiti-v-scotland-2026-06-13",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 3",
+      "round": "Matchday 3",
+      "group": "Group C",
+      "resultStatus": "Final",
+      "score": "0-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-3-qatar-v-switzerland-2026-06-13",
+      "title": "Qatar vs Switzerland",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-13",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Matchday 3, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Qatar",
+        "Switzerland"
+      ],
+      "participants": [
+        "Qatar",
+        "Switzerland"
+      ],
+      "homeTeam": "Qatar",
+      "awayTeam": "Switzerland",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 3"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 3"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-3-qatar-v-switzerland-2026-06-13",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 3",
+      "round": "Matchday 3",
+      "group": "Group B",
+      "resultStatus": "Final",
+      "score": "1-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-4-germany-v-curacao-2026-06-14",
+      "title": "Germany vs Curaçao",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-14",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Matchday 4, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Germany",
+        "Curaçao"
+      ],
+      "participants": [
+        "Germany",
+        "Curaçao"
+      ],
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 4"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 4"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-4-germany-v-curacao-2026-06-14",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 4",
+      "round": "Matchday 4",
+      "group": "Group E",
+      "resultStatus": "Final",
+      "score": "7-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-4-ivory-coast-v-ecuador-2026-06-14",
+      "title": "Ivory Coast vs Ecuador",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-14",
+      "startTime": "19:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Matchday 4, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Ivory Coast",
+        "Ecuador"
+      ],
+      "participants": [
+        "Ivory Coast",
+        "Ecuador"
+      ],
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Ecuador",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 4"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 4"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-4-ivory-coast-v-ecuador-2026-06-14",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 4",
+      "round": "Matchday 4",
+      "group": "Group E",
+      "resultStatus": "Final",
+      "score": "1-0",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-4-netherlands-v-japan-2026-06-14",
+      "title": "Netherlands vs Japan",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-14",
+      "startTime": "15:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Matchday 4, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Netherlands",
+        "Japan"
+      ],
+      "participants": [
+        "Netherlands",
+        "Japan"
+      ],
+      "homeTeam": "Netherlands",
+      "awayTeam": "Japan",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 4"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 4"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-4-netherlands-v-japan-2026-06-14",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 4",
+      "round": "Matchday 4",
+      "group": "Group F",
+      "resultStatus": "Final",
+      "score": "2-2",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-4-sweden-v-tunisia-2026-06-14",
+      "title": "Sweden vs Tunisia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-14",
+      "startTime": "20:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Monterrey (Guadalupe)",
+      "location": "Monterrey (Guadalupe)",
+      "tv": "TBD",
+      "notes": "Matchday 4, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Sweden",
+        "Tunisia"
+      ],
+      "participants": [
+        "Sweden",
+        "Tunisia"
+      ],
+      "homeTeam": "Sweden",
+      "awayTeam": "Tunisia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 4"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 4"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-4-sweden-v-tunisia-2026-06-14",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 4",
+      "round": "Matchday 4",
+      "group": "Group F",
+      "resultStatus": "Final",
+      "score": "5-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-5-belgium-v-egypt-2026-06-15",
+      "title": "Belgium vs Egypt",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-15",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Matchday 5, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Belgium",
+        "Egypt"
+      ],
+      "participants": [
+        "Belgium",
+        "Egypt"
+      ],
+      "homeTeam": "Belgium",
+      "awayTeam": "Egypt",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 5"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 5"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-5-belgium-v-egypt-2026-06-15",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 5",
+      "round": "Matchday 5",
+      "group": "Group G",
+      "resultStatus": "Final",
+      "score": "1-1",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-5-iran-v-new-zealand-2026-06-15",
+      "title": "Iran vs New Zealand",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-15",
+      "startTime": "18:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Matchday 5, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Iran",
+        "New Zealand"
+      ],
+      "participants": [
+        "Iran",
+        "New Zealand"
+      ],
+      "homeTeam": "Iran",
+      "awayTeam": "New Zealand",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 5"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 5"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-5-iran-v-new-zealand-2026-06-15",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 5",
+      "round": "Matchday 5",
+      "group": "Group G",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-5-saudi-arabia-v-uruguay-2026-06-15",
+      "title": "Saudi Arabia vs Uruguay",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-15",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Matchday 5, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Saudi Arabia",
+        "Uruguay"
+      ],
+      "participants": [
+        "Saudi Arabia",
+        "Uruguay"
+      ],
+      "homeTeam": "Saudi Arabia",
+      "awayTeam": "Uruguay",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 5"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 5"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-5-saudi-arabia-v-uruguay-2026-06-15",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 5",
+      "round": "Matchday 5",
+      "group": "Group H",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-5-spain-v-cape-verde-2026-06-15",
+      "title": "Spain vs Cape Verde",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-15",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Matchday 5, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Spain",
+        "Cape Verde"
+      ],
+      "participants": [
+        "Spain",
+        "Cape Verde"
+      ],
+      "homeTeam": "Spain",
+      "awayTeam": "Cape Verde",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 5"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 5"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-5-spain-v-cape-verde-2026-06-15",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 5",
+      "round": "Matchday 5",
+      "group": "Group H",
+      "resultStatus": "Final",
+      "score": "0-0",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-6-argentina-v-algeria-2026-06-16",
+      "title": "Argentina vs Algeria",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-16",
+      "startTime": "20:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Matchday 6, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Argentina",
+        "Algeria"
+      ],
+      "participants": [
+        "Argentina",
+        "Algeria"
+      ],
+      "homeTeam": "Argentina",
+      "awayTeam": "Algeria",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 6"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 6"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-6-argentina-v-algeria-2026-06-16",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 6",
+      "round": "Matchday 6",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-6-austria-v-jordan-2026-06-16",
+      "title": "Austria vs Jordan",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-16",
+      "startTime": "21:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Matchday 6, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Austria",
+        "Jordan"
+      ],
+      "participants": [
+        "Austria",
+        "Jordan"
+      ],
+      "homeTeam": "Austria",
+      "awayTeam": "Jordan",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 6"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 6"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-6-austria-v-jordan-2026-06-16",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 6",
+      "round": "Matchday 6",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-6-france-v-senegal-2026-06-16",
+      "title": "France vs Senegal",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-16",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Matchday 6, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "France",
+        "Senegal"
+      ],
+      "participants": [
+        "France",
+        "Senegal"
+      ],
+      "homeTeam": "France",
+      "awayTeam": "Senegal",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 6"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 6"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-6-france-v-senegal-2026-06-16",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 6",
+      "round": "Matchday 6",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-6-iraq-v-norway-2026-06-16",
+      "title": "Iraq vs Norway",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-16",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Matchday 6, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Iraq",
+        "Norway"
+      ],
+      "participants": [
+        "Iraq",
+        "Norway"
+      ],
+      "homeTeam": "Iraq",
+      "awayTeam": "Norway",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 6"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 6"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-6-iraq-v-norway-2026-06-16",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 6",
+      "round": "Matchday 6",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-7-england-v-croatia-2026-06-17",
+      "title": "England vs Croatia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-17",
+      "startTime": "15:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Matchday 7, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "England",
+        "Croatia"
+      ],
+      "participants": [
+        "England",
+        "Croatia"
+      ],
+      "homeTeam": "England",
+      "awayTeam": "Croatia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 7"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 7"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-7-england-v-croatia-2026-06-17",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 7",
+      "round": "Matchday 7",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-7-ghana-v-panama-2026-06-17",
+      "title": "Ghana vs Panama",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-17",
+      "startTime": "19:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Matchday 7, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Ghana",
+        "Panama"
+      ],
+      "participants": [
+        "Ghana",
+        "Panama"
+      ],
+      "homeTeam": "Ghana",
+      "awayTeam": "Panama",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 7"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 7"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-7-ghana-v-panama-2026-06-17",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 7",
+      "round": "Matchday 7",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-7-portugal-v-dr-congo-2026-06-17",
+      "title": "Portugal vs DR Congo",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-17",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Matchday 7, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Portugal",
+        "DR Congo"
+      ],
+      "participants": [
+        "Portugal",
+        "DR Congo"
+      ],
+      "homeTeam": "Portugal",
+      "awayTeam": "DR Congo",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 7"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 7"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-7-portugal-v-dr-congo-2026-06-17",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 7",
+      "round": "Matchday 7",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-7-uzbekistan-v-colombia-2026-06-17",
+      "title": "Uzbekistan vs Colombia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-17",
+      "startTime": "20:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Mexico City",
+      "location": "Mexico City",
+      "tv": "TBD",
+      "notes": "Matchday 7, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Uzbekistan",
+        "Colombia"
+      ],
+      "participants": [
+        "Uzbekistan",
+        "Colombia"
+      ],
+      "homeTeam": "Uzbekistan",
+      "awayTeam": "Colombia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 7"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 7"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-7-uzbekistan-v-colombia-2026-06-17",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 7",
+      "round": "Matchday 7",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-8-canada-v-qatar-2026-06-18",
+      "title": "Canada vs Qatar",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-18",
+      "startTime": "15:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Matchday 8, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Canada",
+        "Qatar"
+      ],
+      "participants": [
+        "Canada",
+        "Qatar"
+      ],
+      "homeTeam": "Canada",
+      "awayTeam": "Qatar",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 8"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 8"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-8-canada-v-qatar-2026-06-18",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 8",
+      "round": "Matchday 8",
+      "group": "Group B",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-8-czech-republic-v-south-africa-2026-06-18",
+      "title": "Czech Republic vs South Africa",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-18",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Matchday 8, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Czech Republic",
+        "South Africa"
+      ],
+      "participants": [
+        "Czech Republic",
+        "South Africa"
+      ],
+      "homeTeam": "Czech Republic",
+      "awayTeam": "South Africa",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 8"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 8"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-8-czech-republic-v-south-africa-2026-06-18",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 8",
+      "round": "Matchday 8",
+      "group": "Group A",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-8-mexico-v-south-korea-2026-06-18",
+      "title": "Mexico vs South Korea",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-18",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Guadalajara (Zapopan)",
+      "location": "Guadalajara (Zapopan)",
+      "tv": "TBD",
+      "notes": "Matchday 8, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Mexico",
+        "South Korea"
+      ],
+      "participants": [
+        "Mexico",
+        "South Korea"
+      ],
+      "homeTeam": "Mexico",
+      "awayTeam": "South Korea",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 8"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 8"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-8-mexico-v-south-korea-2026-06-18",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 8",
+      "round": "Matchday 8",
+      "group": "Group A",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-8-switzerland-v-bosnia-and-herzegovina-2026-06-18",
+      "title": "Switzerland vs Bosnia & Herzegovina",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-18",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Matchday 8, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Switzerland",
+        "Bosnia & Herzegovina"
+      ],
+      "participants": [
+        "Switzerland",
+        "Bosnia & Herzegovina"
+      ],
+      "homeTeam": "Switzerland",
+      "awayTeam": "Bosnia & Herzegovina",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 8"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 8"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-8-switzerland-v-bosnia-and-herzegovina-2026-06-18",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 8",
+      "round": "Matchday 8",
+      "group": "Group B",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-9-brazil-v-haiti-2026-06-19",
+      "title": "Brazil vs Haiti",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-19",
+      "startTime": "20:30",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Matchday 9, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Brazil",
+        "Haiti"
+      ],
+      "participants": [
+        "Brazil",
+        "Haiti"
+      ],
+      "homeTeam": "Brazil",
+      "awayTeam": "Haiti",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 9"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 9"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-9-brazil-v-haiti-2026-06-19",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 9",
+      "round": "Matchday 9",
+      "group": "Group C",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-9-scotland-v-morocco-2026-06-19",
+      "title": "Scotland vs Morocco",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-19",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Matchday 9, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Scotland",
+        "Morocco"
+      ],
+      "participants": [
+        "Scotland",
+        "Morocco"
+      ],
+      "homeTeam": "Scotland",
+      "awayTeam": "Morocco",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 9"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 9"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-9-scotland-v-morocco-2026-06-19",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 9",
+      "round": "Matchday 9",
+      "group": "Group C",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-9-turkey-v-paraguay-2026-06-19",
+      "title": "Turkey vs Paraguay",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-19",
+      "startTime": "20:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Matchday 9, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Turkey",
+        "Paraguay"
+      ],
+      "participants": [
+        "Turkey",
+        "Paraguay"
+      ],
+      "homeTeam": "Turkey",
+      "awayTeam": "Paraguay",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 9"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 9"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-9-turkey-v-paraguay-2026-06-19",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 9",
+      "round": "Matchday 9",
+      "group": "Group D",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-9-usa-v-australia-2026-06-19",
+      "title": "USA vs Australia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-19",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Matchday 9, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "USA",
+        "Australia"
+      ],
+      "participants": [
+        "USA",
+        "Australia"
+      ],
+      "homeTeam": "USA",
+      "awayTeam": "Australia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 9"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 9"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-9-usa-v-australia-2026-06-19",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 9",
+      "round": "Matchday 9",
+      "group": "Group D",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-10-ecuador-v-curacao-2026-06-20",
+      "title": "Ecuador vs Curaçao",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-20",
+      "startTime": "19:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Matchday 10, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Ecuador",
+        "Curaçao"
+      ],
+      "participants": [
+        "Ecuador",
+        "Curaçao"
+      ],
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 10"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 10"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-10-ecuador-v-curacao-2026-06-20",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 10",
+      "round": "Matchday 10",
+      "group": "Group E",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-10-germany-v-ivory-coast-2026-06-20",
+      "title": "Germany vs Ivory Coast",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-20",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Matchday 10, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Germany",
+        "Ivory Coast"
+      ],
+      "participants": [
+        "Germany",
+        "Ivory Coast"
+      ],
+      "homeTeam": "Germany",
+      "awayTeam": "Ivory Coast",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 10"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 10"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-10-germany-v-ivory-coast-2026-06-20",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 10",
+      "round": "Matchday 10",
+      "group": "Group E",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-10-netherlands-v-sweden-2026-06-20",
+      "title": "Netherlands vs Sweden",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-20",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Matchday 10, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Netherlands",
+        "Sweden"
+      ],
+      "participants": [
+        "Netherlands",
+        "Sweden"
+      ],
+      "homeTeam": "Netherlands",
+      "awayTeam": "Sweden",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 10"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 10"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-10-netherlands-v-sweden-2026-06-20",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 10",
+      "round": "Matchday 10",
+      "group": "Group F",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-10-tunisia-v-japan-2026-06-20",
+      "title": "Tunisia vs Japan",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-20",
+      "startTime": "22:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Monterrey (Guadalupe)",
+      "location": "Monterrey (Guadalupe)",
+      "tv": "TBD",
+      "notes": "Matchday 10, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Tunisia",
+        "Japan"
+      ],
+      "participants": [
+        "Tunisia",
+        "Japan"
+      ],
+      "homeTeam": "Tunisia",
+      "awayTeam": "Japan",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 10"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 10"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-10-tunisia-v-japan-2026-06-20",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 10",
+      "round": "Matchday 10",
+      "group": "Group F",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-11-belgium-v-iran-2026-06-21",
+      "title": "Belgium vs Iran",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-21",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Matchday 11, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Belgium",
+        "Iran"
+      ],
+      "participants": [
+        "Belgium",
+        "Iran"
+      ],
+      "homeTeam": "Belgium",
+      "awayTeam": "Iran",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 11"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 11"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-11-belgium-v-iran-2026-06-21",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 11",
+      "round": "Matchday 11",
+      "group": "Group G",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-11-new-zealand-v-egypt-2026-06-21",
+      "title": "New Zealand vs Egypt",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-21",
+      "startTime": "18:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Matchday 11, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "New Zealand",
+        "Egypt"
+      ],
+      "participants": [
+        "New Zealand",
+        "Egypt"
+      ],
+      "homeTeam": "New Zealand",
+      "awayTeam": "Egypt",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 11"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 11"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-11-new-zealand-v-egypt-2026-06-21",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 11",
+      "round": "Matchday 11",
+      "group": "Group G",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-11-spain-v-saudi-arabia-2026-06-21",
+      "title": "Spain vs Saudi Arabia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-21",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Matchday 11, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Spain",
+        "Saudi Arabia"
+      ],
+      "participants": [
+        "Spain",
+        "Saudi Arabia"
+      ],
+      "homeTeam": "Spain",
+      "awayTeam": "Saudi Arabia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 11"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 11"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-11-spain-v-saudi-arabia-2026-06-21",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 11",
+      "round": "Matchday 11",
+      "group": "Group H",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-11-uruguay-v-cape-verde-2026-06-21",
+      "title": "Uruguay vs Cape Verde",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-21",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Matchday 11, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Uruguay",
+        "Cape Verde"
+      ],
+      "participants": [
+        "Uruguay",
+        "Cape Verde"
+      ],
+      "homeTeam": "Uruguay",
+      "awayTeam": "Cape Verde",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 11"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 11"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-11-uruguay-v-cape-verde-2026-06-21",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 11",
+      "round": "Matchday 11",
+      "group": "Group H",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-12-argentina-v-austria-2026-06-22",
+      "title": "Argentina vs Austria",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-22",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Matchday 12, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Argentina",
+        "Austria"
+      ],
+      "participants": [
+        "Argentina",
+        "Austria"
+      ],
+      "homeTeam": "Argentina",
+      "awayTeam": "Austria",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 12"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 12"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-12-argentina-v-austria-2026-06-22",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 12",
+      "round": "Matchday 12",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-12-france-v-iraq-2026-06-22",
+      "title": "France vs Iraq",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-22",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Matchday 12, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "France",
+        "Iraq"
+      ],
+      "participants": [
+        "France",
+        "Iraq"
+      ],
+      "homeTeam": "France",
+      "awayTeam": "Iraq",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 12"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 12"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-12-france-v-iraq-2026-06-22",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 12",
+      "round": "Matchday 12",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-12-jordan-v-algeria-2026-06-22",
+      "title": "Jordan vs Algeria",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-22",
+      "startTime": "20:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Matchday 12, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Jordan",
+        "Algeria"
+      ],
+      "participants": [
+        "Jordan",
+        "Algeria"
+      ],
+      "homeTeam": "Jordan",
+      "awayTeam": "Algeria",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 12"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 12"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-12-jordan-v-algeria-2026-06-22",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 12",
+      "round": "Matchday 12",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-12-norway-v-senegal-2026-06-22",
+      "title": "Norway vs Senegal",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-22",
+      "startTime": "20:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Matchday 12, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Norway",
+        "Senegal"
+      ],
+      "participants": [
+        "Norway",
+        "Senegal"
+      ],
+      "homeTeam": "Norway",
+      "awayTeam": "Senegal",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 12"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 12"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-12-norway-v-senegal-2026-06-22",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 12",
+      "round": "Matchday 12",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-13-colombia-v-dr-congo-2026-06-23",
+      "title": "Colombia vs DR Congo",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-23",
+      "startTime": "20:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Guadalajara (Zapopan)",
+      "location": "Guadalajara (Zapopan)",
+      "tv": "TBD",
+      "notes": "Matchday 13, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Colombia",
+        "DR Congo"
+      ],
+      "participants": [
+        "Colombia",
+        "DR Congo"
+      ],
+      "homeTeam": "Colombia",
+      "awayTeam": "DR Congo",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 13"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 13"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-13-colombia-v-dr-congo-2026-06-23",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 13",
+      "round": "Matchday 13",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-13-england-v-ghana-2026-06-23",
+      "title": "England vs Ghana",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-23",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Matchday 13, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "England",
+        "Ghana"
+      ],
+      "participants": [
+        "England",
+        "Ghana"
+      ],
+      "homeTeam": "England",
+      "awayTeam": "Ghana",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 13"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 13"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-13-england-v-ghana-2026-06-23",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 13",
+      "round": "Matchday 13",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-13-panama-v-croatia-2026-06-23",
+      "title": "Panama vs Croatia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-23",
+      "startTime": "19:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Matchday 13, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Panama",
+        "Croatia"
+      ],
+      "participants": [
+        "Panama",
+        "Croatia"
+      ],
+      "homeTeam": "Panama",
+      "awayTeam": "Croatia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 13"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 13"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-13-panama-v-croatia-2026-06-23",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 13",
+      "round": "Matchday 13",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-13-portugal-v-uzbekistan-2026-06-23",
+      "title": "Portugal vs Uzbekistan",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-23",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Matchday 13, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Portugal",
+        "Uzbekistan"
+      ],
+      "participants": [
+        "Portugal",
+        "Uzbekistan"
+      ],
+      "homeTeam": "Portugal",
+      "awayTeam": "Uzbekistan",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 13"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 13"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-13-portugal-v-uzbekistan-2026-06-23",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 13",
+      "round": "Matchday 13",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-14-bosnia-and-herzegovina-v-qatar-2026-06-24",
+      "title": "Bosnia & Herzegovina vs Qatar",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Bosnia & Herzegovina",
+        "Qatar"
+      ],
+      "participants": [
+        "Bosnia & Herzegovina",
+        "Qatar"
+      ],
+      "homeTeam": "Bosnia & Herzegovina",
+      "awayTeam": "Qatar",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-14-bosnia-and-herzegovina-v-qatar-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group B",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-14-czech-republic-v-mexico-2026-06-24",
+      "title": "Czech Republic vs Mexico",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Mexico City",
+      "location": "Mexico City",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Czech Republic",
+        "Mexico"
+      ],
+      "participants": [
+        "Czech Republic",
+        "Mexico"
+      ],
+      "homeTeam": "Czech Republic",
+      "awayTeam": "Mexico",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-14-czech-republic-v-mexico-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group A",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-14-morocco-v-haiti-2026-06-24",
+      "title": "Morocco vs Haiti",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Morocco",
+        "Haiti"
+      ],
+      "participants": [
+        "Morocco",
+        "Haiti"
+      ],
+      "homeTeam": "Morocco",
+      "awayTeam": "Haiti",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-14-morocco-v-haiti-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group C",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-c-matchday-14-scotland-v-brazil-2026-06-24",
+      "title": "Scotland vs Brazil",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Scotland",
+        "Brazil"
+      ],
+      "participants": [
+        "Scotland",
+        "Brazil"
+      ],
+      "homeTeam": "Scotland",
+      "awayTeam": "Brazil",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group C",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group C",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-c-matchday-14-scotland-v-brazil-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group C",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-a-matchday-14-south-africa-v-south-korea-2026-06-24",
+      "title": "South Africa vs South Korea",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Monterrey (Guadalupe)",
+      "location": "Monterrey (Guadalupe)",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "South Africa",
+        "South Korea"
+      ],
+      "participants": [
+        "South Africa",
+        "South Korea"
+      ],
+      "homeTeam": "South Africa",
+      "awayTeam": "South Korea",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group A",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group A",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-a-matchday-14-south-africa-v-south-korea-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group A",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-b-matchday-14-switzerland-v-canada-2026-06-24",
+      "title": "Switzerland vs Canada",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-24",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Matchday 14, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Switzerland",
+        "Canada"
+      ],
+      "participants": [
+        "Switzerland",
+        "Canada"
+      ],
+      "homeTeam": "Switzerland",
+      "awayTeam": "Canada",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group B",
+        "Matchday 14"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group B",
+        "Matchday 14"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-b-matchday-14-switzerland-v-canada-2026-06-24",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 14",
+      "round": "Matchday 14",
+      "group": "Group B",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-15-curacao-v-ivory-coast-2026-06-25",
+      "title": "Curaçao vs Ivory Coast",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Curaçao",
+        "Ivory Coast"
+      ],
+      "participants": [
+        "Curaçao",
+        "Ivory Coast"
+      ],
+      "homeTeam": "Curaçao",
+      "awayTeam": "Ivory Coast",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-15-curacao-v-ivory-coast-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group E",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-e-matchday-15-ecuador-v-germany-2026-06-25",
+      "title": "Ecuador vs Germany",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Ecuador",
+        "Germany"
+      ],
+      "participants": [
+        "Ecuador",
+        "Germany"
+      ],
+      "homeTeam": "Ecuador",
+      "awayTeam": "Germany",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group E",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group E",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-e-matchday-15-ecuador-v-germany-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group E",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-15-japan-v-sweden-2026-06-25",
+      "title": "Japan vs Sweden",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "18:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Japan",
+        "Sweden"
+      ],
+      "participants": [
+        "Japan",
+        "Sweden"
+      ],
+      "homeTeam": "Japan",
+      "awayTeam": "Sweden",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-15-japan-v-sweden-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group F",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-15-paraguay-v-australia-2026-06-25",
+      "title": "Paraguay vs Australia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "19:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Paraguay",
+        "Australia"
+      ],
+      "participants": [
+        "Paraguay",
+        "Australia"
+      ],
+      "homeTeam": "Paraguay",
+      "awayTeam": "Australia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-15-paraguay-v-australia-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group D",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-f-matchday-15-tunisia-v-netherlands-2026-06-25",
+      "title": "Tunisia vs Netherlands",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "18:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Tunisia",
+        "Netherlands"
+      ],
+      "participants": [
+        "Tunisia",
+        "Netherlands"
+      ],
+      "homeTeam": "Tunisia",
+      "awayTeam": "Netherlands",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group F",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group F",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-f-matchday-15-tunisia-v-netherlands-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group F",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-d-matchday-15-turkey-v-usa-2026-06-25",
+      "title": "Turkey vs USA",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-25",
+      "startTime": "19:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Matchday 15, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Turkey",
+        "USA"
+      ],
+      "participants": [
+        "Turkey",
+        "USA"
+      ],
+      "homeTeam": "Turkey",
+      "awayTeam": "USA",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group D",
+        "Matchday 15"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group D",
+        "Matchday 15"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-d-matchday-15-turkey-v-usa-2026-06-25",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 15",
+      "round": "Matchday 15",
+      "group": "Group D",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-16-cape-verde-v-saudi-arabia-2026-06-26",
+      "title": "Cape Verde vs Saudi Arabia",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "19:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Cape Verde",
+        "Saudi Arabia"
+      ],
+      "participants": [
+        "Cape Verde",
+        "Saudi Arabia"
+      ],
+      "homeTeam": "Cape Verde",
+      "awayTeam": "Saudi Arabia",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-16-cape-verde-v-saudi-arabia-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group H",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-16-egypt-v-iran-2026-06-26",
+      "title": "Egypt vs Iran",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "20:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Egypt",
+        "Iran"
+      ],
+      "participants": [
+        "Egypt",
+        "Iran"
+      ],
+      "homeTeam": "Egypt",
+      "awayTeam": "Iran",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-16-egypt-v-iran-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group G",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-g-matchday-16-new-zealand-v-belgium-2026-06-26",
+      "title": "New Zealand vs Belgium",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "20:00",
+      "timezone": "UTC-7",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "New Zealand",
+        "Belgium"
+      ],
+      "participants": [
+        "New Zealand",
+        "Belgium"
+      ],
+      "homeTeam": "New Zealand",
+      "awayTeam": "Belgium",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group G",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group G",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-g-matchday-16-new-zealand-v-belgium-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group G",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-16-norway-v-france-2026-06-26",
+      "title": "Norway vs France",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Norway",
+        "France"
+      ],
+      "participants": [
+        "Norway",
+        "France"
+      ],
+      "homeTeam": "Norway",
+      "awayTeam": "France",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-16-norway-v-france-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-i-matchday-16-senegal-v-iraq-2026-06-26",
+      "title": "Senegal vs Iraq",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Senegal",
+        "Iraq"
+      ],
+      "participants": [
+        "Senegal",
+        "Iraq"
+      ],
+      "homeTeam": "Senegal",
+      "awayTeam": "Iraq",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group I",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group I",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-i-matchday-16-senegal-v-iraq-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group I",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-h-matchday-16-uruguay-v-spain-2026-06-26",
+      "title": "Uruguay vs Spain",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-26",
+      "startTime": "18:00",
+      "timezone": "UTC-6",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Guadalajara (Zapopan)",
+      "location": "Guadalajara (Zapopan)",
+      "tv": "TBD",
+      "notes": "Matchday 16, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Uruguay",
+        "Spain"
+      ],
+      "participants": [
+        "Uruguay",
+        "Spain"
+      ],
+      "homeTeam": "Uruguay",
+      "awayTeam": "Spain",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group H",
+        "Matchday 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group H",
+        "Matchday 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-h-matchday-16-uruguay-v-spain-2026-06-26",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 16",
+      "round": "Matchday 16",
+      "group": "Group H",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-17-algeria-v-austria-2026-06-27",
+      "title": "Algeria vs Austria",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "21:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Algeria",
+        "Austria"
+      ],
+      "participants": [
+        "Algeria",
+        "Austria"
+      ],
+      "homeTeam": "Algeria",
+      "awayTeam": "Austria",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-17-algeria-v-austria-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-17-colombia-v-portugal-2026-06-27",
+      "title": "Colombia vs Portugal",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "19:30",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Colombia",
+        "Portugal"
+      ],
+      "participants": [
+        "Colombia",
+        "Portugal"
+      ],
+      "homeTeam": "Colombia",
+      "awayTeam": "Portugal",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-17-colombia-v-portugal-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-17-croatia-v-ghana-2026-06-27",
+      "title": "Croatia vs Ghana",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Croatia",
+        "Ghana"
+      ],
+      "participants": [
+        "Croatia",
+        "Ghana"
+      ],
+      "homeTeam": "Croatia",
+      "awayTeam": "Ghana",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-17-croatia-v-ghana-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-k-matchday-17-dr-congo-v-uzbekistan-2026-06-27",
+      "title": "DR Congo vs Uzbekistan",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "19:30",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "DR Congo",
+        "Uzbekistan"
+      ],
+      "participants": [
+        "DR Congo",
+        "Uzbekistan"
+      ],
+      "homeTeam": "DR Congo",
+      "awayTeam": "Uzbekistan",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group K",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group K",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-k-matchday-17-dr-congo-v-uzbekistan-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group K",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-j-matchday-17-jordan-v-argentina-2026-06-27",
+      "title": "Jordan vs Argentina",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "21:00",
+      "timezone": "UTC-5",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Jordan",
+        "Argentina"
+      ],
+      "participants": [
+        "Jordan",
+        "Argentina"
+      ],
+      "homeTeam": "Jordan",
+      "awayTeam": "Argentina",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group J",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group J",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-j-matchday-17-jordan-v-argentina-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group J",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-group-l-matchday-17-panama-v-england-2026-06-27",
+      "title": "Panama vs England",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-27",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Matchday 17, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Panama",
+        "England"
+      ],
+      "participants": [
+        "Panama",
+        "England"
+      ],
+      "homeTeam": "Panama",
+      "awayTeam": "England",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Group L",
+        "Matchday 17"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Group L",
+        "Matchday 17"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "fifa-world-cup-2026-group-l-matchday-17-panama-v-england-2026-06-27",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Matchday 17",
+      "round": "Matchday 17",
+      "group": "Group L",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-073",
+      "title": "2A vs 2B",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-28",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "2A",
+        "2B"
+      ],
+      "participants": [
+        "2A",
+        "2B"
+      ],
+      "homeTeam": "2A",
+      "awayTeam": "2B",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "73",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-076",
+      "title": "1C vs 2F",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-29",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1C",
+        "2F"
+      ],
+      "participants": [
+        "1C",
+        "2F"
+      ],
+      "homeTeam": "1C",
+      "awayTeam": "2F",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "76",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-074",
+      "title": "1E vs 3A/B/C/D/F",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-29",
+      "startTime": "16:30",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1E",
+        "3A/B/C/D/F"
+      ],
+      "participants": [
+        "1E",
+        "3A/B/C/D/F"
+      ],
+      "homeTeam": "1E",
+      "awayTeam": "3A/B/C/D/F",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "74",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-075",
+      "title": "1F vs 2C",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-29",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Monterrey (Guadalupe)",
+      "location": "Monterrey (Guadalupe)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1F",
+        "2C"
+      ],
+      "participants": [
+        "1F",
+        "2C"
+      ],
+      "homeTeam": "1F",
+      "awayTeam": "2C",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "75",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-079",
+      "title": "1A vs 3C/E/F/H/I",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-30",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Mexico City",
+      "location": "Mexico City",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1A",
+        "3C/E/F/H/I"
+      ],
+      "participants": [
+        "1A",
+        "3C/E/F/H/I"
+      ],
+      "homeTeam": "1A",
+      "awayTeam": "3C/E/F/H/I",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "79",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-077",
+      "title": "1I vs 3C/D/F/G/H",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-30",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1I",
+        "3C/D/F/G/H"
+      ],
+      "participants": [
+        "1I",
+        "3C/D/F/G/H"
+      ],
+      "homeTeam": "1I",
+      "awayTeam": "3C/D/F/G/H",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "77",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-078",
+      "title": "2E vs 2I",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-30",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "2E",
+        "2I"
+      ],
+      "participants": [
+        "2E",
+        "2I"
+      ],
+      "homeTeam": "2E",
+      "awayTeam": "2I",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "78",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-081",
+      "title": "1D vs 3B/E/F/I/J",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-01",
+      "startTime": "17:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1D",
+        "3B/E/F/I/J"
+      ],
+      "participants": [
+        "1D",
+        "3B/E/F/I/J"
+      ],
+      "homeTeam": "1D",
+      "awayTeam": "3B/E/F/I/J",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "81",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-082",
+      "title": "1G vs 3A/E/H/I/J",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-01",
+      "startTime": "13:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1G",
+        "3A/E/H/I/J"
+      ],
+      "participants": [
+        "1G",
+        "3A/E/H/I/J"
+      ],
+      "homeTeam": "1G",
+      "awayTeam": "3A/E/H/I/J",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "82",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-080",
+      "title": "1L vs 3E/H/I/J/K",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-01",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1L",
+        "3E/H/I/J/K"
+      ],
+      "participants": [
+        "1L",
+        "3E/H/I/J/K"
+      ],
+      "homeTeam": "1L",
+      "awayTeam": "3E/H/I/J/K",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "80",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-085",
+      "title": "1B vs 3E/F/G/I/J",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-02",
+      "startTime": "20:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1B",
+        "3E/F/G/I/J"
+      ],
+      "participants": [
+        "1B",
+        "3E/F/G/I/J"
+      ],
+      "homeTeam": "1B",
+      "awayTeam": "3E/F/G/I/J",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "85",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-084",
+      "title": "1H vs 2J",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-02",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1H",
+        "2J"
+      ],
+      "participants": [
+        "1H",
+        "2J"
+      ],
+      "homeTeam": "1H",
+      "awayTeam": "2J",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "84",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-083",
+      "title": "2K vs 2L",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-02",
+      "startTime": "19:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Toronto",
+      "location": "Toronto",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "2K",
+        "2L"
+      ],
+      "participants": [
+        "2K",
+        "2L"
+      ],
+      "homeTeam": "2K",
+      "awayTeam": "2L",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "83",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-086",
+      "title": "1J vs 2H",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-03",
+      "startTime": "18:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1J",
+        "2H"
+      ],
+      "participants": [
+        "1J",
+        "2H"
+      ],
+      "homeTeam": "1J",
+      "awayTeam": "2H",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "86",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-087",
+      "title": "1K vs 3D/E/I/J/L",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-03",
+      "startTime": "20:30",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "1K",
+        "3D/E/I/J/L"
+      ],
+      "participants": [
+        "1K",
+        "3D/E/I/J/L"
+      ],
+      "homeTeam": "1K",
+      "awayTeam": "3D/E/I/J/L",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "87",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-088",
+      "title": "2D vs 2G",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-03",
+      "startTime": "13:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "2D",
+        "2G"
+      ],
+      "participants": [
+        "2D",
+        "2G"
+      ],
+      "homeTeam": "2D",
+      "awayTeam": "2G",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "88",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-090",
+      "title": "W73 vs W75",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-04",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W73",
+        "W75"
+      ],
+      "participants": [
+        "W73",
+        "W75"
+      ],
+      "homeTeam": "W73",
+      "awayTeam": "W75",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "90",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-089",
+      "title": "W74 vs W77",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-04",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Philadelphia",
+      "location": "Philadelphia",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W74",
+        "W77"
+      ],
+      "participants": [
+        "W74",
+        "W77"
+      ],
+      "homeTeam": "W74",
+      "awayTeam": "W77",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "89",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-091",
+      "title": "W76 vs W78",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-05",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W76",
+        "W78"
+      ],
+      "participants": [
+        "W76",
+        "W78"
+      ],
+      "homeTeam": "W76",
+      "awayTeam": "W78",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "91",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-092",
+      "title": "W79 vs W80",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-05",
+      "startTime": "18:00",
+      "timezone": "UTC-6",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Mexico City",
+      "location": "Mexico City",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W79",
+        "W80"
+      ],
+      "participants": [
+        "W79",
+        "W80"
+      ],
+      "homeTeam": "W79",
+      "awayTeam": "W80",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "92",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-094",
+      "title": "W81 vs W82",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-06",
+      "startTime": "17:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Seattle",
+      "location": "Seattle",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W81",
+        "W82"
+      ],
+      "participants": [
+        "W81",
+        "W82"
+      ],
+      "homeTeam": "W81",
+      "awayTeam": "W82",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "94",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-093",
+      "title": "W83 vs W84",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-06",
+      "startTime": "14:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W83",
+        "W84"
+      ],
+      "participants": [
+        "W83",
+        "W84"
+      ],
+      "homeTeam": "W83",
+      "awayTeam": "W84",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "93",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-096",
+      "title": "W85 vs W87",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-07",
+      "startTime": "13:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Vancouver",
+      "location": "Vancouver",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W85",
+        "W87"
+      ],
+      "participants": [
+        "W85",
+        "W87"
+      ],
+      "homeTeam": "W85",
+      "awayTeam": "W87",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "96",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-095",
+      "title": "W86 vs W88",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-07",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W86",
+        "W88"
+      ],
+      "participants": [
+        "W86",
+        "W88"
+      ],
+      "homeTeam": "W86",
+      "awayTeam": "W88",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "95",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-097",
+      "title": "W89 vs W90",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-09",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
+      "tv": "TBD",
+      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W89",
+        "W90"
+      ],
+      "participants": [
+        "W89",
+        "W90"
+      ],
+      "homeTeam": "W89",
+      "awayTeam": "W90",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Quarter-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Quarter-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "97",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Quarter-final",
+      "round": "Quarter-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-098",
+      "title": "W93 vs W94",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-10",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "TBD",
+      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W93",
+        "W94"
+      ],
+      "participants": [
+        "W93",
+        "W94"
+      ],
+      "homeTeam": "W93",
+      "awayTeam": "W94",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Quarter-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Quarter-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "98",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Quarter-final",
+      "round": "Quarter-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-099",
+      "title": "W91 vs W92",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-11",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W91",
+        "W92"
+      ],
+      "participants": [
+        "W91",
+        "W92"
+      ],
+      "homeTeam": "W91",
+      "awayTeam": "W92",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Quarter-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Quarter-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "99",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Quarter-final",
+      "round": "Quarter-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-100",
+      "title": "W95 vs W96",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-11",
+      "startTime": "20:00",
+      "timezone": "UTC-5",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "TBD",
+      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W95",
+        "W96"
+      ],
+      "participants": [
+        "W95",
+        "W96"
+      ],
+      "homeTeam": "W95",
+      "awayTeam": "W96",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Quarter-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Quarter-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "100",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Quarter-final",
+      "round": "Quarter-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-101",
+      "title": "W97 vs W98",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-14",
+      "startTime": "14:00",
+      "timezone": "UTC-5",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Dallas (Arlington)",
+      "location": "Dallas (Arlington)",
+      "tv": "TBD",
+      "notes": "Semi-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W97",
+        "W98"
+      ],
+      "participants": [
+        "W97",
+        "W98"
+      ],
+      "homeTeam": "W97",
+      "awayTeam": "W98",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Semi-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Semi-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "101",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Semi-final",
+      "round": "Semi-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-102",
+      "title": "W99 vs W100",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-15",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "TBD",
+      "notes": "Semi-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W99",
+        "W100"
+      ],
+      "participants": [
+        "W99",
+        "W100"
+      ],
+      "homeTeam": "W99",
+      "awayTeam": "W100",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Semi-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Semi-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "102",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Semi-final",
+      "round": "Semi-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-103",
+      "title": "L101 vs L102",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-18",
+      "startTime": "17:00",
+      "timezone": "UTC-4",
+      "importance": 6,
+      "personalImportance": 6,
+      "status": "Good TV weekend",
+      "venue": "Miami (Miami Gardens)",
+      "location": "Miami (Miami Gardens)",
+      "tv": "TBD",
+      "notes": "Match for third place. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "L101",
+        "L102"
+      ],
+      "participants": [
+        "L101",
+        "L102"
+      ],
+      "homeTeam": "L101",
+      "awayTeam": "L102",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Match for third place"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Match for third place"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "103",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Match for third place",
+      "round": "Match for third place",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 6,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-104",
+      "title": "W101 vs W102",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-19",
+      "startTime": "15:00",
+      "timezone": "UTC-4",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "TBD",
+      "notes": "Final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "W101",
+        "W102"
+      ],
+      "participants": [
+        "W101",
+        "W102"
+      ],
+      "homeTeam": "W101",
+      "awayTeam": "W102",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "104",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Imported",
+      "stage": "Final",
+      "round": "Final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      }
+    },
     {
       "id": "hosted-premier-league-opening-weekend",
       "title": "Premier League Opening Weekend",
@@ -75,5 +6147,15 @@
         "status": "Idea"
       }
     }
-  ]
+  ],
+  "automation": {
+    "strategy": "GitHub Actions plus hosted events.json",
+    "sources": [
+      {
+        "name": "OpenFootball World Cup JSON",
+        "adapter": "sources/world-cup-2026.mjs",
+        "eventCount": 104
+      }
+    ]
+  }
 }

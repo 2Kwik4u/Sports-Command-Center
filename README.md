@@ -1,150 +1,74 @@
-﻿# Sports Weekend Planner
+# Sports Command Center
 
 ## Overview
 
-Sports Weekend Planner is a shared sports calendar and trip-planning web app for people who want to track major sporting events across many sports. It is built for users who care less about seeing every single game and more about identifying the biggest events, best TV weekends, and live-event road trip opportunities.
-
-The current version is a beginner-friendly static web app that runs in the browser and can be hosted on Vercel, GitHub Pages, Netlify, or any other static hosting service.
+Sports Command Center is a static web app for tracking major sports events, deciding what is worth watching, and identifying weekends that should be kept free for sports. It is built for people who want a shared sports calendar with a friend without drowning in every game from every league.
 
 ## Vision
 
-The long-term goal is to help users monitor major sporting events, plan trips to live events, and quickly answer one practical question: which sports weekends are worth protecting on the calendar?
-
-Over time, Sports Weekend Planner should become a premium sports command center that combines:
-
-- A curated major-events calendar.
-- A weekend watch planner.
-- A live-event trip planner.
-- Shared planning for two people.
-- Future sports schedule imports and calendar integrations.
-
-The project should prioritize meaningful events and useful planning decisions over trying to become a complete schedule database for every league.
+The long-term goal is a personalized sports command center that answers what to watch today, what to watch this week, which weekends matter, and which major events are coming up. Travel planning remains secondary.
 
 ## Current Features
 
-- Dashboard view with event summary stats.
-- Monthly calendar view.
-- Weekend list view grouped around Friday through Sunday.
-- Manual event database with starter events across many sports.
-- Add, edit, and delete events.
-- Event fields for sport, competition, date, start time, timezone, importance, status, venue, location, TV or streaming service, and notes.
-- Trip planning fields for distance from home, travel notes, hotel needed, ticket link, personal interest, friend interest, and trip status.
-- Event statuses including Must-watch, Good TV weekend, Possible road trip, Already attending, and Skip.
-- Sport-colored tags and visual accents.
-- Filters for search, sport, minimum importance, and road trip candidates.
-- Dashboard sections for next major event, upcoming road trip candidates, must-watch events, best sports weekends, and events grouped by sport.
-- Dark, light, and system theme settings.
-- Local settings for home base, default timezone, default TV service, auto-update preference, and hosted update source.
-- Favorite settings for sports, leagues, competitions, teams, drivers, and keywords.
-- Personal importance scoring separate from general event importance.
-- Structured event fields for teams, drivers/athletes, competition tags, and extra watch keywords.
-- Favorite-only and minimum personal score filters.
-- Personalized watchlist dashboard section.
-- Visible app version in the left sidebar settings area.
-- Preference-aware Weekend Score and event priority scoring.
-- Inferred keep-free/must-watch detection using event status, major-event importance, personal score, favorite matches, and watch priority.
-- Weekend Score labels and reason summaries for comparing which weekends matter most.
-- JSON export for sharing the local event database.
-- JSON import for loading shared or edited event data.
-- Shared JSON exports include event count, export metadata, and favorite preference context.
-- Imports show how many events were added, replaced, or unchanged.
-- Imports show a preview before shared JSON files are merged into local storage.
-- Google Calendar-compatible `.ics` export for high-priority events from the current filtered view.
-- Selected-weekend Google Calendar export from weekend cards.
-- Hosted `events.json` update support that can merge deployed event updates by stable event `id`.
-- Node-based event validation helper for `events.json`.
-- Static hosting compatibility.
-- Shareable output folder and zip artifact under `outputs/`.
+- Dashboard, calendar, and weekend planner views.
+- Today / Next 24 Hours, This Week, World Cup / Active Tournaments, Next Major Event, Keep-Free Weekends, Watchlist, Sports Covered, and matching event dashboard sections.
+- Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
+- Automatic hiding of past events from Dashboard and Weekends.
+- Manual add/edit/delete event workflow.
+- Local settings, dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
+- Event priority, personal importance, friend interest, must-watch detection, and Weekend Score.
+- JSON import/export with import preview.
+- Google Calendar-compatible `.ics` export.
+- Hosted `events.json` update flow.
+- Visible hosted update status in the app.
+- GitHub Actions-based event update pipeline.
+- Full FIFA World Cup 2026 import from a no-key public structured source.
 
 ## Planned Features
 
-Near-term roadmap items include:
-
-- Deploy and verify the app on Vercel.
-- Confirm that hosted `/events.json` updates work from the deployed site.
-- Wire `events.json` validation into a repeatable pre-deploy checklist.
-- Improve event data quality with more confirmed dates, venues, times, and broadcast information.
-- Add clearer feedback for hosted update results.
-- Add a reset or restore option for the starter event database.
-- Improve responsive behavior across desktop and mobile.
-
-Longer-term roadmap items include:
-
-- Sports schedule API integrations through serverless functions.
-- Scheduled hosted updates with Vercel cron jobs.
-- Shared backend storage for two-person collaboration.
-- Login/accounts.
-- Google Calendar export refinements.
-- Notifications.
-- Map view.
-- Ticket price tracking.
-- Hotel and travel estimate support.
-- Favorite teams, leagues, drivers, and sports filters.
-
-See `ROADMAP.md` for the authoritative long-term plan.
+- GitHub Pages deployment verification.
+- PWA installability for phone home-screen use.
+- Additional event source adapters.
+- More flexible calendar export options.
+- Stronger favorite/team/competition matching.
+- Browser smoke tests.
 
 ## Technology Stack
 
 - Frontend: plain HTML, CSS, and JavaScript.
-- Backend: none in the current version.
-- Storage: browser `localStorage` for events and settings.
-- Hosted data source: static `events.json` file.
-- Libraries: none currently.
-- Tooling: no build step, no package manager requirement, and no framework dependency.
-- Deployment target: Vercel or any static hosting provider.
+- Backend: none for the browser app.
+- Storage: browser `localStorage`.
+- Hosted shared data: static `events.json`.
+- Automation: GitHub Actions plus Node scripts.
+- Deployment target: GitHub Pages/static hosting.
 
-There is currently no `package.json`, so there are no npm dependencies to install.
+The browser app does not require API secrets. Future authenticated sources should run through GitHub Actions secrets, not client-side JavaScript.
 
 ## Project Structure
 
 ```text
 i-want-to-build-a-web/
+  .github/workflows/update-events.yml
   index.html
   styles.css
   app.js
   events.json
-  PROJECT_STATUS.md
-  ROADMAP.md
   README.md
-  outputs/
-    sports-weekend-planner/
-      .nojekyll
-      index.html
-      styles.css
-      app.js
-      events.json
-    sports-weekend-planner-shareable-v1.zip
-  work/
-    local-static-server.cjs
-    validate-events.cjs
+  ROADMAP.md
+  PROJECT_STATUS.md
+  CHANGELOG.md
+  scripts/update-events.mjs
+  sources/normalize-event.mjs
+  sources/world-cup-2026.mjs
+  work/local-static-server.cjs
+  work/validate-events.cjs
 ```
-
-Important files:
-
-- `index.html`: Main app layout, navigation, filters, dashboard, calendar view, weekend view, settings, and event form modal.
-- `styles.css`: Visual design, responsive layout, dark/light themes, sport accents, cards, calendar styling, and modal styling.
-- `app.js`: Starter data, local storage, rendering, filtering, event CRUD, settings, themes, import/export, and hosted updates.
-- `events.json`: Static hosted update file for adding or replacing events on deployed versions of the app.
-- `PROJECT_STATUS.md`: Current project summary and status report.
-- `ROADMAP.md`: Long-term roadmap and feature prioritization.
-- `outputs/sports-weekend-planner/`: Shareable/deployable copy of the app.
-- `outputs/sports-weekend-planner-shareable-v1.zip`: Zip package for sharing the current static app.
-- `work/local-static-server.cjs`: Local static server for `http://localhost:8000`.
-- `work/validate-events.cjs`: Event validator for hosted calendar data.
 
 ## Installation
 
-This project currently does not require installation in the traditional sense because it has no dependencies and no build step.
+No package install is required.
 
-1. Clone or download the repository.
-2. Open the project folder.
-3. Open `index.html` in a modern web browser.
-
-That is enough for the core app experience: dashboard, calendar, weekend view, event editing, filters, themes, and local import/export.
-
-For the best local testing experience, especially when testing `events.json` hosted updates, run the project through a local static server instead of opening it with a `file://` URL.
-
-This repository includes a small Node-based local server helper:
+Run locally with the included static server:
 
 ```bash
 node work/local-static-server.cjs
@@ -156,92 +80,97 @@ Then open:
 http://localhost:8000
 ```
 
-If you prefer Python and have it installed, this also works:
+## Usage
 
+1. Open the app.
+2. Use Dashboard to decide what to watch soon and which weekends matter.
+3. Use Calendar for month browsing.
+4. Use Weekends to compare Friday-Sunday clusters.
+5. Use Add Event or click an event card to edit local events.
+6. Use filters and quick chips to narrow the planning view.
+7. Use Check for Event Updates to merge hosted `events.json` updates into local storage.
+8. Use JSON export/import to share a local calendar with a friend.
+9. Use Google Calendar export for high-priority events or selected weekends.
 
-```bash
-python -m http.server 8000
-```
+## Automated Event Updates
 
-Then open:
+The current automation model is:
 
-```text
-http://localhost:8000
-```
+1. GitHub Actions runs `.github/workflows/update-events.yml`.
+2. The workflow runs `node scripts/update-events.mjs`.
+3. The script fetches approved public structured event data.
+4. Source adapters normalize events into the app schema.
+5. Events merge into `events.json` by stable `id`.
+6. Validation runs with `node work/validate-events.cjs`.
+7. GitHub commits `events.json` only if it changed.
+8. The deployed static app fetches hosted `events.json` and merges updates into each user's local storage.
 
-If Python is not installed, any static file server will work.
+User-created local events are not deleted by automated updates.
 
-To validate the hosted event file before deployment, run:
+## World Cup Import
+
+Version 0.16.0 includes a source adapter for FIFA World Cup 2026:
+
+- Adapter: `sources/world-cup-2026.mjs`
+- Source: `https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json`
+- Imported events: 104 matches
+- Metadata: source, sourceId, round, group, home/away teams, participants, result status, and score when available
+
+If TV/streaming data is not provided by the source, the app uses `TBD` and does not invent it.
+
+## Validation
+
+Run:
 
 ```bash
 node work/validate-events.cjs
 ```
 
-## Usage
+Validation checks JSON parsing, top-level event array, required event fields, stable IDs, duplicate IDs, optional metadata types, and source/sourceId for auto-imported events.
 
-1. Open the app in a browser.
-2. Use the Dashboard to see major upcoming events, trip candidates, best sports weekends, and sport groupings.
-3. Use the Calendar view to browse events by month.
-4. Use the Weekends view to compare sports-heavy weekends.
-5. Select Add Event to create a new sports event.
-6. Click an existing event card to edit or delete it.
-7. Use filters to search by event, venue, TV service, sport, importance, or road trip status.
-8. Use Settings to choose dark, light, or system theme and set defaults like home base, timezone, and TV service.
-9. Use Export Shared JSON to download your local event database.
-10. Use Import JSON to load a shared event database.
-11. Review the import preview before confirming a merge.
-12. Use Export Google Calendar to download a `.ics` file of high-priority events from the current filtered view.
-13. Use Export Weekend Calendar on a weekend card to download a `.ics` file for that specific weekend.
-14. On a hosted site, use Check Updates to merge events from the configured `events.json` update source.
+## GitHub Action
+
+To trigger updates manually:
+
+1. Open the GitHub repository.
+2. Go to Actions.
+3. Choose `Update sports events`.
+4. Select `Run workflow`.
+
+The workflow also runs on a schedule. It is intentionally safe for static hosting because it only updates committed JSON.
 
 ## Current Status
 
-Current version: `0.15.1`
+Current version: `0.16.0`
 
-Sports Weekend Planner is in an early but usable prototype stage. The foundation is working: users can browse, filter, add, edit, delete, preview imports, export shared JSON, theme event data locally, personalize the calendar with favorite sports, competitions, teams, drivers, structured event tags, and personal event scores, compare weekends with preference-aware watch scoring, validate hosted event data, and export high-priority or selected-weekend events to Google Calendar-compatible `.ics` files. The project is not yet a full version 1.0 because it does not have deployed verification, shared backend storage, or real sports API integrations.
-
-The current development focus is to make the static hosted version reliable before adding heavier automation.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. It is not yet a full 1.0 because GitHub Pages publishing, mobile playtesting, and PWA installability still need to be finished.
 
 ## Roadmap
 
-The future plan is maintained in `ROADMAP.md`. That file should be treated as the authoritative roadmap for milestones, priorities, advanced features, and future ideas.
-
-Current top priorities from the roadmap are:
-
-1. Deploy the current app to Vercel and verify hosted behavior.
-2. Improve documentation and beginner-friendly setup instructions.
-3. Prepare Vercel deployment and hosted update verification.
+`ROADMAP.md` is the authoritative future-planning document.
 
 ## Security and Privacy
 
-The current version stores event data and settings in the browser using `localStorage`. This means:
-
-- Data is stored locally on each user's device and browser.
-- There is no central account or shared database yet.
-- Clearing browser data can remove saved events and settings.
-- Exported JSON files may contain personal notes, trip ideas, home base, ticket links, or other planning details.
-- Imported JSON should only come from trusted sources.
-
-The app currently does not require API keys. Future sports schedule API integrations should run through serverless backend functions so private API keys are not exposed in browser JavaScript.
+- Events and settings are stored in the browser using `localStorage`.
+- There are no accounts or shared backend yet.
+- Exported JSON can contain personal notes and should be shared thoughtfully.
+- API keys must not be placed in browser JavaScript.
+- Future authenticated data sources should use GitHub Actions secrets.
 
 ## Known Limitations
 
-- No shared backend or real-time sync yet.
-- No login or accounts yet.
-- Each browser has its own local event database.
-- Hosted updates merge events but do not currently remove stale local events.
-- `events.json` is manually maintained and not verified against live sports schedules.
-- No automated tests yet.
-- Event validation exists as a local helper, but it is not yet part of an automated deploy workflow.
-- Hosted update fetching may not work when opening the app directly from `file://`; use a hosted site or local server for that feature.
-- Import conflicts are resolved by replacing events with the same `id`.
-- Calendar and weekend scoring are useful but still early.
+- No shared backend or real-time sync.
+- Hosted updates do not delete local user-created events.
+- OpenFootball is useful but not guaranteed to be an official live schedule source.
+- Imported World Cup TV data is `TBD` unless provided by a source.
+- No automated browser test suite yet.
+- PWA installability is planned but not implemented.
 
 ## Development Philosophy
 
 This project prioritizes:
 
 - Shipping useful functionality before advanced features.
-- Manual data management before API integrations.
-- Reliability before automation.
-- Simplicity over unnecessary complexity.
+- Manual data management before risky automation.
+- Reliable static hosting before complex backend systems.
+- Clear watch-planning value before travel-planning expansion.

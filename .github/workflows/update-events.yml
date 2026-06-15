@@ -1,0 +1,35 @@
+name: Update sports events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 11 * * *"
+    - cron: "17 18 * * *"
+    - cron: "17 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update event data
+        run: node scripts/update-events.mjs
+
+      - name: Validate event data
+        run: node work/validate-events.cjs
+
+      - name: Commit changed event data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Auto-update sports events
+          file_pattern: events.json

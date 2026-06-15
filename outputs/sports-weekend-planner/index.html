@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sports Weekend Planner</title>
+    <title>Sports Command Center</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -12,8 +12,8 @@
         <div class="brand">
           <div class="brand-mark">SW</div>
           <div>
-            <h1>Sports Weekend Planner</h1>
-            <p>Major events, must-watch weekends, and shared calendars.</p>
+            <h1>Sports Command Center</h1>
+            <p>Major events, watch windows, and shared calendars.</p>
           </div>
         </div>
 
@@ -57,12 +57,19 @@
         </section>
 
         <section class="data-panel" aria-label="Share event data">
-          <h2>Share data</h2>
+          <h2>Event updates</h2>
           <button id="exportButton" class="secondary-button" type="button">Export Shared JSON</button>
           <button id="importButton" class="secondary-button" type="button">Import JSON</button>
           <button id="calendarExportButton" class="secondary-button" type="button">Export Google Calendar</button>
           <input id="importFileInput" type="file" accept="application/json,.json" hidden>
           <p id="dataStatus" class="data-status">Share JSON for the app, or export high-priority events to calendar.</p>
+          <div class="update-summary" aria-label="Hosted update status">
+            <span id="updateSourceStatus">Source: events.json</span>
+            <span id="autoUpdateStatus">Auto-update: on</span>
+            <span id="lastCheckedStatus">Last checked: never</span>
+            <span id="lastSuccessStatus">Last success: never</span>
+            <span id="lastMergeStatus">Last merge: no hosted updates yet</span>
+          </div>
         </section>
 
         <section class="settings-panel" aria-label="App settings">
@@ -112,7 +119,7 @@
             <input id="updateUrlInput" placeholder="events.json">
           </label>
           <button id="saveSettingsButton" class="secondary-button" type="button">Save Settings</button>
-          <button id="checkUpdatesButton" class="secondary-button" type="button">Check Updates</button>
+          <button id="checkUpdatesButton" class="secondary-button" type="button">Check for Event Updates</button>
           <p id="settingsStatus" class="data-status">Settings stay on this device.</p>
           <p id="appVersion" class="version-note">Version loading...</p>
         </section>
@@ -121,13 +128,35 @@
       <main class="main-content">
         <header class="page-header">
           <div>
-            <p class="eyebrow">Manual event database</p>
+            <p class="eyebrow">Your watch calendar</p>
             <h2 id="pageTitle">Sports command center</h2>
+            <p id="pageSubtitle" class="page-subtitle">Track what matters today, this week, and on the weekends worth protecting.</p>
           </div>
           <button id="addEventButton" class="primary-button" type="button">Add Event</button>
         </header>
 
         <section id="dashboardView" class="view active-view">
+          <section class="command-hero" aria-label="Sports Command Center overview">
+            <div>
+              <p class="scoreboard-label">Live planning board</p>
+              <h3>What should we watch next?</h3>
+              <p id="heroSummary">Your personalized sports board is ready.</p>
+            </div>
+            <div id="worldCupIndicator" class="hero-indicator">World Cup status loading...</div>
+          </section>
+
+          <section class="quick-filter-bar" aria-label="Dashboard quick filters">
+            <button class="quick-chip active" type="button" data-quick-filter="all">All</button>
+            <button class="quick-chip" type="button" data-quick-filter="today">Today</button>
+            <button class="quick-chip" type="button" data-quick-filter="week">This Week</button>
+            <button class="quick-chip" type="button" data-quick-filter="month">This Month</button>
+            <button class="quick-chip" type="button" data-quick-filter="world-cup">World Cup</button>
+            <button class="quick-chip" type="button" data-quick-filter="favorites">Favorites</button>
+            <button class="quick-chip" type="button" data-quick-filter="must-watch">Must-watch</button>
+            <button class="quick-chip" type="button" data-quick-filter="racing">Racing</button>
+            <button class="quick-chip" type="button" data-quick-filter="soccer">Soccer</button>
+          </section>
+
           <section class="stats-grid" aria-label="Event summary">
             <article class="stat-card">
               <span id="totalEvents">0</span>
@@ -149,6 +178,30 @@
 
           <section class="dashboard-grid">
             <div class="dashboard-stack">
+              <article class="panel highlight-panel">
+                <div class="panel-heading">
+                  <h3>Today / Next 24 Hours</h3>
+                  <p>Immediate watch windows.</p>
+                </div>
+                <div id="todayEventList" class="compact-list"></div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>This Week</h3>
+                  <p>Coming up before the next weekend clears.</p>
+                </div>
+                <div id="thisWeekList" class="compact-list"></div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-heading">
+                  <h3>World Cup / Active Tournaments</h3>
+                  <p id="activeTournamentSummary">Tournament tracker loading.</p>
+                </div>
+                <div id="activeTournamentList" class="compact-list"></div>
+              </article>
+
               <article class="panel">
                 <div class="panel-heading">
                   <h3>Next Major Event</h3>
@@ -158,7 +211,7 @@
 
               <article class="panel">
                 <div class="panel-heading">
-                  <h3>Best Sports Weekends</h3>
+                  <h3>Keep-Free Weekends</h3>
                 </div>
                 <div id="bestWeekendList" class="weekend-score-list"></div>
               </article>

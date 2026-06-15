@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.15.1";
+const APP_VERSION = "0.16.0";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -106,6 +106,7 @@ let settings = loadSettings();
 let visibleMonth = new Date(2026, 4, 1);
 let pendingImportEvents = [];
 let pendingImportSummary = null;
+let activeQuickFilter = "all";
 
 function loadEvents() {
   const savedEvents = localStorage.getItem(STORAGE_KEY);
@@ -156,7 +157,16 @@ function defaultSettings() {
     favoriteTeams: [],
     favoriteDrivers: [],
     autoUpdate: true,
-    updateUrl: DEFAULT_UPDATE_URL
+    updateUrl: DEFAULT_UPDATE_URL,
+    updateStats: {
+      lastCheckedAt: "",
+      lastSuccessAt: "",
+      lastAdded: 0,
+      lastReplaced: 0,
+      lastUnchanged: 0,
+      lastTotalEvents: 0,
+      lastMessage: ""
+    }
   };
 }
 
@@ -224,9 +234,24 @@ function normalizeEvent(event) {
     notes: String(event.notes || "").trim(),
     personalImportance: clamp(Number(event.personalImportance || event.trip?.myInterest || event.importance || 1), 1, 10),
     teams: normalizeList(event.teams || event.participants || []),
+    participants: normalizeList(event.participants || event.teams || []),
     drivers: normalizeList(event.drivers || event.athletes || []),
     competitionTags: normalizeList(event.competitionTags || event.leagueTags || event.leagues || []),
     favoriteTags: normalizeList(event.favoriteTags || event.tags || []),
+    source: String(event.source || "").trim(),
+    sourceId: String(event.sourceId || "").trim(),
+    sourceUrl: String(event.sourceUrl || "").trim(),
+    sourceUpdatedAt: String(event.sourceUpdatedAt || "").trim(),
+    lastVerifiedAt: String(event.lastVerifiedAt || "").trim(),
+    isAutoImported: Boolean(event.isAutoImported),
+    dataStatus: String(event.dataStatus || "").trim(),
+    stage: String(event.stage || "").trim(),
+    round: String(event.round || "").trim(),
+    group: String(event.group || "").trim(),
+    homeTeam: String(event.homeTeam || "").trim(),
+    awayTeam: String(event.awayTeam || "").trim(),
+    resultStatus: String(event.resultStatus || "").trim(),
+    score: String(event.score || "").trim(),
     trip: {
       ...defaultTrip(),
       ...(event.trip || {}),
@@ -291,6 +316,14 @@ function isUpcomingEvent(event) {
 
 function getUpcomingEvents(sourceEvents) {
   return sourceEvents.filter(isUpcomingEvent);
+}
+
+function isWithinDays(event, days) {
+  const start = startOfToday();
+  const end = addDays(start, days);
+  const eventDate = parseDate(event.date);
+
+  return eventDate >= start && eventDate <= end;
 }
 
 function addDays(date, days) {
@@ -383,9 +416,15 @@ function eventPreferenceText(event) {
     event.status,
     event.notes,
     ...(event.teams || []),
+    ...(event.participants || []),
     ...(event.drivers || []),
     ...(event.competitionTags || []),
-    ...(event.favoriteTags || [])
+    ...(event.favoriteTags || []),
+    event.stage,
+    event.round,
+    event.group,
+    event.homeTeam,
+    event.awayTeam
   ].join(" ").toLowerCase();
 }
 
@@ -518,9 +557,15 @@ function getFilteredEvents() {
       event.notes,
       event.personalImportance,
       ...(event.teams || []),
+      ...(event.participants || []),
       ...(event.drivers || []),
       ...(event.competitionTags || []),
       ...(event.favoriteTags || []),
+      event.stage,
+      event.round,
+      event.group,
+      event.homeTeam,
+      event.awayTeam,
       event.trip?.travelNotes
     ].join(" ").toLowerCase();
 
@@ -531,6 +576,70 @@ function getFilteredEvents() {
       (!favoritesOnly || hasFavoriteMatch(event)) &&
       (!roadTripsOnly || isRoadTripCandidate(event));
   });
+}
+
+function getQuickFilteredEvents(sourceEvents) {
+  if (activeQuickFilter === "today") {
+    return sourceEvents.filter((event) => isWithinDays(event, 1));
+  }
+
+  if (activeQuickFilter === "week") {
+    return sourceEvents.filter((event) => isWithinDays(event, 7));
+  }
+
+  if (activeQuickFilter === "month") {
+    return sourceEvents.filter((event) => isWithinDays(event, 31));
+  }
+
+  if (activeQuickFilter === "world-cup") {
+    return sourceEvents.filter((event) => event.competition === "FIFA World Cup");
+  }
+
+  if (activeQuickFilter === "favorites") {
+    return sourceEvents.filter(hasFavoriteMatch);
+  }
+
+  if (activeQuickFilter === "must-watch") {
+    return sourceEvents.filter(isMustWatchEvent);
+  }
+
+  if (activeQuickFilter === "racing") {
+    return sourceEvents.filter((event) => event.sport === "Racing");
+  }
+
+  if (activeQuickFilter === "soccer") {
+    return sourceEvents.filter((event) => event.sport === "Soccer");
+  }
+
+  return sourceEvents;
+}
+
+function competitionLabel(event) {
+  return [event.competition, event.group || event.round || event.stage].filter(Boolean).join(" - ");
+}
+
+function matchupLabel(event) {
+  if (event.homeTeam && event.awayTeam) {
+    return `${event.homeTeam} vs ${event.awayTeam}`;
+  }
+
+  const participants = normalizeList(event.participants || event.teams);
+
+  if (participants.length >= 2) {
+    return `${participants[0]} vs ${participants[1]}`;
+  }
+
+  return participants.join(", ");
+}
+
+function compactEventCard(event) {
+  return `
+    <button class="mini-event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+      <strong>${escapeHtml(event.title)}</strong>
+      <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(event.startTime || "Time TBD")} ${escapeHtml(event.timezone || "")}</span>
+      <span>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</span>
+    </button>
+  `;
 }
 
 function sportTag(sport) {
@@ -553,20 +662,26 @@ function sportAccentStyle(sport) {
 
 function eventCard(event) {
   const favoriteMatches = favoriteMatchDetails(event);
+  const matchup = matchupLabel(event);
+  const competitionText = competitionLabel(event);
 
   return `
     <button class="event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
       <div class="event-topline">
         <div>
           <h4>${escapeHtml(event.title)}</h4>
+          ${matchup && matchup !== event.title ? `<p class="event-matchup">${escapeHtml(matchup)}</p>` : ""}
           <div class="event-meta">
             ${sportTag(event.sport)}
             ${statusTag(event.status)}
+            ${competitionText ? `<span>${escapeHtml(competitionText)}</span>` : ""}
             <span>${formatDate(event.date)}</span>
             <span>${escapeHtml(event.startTime || "Time TBD")} ${escapeHtml(event.timezone || "")}</span>
             <span>${escapeHtml(event.tv || "TV TBD")}</span>
+            ${event.score ? `<span>Score ${escapeHtml(event.score)}</span>` : ""}
             <span>Personal ${event.personalImportance}/10</span>
-            ${favoriteMatches.length ? `<span class="watch-reason">${escapeHtml(priorityLabel(event))}</span>` : ""}
+            ${event.isAutoImported ? `<span class="source-pill">Auto</span>` : ""}
+            ${(favoriteMatches.length || isMustWatchEvent(event)) ? `<span class="watch-reason">${escapeHtml(isMustWatchEvent(event) ? mustWatchReason(event) : priorityLabel(event))}</span>` : ""}
           </div>
         </div>
         <span class="importance" title="Watch priority">${eventWatchPriority(event)}</span>
@@ -600,10 +715,12 @@ function renderNextMajorEvent(visibleEvents) {
     <button class="spotlight-card event-button" type="button" data-event-id="${escapeHtml(nextMajor.id)}" style="${sportAccentStyle(nextMajor.sport)}">
       ${sportTag(nextMajor.sport)}
       <h4>${escapeHtml(nextMajor.title)}</h4>
+      ${matchupLabel(nextMajor) && matchupLabel(nextMajor) !== nextMajor.title ? `<p class="event-matchup">${escapeHtml(matchupLabel(nextMajor))}</p>` : ""}
       <div class="event-meta">
         <span>${formatDate(nextMajor.date)}</span>
         <span>${escapeHtml(nextMajor.startTime || "Time TBD")} ${escapeHtml(nextMajor.timezone || "")}</span>
         <span>${escapeHtml(nextMajor.location || "Location TBD")}</span>
+        ${competitionLabel(nextMajor) ? `<span>${escapeHtml(competitionLabel(nextMajor))}</span>` : ""}
       </div>
       <p>Priority ${eventWatchPriority(nextMajor)} - ${escapeHtml(isMustWatchEvent(nextMajor) ? mustWatchReason(nextMajor) : priorityLabel(nextMajor))} ${statusTag(nextMajor.status)}</p>
     </button>
@@ -621,6 +738,61 @@ function renderStats(visibleEvents) {
   document.querySelector("#mustWatchEvents").textContent = mustWatchCount;
   document.querySelector("#roadTripEvents").textContent = favoriteMatchCount;
   document.querySelector("#averageImportance").textContent = averagePriority.toFixed(1);
+}
+
+function renderHeroSummary(visibleEvents) {
+  const mustWatchCount = visibleEvents.filter(isMustWatchEvent).length;
+  const worldCupCount = visibleEvents.filter((event) => event.competition === "FIFA World Cup").length;
+  const nextEvent = [...visibleEvents].sort((first, second) => eventDateTime(first) - eventDateTime(second))[0];
+  const heroSummary = document.querySelector("#heroSummary");
+  const worldCupIndicator = document.querySelector("#worldCupIndicator");
+
+  heroSummary.textContent = nextEvent
+    ? `${visibleEvents.length} upcoming events in view. Next up: ${nextEvent.title} on ${formatDate(nextEvent.date)}.`
+    : "No upcoming events match the current filters.";
+
+  worldCupIndicator.textContent = worldCupCount
+    ? `${worldCupCount} World Cup match${worldCupCount === 1 ? "" : "es"} loaded - ${mustWatchCount} keep-free event${mustWatchCount === 1 ? "" : "s"} in view`
+    : "World Cup events not loaded yet";
+}
+
+function renderTodayEvents(visibleEvents) {
+  const todayEventList = document.querySelector("#todayEventList");
+  const eventsInWindow = visibleEvents
+    .filter((event) => isWithinDays(event, 1))
+    .sort((first, second) => eventDateTime(first) - eventDateTime(second))
+    .slice(0, 6);
+
+  todayEventList.innerHTML = eventsInWindow.map(compactEventCard).join("") ||
+    `<div class="empty-state">Nothing urgent in the next 24 hours.</div>`;
+}
+
+function renderThisWeekEvents(visibleEvents) {
+  const thisWeekList = document.querySelector("#thisWeekList");
+  const eventsThisWeek = visibleEvents
+    .filter((event) => isWithinDays(event, 7))
+    .sort((first, second) => eventDateTime(first) - eventDateTime(second))
+    .slice(0, 8);
+
+  thisWeekList.innerHTML = eventsThisWeek.map(compactEventCard).join("") ||
+    `<div class="empty-state">No events this week match the current filters.</div>`;
+}
+
+function renderActiveTournaments(visibleEvents) {
+  const activeTournamentList = document.querySelector("#activeTournamentList");
+  const activeTournamentSummary = document.querySelector("#activeTournamentSummary");
+  const tournamentEvents = visibleEvents
+    .filter((event) => event.competition === "FIFA World Cup" || event.isAutoImported)
+    .sort((first, second) => eventDateTime(first) - eventDateTime(second));
+  const worldCupEvents = tournamentEvents.filter((event) => event.competition === "FIFA World Cup");
+  const nextWorldCupEvents = worldCupEvents.slice(0, 8);
+
+  activeTournamentSummary.textContent = worldCupEvents.length
+    ? `${worldCupEvents.length} World Cup match${worldCupEvents.length === 1 ? "" : "es"} in the upcoming planning view.`
+    : "No active tournament events match the current filters.";
+
+  activeTournamentList.innerHTML = nextWorldCupEvents.map(compactEventCard).join("") ||
+    `<div class="empty-state">No World Cup or automated tournament events match the current filters.</div>`;
 }
 
 function renderEvents(visibleEvents) {
@@ -1091,16 +1263,22 @@ function handleEventDelete() {
 function renderAll() {
   const visibleEvents = getFilteredEvents();
   const upcomingEvents = getUpcomingEvents(visibleEvents);
+  const dashboardEvents = getQuickFilteredEvents(upcomingEvents);
 
-  renderStats(upcomingEvents);
-  renderNextMajorEvent(upcomingEvents);
-  renderEvents(upcomingEvents);
-  renderBestWeekends(upcomingEvents);
-  renderSportSummary(upcomingEvents);
-  renderPersonalWatchList(upcomingEvents);
-  renderTripCandidates(upcomingEvents);
+  renderHeroSummary(dashboardEvents);
+  renderStats(dashboardEvents);
+  renderTodayEvents(dashboardEvents);
+  renderThisWeekEvents(dashboardEvents);
+  renderActiveTournaments(dashboardEvents);
+  renderNextMajorEvent(dashboardEvents);
+  renderEvents(dashboardEvents);
+  renderBestWeekends(dashboardEvents);
+  renderSportSummary(dashboardEvents);
+  renderPersonalWatchList(dashboardEvents);
+  renderTripCandidates(dashboardEvents);
   renderCalendar(visibleEvents);
   renderWeekends(upcomingEvents);
+  renderUpdateStatus();
 }
 
 function renderSettingsForm() {
@@ -1115,10 +1293,46 @@ function renderSettingsForm() {
   document.querySelector("#autoUpdateInput").checked = settings.autoUpdate;
   document.querySelector("#updateUrlInput").value = settings.updateUrl;
   document.querySelector("#appVersion").textContent = `Version ${APP_VERSION}`;
+  renderUpdateStatus();
 }
 
 function setDataStatus(message) {
   document.querySelector("#dataStatus").textContent = message;
+}
+
+function formatTimestamp(value) {
+  if (!value) {
+    return "never";
+  }
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString(undefined, {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit"
+  });
+}
+
+function renderUpdateStatus() {
+  const updateStats = settings.updateStats || defaultSettings().updateStats;
+  const sourceStatus = document.querySelector("#updateSourceStatus");
+
+  if (!sourceStatus) {
+    return;
+  }
+
+  sourceStatus.textContent = `Source: ${settings.updateUrl || DEFAULT_UPDATE_URL}`;
+  document.querySelector("#autoUpdateStatus").textContent = `Auto-update: ${settings.autoUpdate ? "on" : "off"}`;
+  document.querySelector("#lastCheckedStatus").textContent = `Last checked: ${formatTimestamp(updateStats.lastCheckedAt)}`;
+  document.querySelector("#lastSuccessStatus").textContent = `Last success: ${formatTimestamp(updateStats.lastSuccessAt)}`;
+  document.querySelector("#lastMergeStatus").textContent = updateStats.lastMessage ||
+    `Last merge: ${updateStats.lastAdded || 0} added, ${updateStats.lastReplaced || 0} replaced, ${updateStats.lastUnchanged || 0} unchanged`;
 }
 
 function setActiveView(viewName) {
@@ -1183,7 +1397,15 @@ function clearFilters() {
   document.querySelector("#personalScoreValue").textContent = "1+";
   document.querySelector("#favoritesFilter").checked = false;
   document.querySelector("#roadTripFilter").checked = false;
+  activeQuickFilter = "all";
+  renderQuickFilters();
   renderAll();
+}
+
+function renderQuickFilters() {
+  document.querySelectorAll("[data-quick-filter]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.quickFilter === activeQuickFilter);
+  });
 }
 
 function exportedPreferences() {
@@ -1197,7 +1419,7 @@ function exportedPreferences() {
 
 function exportEvents() {
   const exportPayload = {
-    app: "Sports Weekend Planner",
+    app: "Sports Command Center",
     format: "sports-weekend-planner-shared-calendar",
     version: 2,
     exportedAt: new Date().toISOString(),
@@ -1288,7 +1510,7 @@ function buildIcsCalendar(calendarEvents) {
   return [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Sports Weekend Planner//Sports Command Center//EN",
+    "PRODID:-//Sports Command Center//Sports Calendar//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     ...calendarEvents.map(eventToIcs),
@@ -1395,6 +1617,8 @@ function mergeImportedEvents(importedEvents, label = "Imported") {
   renderSportFilterOptions();
   renderAll();
   setDataStatus(`${label} ${summary.added} added, ${summary.replaced} replaced, ${summary.unchanged} unchanged. Database now has ${events.length}.`);
+
+  return summary;
 }
 
 function previewEventList(importedEvents) {
@@ -1485,8 +1709,27 @@ async function checkHostedUpdates(options = {}) {
       return;
     }
 
-    mergeImportedEvents(importedEvents, "Updated from hosted calendar:");
+    const summary = mergeImportedEvents(importedEvents, "Updated from hosted calendar:");
+    settings.updateStats = {
+      lastCheckedAt: new Date().toISOString(),
+      lastSuccessAt: new Date().toISOString(),
+      lastAdded: summary.added,
+      lastReplaced: summary.replaced,
+      lastUnchanged: summary.unchanged,
+      lastTotalEvents: importedEvents.length,
+      lastMessage: `Last hosted update: ${summary.added} added, ${summary.replaced} replaced, ${summary.unchanged} unchanged`
+    };
+    saveSettings();
+    renderUpdateStatus();
   } catch (error) {
+    settings.updateStats = {
+      ...(settings.updateStats || defaultSettings().updateStats),
+      lastCheckedAt: new Date().toISOString(),
+      lastMessage: `Hosted update unavailable: ${error.message}`
+    };
+    saveSettings();
+    renderUpdateStatus();
+
     if (options.showStatus) {
       setDataStatus(`Hosted update unavailable: ${error.message}`);
     }
@@ -1548,12 +1791,14 @@ function handleSaveSettings() {
     favoriteTeams: normalizeList(document.querySelector("#favoriteTeamsInput").value),
     favoriteDrivers: normalizeList(document.querySelector("#favoriteDriversInput").value),
     autoUpdate: document.querySelector("#autoUpdateInput").checked,
-    updateUrl: document.querySelector("#updateUrlInput").value.trim() || DEFAULT_UPDATE_URL
+    updateUrl: document.querySelector("#updateUrlInput").value.trim() || DEFAULT_UPDATE_URL,
+    updateStats: settings.updateStats || defaultSettings().updateStats
   };
 
   saveSettings();
   applyTheme();
   renderAll();
+  renderUpdateStatus();
   document.querySelector("#settingsStatus").textContent = "Settings saved on this device.";
 }
 
@@ -1588,6 +1833,14 @@ function wireFilters() {
     });
   });
 
+  document.querySelectorAll("[data-quick-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeQuickFilter = button.dataset.quickFilter || "all";
+      renderQuickFilters();
+      renderAll();
+    });
+  });
+
   document.querySelector("#clearFiltersButton").addEventListener("click", clearFilters);
 }
 
@@ -1617,6 +1870,7 @@ function wireEventForm() {
 applyTheme();
 renderSportFilterOptions();
 renderSettingsForm();
+renderQuickFilters();
 renderAll();
 wireNavigation();
 wireEventForm();

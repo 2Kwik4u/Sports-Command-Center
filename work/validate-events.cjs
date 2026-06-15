@@ -17,6 +17,10 @@ function isStringList(value) {
   return Array.isArray(value) && value.every((item) => typeof item === "string");
 }
 
+function isOptionalString(value) {
+  return value === undefined || typeof value === "string";
+}
+
 function isNumberInRange(value, minimum, maximum) {
   return value === undefined || (Number.isFinite(value) && value >= minimum && value <= maximum);
 }
@@ -39,6 +43,10 @@ function validateEvent(event, index) {
     errors.push(`${label}.date must use YYYY-MM-DD format.`);
   }
 
+  if (typeof event.id === "string" && !/^[a-z0-9][a-z0-9-]*[a-z0-9]$/.test(event.id)) {
+    errors.push(`${label}.id must be stable and URL-safe: lowercase letters, numbers, and hyphens.`);
+  }
+
   if (event.startTime !== undefined && (typeof event.startTime !== "string" || (event.startTime && !/^\d{2}:\d{2}$/.test(event.startTime)))) {
     errors.push(`${label}.startTime must use HH:MM format or be an empty string.`);
   }
@@ -55,11 +63,40 @@ function validateEvent(event, index) {
     errors.push(`${label}.status must be one of: ${[...allowedStatuses].join(", ")}.`);
   }
 
-  ["teams", "drivers", "competitionTags", "favoriteTags"].forEach((field) => {
+  ["teams", "drivers", "competitionTags", "favoriteTags", "participants"].forEach((field) => {
     if (!isStringList(event[field])) {
       errors.push(`${label}.${field} must be an array of strings when provided.`);
     }
   });
+
+  [
+    "competition",
+    "source",
+    "sourceId",
+    "sourceUrl",
+    "sourceUpdatedAt",
+    "lastVerifiedAt",
+    "dataStatus",
+    "stage",
+    "round",
+    "group",
+    "homeTeam",
+    "awayTeam",
+    "resultStatus",
+    "score"
+  ].forEach((field) => {
+    if (!isOptionalString(event[field])) {
+      errors.push(`${label}.${field} must be a string when provided.`);
+    }
+  });
+
+  if (event.isAutoImported !== undefined && typeof event.isAutoImported !== "boolean") {
+    errors.push(`${label}.isAutoImported must be true or false when provided.`);
+  }
+
+  if (event.isAutoImported && (!event.source || !event.sourceId)) {
+    errors.push(`${label} is auto-imported and must include source and sourceId.`);
+  }
 
   if (event.trip !== undefined && !isPlainObject(event.trip)) {
     errors.push(`${label}.trip must be an object when provided.`);
