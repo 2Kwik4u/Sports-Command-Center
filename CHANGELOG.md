@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.16.5
+
+- Removed nonfunctional search, notification, and settings icon buttons from the header.
+- Kept Add Event as the only header action.
+- Preserved the dedicated Settings tab and existing Add Event behavior.
+
 ## 0.16.4
 
 - Moved the full app settings form out of the sidebar and into a dedicated Settings view.

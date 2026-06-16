@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.4
+Version 0.16.5
 
 # Completed Features
 
@@ -40,7 +40,7 @@ Version 0.16.4
 
 # In Progress
 
-- Verifying the Version 0.16.4 settings layout cleanup and automated update workflow.
+- Verifying the Version 0.16.5 header action cleanup and automated update workflow.
 - Continuing to tune the Sports Command Center dashboard for real watch-planning use.
 - Preparing GitHub Pages as the primary deployment path.
 - Continuing desktop visual matching against the approved Sports Command Center concept screenshot.
@@ -139,10 +139,11 @@ i-want-to-build-a-web/
 - Added a controlled local logo asset structure and rendering fallback layer for future channel, league, team, and flag images.
 - Moved the update status/check card to the lower sidebar near the version area and kept Add Event as a compact header action.
 - Completed Version 0.16.4 by moving the full settings form into the Settings tab so the sidebar stays focused on navigation, filters, sharing, update status, and version.
+- Completed Version 0.16.5 by removing inactive header icon buttons and leaving Add Event as the only header action.
 
 # Next Recommended Steps
 
-1. Playtest the 0.16.4 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
+1. Playtest the 0.16.5 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
 2. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
 3. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
 4. Test the compact dashboard, quick chips, Calendar, Weekends, Add/Edit/Delete, and hosted update button on desktop and phone widths.

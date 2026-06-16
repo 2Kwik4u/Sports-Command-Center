@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.4";
+const APP_VERSION = "0.16.5";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
