@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T04:59:22.118Z",
+  "updatedAt": "2026-06-16T21:45:23.705Z",
   "sources": [
     {
       "name": "TheSportsDB",
@@ -17,6 +17,11 @@
       "name": "Local channel identifiers",
       "type": "repo-assets",
       "role": "Small text-based SVG channel identifiers, not scraped official marks."
+    },
+    {
+      "name": "Local league assets",
+      "type": "repo-assets",
+      "role": "Manually verified league/tournament marks stored under assets/logos/leagues/."
     }
   ],
   "sports": {
@@ -171,6 +176,27 @@
       "logoUpdatedAt": "",
       "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4370",
       "aliasOf": "Formula 1"
+    },
+    "fifa-world-cup": {
+      "name": "FIFA World Cup",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Soccer",
+      "logo": "assets/logos/leagues/fifa-world-cup.svg",
+      "source": "manual",
+      "logoSource": "Wikimedia Commons local asset",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg"
+    },
+    "fifa-world-cup-2026": {
+      "name": "FIFA World Cup 2026",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Soccer",
+      "logo": "assets/logos/leagues/fifa-world-cup.svg",
+      "source": "manual",
+      "logoSource": "Wikimedia Commons local asset",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg",
+      "aliasOf": "FIFA World Cup"
     },
     "formula-1": {
       "name": "Formula 1",
@@ -392,6 +418,28 @@
       "logoSource": "TheSportsDB",
       "logoUpdatedAt": "",
       "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4489"
+    },
+    "world-cup": {
+      "name": "World Cup",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Soccer",
+      "logo": "assets/logos/leagues/fifa-world-cup.svg",
+      "source": "manual",
+      "logoSource": "Wikimedia Commons local asset",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg",
+      "aliasOf": "FIFA World Cup"
+    },
+    "world-cup-2026": {
+      "name": "World Cup 2026",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Soccer",
+      "logo": "assets/logos/leagues/fifa-world-cup.svg",
+      "source": "manual",
+      "logoSource": "Wikimedia Commons local asset",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg",
+      "aliasOf": "FIFA World Cup"
     },
     "world-series": {
       "name": "World Series",

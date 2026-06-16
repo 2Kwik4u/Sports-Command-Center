@@ -12,6 +12,7 @@ Sports Command Center uses controlled, documented sources only. The app does not
 | TheSportsDB v1 | Multi-sport | Limited | Yes | Limited | Public key `123` or `THESPORTSDB_API_KEY` | Used in Version 0.18.0 for league and team artwork. Schedule/TV endpoints are documented but not reliable enough yet for broad imports on the free tier. |
 | FlagCDN | World Cup countries | No | Flags only | No | None | Provides country flag PNGs for World Cup matchup tiles. Emoji remains the fallback for missing/placeholder teams. |
 | Local repo assets | Channels and sport fallbacks | No | Yes | No | None | Stores local channel identifiers and sport fallback marks in `assets/logos/`. These are controlled local assets, not scraped official broadcast logos. |
+| Wikimedia Commons local league asset | FIFA World Cup | No | Yes | No | None | Stores a locally downloaded FIFA World Cup 2026 SVG in `assets/logos/leagues/` for World Cup event branding. The source page lists the SVG as a public-domain text logo with trademark cautions. |
 
 ## Current Event Coverage
 
@@ -45,6 +46,7 @@ Current registry buckets:
 
 - `sports`: local fallback marks.
 - `leagues`: TheSportsDB league/series artwork where available.
+- `leagues`: local manually verified tournament marks such as FIFA World Cup 2026.
 - `teams`: TheSportsDB team/club/constructor badges where available.
 - `channels`: local styled channel identifiers for common TV and streaming services.
 - `flags`: FlagCDN country flag PNGs.

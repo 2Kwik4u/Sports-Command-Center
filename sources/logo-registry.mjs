@@ -87,6 +87,16 @@ const SPORT_FALLBACKS = {
   "Major Events": "assets/logos/fallbacks/sport-major-events.svg"
 };
 
+const LOCAL_LEAGUES = {
+  "FIFA World Cup": {
+    sport: "Soccer",
+    logo: "assets/logos/leagues/fifa-world-cup.svg",
+    source: "manual",
+    logoSource: "Wikimedia Commons local asset",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg"
+  }
+};
+
 const LEAGUE_ALIASES = {
   "american-major-league-soccer": ["MLS"],
   "english-premier-league": ["Premier League"],
@@ -153,6 +163,18 @@ function buildStaticSports() {
       source: "local-sport-fallback",
       logoSource: "local-sport-fallback",
       logoUpdatedAt: ""
+    }
+  ]));
+}
+
+function buildStaticLeagues() {
+  return Object.fromEntries(Object.entries(LOCAL_LEAGUES).map(([name, asset]) => [
+    slugify(name),
+    {
+      name,
+      manual: true,
+      logoUpdatedAt: "",
+      ...asset
     }
   ]));
 }
@@ -232,10 +254,15 @@ export function buildLogoRegistry({ existingRegistry = {}, providerRegistry = {}
         name: "Local channel identifiers",
         type: "repo-assets",
         role: "Small text-based SVG channel identifiers, not scraped official marks."
+      },
+      {
+        name: "Local league assets",
+        type: "repo-assets",
+        role: "Manually verified league/tournament marks stored under assets/logos/leagues/."
       }
     ],
     sports: mergeAssetBucket(existingRegistry.sports, buildStaticSports()),
-    leagues: mergeAssetBucket(existingRegistry.leagues, providerRegistry.leagues),
+    leagues: mergeAssetBucket(mergeAssetBucket(existingRegistry.leagues, providerRegistry.leagues), buildStaticLeagues()),
     teams: mergeAssetBucket(existingRegistry.teams, providerRegistry.teams),
     channels: mergeAssetBucket(existingRegistry.channels, buildStaticChannels()),
     flags: mergeAssetBucket(existingRegistry.flags, buildStaticFlags()),

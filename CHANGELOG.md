@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.19.3
+
+- Replaced the six top stat tile placeholder/emoji icons with compact inline SVG dashboard icons.
+- Centered stat tile icons inside their existing icon blocks for more balanced alignment.
+- Preserved the current stat tile layout, counts, dashboard grid, and section accent color system.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
+## 0.19.2
+
+- Added a local FIFA World Cup 2026 SVG mark under `assets/logos/leagues/`.
+- Registered the World Cup mark as a manual local league asset so World Cup cards and rows use it instead of the generic soccer fallback.
+- Refreshed `data/logo-registry.json` and hosted event logo metadata.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
+## 0.19.1
+
+- Added pagination controls to the All Events dashboard table so lists longer than 10 rows can be navigated.
+- Reset the All Events table back to page 1 when filters, quick filters, or sort mode change.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.19.0
 
 - Added verified static future 2026 racing schedule data for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, NASCAR Craftsman Truck Series, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech SportsCar Championship.

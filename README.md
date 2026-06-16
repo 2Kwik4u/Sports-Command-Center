@@ -14,6 +14,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events dashboard sections.
 - Compact dashboard panels with capped event lists and `+ X more` rows.
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
+- All Events table pagination for filtered lists longer than 10 rows.
 - Automatic hiding of past events from Dashboard and Weekends.
 - Manual add/edit/delete event workflow.
 - Dedicated Settings view for dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
@@ -30,6 +31,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - TheSportsDB league/team artwork support through the Node update script.
 - FlagCDN country flags for World Cup matchup tiles.
 - Local channel identifier SVGs and sport fallback marks.
+- Local FIFA World Cup 2026 mark for World Cup event cards and rows.
 - Selective curated major-event windows beyond soccer.
 
 ## Planned Features
@@ -180,9 +182,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.19.0`
+Current version: `0.19.3`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, and expanded racing coverage. Version 0.19.0 adds verified future racing schedules while keeping the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, and polished stat tile icons. Version 0.19.3 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 

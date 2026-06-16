@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.19.0
+Version 0.19.3
 
 # Completed Features
 
@@ -22,6 +22,7 @@ Version 0.19.0
 - Personal importance scoring and friend interest scoring.
 - Preference-aware event priority and Weekend Score logic.
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
+- All Events dashboard table pagination for filtered lists longer than 10 rows.
 - Dashboard sections for Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
 - Compact dashboard panels cap Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles so the first screen stays dense.
 - Compact event rows display times in the preferred/default timezone where possible, using ET by default.
@@ -47,6 +48,7 @@ Version 0.19.0
 - FlagCDN country flags for World Cup matchup tiles.
 - Local channel identifier SVGs for common broadcast/streaming labels.
 - Local sport fallback SVG marks.
+- Local FIFA World Cup 2026 league mark for World Cup event cards and rows.
 - Selective curated major-event windows beyond soccer.
 - Optional logo metadata fields: `sportLogo`, `competitionLogo`, `homeTeamLogo`, `awayTeamLogo`, `teamLogos`, `channelLogo`, `flagLogos`, `logoSource`, and `logoUpdatedAt`.
 - Optional active tournament metadata fields: `tournamentId`, `tournamentName`, `tournamentStartDate`, `tournamentEndDate`, `tournamentStage`, `tournamentStatus`, and `tournamentPriority`.
@@ -56,10 +58,11 @@ Version 0.19.0
 - Stadium banner crop, overlay, and compact header height tuned so more stadium-light detail is visible while keeping the title left-aligned.
 - Reusable command-center color system for dashboard sections, stat tiles, quick filters, status badges, and broadcast labels.
 - Dashboard sections now have distinct accent identities: Today cyan, This Week blue, Keep-Free Weekends lime/gold, World Cup violet/blue, Must-Watch red, Watchlist orange/gold, and All Events cyan.
+- Top stat tile icons now use centered inline SVG dashboard icons instead of placeholder/emoji glyphs.
 
 # In Progress
 
-- Playtesting Version 0.19.0 racing schedule expansion across Dashboard, Calendar, Weekends, Events, and Racing quick filter.
+- Playtesting Version 0.19.3 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -202,10 +205,16 @@ i-want-to-build-a-web/
 - Preserved World Cup import, curated major-event windows, logo registry, hosted update flow, localStorage behavior, and current visual styling.
 - Documented future NFL/NCAA football source-model groundwork without importing football schedules in this version.
 - Carried forward the pending 0.18.3 visual polish: centered status pills, continuous All Events border styling, and hidden stat-card mini bars.
+- Completed Version 0.19.1 as a focused All Events usability fix.
+- Added Previous/Next pagination to the All Events table and reset pagination when filters or sort mode change.
+- Completed Version 0.19.2 as a focused World Cup logo fix.
+- Added a local FIFA World Cup 2026 SVG under `assets/logos/leagues/` and registered it as a manual local league asset.
+- Completed Version 0.19.3 as a focused top stat tile icon polish pass.
+- Replaced weak top-row stat tile placeholders with centered inline SVG icons while preserving the dashboard layout and accent color system.
 
 # Next Recommended Steps
 
-1. Playtest 0.19.0 with the Racing quick filter, Calendar, Weekends, and All Events views to confirm the new racing density feels useful.
+1. Playtest 0.19.3 with the Dashboard, Racing quick filter, Calendar, Weekends, and All Events views to confirm the new racing density and polished stat tiles feel useful.
 2. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 3. Tune Weekend Score and must-watch logic so racing-heavy weekends rank well without overwhelming other sports.
 4. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.

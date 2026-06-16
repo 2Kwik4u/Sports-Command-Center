@@ -1,10 +1,11 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.19.0";
+const APP_VERSION = "0.19.3";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
+const EVENT_LIST_PAGE_SIZE = 10;
 
 const sportStyles = {
   Soccer: ["#5eead4", "rgba(94, 234, 212, 0.16)", "rgba(94, 234, 212, 0.45)"],
@@ -199,6 +200,7 @@ let visibleMonth = new Date(2026, 4, 1);
 let pendingImportEvents = [];
 let pendingImportSummary = null;
 let activeQuickFilter = "all";
+let eventListPage = 1;
 
 function loadEvents() {
   const savedEvents = localStorage.getItem(STORAGE_KEY);
@@ -1269,11 +1271,20 @@ function renderEvents(visibleEvents) {
     return a.date.localeCompare(b.date);
   });
   const eventList = document.querySelector("#eventList");
-  const visibleRows = sortedEvents.slice(0, 10);
+  const totalPages = Math.max(1, Math.ceil(sortedEvents.length / EVENT_LIST_PAGE_SIZE));
+
+  eventListPage = Math.min(Math.max(eventListPage, 1), totalPages);
+
+  const startIndex = (eventListPage - 1) * EVENT_LIST_PAGE_SIZE;
+  const visibleRows = sortedEvents.slice(startIndex, startIndex + EVENT_LIST_PAGE_SIZE);
+  const endIndex = Math.min(startIndex + visibleRows.length, sortedEvents.length);
 
   document.querySelector("#eventListSummary").textContent = sortedEvents.length
-    ? `Showing 1-${Math.min(visibleRows.length, sortedEvents.length)} of ${sortedEvents.length} events`
+    ? `Showing ${startIndex + 1}-${endIndex} of ${sortedEvents.length} events`
     : "No events match this view";
+
+  renderEventPagination(sortedEvents.length, totalPages);
+
   eventList.innerHTML = visibleRows.length
     ? `
       <div class="events-table">
@@ -1293,6 +1304,26 @@ function renderEvents(visibleEvents) {
     `
     :
     `<div class="empty-state">No events match the current filters.</div>`;
+}
+
+function renderEventPagination(totalEvents, totalPages) {
+  const pagination = document.querySelector("#eventPagination");
+  const previousButton = document.querySelector("#eventPreviousPageButton");
+  const nextButton = document.querySelector("#eventNextPageButton");
+  const pageCount = document.querySelector("#eventPageCount");
+
+  if (!pagination || !previousButton || !nextButton || !pageCount) {
+    return;
+  }
+
+  pagination.hidden = totalEvents <= EVENT_LIST_PAGE_SIZE;
+  previousButton.disabled = eventListPage <= 1;
+  nextButton.disabled = eventListPage >= totalPages;
+  pageCount.textContent = `Page ${eventListPage} of ${totalPages}`;
+}
+
+function resetEventListPage() {
+  eventListPage = 1;
 }
 
 function eventRow(event) {
@@ -1869,6 +1900,7 @@ function wireNavigation() {
 
       if (button.dataset.navFilter) {
         activeQuickFilter = button.dataset.navFilter;
+        resetEventListPage();
         renderQuickFilters();
       }
 
@@ -1916,6 +1948,7 @@ function clearFilters() {
   document.querySelector("#favoritesFilter").checked = false;
   document.querySelector("#roadTripFilter").checked = false;
   activeQuickFilter = "all";
+  resetEventListPage();
   renderQuickFilters();
   renderAll();
 }
@@ -2292,6 +2325,16 @@ function wireImportExport() {
   document.querySelector("#exportButton").addEventListener("click", exportEvents);
   document.querySelector("#calendarExportButton").addEventListener("click", exportCalendarEvents);
   document.querySelector("#tableCalendarExportButton").addEventListener("click", exportCalendarEvents);
+  document.querySelector("#eventPreviousPageButton").addEventListener("click", () => {
+    eventListPage = Math.max(1, eventListPage - 1);
+    renderAll();
+    document.querySelector("#eventList")?.scrollIntoView({ block: "nearest" });
+  });
+  document.querySelector("#eventNextPageButton").addEventListener("click", () => {
+    eventListPage += 1;
+    renderAll();
+    document.querySelector("#eventList")?.scrollIntoView({ block: "nearest" });
+  });
   document.querySelector("#headerCheckUpdatesButton").addEventListener("click", () => checkHostedUpdates({ showStatus: true }));
   document.querySelector("#importButton").addEventListener("click", () => importFileInput.click());
   importFileInput.addEventListener("change", () => importEventsFromFile(importFileInput.files[0]));
@@ -2349,6 +2392,7 @@ function wireFilters() {
 
   filterControls.forEach((control) => {
     control.addEventListener("input", () => {
+      resetEventListPage();
       document.querySelector("#importanceValue").textContent = `${document.querySelector("#importanceFilter").value}+`;
       document.querySelector("#personalScoreValue").textContent = `${document.querySelector("#personalScoreFilter").value}+`;
       renderAll();
@@ -2370,6 +2414,7 @@ function wireEventForm() {
 
     if (quickFilterButton) {
       activeQuickFilter = quickFilterButton.dataset.quickFilter || "all";
+      resetEventListPage();
       renderQuickFilters();
       renderAll();
       return;

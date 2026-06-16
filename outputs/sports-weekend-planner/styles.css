@@ -1874,6 +1874,33 @@ body[data-theme="light"] .icon-button {
   margin: 0;
 }
 
+.event-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(47, 247, 240, 0.22);
+}
+
+.event-pagination[hidden] {
+  display: none;
+}
+
+.event-pagination span {
+  min-width: 92px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.event-pagination .compact-action {
+  min-height: 29px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+}
+
 .events-table-head,
 .event-row {
   grid-template-columns: 104px 62px 112px 150px minmax(190px, 1fr) minmax(150px, 0.8fr) 116px 82px 118px;
@@ -1941,6 +1968,10 @@ body[data-theme="light"] .icon-button {
   }
 
   .sort-control {
+    justify-content: space-between;
+  }
+
+  .event-pagination {
     justify-content: space-between;
   }
 }
@@ -3681,4 +3712,34 @@ body[data-theme="light"] .event-list-panel {
 
 .stat-card::after {
   display: none;
+}
+
+/* Version 0.19.3: keep stat tile SVG icons centered and consistent. */
+.stats-grid .stat-card .stat-icon,
+body:not([data-theme="light"]) .stats-grid .stat-card .stat-icon,
+body[data-theme="light"] .stats-grid .stat-card .stat-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  line-height: 1;
+  font-size: 0;
+  color: var(--tile-accent);
+}
+
+.stats-grid .stat-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.05;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.stats-grid .stat-card:nth-child(4) .stat-icon svg,
+.stats-grid .stat-card:nth-child(5) .stat-icon svg {
+  width: 25px;
+  height: 25px;
 }
