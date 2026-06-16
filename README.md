@@ -144,9 +144,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.16.5`
+Current version: `0.16.6`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.5 removes inactive header icon buttons so Add Event is the only header action.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.6 removes the detailed hosted update status block from the sidebar while keeping the compact Last Update card.
 
 ## Roadmap
 

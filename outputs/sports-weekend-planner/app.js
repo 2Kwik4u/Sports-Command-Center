@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.5";
+const APP_VERSION = "0.16.6";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -1649,18 +1649,7 @@ function formatTimestamp(value) {
 
 function renderUpdateStatus() {
   const updateStats = settings.updateStats || defaultSettings().updateStats;
-  const sourceStatus = document.querySelector("#updateSourceStatus");
 
-  if (!sourceStatus) {
-    return;
-  }
-
-  sourceStatus.textContent = `Source: ${settings.updateUrl || DEFAULT_UPDATE_URL}`;
-  document.querySelector("#autoUpdateStatus").textContent = `Auto-update: ${settings.autoUpdate ? "on" : "off"}`;
-  document.querySelector("#lastCheckedStatus").textContent = `Last checked: ${formatTimestamp(updateStats.lastCheckedAt)}`;
-  document.querySelector("#lastSuccessStatus").textContent = `Last success: ${formatTimestamp(updateStats.lastSuccessAt)}`;
-  document.querySelector("#lastMergeStatus").textContent = updateStats.lastMessage ||
-    `Last merge: ${updateStats.lastAdded || 0} added, ${updateStats.lastReplaced || 0} replaced, ${updateStats.lastUnchanged || 0} unchanged`;
   document.querySelector("#headerLastUpdate").textContent = formatTimestamp(updateStats.lastSuccessAt || updateStats.lastCheckedAt);
   document.querySelector("#headerUpdateHealth").textContent = updateStats.lastMessage || "Ready to check";
 }

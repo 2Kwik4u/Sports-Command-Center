@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.16.6
+
+- Removed the detailed hosted update status block from the sidebar Event updates section.
+- Kept the compact Last Update card and update/check behavior.
+- Removed unused CSS for the deleted hosted status block.
+
 ## 0.16.5
 
 - Removed nonfunctional search, notification, and settings icon buttons from the header.

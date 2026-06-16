@@ -309,18 +309,6 @@ body[data-theme="light"] .sidebar {
   text-transform: uppercase;
 }
 
-.update-summary {
-  display: grid;
-  gap: 6px;
-  border: 1px solid rgba(70, 215, 199, 0.22);
-  border-radius: 8px;
-  background: rgba(70, 215, 199, 0.07);
-  color: var(--muted);
-  font-size: 0.75rem;
-  line-height: 1.35;
-  padding: 10px;
-}
-
 .checkbox-row {
   display: flex;
   align-items: center;
