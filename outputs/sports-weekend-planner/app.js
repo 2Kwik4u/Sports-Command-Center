@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.2";
+const APP_VERSION = "0.16.3";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -90,6 +90,30 @@ const countryFlags = {
   USA: "🇺🇸",
   Uruguay: "🇺🇾",
   Uzbekistan: "🇺🇿"
+};
+
+const logoAssets = {
+  channels: {},
+  leagues: {},
+  teams: {},
+  flags: {}
+};
+
+const channelLabelMap = {
+  "ABC": "ABC",
+  "Amazon Prime": "Prime",
+  "CBS": "CBS",
+  "ESPN": "ESPN",
+  "ESPN+": "ESPN+",
+  "FOX": "FOX",
+  "FS1": "FS1",
+  "Max": "Max",
+  "NBC": "NBC",
+  "Netflix": "Netflix",
+  "Paramount+": "P+",
+  "Peacock": "Peacock",
+  "TBS": "TBS",
+  "TNT": "TNT"
 };
 
 function starterEvent(event) {
@@ -699,23 +723,68 @@ function matchupLabel(event) {
   return participants.join(", ");
 }
 
-function compactEventCard(event) {
-  const icon = sportIcons[event.sport] || "★";
-
-  return `
-    <button class="mini-event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
-      <span class="mini-time">${escapeHtml(event.startTime || "TBD")}<small>${escapeHtml(event.timezone || "")}</small></span>
-      <span class="sport-disc">${icon}</span>
-      <span class="mini-main">
-        <strong>${escapeHtml(event.title)}</strong>
-        <small>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</small>
-      </span>
-      ${channelBadge(event.tv)}
-    </button>
-  `;
+function assetKey(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/\+/g, "plus")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
-function channelBadge(value) {
+function logoAsset(type, value) {
+  const key = assetKey(value);
+
+  return logoAssets[type]?.[key] || "";
+}
+
+function logoImage(type, value, className) {
+  const source = logoAsset(type, value);
+
+  if (!source) {
+    return "";
+  }
+
+  return `<img class="${className}" src="${escapeHtml(source)}" alt="${escapeHtml(value)} logo">`;
+}
+
+function cleanTimezone(value) {
+  const timezone = String(value || "").trim();
+  const timezoneMap = {
+    "America/New_York": "ET",
+    "America/Chicago": "CT",
+    "America/Denver": "MT",
+    "America/Los_Angeles": "PT",
+    "Europe/London": "UK",
+    "Europe/Paris": "CET"
+  };
+
+  return timezoneMap[timezone] || timezone.replace(/^UTC([+-])0?(\d+)$/, "UTC$1$2");
+}
+
+function formatClockTime(value) {
+  const match = String(value || "").match(/^(\d{1,2}):(\d{2})/);
+
+  if (!match) {
+    return value || "TBD";
+  }
+
+  const hours = Number(match[1]);
+  const minutes = match[2];
+  const period = hours >= 12 ? "PM" : "AM";
+  const displayHour = hours % 12 || 12;
+
+  return `${displayHour}:${minutes} ${period}`;
+}
+
+function eventTimeParts(event) {
+  return {
+    time: formatClockTime(event.startTime),
+    zone: cleanTimezone(event.timezone)
+  };
+}
+
+function primaryChannelLabel(value) {
   const label = String(value || "TBD")
     .replace(" / ESPN App", "")
     .replace(" / Peacock", "")
@@ -724,7 +793,57 @@ function channelBadge(value) {
     .trim() || "TBD";
   const shortLabel = label.includes("/") ? label.split("/")[0].trim() : label;
 
-  return `<span class="channel-badge">${escapeHtml(shortLabel)}</span>`;
+  return channelLabelMap[shortLabel] || shortLabel;
+}
+
+function channelBadge(value) {
+  const label = primaryChannelLabel(value);
+  const logo = logoImage("channels", label, "channel-logo");
+
+  return `<span class="channel-badge">${logo || escapeHtml(label)}</span>`;
+}
+
+function competitionLogo(event) {
+  return logoImage("leagues", event.competition, "sport-logo") || "";
+}
+
+function sportMark(event) {
+  return competitionLogo(event) || `<span class="sport-disc">${sportIcons[event.sport] || "★"}</span>`;
+}
+
+function countryFlagMark(country) {
+  return logoImage("flags", country, "flag-logo") || `<span class="flag-emoji">${countryFlags[country] || "⚽"}</span>`;
+}
+
+function cappedListMarkup(items, limit, renderItem, emptyMessage, moreLabel, quickFilter = "") {
+  if (!items.length) {
+    return `<div class="empty-state">${escapeHtml(emptyMessage)}</div>`;
+  }
+
+  const shownItems = items.slice(0, limit);
+  const remainingCount = Math.max(items.length - shownItems.length, 0);
+  const moreAttributes = quickFilter ? ` data-quick-filter="${escapeHtml(quickFilter)}"` : "";
+  const moreRow = remainingCount
+    ? `<button class="more-row" type="button"${moreAttributes}>+ ${remainingCount} more ${escapeHtml(moreLabel)}</button>`
+    : "";
+
+  return `${shownItems.map(renderItem).join("")}${moreRow}`;
+}
+
+function compactEventCard(event) {
+  const time = eventTimeParts(event);
+
+  return `
+    <button class="mini-event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+      <span class="mini-time">${escapeHtml(time.time)}<small>${escapeHtml(time.zone)}</small></span>
+      ${sportMark(event)}
+      <span class="mini-main">
+        <strong>${escapeHtml(event.title)}</strong>
+        <small>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</small>
+      </span>
+      ${channelBadge(event.tv)}
+    </button>
+  `;
 }
 
 function sportTag(sport) {
@@ -790,19 +909,20 @@ function renderMustWatchEvents(visibleEvents) {
       return eventDateTime(first) - eventDateTime(second);
     });
   const mustWatchEvents = upcomingEvents
-    .filter((event) => isMustWatchEvent(event) || hasFavoriteMatch(event) || event.importance >= 8)
-    .slice(0, 4);
-
-  if (!mustWatchEvents.length) {
-    mustWatchList.innerHTML = `<div class="empty-state">No must-watch events match the current filters.</div>`;
-    return;
-  }
-
-  mustWatchList.innerHTML = mustWatchEvents.map((event) => compactPriorityRow(event, "fire")).join("");
+    .filter((event) => isMustWatchEvent(event) || hasFavoriteMatch(event) || event.importance >= 8);
+  mustWatchList.innerHTML = cappedListMarkup(
+    mustWatchEvents,
+    3,
+    (event) => compactPriorityRow(event, "fire"),
+    "No must-watch events match the current filters.",
+    "must-watch events",
+    "must-watch"
+  );
 }
 
 function compactPriorityRow(event, variant = "star") {
   const icon = variant === "fire" ? "🔥" : sportIcons[event.sport] || "★";
+  const time = eventTimeParts(event);
 
   return `
     <button class="priority-row event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
@@ -811,7 +931,7 @@ function compactPriorityRow(event, variant = "star") {
         <strong>${escapeHtml(event.title)}</strong>
         <small>${escapeHtml(competitionLabel(event) || event.location || event.sport)}</small>
       </span>
-      <span class="priority-date">${escapeHtml(formatDate(event.date))}<small>${escapeHtml(event.startTime || "TBD")}</small></span>
+      <span class="priority-date">${escapeHtml(formatDate(event.date))}<small>${escapeHtml(time.time)}</small></span>
       ${channelBadge(event.tv)}
     </button>
   `;
@@ -858,22 +978,32 @@ function renderTodayEvents(visibleEvents) {
   const todayEventList = document.querySelector("#todayEventList");
   const eventsInWindow = visibleEvents
     .filter((event) => isWithinDays(event, 1))
-    .sort((first, second) => eventDateTime(first) - eventDateTime(second))
-    .slice(0, 6);
+    .sort((first, second) => eventDateTime(first) - eventDateTime(second));
 
-  todayEventList.innerHTML = eventsInWindow.map(compactEventCard).join("") ||
-    `<div class="empty-state">Nothing urgent in the next 24 hours.</div>`;
+  todayEventList.innerHTML = cappedListMarkup(
+    eventsInWindow,
+    3,
+    compactEventCard,
+    "Nothing urgent in the next 24 hours.",
+    "events",
+    "today"
+  );
 }
 
 function renderThisWeekEvents(visibleEvents) {
   const thisWeekList = document.querySelector("#thisWeekList");
   const eventsThisWeek = visibleEvents
     .filter((event) => isWithinDays(event, 7))
-    .sort((first, second) => eventDateTime(first) - eventDateTime(second))
-    .slice(0, 8);
+    .sort((first, second) => eventDateTime(first) - eventDateTime(second));
 
-  thisWeekList.innerHTML = eventsThisWeek.map(compactEventCard).join("") ||
-    `<div class="empty-state">No events this week match the current filters.</div>`;
+  thisWeekList.innerHTML = cappedListMarkup(
+    eventsThisWeek,
+    3,
+    compactEventCard,
+    "No events this week match the current filters.",
+    "events",
+    "week"
+  );
 }
 
 function renderActiveTournaments(visibleEvents) {
@@ -883,7 +1013,7 @@ function renderActiveTournaments(visibleEvents) {
     .filter((event) => event.competition === "FIFA World Cup" || event.isAutoImported)
     .sort((first, second) => eventDateTime(first) - eventDateTime(second));
   const worldCupEvents = tournamentEvents.filter((event) => event.competition === "FIFA World Cup");
-  const nextWorldCupEvents = worldCupEvents.slice(0, 8);
+  const nextWorldCupEvents = worldCupEvents.slice(0, 3);
 
   activeTournamentSummary.textContent = worldCupEvents.length
     ? `${worldCupEvents.length} World Cup match${worldCupEvents.length === 1 ? "" : "es"} in the upcoming planning view.`
@@ -908,14 +1038,16 @@ function renderActiveTournaments(visibleEvents) {
 }
 
 function worldCupMatchTile(event) {
+  const time = eventTimeParts(event);
+
   return `
     <button class="world-cup-tile event-button" type="button" data-event-id="${escapeHtml(event.id)}">
-      <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(event.startTime || "TBD")} ${escapeHtml(event.timezone || "")}</span>
+      <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(time.time)} ${escapeHtml(time.zone)}</span>
       <strong>${escapeHtml(event.group || event.round || "World Cup")}</strong>
       <div class="flag-matchup">
-        <span>${countryFlags[event.homeTeam] || "⚽"}<small>${escapeHtml(shortTeamName(event.homeTeam))}</small></span>
+        <span>${countryFlagMark(event.homeTeam)}<small>${escapeHtml(shortTeamName(event.homeTeam))}</small></span>
         <b>vs</b>
-        <span>${countryFlags[event.awayTeam] || "⚽"}<small>${escapeHtml(shortTeamName(event.awayTeam))}</small></span>
+        <span>${countryFlagMark(event.awayTeam)}<small>${escapeHtml(shortTeamName(event.awayTeam))}</small></span>
       </div>
     </button>
   `;
@@ -983,11 +1115,12 @@ function renderEvents(visibleEvents) {
 
 function eventRow(event) {
   const teams = matchupLabel(event) || normalizeList(event.participants || event.teams).join(", ") || "TBD";
+  const time = eventTimeParts(event);
 
   return `
     <button class="event-row event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
       <span>${escapeHtml(formatDate(event.date))}</span>
-      <span>${escapeHtml(event.startTime || "TBD")}</span>
+      <span>${escapeHtml(time.time)}<small>${escapeHtml(time.zone)}</small></span>
       <span><span class="row-icon">${sportIcons[event.sport] || "★"}</span>${escapeHtml(event.sport)}</span>
       <span>${escapeHtml(event.competition || "Open")}${event.group ? ` <small>${escapeHtml(event.group)}</small>` : ""}</span>
       <span>${escapeHtml(event.title)}</span>
@@ -1049,16 +1182,21 @@ function renderPersonalWatchList(visibleEvents) {
   const watchlistSummary = document.querySelector("#watchlistSummary");
   const watchEvents = [...visibleEvents]
     .filter((event) => isMustWatchEvent(event) || hasFavoriteMatch(event) || event.personalImportance >= 8)
-    .sort((first, second) => eventWatchPriority(second) - eventWatchPriority(first))
-    .slice(0, 6);
+    .sort((first, second) => eventWatchPriority(second) - eventWatchPriority(first));
 
   const favoriteCount = visibleEvents.filter(hasFavoriteMatch).length;
   watchlistSummary.textContent = favoriteCount
     ? `${favoriteCount} favorite-based event${favoriteCount === 1 ? "" : "s"} in view.`
     : "Add favorites in settings to personalize this list.";
 
-  personalWatchList.innerHTML = watchEvents.map((event) => compactPriorityRow(event, "star")).join("") ||
-    `<div class="empty-state">No personalized watchlist events match the current filters.</div>`;
+  personalWatchList.innerHTML = cappedListMarkup(
+    watchEvents,
+    3,
+    (event) => compactPriorityRow(event, "star"),
+    "No personalized watchlist events match the current filters.",
+    "watchlist events",
+    "favorites"
+  );
 }
 
 function weekendScore(eventsForWeekend) {
@@ -1201,21 +1339,25 @@ function renderBestWeekends(visibleEvents) {
   const today = new Date();
   const startDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   const endDate = addDays(startDate, 60);
-  const bestWeekends = getWeekendGroups(visibleEvents, { startDate, endDate }).slice(0, 4);
+  const bestWeekends = getWeekendGroups(visibleEvents, { startDate, endDate });
 
-  bestWeekendList.innerHTML = bestWeekends.map((weekend) => `
+  bestWeekendList.innerHTML = cappedListMarkup(
+    bestWeekends,
+    3,
+    weekendScoreRow,
+    "No scored weekends match the current filters.",
+    "weekends"
+  );
+}
+
+function weekendScoreRow(weekend) {
+  return `
     <article class="weekend-score-card" style="${sportAccentStyle(weekend.events[0]?.sport)}">
-      <h4>${formatDateObject(weekend.friday)} - ${formatDateObject(weekend.sunday)}</h4>
-      <div class="event-meta">
-        <span class="score-label">${escapeHtml(weekendScoreLabel(weekend.details))}</span>
-        <span>Score ${weekend.score}</span>
-        <span>${weekend.events.length} event${weekend.events.length === 1 ? "" : "s"}</span>
-      </div>
-      <p>${escapeHtml(weekendScoreSummary(weekend.details))}</p>
-      <p>${weekend.events.map((event) => escapeHtml(event.title)).join(", ")}</p>
-      <button class="secondary-button compact-action" type="button" data-export-weekend="${toDateValue(weekend.friday)}">Export Weekend Calendar</button>
+      <span class="weekend-date">${formatDateObject(weekend.friday)} - ${formatDateObject(weekend.sunday)}</span>
+      <span class="weekend-score">Weekend Score <strong>${weekend.score}</strong></span>
+      <span class="score-label">${escapeHtml(weekendScoreLabel(weekend.details))}</span>
     </article>
-  `).join("") || `<div class="empty-state">No scored weekends match the current filters.</div>`;
+  `;
 }
 
 function renderCalendar(visibleEvents) {
@@ -1534,18 +1676,25 @@ function setActiveView(viewName, activeButton = null) {
 
   document.querySelector(`#${viewName}View`).classList.add("active-view");
 
-  const titles = {
-    dashboard: "Sports command center",
-    calendar: "Monthly calendar",
-    weekends: "Weekend planner"
+  const subtitles = {
+    dashboard: "WHAT TO WATCH NEXT",
+    calendar: "MONTHLY CALENDAR",
+    weekends: "WEEKEND PLANNER"
   };
 
-  document.querySelector("#pageTitle").innerHTML = `${titles[viewName]} <span class="title-star">★</span>`;
+  document.querySelector("#pageTitle").textContent = "★ SPORTS COMMAND CENTER ★";
+  document.querySelector("#pageSubtitle").textContent = subtitles[viewName] || "WHAT TO WATCH NEXT";
 }
 
 function wireNavigation() {
   document.querySelectorAll(".nav-item").forEach((button) => {
     button.addEventListener("click", () => {
+      if (button.dataset.sidebarFocus) {
+        document.querySelectorAll(".nav-item").forEach((navItem) => navItem.classList.toggle("active", navItem === button));
+        document.querySelector(`.${button.dataset.sidebarFocus}-panel`)?.scrollIntoView({ block: "nearest" });
+        return;
+      }
+
       if (button.dataset.navFilter) {
         activeQuickFilter = button.dataset.navFilter;
         renderQuickFilters();

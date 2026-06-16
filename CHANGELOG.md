@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.16.3
+
+- Treated the generated Sports Command Center screenshot as the approved pixel-target design spec.
+- Reordered the Dashboard so six stat tiles appear before quick filters.
+- Tightened the stadium header, narrowed the sidebar, and improved the SCC crest.
+- Moved update status/check controls to the lower sidebar near the version area.
+- Kept Add Event as a compact header action.
+- Capped Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles to three visible items plus `+ X more` rows.
+- Added cleaner event time formatting for compact broadcast-style rows.
+- Added a controlled `assets/logos/` structure and JavaScript fallback layer for future local channel, league, team, and flag logos.
+- Preserved existing static app functionality, hosted updates, local storage, JSON import/export, and calendar export.
+
 ## 0.16.2
 
 - Treated the generated Sports Command Center screenshot as the approved visual target.

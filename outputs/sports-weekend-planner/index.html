@@ -11,12 +11,18 @@
       <aside class="sidebar">
         <div class="brand">
           <div class="brand-mark">
-            <span class="brand-sports">🏈 ⚽ 🏁</span>
+            <span class="brand-stars">★</span>
+            <span class="brand-sports" aria-hidden="true">
+              <span>🏈</span>
+              <span>⚽</span>
+              <span>🏁</span>
+            </span>
             <strong>SCC</strong>
+            <span class="brand-ribbon">COMMAND</span>
           </div>
           <div>
             <h1>Sports Command Center</h1>
-            <p>Major events, watch windows, and shared calendars.</p>
+            <p>Your watch calendar</p>
           </div>
         </div>
 
@@ -26,6 +32,7 @@
           <button class="nav-item" type="button" data-view="weekends"><span>⚖</span> Weekends</button>
           <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="all"><span>☷</span> Events</button>
           <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="favorites"><span>☆</span> Watchlist</button>
+          <button class="nav-item" type="button" data-sidebar-focus="settings"><span>⚙</span> Settings</button>
         </nav>
 
         <section class="filter-panel" aria-label="Event filters">
@@ -134,6 +141,12 @@
           </label>
           <button id="saveSettingsButton" class="secondary-button" type="button">Save Settings</button>
           <button id="checkUpdatesButton" class="secondary-button" type="button">Check for Event Updates</button>
+          <div class="header-update-card sidebar-update-card">
+            <span>Last update</span>
+            <strong id="headerLastUpdate">Not checked yet</strong>
+            <small id="headerUpdateHealth">Ready</small>
+            <button id="headerCheckUpdatesButton" class="secondary-button compact-action" type="button">Check for Updates</button>
+          </div>
           <p id="settingsStatus" class="data-status">Settings stay on this device.</p>
           <p id="appVersion" class="version-note">Version loading...</p>
         </section>
@@ -142,20 +155,13 @@
       <main class="main-content">
         <header class="page-header">
           <div>
-            <p class="eyebrow">Your watch calendar</p>
-            <h2 id="pageTitle">Sports command center <span class="title-star">★</span></h2>
-            <p id="pageSubtitle" class="page-subtitle">Track what matters today, this week, and on the weekends worth protecting.</p>
+            <h2 id="pageTitle">★ SPORTS COMMAND CENTER ★</h2>
+            <p id="pageSubtitle" class="page-subtitle">WHAT TO WATCH NEXT</p>
           </div>
           <div class="header-actions">
             <button class="icon-action" type="button" aria-label="Search">⌕</button>
             <button class="icon-action" type="button" aria-label="Notifications">◔</button>
             <button class="icon-action" type="button" aria-label="Settings">⚙</button>
-            <div class="header-update-card">
-              <span>Last update</span>
-              <strong id="headerLastUpdate">Not checked yet</strong>
-              <small id="headerUpdateHealth">Ready</small>
-              <button id="headerCheckUpdatesButton" class="secondary-button compact-action" type="button">Check for Updates</button>
-            </div>
             <button id="addEventButton" class="primary-button" type="button">Add Event</button>
           </div>
         </header>
@@ -168,18 +174,6 @@
               <p id="heroSummary">Your personalized sports board is ready.</p>
             </div>
             <div id="worldCupIndicator" class="hero-indicator">World Cup status loading...</div>
-          </section>
-
-          <section class="quick-filter-bar" aria-label="Dashboard quick filters">
-            <button class="quick-chip active" type="button" data-quick-filter="all">All</button>
-            <button class="quick-chip" type="button" data-quick-filter="today">Today</button>
-            <button class="quick-chip" type="button" data-quick-filter="week">This Week</button>
-            <button class="quick-chip" type="button" data-quick-filter="month">This Month</button>
-            <button class="quick-chip" type="button" data-quick-filter="world-cup">World Cup</button>
-            <button class="quick-chip" type="button" data-quick-filter="favorites">Favorites</button>
-            <button class="quick-chip" type="button" data-quick-filter="must-watch">Must-watch</button>
-            <button class="quick-chip" type="button" data-quick-filter="racing">Racing</button>
-            <button class="quick-chip" type="button" data-quick-filter="soccer">Soccer</button>
           </section>
 
           <section class="stats-grid" aria-label="Event summary">
@@ -219,6 +213,18 @@
               <p>On watchlist</p>
               <small>For you</small>
             </article>
+          </section>
+
+          <section class="quick-filter-bar" aria-label="Dashboard quick filters">
+            <button class="quick-chip" type="button" data-quick-filter="today">Today</button>
+            <button class="quick-chip" type="button" data-quick-filter="week">This Week</button>
+            <button class="quick-chip" type="button" data-quick-filter="month">This Month</button>
+            <button class="quick-chip" type="button" data-quick-filter="world-cup">World Cup</button>
+            <button class="quick-chip" type="button" data-quick-filter="favorites">Favorites</button>
+            <button class="quick-chip" type="button" data-quick-filter="must-watch">Must-watch</button>
+            <button class="quick-chip" type="button" data-quick-filter="soccer">Soccer</button>
+            <button class="quick-chip" type="button" data-quick-filter="racing">Racing</button>
+            <button class="quick-chip active" type="button" data-quick-filter="all">More</button>
           </section>
 
           <section class="dashboard-grid">
@@ -263,7 +269,7 @@
 
               <article class="panel watchlist-panel">
                 <div class="panel-heading">
-                  <h3>Your Watchlist</h3>
+                  <h3>Watchlist</h3>
                   <p id="watchlistSummary">View all</p>
                 </div>
                 <div id="personalWatchList" class="compact-list"></div>
@@ -287,7 +293,7 @@
 
             <article class="panel event-list-panel">
               <div class="panel-heading">
-                <h3>All Matching Events</h3>
+                <h3>All Events</h3>
                 <p id="eventListSummary">Showing upcoming events.</p>
                 <div class="table-actions">
                   <label class="sort-control">Sort by

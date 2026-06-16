@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.2
+Version 0.16.3
 
 # Completed Features
 
@@ -21,7 +21,8 @@ Version 0.16.2
 - Personal importance scoring and friend interest scoring.
 - Preference-aware event priority and Weekend Score logic.
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
-- Dashboard sections for Today / Next 24 Hours, This Week, World Cup / Active Tournaments, Next Major Event, Keep-Free Weekends, Watchlist, optional trip candidates, sports covered, and matching events.
+- Dashboard sections for Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
+- Compact dashboard panels cap Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles so the first screen stays dense.
 - JSON import/export for sharing event databases.
 - Import preview showing added, replaced, and unchanged events.
 - Google Calendar-compatible `.ics` export for high-priority filtered events and selected weekends.
@@ -34,12 +35,14 @@ Version 0.16.2
 - Event validation script covering required fields, stable IDs, duplicate IDs, optional metadata, and imported source metadata.
 - Static hosting compatibility for GitHub Pages.
 - GitHub repository connection is active and working.
+- Local logo asset structure under `assets/logos/` with graceful fallback to text badges, sport icons, and flag emoji.
 
 # In Progress
 
-- Verifying the Version 0.16.0 visual refresh and automated update workflow.
+- Verifying the Version 0.16.3 visual match pass and automated update workflow.
 - Continuing to tune the Sports Command Center dashboard for real watch-planning use.
 - Preparing GitHub Pages as the primary deployment path.
+- Continuing desktop visual matching against the approved Sports Command Center concept screenshot.
 
 # Planned Features
 
@@ -72,6 +75,12 @@ i-want-to-build-a-web/
   styles.css
   app.js
   events.json
+  assets/
+    logos/
+      channels/
+      flags/
+      leagues/
+      teams/
   README.md
   ROADMAP.md
   PROJECT_STATUS.md
@@ -123,11 +132,16 @@ i-want-to-build-a-web/
 - Reduced header height, tightened dashboard spacing, compacted panel rows, added broadcast-style channel badges, improved Must-Watch and Watchlist rows, and expanded the All Events table with teams/participants plus sort/export controls.
 - Hid the optional Trip Candidates and Sports Covered dashboard panels from the main concept layout so the Dashboard matches the approved two-row panel grid more closely.
 - Intentional differences from the concept: stadium lights, SCC shield, sport icons, flags, and channel labels are built with CSS, emoji, and styled text rather than external image assets or copyrighted broadcast logos.
+- Completed Version 0.16.3 as a pixel-target visual match pass using the generated Sports Command Center screenshot as the approved design spec.
+- Reordered the dashboard so stat tiles appear before quick filters, removed the visible hero block from the dashboard flow, tightened the stadium header, narrowed the sidebar, and improved the SCC crest.
+- Capped Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup match tiles at three visible items with `+ X more` rows.
+- Added a controlled local logo asset structure and rendering fallback layer for future channel, league, team, and flag images.
+- Moved the update status/check card to the lower sidebar near the version area and kept Add Event as a compact header action.
 
 # Next Recommended Steps
 
-1. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
-2. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
-3. Playtest the refreshed Dashboard, quick chips, Calendar, Weekends, and hosted update button on desktop and phone widths.
-4. Tune World Cup priority rules and Weekend Score after seeing real usage.
+1. Playtest the 0.16.3 Dashboard at a desktop viewport around 1536x1024 against the approved screenshot.
+2. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
+3. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
+4. Test the compact dashboard, quick chips, Calendar, Weekends, Add/Edit/Delete, and hosted update button on desktop and phone widths.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

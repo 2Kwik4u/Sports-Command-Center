@@ -11,7 +11,8 @@ The long-term goal is a personalized sports command center that answers what to 
 ## Current Features
 
 - Dashboard, calendar, and weekend planner views.
-- Today / Next 24 Hours, This Week, World Cup / Active Tournaments, Next Major Event, Keep-Free Weekends, Watchlist, Sports Covered, and matching event dashboard sections.
+- Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events dashboard sections.
+- Compact dashboard panels with capped event lists and `+ X more` rows.
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
 - Automatic hiding of past events from Dashboard and Weekends.
 - Manual add/edit/delete event workflow.
@@ -23,6 +24,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Visible hosted update status in the app.
 - GitHub Actions-based event update pipeline.
 - Full FIFA World Cup 2026 import from a no-key public structured source.
+- Local logo asset structure with fallbacks for future channel, league, team, and flag logos.
 
 ## Planned Features
 
@@ -52,6 +54,7 @@ i-want-to-build-a-web/
   index.html
   styles.css
   app.js
+  assets/logos/README.md
   events.json
   README.md
   ROADMAP.md
@@ -141,9 +144,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.16.2`
+Current version: `0.16.3`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.2 is a visual fidelity pass that treats the generated command-center screenshot as the approved visual target while preserving the existing static HTML/CSS/JS app behavior.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.3 is a pixel-target visual match pass that treats the generated command-center screenshot as the approved visual target while preserving the existing static HTML/CSS/JS app behavior.
 
 ## Roadmap
 
@@ -163,6 +166,7 @@ The project is a usable static prototype with a refreshed Sports Command Center 
 - Hosted updates do not delete local user-created events.
 - OpenFootball is useful but not guaranteed to be an official live schedule source.
 - Imported World Cup TV data is `TBD` unless provided by a source.
+- Real logo assets are not bundled yet; the app currently falls back to styled badges, sport icons, and flag emoji.
 - No automated browser test suite yet.
 - PWA installability is planned but not implemented.
 
