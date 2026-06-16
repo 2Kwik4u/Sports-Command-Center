@@ -1,0 +1,1685 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-16T04:59:22.118Z",
+  "sources": [
+    {
+      "name": "TheSportsDB",
+      "type": "sports-data-api",
+      "role": "Team and league artwork URLs returned by the provider.",
+      "apiKey": "Uses THESPORTSDB_API_KEY when set, otherwise the documented public v1 key 123."
+    },
+    {
+      "name": "FlagCDN",
+      "type": "flag-cdn",
+      "role": "Country flag PNG URLs for World Cup matchup tiles."
+    },
+    {
+      "name": "Local channel identifiers",
+      "type": "repo-assets",
+      "role": "Small text-based SVG channel identifiers, not scraped official marks."
+    }
+  ],
+  "sports": {
+    "baseball": {
+      "name": "Baseball",
+      "logo": "assets/logos/fallbacks/sport-baseball.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "basketball": {
+      "name": "Basketball",
+      "logo": "assets/logos/fallbacks/sport-basketball.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "combat-sports": {
+      "name": "Combat Sports",
+      "logo": "assets/logos/fallbacks/sport-combat.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "football": {
+      "name": "Football",
+      "logo": "assets/logos/fallbacks/sport-football.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "golf": {
+      "name": "Golf",
+      "logo": "assets/logos/fallbacks/sport-golf.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "hockey": {
+      "name": "Hockey",
+      "logo": "assets/logos/fallbacks/sport-hockey.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "horse-racing": {
+      "name": "Horse Racing",
+      "logo": "assets/logos/fallbacks/sport-horse-racing.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "major-events": {
+      "name": "Major Events",
+      "logo": "assets/logos/fallbacks/sport-major-events.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "racing": {
+      "name": "Racing",
+      "logo": "assets/logos/fallbacks/sport-racing.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "soccer": {
+      "name": "Soccer",
+      "logo": "assets/logos/fallbacks/sport-soccer.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    },
+    "tennis": {
+      "name": "Tennis",
+      "logo": "assets/logos/fallbacks/sport-tennis.svg",
+      "source": "local-sport-fallback",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": ""
+    }
+  },
+  "leagues": {
+    "american-major-league-soccer": {
+      "name": "American Major League Soccer",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/dqo6r91549878326.png/tiny",
+      "providerId": "4346",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4346"
+    },
+    "atp-world-tour": {
+      "name": "ATP World Tour",
+      "sport": "Tennis",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/q7aej51769857150.png/tiny",
+      "providerId": "4464",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4464"
+    },
+    "carabao-cup": {
+      "name": "Carabao Cup",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/x1va771565372556.png/tiny",
+      "providerId": "4570",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4570",
+      "aliasOf": "EFL Cup"
+    },
+    "champions-league": {
+      "name": "Champions League",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png/tiny",
+      "providerId": "4480",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4480",
+      "aliasOf": "UEFA Champions League"
+    },
+    "efl-cup": {
+      "name": "EFL Cup",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/x1va771565372556.png/tiny",
+      "providerId": "4570",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4570"
+    },
+    "english-premier-league": {
+      "name": "English Premier League",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png/tiny",
+      "providerId": "4328",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4328"
+    },
+    "f1": {
+      "name": "F1",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
+      "providerId": "4370",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4370",
+      "aliasOf": "Formula 1"
+    },
+    "formula-1": {
+      "name": "Formula 1",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
+      "providerId": "4370",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4370"
+    },
+    "imsa": {
+      "name": "IMSA",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/t3fpd41536244390.png/tiny",
+      "providerId": "4488",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4488",
+      "aliasOf": "IMSA SportsCar Championship"
+    },
+    "imsa-sportscar-championship": {
+      "name": "IMSA SportsCar Championship",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/t3fpd41536244390.png/tiny",
+      "providerId": "4488",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4488"
+    },
+    "mlb": {
+      "name": "MLB",
+      "sport": "Baseball",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
+      "providerId": "4424",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4424"
+    },
+    "mlb-playoffs": {
+      "name": "MLB Playoffs",
+      "sport": "Baseball",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
+      "providerId": "4424",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4424",
+      "aliasOf": "MLB"
+    },
+    "mls": {
+      "name": "MLS",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/dqo6r91549878326.png/tiny",
+      "providerId": "4346",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4346",
+      "aliasOf": "American Major League Soccer"
+    },
+    "nba": {
+      "name": "NBA",
+      "sport": "Basketball",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png/tiny",
+      "providerId": "4387",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4387"
+    },
+    "nba-finals": {
+      "name": "NBA Finals",
+      "sport": "Basketball",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png/tiny",
+      "providerId": "4387",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4387",
+      "aliasOf": "NBA"
+    },
+    "nfl": {
+      "name": "NFL",
+      "sport": "American Football",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "providerId": "4391",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4391"
+    },
+    "nfl-playoffs": {
+      "name": "NFL Playoffs",
+      "sport": "American Football",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "providerId": "4391",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4391",
+      "aliasOf": "NFL"
+    },
+    "nfl-regular-season": {
+      "name": "NFL Regular Season",
+      "sport": "American Football",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "providerId": "4391",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4391",
+      "aliasOf": "NFL"
+    },
+    "nhl": {
+      "name": "NHL",
+      "sport": "Ice Hockey",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png/tiny",
+      "providerId": "4380",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4380"
+    },
+    "nhl-playoffs": {
+      "name": "NHL Playoffs",
+      "sport": "Ice Hockey",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png/tiny",
+      "providerId": "4380",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4380",
+      "aliasOf": "NHL"
+    },
+    "pga-tour": {
+      "name": "PGA Tour",
+      "sport": "Golf",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/quvqqr1423564787.png/tiny",
+      "providerId": "4425",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4425"
+    },
+    "premier-league": {
+      "name": "Premier League",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png/tiny",
+      "providerId": "4328",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4328",
+      "aliasOf": "English Premier League"
+    },
+    "stanley-cup-final": {
+      "name": "Stanley Cup Final",
+      "sport": "Ice Hockey",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png/tiny",
+      "providerId": "4380",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4380",
+      "aliasOf": "NHL"
+    },
+    "super-bowl": {
+      "name": "Super Bowl",
+      "sport": "American Football",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "providerId": "4391",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4391",
+      "aliasOf": "NFL"
+    },
+    "supercars": {
+      "name": "Supercars",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/64f67s1770108650.png/tiny",
+      "providerId": "4489",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4489",
+      "aliasOf": "V8 Supercars"
+    },
+    "uefa-champions-league": {
+      "name": "UEFA Champions League",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png/tiny",
+      "providerId": "4480",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4480"
+    },
+    "uefa-conference-league": {
+      "name": "UEFA Conference League",
+      "sport": "Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/ymfo5j1718775759.png/tiny",
+      "providerId": "5071",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=5071"
+    },
+    "v8-supercars": {
+      "name": "V8 Supercars",
+      "sport": "Motorsport",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/64f67s1770108650.png/tiny",
+      "providerId": "4489",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4489"
+    },
+    "world-series": {
+      "name": "World Series",
+      "sport": "Baseball",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
+      "providerId": "4424",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4424",
+      "aliasOf": "MLB"
+    }
+  },
+  "teams": {
+    "anaheim-ducks": {
+      "name": "Anaheim Ducks",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/1d465t1719573796.png/tiny",
+      "providerId": "134846",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "arizona-cardinals": {
+      "name": "Arizona Cardinals",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png/tiny",
+      "providerId": "134946",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "arizona-diamondbacks": {
+      "name": "Arizona Diamondbacks",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xe5wlo1713861863.png/tiny",
+      "providerId": "135267",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "arsenal": {
+      "name": "Arsenal",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png/tiny",
+      "providerId": "133604",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "aston-martin-aramco-formula-one-team": {
+      "name": "Aston Martin Aramco Formula One Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ez5rlk1740774066.png/tiny",
+      "providerId": "135126",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "aston-villa": {
+      "name": "Aston Villa",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png/tiny",
+      "providerId": "133601",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "athletics": {
+      "name": "Athletics",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/cyvrv31741640777.png/tiny",
+      "providerId": "135261",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "atlanta-braves": {
+      "name": "Atlanta Braves",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png/tiny",
+      "providerId": "135268",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "atlanta-falcons": {
+      "name": "Atlanta Falcons",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png/tiny",
+      "providerId": "134942",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "atlanta-hawks": {
+      "name": "Atlanta Hawks",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/7o1noy1778226315.png/tiny",
+      "providerId": "134880",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "atlanta-united": {
+      "name": "Atlanta United",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ej091x1602103070.png/tiny",
+      "providerId": "135851",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "audi-revolut-f1-team": {
+      "name": "Audi Revolut F1 Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/3uce6h1773158180.png/tiny",
+      "providerId": "137569",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "austin-fc": {
+      "name": "Austin FC",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/a3dlg61595434277.png/tiny",
+      "providerId": "140079",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "baltimore-orioles": {
+      "name": "Baltimore Orioles",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png/tiny",
+      "providerId": "135251",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "baltimore-ravens": {
+      "name": "Baltimore Ravens",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png/tiny",
+      "providerId": "134922",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "boston-bruins": {
+      "name": "Boston Bruins",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/b1r86e1720023232.png/tiny",
+      "providerId": "134830",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "boston-celtics": {
+      "name": "Boston Celtics",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/4j85bn1667936589.png/tiny",
+      "providerId": "134860",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "boston-red-sox": {
+      "name": "Boston Red Sox",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/stpsus1425120215.png/tiny",
+      "providerId": "135252",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "bournemouth": {
+      "name": "Bournemouth",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png/tiny",
+      "providerId": "134301",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "brentford": {
+      "name": "Brentford",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png/tiny",
+      "providerId": "134355",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "brighton-and-hove-albion": {
+      "name": "Brighton and Hove Albion",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ywypts1448810904.png/tiny",
+      "providerId": "133619",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "brooklyn-nets": {
+      "name": "Brooklyn Nets",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/hkafe61739948361.png/tiny",
+      "providerId": "134861",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "buffalo-bills": {
+      "name": "Buffalo Bills",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/6pb37b1515849026.png/tiny",
+      "providerId": "134918",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "buffalo-sabres": {
+      "name": "Buffalo Sabres",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/3m3jhp1619536655.png/tiny",
+      "providerId": "134831",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "bwt-alpine-formula-one-team": {
+      "name": "BWT Alpine Formula One Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ozhoj31740774899.png/tiny",
+      "providerId": "135706",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "cadillac-formula-1-team": {
+      "name": "Cadillac Formula 1 Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/2wqnjo1769429652.png/tiny",
+      "providerId": "154529",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "calgary-flames": {
+      "name": "Calgary Flames",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/v8vkk11619536610.png/tiny",
+      "providerId": "134848",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "carolina-hurricanes": {
+      "name": "Carolina Hurricanes",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/v07m3x1547232585.png/tiny",
+      "providerId": "134838",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "carolina-panthers": {
+      "name": "Carolina Panthers",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png/tiny",
+      "providerId": "134943",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "cf-montreal": {
+      "name": "CF Montréal",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/livdl31679344925.png/tiny",
+      "providerId": "134150",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "charlotte-fc": {
+      "name": "Charlotte FC",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/b6p4uz1595434047.png/tiny",
+      "providerId": "140078",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "charlotte-hornets": {
+      "name": "Charlotte Hornets",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xqtvvp1422380623.png/tiny",
+      "providerId": "134881",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "chelsea": {
+      "name": "Chelsea",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png/tiny",
+      "providerId": "133610",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "chicago-bears": {
+      "name": "Chicago Bears",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png/tiny",
+      "providerId": "134938",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "chicago-blackhawks": {
+      "name": "Chicago Blackhawks",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/tuwyvr1422041801.png/tiny",
+      "providerId": "134854",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "chicago-bulls": {
+      "name": "Chicago Bulls",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ehq8l31778197349.png/tiny",
+      "providerId": "134870",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "chicago-cubs": {
+      "name": "Chicago Cubs",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/wxbe071521892391.png/tiny",
+      "providerId": "135269",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "chicago-fire": {
+      "name": "Chicago Fire",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/8xuc781639493166.png/tiny",
+      "providerId": "134154",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "chicago-white-sox": {
+      "name": "Chicago White Sox",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/yyz5dh1554140884.png/tiny",
+      "providerId": "135253",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "cincinnati-bengals": {
+      "name": "Cincinnati Bengals",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png/tiny",
+      "providerId": "134923",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "cincinnati-reds": {
+      "name": "Cincinnati Reds",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/wspusr1431538832.png/tiny",
+      "providerId": "135270",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "cleveland-browns": {
+      "name": "Cleveland Browns",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/squvxy1420942389.png/tiny",
+      "providerId": "134924",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "cleveland-cavaliers": {
+      "name": "Cleveland Cavaliers",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/pch9ct1778195828.png/tiny",
+      "providerId": "134871",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "cleveland-guardians": {
+      "name": "Cleveland Guardians",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/3zvzao1640964590.png/tiny",
+      "providerId": "135254",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "colorado-avalanche": {
+      "name": "Colorado Avalanche",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/wqutut1421173572.png/tiny",
+      "providerId": "134855",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "colorado-rapids": {
+      "name": "Colorado Rapids",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/uppupv1473536412.png/tiny",
+      "providerId": "134794",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "colorado-rockies": {
+      "name": "Colorado Rockies",
+      "sport": "Baseball",
+      "league": "MLB",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/r7q6ko1687608395.png/tiny",
+      "providerId": "135271",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=MLB"
+    },
+    "columbus-blue-jackets": {
+      "name": "Columbus Blue Jackets",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ssytwt1421792535.png/tiny",
+      "providerId": "134839",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "columbus-crew": {
+      "name": "Columbus Crew",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/dzs8cp1629059854.png/tiny",
+      "providerId": "134152",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "coventry-city": {
+      "name": "Coventry City",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/uxyqys1424033798.png/tiny",
+      "providerId": "133625",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "crystal-palace": {
+      "name": "Crystal Palace",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png/tiny",
+      "providerId": "133632",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "dallas-cowboys": {
+      "name": "Dallas Cowboys",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/wrxssu1450018209.png/tiny",
+      "providerId": "134934",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "dallas-mavericks": {
+      "name": "Dallas Mavericks",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/s5dx7c1778197536.png/tiny",
+      "providerId": "134875",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "dallas-stars": {
+      "name": "Dallas Stars",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/qrvywq1422042125.png/tiny",
+      "providerId": "134856",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "dc-united": {
+      "name": "DC United",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/uwvsyt1467462609.png/tiny",
+      "providerId": "134145",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "denver-broncos": {
+      "name": "Denver Broncos",
+      "sport": "American Football",
+      "league": "NFL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/upsspx1421635647.png/tiny",
+      "providerId": "134930",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NFL"
+    },
+    "denver-nuggets": {
+      "name": "Denver Nuggets",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/s8ch7m1778197814.png/tiny",
+      "providerId": "134885",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "detroit-pistons": {
+      "name": "Detroit Pistons",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/lg7qrc1621594751.png/tiny",
+      "providerId": "134872",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "detroit-red-wings": {
+      "name": "Detroit Red Wings",
+      "sport": "Ice Hockey",
+      "league": "NHL",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/1c24ow1546544080.png/tiny",
+      "providerId": "134832",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NHL"
+    },
+    "everton": {
+      "name": "Everton",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png/tiny",
+      "providerId": "133615",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "fc-cincinnati": {
+      "name": "FC Cincinnati",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/vvhsqc1707631046.png/tiny",
+      "providerId": "136688",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "fc-dallas": {
+      "name": "FC Dallas",
+      "sport": "Soccer",
+      "league": "American Major League Soccer",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/vxy8xy1602103187.png/tiny",
+      "providerId": "134146",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=American%20Major%20League%20Soccer"
+    },
+    "fulham": {
+      "name": "Fulham",
+      "sport": "Soccer",
+      "league": "English Premier League",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png/tiny",
+      "providerId": "133600",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=English%20Premier%20League"
+    },
+    "golden-state-warriors": {
+      "name": "Golden State Warriors",
+      "sport": "Basketball",
+      "league": "NBA",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/xokycb1778197905.png/tiny",
+      "providerId": "134865",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=NBA"
+    },
+    "mclaren-formula-1-team": {
+      "name": "McLaren Formula 1 Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/kzqi7v1743602056.png/tiny",
+      "providerId": "134811",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "mercedes-amg-petronas-formula-one-team": {
+      "name": "Mercedes-AMG PETRONAS Formula One Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/6caw0r1744037679.png/tiny",
+      "providerId": "134812",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "moneygram-haas-f1-team": {
+      "name": "MoneyGram Haas F1 Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/9yp3s51740773680.png/tiny",
+      "providerId": "135705",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "oracle-red-bull-racing": {
+      "name": "Oracle Red Bull Racing",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/nhlev81679826274.png/tiny",
+      "providerId": "134813",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "scuderia-ferrari-hp": {
+      "name": "Scuderia Ferrari HP",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/rxwsqv1420417429.png/tiny",
+      "providerId": "134806",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    },
+    "visa-cash-app-racing-bulls-formula-one-team": {
+      "name": "Visa Cash App Racing Bulls Formula One Team",
+      "sport": "Motorsport",
+      "league": "Formula 1",
+      "logo": "https://r2.thesportsdb.com/images/media/team/badge/ot7pjx1740775883.png/tiny",
+      "providerId": "139631",
+      "source": "TheSportsDB",
+      "logoSource": "TheSportsDB",
+      "logoUpdatedAt": "",
+      "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/search_all_teams.php?l=Formula%201"
+    }
+  },
+  "channels": {
+    "abc": {
+      "name": "ABC",
+      "logo": "assets/logos/channels/abc.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "apple-tv": {
+      "name": "Apple TV",
+      "logo": "assets/logos/channels/apple-tv.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "cbs": {
+      "name": "CBS",
+      "logo": "assets/logos/channels/cbs.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "espn": {
+      "name": "ESPN+",
+      "logo": "assets/logos/channels/espn-plus.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "espn2": {
+      "name": "ESPN2",
+      "logo": "assets/logos/channels/espn2.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "fox": {
+      "name": "FOX",
+      "logo": "assets/logos/channels/fox.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "fs1": {
+      "name": "FS1",
+      "logo": "assets/logos/channels/fs1.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "fs2": {
+      "name": "FS2",
+      "logo": "assets/logos/channels/fs2.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "nbc": {
+      "name": "NBC",
+      "logo": "assets/logos/channels/nbc.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "paramount": {
+      "name": "Paramount+",
+      "logo": "assets/logos/channels/paramount-plus.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "peacock": {
+      "name": "Peacock",
+      "logo": "assets/logos/channels/peacock.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "prime-video": {
+      "name": "Prime Video",
+      "logo": "assets/logos/channels/prime-video.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "tbs": {
+      "name": "TBS",
+      "logo": "assets/logos/channels/tbs.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "tnt": {
+      "name": "TNT",
+      "logo": "assets/logos/channels/tnt.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "trutv": {
+      "name": "truTV",
+      "logo": "assets/logos/channels/trutv.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    },
+    "youtube-tv": {
+      "name": "YouTube TV",
+      "logo": "assets/logos/channels/youtube-tv.svg",
+      "source": "local-styled-channel-identifier",
+      "logoSource": "local-styled-channel-identifier",
+      "logoUpdatedAt": ""
+    }
+  },
+  "flags": {
+    "algeria": {
+      "name": "Algeria",
+      "countryCode": "dz",
+      "logo": "https://flagcdn.com/w40/dz.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "argentina": {
+      "name": "Argentina",
+      "countryCode": "ar",
+      "logo": "https://flagcdn.com/w40/ar.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "australia": {
+      "name": "Australia",
+      "countryCode": "au",
+      "logo": "https://flagcdn.com/w40/au.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "austria": {
+      "name": "Austria",
+      "countryCode": "at",
+      "logo": "https://flagcdn.com/w40/at.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "belgium": {
+      "name": "Belgium",
+      "countryCode": "be",
+      "logo": "https://flagcdn.com/w40/be.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "bosnia-and-herzegovina": {
+      "name": "Bosnia & Herzegovina",
+      "countryCode": "ba",
+      "logo": "https://flagcdn.com/w40/ba.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "brazil": {
+      "name": "Brazil",
+      "countryCode": "br",
+      "logo": "https://flagcdn.com/w40/br.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "canada": {
+      "name": "Canada",
+      "countryCode": "ca",
+      "logo": "https://flagcdn.com/w40/ca.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "cape-verde": {
+      "name": "Cape Verde",
+      "countryCode": "cv",
+      "logo": "https://flagcdn.com/w40/cv.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "colombia": {
+      "name": "Colombia",
+      "countryCode": "co",
+      "logo": "https://flagcdn.com/w40/co.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "croatia": {
+      "name": "Croatia",
+      "countryCode": "hr",
+      "logo": "https://flagcdn.com/w40/hr.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "curacao": {
+      "name": "Curacao",
+      "countryCode": "cw",
+      "logo": "https://flagcdn.com/w40/cw.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "czech-republic": {
+      "name": "Czech Republic",
+      "countryCode": "cz",
+      "logo": "https://flagcdn.com/w40/cz.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "dr-congo": {
+      "name": "DR Congo",
+      "countryCode": "cd",
+      "logo": "https://flagcdn.com/w40/cd.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "ecuador": {
+      "name": "Ecuador",
+      "countryCode": "ec",
+      "logo": "https://flagcdn.com/w40/ec.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "egypt": {
+      "name": "Egypt",
+      "countryCode": "eg",
+      "logo": "https://flagcdn.com/w40/eg.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "england": {
+      "name": "England",
+      "countryCode": "gb-eng",
+      "logo": "https://flagcdn.com/w40/gb-eng.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "france": {
+      "name": "France",
+      "countryCode": "fr",
+      "logo": "https://flagcdn.com/w40/fr.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "germany": {
+      "name": "Germany",
+      "countryCode": "de",
+      "logo": "https://flagcdn.com/w40/de.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "ghana": {
+      "name": "Ghana",
+      "countryCode": "gh",
+      "logo": "https://flagcdn.com/w40/gh.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "haiti": {
+      "name": "Haiti",
+      "countryCode": "ht",
+      "logo": "https://flagcdn.com/w40/ht.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "iran": {
+      "name": "Iran",
+      "countryCode": "ir",
+      "logo": "https://flagcdn.com/w40/ir.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "iraq": {
+      "name": "Iraq",
+      "countryCode": "iq",
+      "logo": "https://flagcdn.com/w40/iq.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "ivory-coast": {
+      "name": "Ivory Coast",
+      "countryCode": "ci",
+      "logo": "https://flagcdn.com/w40/ci.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "japan": {
+      "name": "Japan",
+      "countryCode": "jp",
+      "logo": "https://flagcdn.com/w40/jp.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "jordan": {
+      "name": "Jordan",
+      "countryCode": "jo",
+      "logo": "https://flagcdn.com/w40/jo.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "mexico": {
+      "name": "Mexico",
+      "countryCode": "mx",
+      "logo": "https://flagcdn.com/w40/mx.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "morocco": {
+      "name": "Morocco",
+      "countryCode": "ma",
+      "logo": "https://flagcdn.com/w40/ma.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "netherlands": {
+      "name": "Netherlands",
+      "countryCode": "nl",
+      "logo": "https://flagcdn.com/w40/nl.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "new-zealand": {
+      "name": "New Zealand",
+      "countryCode": "nz",
+      "logo": "https://flagcdn.com/w40/nz.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "norway": {
+      "name": "Norway",
+      "countryCode": "no",
+      "logo": "https://flagcdn.com/w40/no.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "panama": {
+      "name": "Panama",
+      "countryCode": "pa",
+      "logo": "https://flagcdn.com/w40/pa.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "paraguay": {
+      "name": "Paraguay",
+      "countryCode": "py",
+      "logo": "https://flagcdn.com/w40/py.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "portugal": {
+      "name": "Portugal",
+      "countryCode": "pt",
+      "logo": "https://flagcdn.com/w40/pt.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "qatar": {
+      "name": "Qatar",
+      "countryCode": "qa",
+      "logo": "https://flagcdn.com/w40/qa.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "saudi-arabia": {
+      "name": "Saudi Arabia",
+      "countryCode": "sa",
+      "logo": "https://flagcdn.com/w40/sa.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "scotland": {
+      "name": "Scotland",
+      "countryCode": "gb-sct",
+      "logo": "https://flagcdn.com/w40/gb-sct.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "senegal": {
+      "name": "Senegal",
+      "countryCode": "sn",
+      "logo": "https://flagcdn.com/w40/sn.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "south-africa": {
+      "name": "South Africa",
+      "countryCode": "za",
+      "logo": "https://flagcdn.com/w40/za.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "south-korea": {
+      "name": "South Korea",
+      "countryCode": "kr",
+      "logo": "https://flagcdn.com/w40/kr.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "spain": {
+      "name": "Spain",
+      "countryCode": "es",
+      "logo": "https://flagcdn.com/w40/es.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "sweden": {
+      "name": "Sweden",
+      "countryCode": "se",
+      "logo": "https://flagcdn.com/w40/se.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "switzerland": {
+      "name": "Switzerland",
+      "countryCode": "ch",
+      "logo": "https://flagcdn.com/w40/ch.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "tunisia": {
+      "name": "Tunisia",
+      "countryCode": "tn",
+      "logo": "https://flagcdn.com/w40/tn.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "turkey": {
+      "name": "Turkey",
+      "countryCode": "tr",
+      "logo": "https://flagcdn.com/w40/tr.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "uruguay": {
+      "name": "Uruguay",
+      "countryCode": "uy",
+      "logo": "https://flagcdn.com/w40/uy.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "usa": {
+      "name": "USA",
+      "countryCode": "us",
+      "logo": "https://flagcdn.com/w40/us.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    },
+    "uzbekistan": {
+      "name": "Uzbekistan",
+      "countryCode": "uz",
+      "logo": "https://flagcdn.com/w40/uz.png",
+      "source": "FlagCDN",
+      "logoSource": "FlagCDN",
+      "logoUpdatedAt": ""
+    }
+  },
+  "notes": [
+    "Generated by scripts/update-events.mjs.",
+    "Manual entries can be preserved by setting manual: true or source: manual.",
+    "Missing logos should fall back inside the UI rather than blocking rendering."
+  ]
+}

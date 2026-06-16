@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-15T22:21:36.541Z",
+  "updatedAt": "2026-06-16T07:41:52.360Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -60,7 +60,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 1",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Mexico": "https://flagcdn.com/w40/mx.png",
+        "South Africa": "https://flagcdn.com/w40/za.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-south-korea-v-czech-republic-2026-06-11",
@@ -119,7 +133,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 1",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "South Korea": "https://flagcdn.com/w40/kr.png",
+        "Czech Republic": "https://flagcdn.com/w40/cz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-2-canada-v-bosnia-and-herzegovina-2026-06-12",
@@ -178,7 +206,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 2",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Canada": "https://flagcdn.com/w40/ca.png",
+        "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-2-usa-v-paraguay-2026-06-12",
@@ -237,7 +279,21 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 2",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "USA": "https://flagcdn.com/w40/us.png",
+        "Paraguay": "https://flagcdn.com/w40/py.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-3-australia-v-turkey-2026-06-13",
@@ -296,7 +352,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 3",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Australia": "https://flagcdn.com/w40/au.png",
+        "Turkey": "https://flagcdn.com/w40/tr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-3-brazil-v-morocco-2026-06-13",
@@ -355,7 +425,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 3",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Brazil": "https://flagcdn.com/w40/br.png",
+        "Morocco": "https://flagcdn.com/w40/ma.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-3-haiti-v-scotland-2026-06-13",
@@ -414,7 +498,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 3",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Haiti": "https://flagcdn.com/w40/ht.png",
+        "Scotland": "https://flagcdn.com/w40/gb-sct.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-3-qatar-v-switzerland-2026-06-13",
@@ -473,7 +571,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 3",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Qatar": "https://flagcdn.com/w40/qa.png",
+        "Switzerland": "https://flagcdn.com/w40/ch.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-4-germany-v-curacao-2026-06-14",
@@ -532,7 +644,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 4",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Germany": "https://flagcdn.com/w40/de.png",
+        "Curaçao": "https://flagcdn.com/w40/cw.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-4-ivory-coast-v-ecuador-2026-06-14",
@@ -591,7 +717,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 4",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Ivory Coast": "https://flagcdn.com/w40/ci.png",
+        "Ecuador": "https://flagcdn.com/w40/ec.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-4-netherlands-v-japan-2026-06-14",
@@ -650,7 +790,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 4",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Netherlands": "https://flagcdn.com/w40/nl.png",
+        "Japan": "https://flagcdn.com/w40/jp.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-4-sweden-v-tunisia-2026-06-14",
@@ -709,7 +863,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 4",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Sweden": "https://flagcdn.com/w40/se.png",
+        "Tunisia": "https://flagcdn.com/w40/tn.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-5-belgium-v-egypt-2026-06-15",
@@ -768,7 +936,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 5",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Belgium": "https://flagcdn.com/w40/be.png",
+        "Egypt": "https://flagcdn.com/w40/eg.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-5-iran-v-new-zealand-2026-06-15",
@@ -817,8 +999,8 @@
       "stage": "Matchday 5",
       "round": "Matchday 5",
       "group": "Group G",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "2-2",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -827,7 +1009,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 5",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Iran": "https://flagcdn.com/w40/ir.png",
+        "New Zealand": "https://flagcdn.com/w40/nz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-5-saudi-arabia-v-uruguay-2026-06-15",
@@ -876,8 +1072,8 @@
       "stage": "Matchday 5",
       "round": "Matchday 5",
       "group": "Group H",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -886,7 +1082,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 5",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Saudi Arabia": "https://flagcdn.com/w40/sa.png",
+        "Uruguay": "https://flagcdn.com/w40/uy.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-5-spain-v-cape-verde-2026-06-15",
@@ -945,7 +1155,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 5",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Spain": "https://flagcdn.com/w40/es.png",
+        "Cape Verde": "https://flagcdn.com/w40/cv.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-6-argentina-v-algeria-2026-06-16",
@@ -1004,7 +1228,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 6",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Argentina": "https://flagcdn.com/w40/ar.png",
+        "Algeria": "https://flagcdn.com/w40/dz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-6-austria-v-jordan-2026-06-16",
@@ -1063,7 +1301,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 6",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Austria": "https://flagcdn.com/w40/at.png",
+        "Jordan": "https://flagcdn.com/w40/jo.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-6-france-v-senegal-2026-06-16",
@@ -1122,7 +1374,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 6",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "France": "https://flagcdn.com/w40/fr.png",
+        "Senegal": "https://flagcdn.com/w40/sn.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-6-iraq-v-norway-2026-06-16",
@@ -1181,7 +1447,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 6",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Iraq": "https://flagcdn.com/w40/iq.png",
+        "Norway": "https://flagcdn.com/w40/no.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-7-england-v-croatia-2026-06-17",
@@ -1240,7 +1520,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 7",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "England": "https://flagcdn.com/w40/gb-eng.png",
+        "Croatia": "https://flagcdn.com/w40/hr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-7-ghana-v-panama-2026-06-17",
@@ -1299,7 +1593,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 7",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Ghana": "https://flagcdn.com/w40/gh.png",
+        "Panama": "https://flagcdn.com/w40/pa.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-7-portugal-v-dr-congo-2026-06-17",
@@ -1358,7 +1666,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 7",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Portugal": "https://flagcdn.com/w40/pt.png",
+        "DR Congo": "https://flagcdn.com/w40/cd.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-7-uzbekistan-v-colombia-2026-06-17",
@@ -1417,7 +1739,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 7",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Uzbekistan": "https://flagcdn.com/w40/uz.png",
+        "Colombia": "https://flagcdn.com/w40/co.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-8-canada-v-qatar-2026-06-18",
@@ -1476,7 +1812,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 8",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Canada": "https://flagcdn.com/w40/ca.png",
+        "Qatar": "https://flagcdn.com/w40/qa.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-8-czech-republic-v-south-africa-2026-06-18",
@@ -1535,7 +1885,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 8",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Czech Republic": "https://flagcdn.com/w40/cz.png",
+        "South Africa": "https://flagcdn.com/w40/za.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-8-mexico-v-south-korea-2026-06-18",
@@ -1594,7 +1958,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 8",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Mexico": "https://flagcdn.com/w40/mx.png",
+        "South Korea": "https://flagcdn.com/w40/kr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-8-switzerland-v-bosnia-and-herzegovina-2026-06-18",
@@ -1653,7 +2031,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 8",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Switzerland": "https://flagcdn.com/w40/ch.png",
+        "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-9-brazil-v-haiti-2026-06-19",
@@ -1712,7 +2104,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 9",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Brazil": "https://flagcdn.com/w40/br.png",
+        "Haiti": "https://flagcdn.com/w40/ht.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-9-scotland-v-morocco-2026-06-19",
@@ -1771,7 +2177,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 9",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Scotland": "https://flagcdn.com/w40/gb-sct.png",
+        "Morocco": "https://flagcdn.com/w40/ma.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-9-turkey-v-paraguay-2026-06-19",
@@ -1830,7 +2250,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 9",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Turkey": "https://flagcdn.com/w40/tr.png",
+        "Paraguay": "https://flagcdn.com/w40/py.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-9-usa-v-australia-2026-06-19",
@@ -1889,7 +2323,21 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 9",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "USA": "https://flagcdn.com/w40/us.png",
+        "Australia": "https://flagcdn.com/w40/au.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-10-ecuador-v-curacao-2026-06-20",
@@ -1948,7 +2396,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 10",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Ecuador": "https://flagcdn.com/w40/ec.png",
+        "Curaçao": "https://flagcdn.com/w40/cw.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-10-germany-v-ivory-coast-2026-06-20",
@@ -2007,7 +2469,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 10",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Germany": "https://flagcdn.com/w40/de.png",
+        "Ivory Coast": "https://flagcdn.com/w40/ci.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-10-netherlands-v-sweden-2026-06-20",
@@ -2066,7 +2542,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 10",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Netherlands": "https://flagcdn.com/w40/nl.png",
+        "Sweden": "https://flagcdn.com/w40/se.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-10-tunisia-v-japan-2026-06-20",
@@ -2125,7 +2615,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 10",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Tunisia": "https://flagcdn.com/w40/tn.png",
+        "Japan": "https://flagcdn.com/w40/jp.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-11-belgium-v-iran-2026-06-21",
@@ -2184,7 +2688,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 11",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Belgium": "https://flagcdn.com/w40/be.png",
+        "Iran": "https://flagcdn.com/w40/ir.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-11-new-zealand-v-egypt-2026-06-21",
@@ -2243,7 +2761,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 11",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "New Zealand": "https://flagcdn.com/w40/nz.png",
+        "Egypt": "https://flagcdn.com/w40/eg.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-11-spain-v-saudi-arabia-2026-06-21",
@@ -2302,7 +2834,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 11",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Spain": "https://flagcdn.com/w40/es.png",
+        "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-11-uruguay-v-cape-verde-2026-06-21",
@@ -2361,7 +2907,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 11",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Uruguay": "https://flagcdn.com/w40/uy.png",
+        "Cape Verde": "https://flagcdn.com/w40/cv.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-12-argentina-v-austria-2026-06-22",
@@ -2420,7 +2980,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 12",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Argentina": "https://flagcdn.com/w40/ar.png",
+        "Austria": "https://flagcdn.com/w40/at.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-12-france-v-iraq-2026-06-22",
@@ -2479,7 +3053,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 12",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "France": "https://flagcdn.com/w40/fr.png",
+        "Iraq": "https://flagcdn.com/w40/iq.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-12-jordan-v-algeria-2026-06-22",
@@ -2538,7 +3126,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 12",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Jordan": "https://flagcdn.com/w40/jo.png",
+        "Algeria": "https://flagcdn.com/w40/dz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-12-norway-v-senegal-2026-06-22",
@@ -2597,7 +3199,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 12",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Norway": "https://flagcdn.com/w40/no.png",
+        "Senegal": "https://flagcdn.com/w40/sn.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-13-colombia-v-dr-congo-2026-06-23",
@@ -2656,7 +3272,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 13",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Colombia": "https://flagcdn.com/w40/co.png",
+        "DR Congo": "https://flagcdn.com/w40/cd.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-13-england-v-ghana-2026-06-23",
@@ -2715,7 +3345,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 13",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "England": "https://flagcdn.com/w40/gb-eng.png",
+        "Ghana": "https://flagcdn.com/w40/gh.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-13-panama-v-croatia-2026-06-23",
@@ -2774,7 +3418,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 13",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Panama": "https://flagcdn.com/w40/pa.png",
+        "Croatia": "https://flagcdn.com/w40/hr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-13-portugal-v-uzbekistan-2026-06-23",
@@ -2833,7 +3491,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 13",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Portugal": "https://flagcdn.com/w40/pt.png",
+        "Uzbekistan": "https://flagcdn.com/w40/uz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-14-bosnia-and-herzegovina-v-qatar-2026-06-24",
@@ -2892,7 +3564,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png",
+        "Qatar": "https://flagcdn.com/w40/qa.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-14-czech-republic-v-mexico-2026-06-24",
@@ -2951,7 +3637,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Czech Republic": "https://flagcdn.com/w40/cz.png",
+        "Mexico": "https://flagcdn.com/w40/mx.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-14-morocco-v-haiti-2026-06-24",
@@ -3010,7 +3710,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Morocco": "https://flagcdn.com/w40/ma.png",
+        "Haiti": "https://flagcdn.com/w40/ht.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-14-scotland-v-brazil-2026-06-24",
@@ -3069,7 +3783,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Scotland": "https://flagcdn.com/w40/gb-sct.png",
+        "Brazil": "https://flagcdn.com/w40/br.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-14-south-africa-v-south-korea-2026-06-24",
@@ -3128,7 +3856,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "South Africa": "https://flagcdn.com/w40/za.png",
+        "South Korea": "https://flagcdn.com/w40/kr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-14-switzerland-v-canada-2026-06-24",
@@ -3187,7 +3929,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 14",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Switzerland": "https://flagcdn.com/w40/ch.png",
+        "Canada": "https://flagcdn.com/w40/ca.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-15-curacao-v-ivory-coast-2026-06-25",
@@ -3246,7 +4002,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Curaçao": "https://flagcdn.com/w40/cw.png",
+        "Ivory Coast": "https://flagcdn.com/w40/ci.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-15-ecuador-v-germany-2026-06-25",
@@ -3305,7 +4075,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Ecuador": "https://flagcdn.com/w40/ec.png",
+        "Germany": "https://flagcdn.com/w40/de.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-15-japan-v-sweden-2026-06-25",
@@ -3364,7 +4148,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Japan": "https://flagcdn.com/w40/jp.png",
+        "Sweden": "https://flagcdn.com/w40/se.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-15-paraguay-v-australia-2026-06-25",
@@ -3423,7 +4221,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Paraguay": "https://flagcdn.com/w40/py.png",
+        "Australia": "https://flagcdn.com/w40/au.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-15-tunisia-v-netherlands-2026-06-25",
@@ -3482,7 +4294,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Tunisia": "https://flagcdn.com/w40/tn.png",
+        "Netherlands": "https://flagcdn.com/w40/nl.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-15-turkey-v-usa-2026-06-25",
@@ -3541,7 +4367,21 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 15",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Turkey": "https://flagcdn.com/w40/tr.png",
+        "USA": "https://flagcdn.com/w40/us.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-16-cape-verde-v-saudi-arabia-2026-06-26",
@@ -3600,7 +4440,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Cape Verde": "https://flagcdn.com/w40/cv.png",
+        "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-16-egypt-v-iran-2026-06-26",
@@ -3659,7 +4513,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Egypt": "https://flagcdn.com/w40/eg.png",
+        "Iran": "https://flagcdn.com/w40/ir.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-16-new-zealand-v-belgium-2026-06-26",
@@ -3718,7 +4586,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "New Zealand": "https://flagcdn.com/w40/nz.png",
+        "Belgium": "https://flagcdn.com/w40/be.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-16-norway-v-france-2026-06-26",
@@ -3777,7 +4659,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Norway": "https://flagcdn.com/w40/no.png",
+        "France": "https://flagcdn.com/w40/fr.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-16-senegal-v-iraq-2026-06-26",
@@ -3836,7 +4732,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Senegal": "https://flagcdn.com/w40/sn.png",
+        "Iraq": "https://flagcdn.com/w40/iq.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-16-uruguay-v-spain-2026-06-26",
@@ -3895,7 +4805,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Uruguay": "https://flagcdn.com/w40/uy.png",
+        "Spain": "https://flagcdn.com/w40/es.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-17-algeria-v-austria-2026-06-27",
@@ -3954,7 +4878,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Algeria": "https://flagcdn.com/w40/dz.png",
+        "Austria": "https://flagcdn.com/w40/at.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-17-colombia-v-portugal-2026-06-27",
@@ -4013,7 +4951,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Colombia": "https://flagcdn.com/w40/co.png",
+        "Portugal": "https://flagcdn.com/w40/pt.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-17-croatia-v-ghana-2026-06-27",
@@ -4072,7 +5024,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Croatia": "https://flagcdn.com/w40/hr.png",
+        "Ghana": "https://flagcdn.com/w40/gh.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-17-dr-congo-v-uzbekistan-2026-06-27",
@@ -4131,7 +5097,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "DR Congo": "https://flagcdn.com/w40/cd.png",
+        "Uzbekistan": "https://flagcdn.com/w40/uz.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-17-jordan-v-argentina-2026-06-27",
@@ -4190,7 +5170,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Jordan": "https://flagcdn.com/w40/jo.png",
+        "Argentina": "https://flagcdn.com/w40/ar.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-17-panama-v-england-2026-06-27",
@@ -4249,7 +5243,21 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Matchday 17",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "flagLogos": {
+        "Panama": "https://flagcdn.com/w40/pa.png",
+        "England": "https://flagcdn.com/w40/gb-eng.png"
+      },
+      "logoSource": "local-sport-fallback, FlagCDN",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-073",
@@ -4306,7 +5314,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-076",
@@ -4363,7 +5381,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-074",
@@ -4420,7 +5448,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-075",
@@ -4477,7 +5515,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-079",
@@ -4534,7 +5582,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-077",
@@ -4591,7 +5649,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-078",
@@ -4648,7 +5716,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-081",
@@ -4705,7 +5783,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-082",
@@ -4762,7 +5850,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-080",
@@ -4819,7 +5917,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-085",
@@ -4876,7 +5984,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-084",
@@ -4933,7 +6051,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-083",
@@ -4990,7 +6118,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-086",
@@ -5047,7 +6185,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-087",
@@ -5104,7 +6252,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-088",
@@ -5161,7 +6319,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-090",
@@ -5218,7 +6386,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-089",
@@ -5275,7 +6453,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-091",
@@ -5332,7 +6520,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-092",
@@ -5389,7 +6587,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-094",
@@ -5446,7 +6654,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-093",
@@ -5503,7 +6721,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-096",
@@ -5560,7 +6788,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-095",
@@ -5617,7 +6855,17 @@
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-097",
@@ -5674,7 +6922,17 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Quarter-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-098",
@@ -5731,7 +6989,17 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Quarter-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-099",
@@ -5788,7 +7056,17 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Quarter-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-100",
@@ -5845,7 +7123,76 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Quarter-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "All England Club",
+      "location": "London, England",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Wimbledon"
+      ],
+      "favoriteTags": [
+        "Tennis",
+        "Wimbledon"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-wimbledon-finals",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "International",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-wimbledon-finals",
+      "title": "Wimbledon Finals Weekend",
+      "sport": "Tennis",
+      "competition": "Wimbledon",
+      "date": "2026-07-12",
+      "startTime": "09:00",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentStage": "Finals",
+      "tournamentId": "wimbledon",
+      "tournamentName": "Wimbledon",
+      "tournamentStartDate": "2026-07-12",
+      "tournamentEndDate": "2026-07-12",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-101",
@@ -5902,7 +7249,17 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Semi-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-102",
@@ -5959,7 +7316,17 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Semi-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-103",
@@ -6016,7 +7383,17 @@
         "myInterest": 6,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Match for third place",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
       "id": "fifa-world-cup-2026-match-104",
@@ -6073,79 +7450,2170 @@
         "myInterest": 10,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Premier League",
+        "Premier League"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "Premier League",
+        "Premier League"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "hosted-premier-league-opening-weekend",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
       "id": "hosted-premier-league-opening-weekend",
       "title": "Premier League Opening Weekend",
       "sport": "Soccer",
       "competition": "Premier League",
       "date": "2026-08-15",
       "startTime": "10:00",
-      "timezone": "ET",
       "importance": 7,
       "status": "Good TV weekend",
-      "venue": "Multiple venues",
-      "location": "England",
-      "tv": "NBC / Peacock",
-      "notes": "Hosted update example. Replace with exact fixtures once the schedule is confirmed.",
+      "tournamentName": "Premier League",
+      "tournamentStage": "Opening weekend",
+      "tournamentId": "premier-league",
+      "tournamentStartDate": "2026-08-15",
+      "tournamentEndDate": "2026-08-15",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z",
+      "channelLogo": "assets/logos/channels/nbc.svg"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "UFC"
+      ],
+      "favoriteTags": [
+        "Combat Sports",
+        "UFC"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-ufc-major-card",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
       "trip": {
-        "distanceFromHome": "International",
-        "travelNotes": "Useful as a TV weekend marker unless planning a larger England trip.",
-        "hotelNeeded": true,
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
         "ticketLink": "",
         "myInterest": 7,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "id": "evt-ufc-major-card",
+      "title": "UFC Major PPV Card",
+      "sport": "Combat Sports",
+      "competition": "UFC",
+      "date": "2026-08-15",
+      "startTime": "22:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "PPV card",
+      "tournamentId": "ufc",
+      "tournamentName": "UFC",
+      "tournamentStartDate": "2026-08-15",
+      "tournamentEndDate": "2026-08-15",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-combat.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
-      "id": "hosted-fa-cup-final",
-      "title": "FA Cup Final",
-      "sport": "Soccer",
-      "competition": "FA Cup",
-      "date": "2027-05-15",
-      "startTime": "10:00",
       "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 6,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Leagues Cup"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "Leagues Cup"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-leagues-cup-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-leagues-cup-final",
+      "title": "Leagues Cup Final",
+      "sport": "Soccer",
+      "competition": "Leagues Cup",
+      "date": "2026-08-30",
+      "startTime": "20:00",
+      "importance": 6,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final",
+      "tournamentId": "leagues-cup",
+      "tournamentName": "Leagues Cup",
+      "tournamentStartDate": "2026-08-30",
+      "tournamentEndDate": "2026-08-30",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "World Cup Qualifiers"
+      ],
+      "favoriteTags": [
+        "Major Events",
+        "World Cup Qualifiers"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-world-cup-qualifier-window",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-world-cup-qualifier-window",
+      "title": "World Cup Qualifier Window",
+      "sport": "Major Events",
+      "competition": "World Cup Qualifiers",
+      "date": "2026-09-05",
+      "startTime": "19:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Qualifier window",
+      "tournamentId": "world-cup-qualifiers",
+      "tournamentName": "World Cup Qualifiers",
+      "tournamentStartDate": "2026-09-05",
+      "tournamentEndDate": "2026-09-05",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-major-events.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NFL Regular Season",
+        "NFL Season"
+      ],
+      "favoriteTags": [
+        "Football",
+        "NFL Regular Season",
+        "NFL Season"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-nfl-kickoff",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-nfl-kickoff",
+      "title": "NFL Kickoff Game",
+      "sport": "Football",
+      "competition": "NFL Regular Season",
+      "date": "2026-09-10",
+      "startTime": "20:20",
       "importance": 8,
       "status": "Good TV weekend",
-      "venue": "Wembley Stadium",
-      "location": "London, England",
+      "tournamentName": "NFL Season",
+      "tournamentStage": "Opening game",
+      "tournamentId": "nfl-season",
+      "tournamentStartDate": "2026-09-10",
+      "tournamentEndDate": "2026-09-10",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-football.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "USTA Billie Jean King National Tennis Center",
+      "location": "New York, NY",
       "tv": "TBD",
-      "notes": "Hosted update example. Confirm exact time and broadcaster.",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "US Open"
+      ],
+      "favoriteTags": [
+        "Tennis",
+        "US Open"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-us-open-tennis-finals",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
       "trip": {
-        "distanceFromHome": "International",
+        "distanceFromHome": "",
         "travelNotes": "",
         "hotelNeeded": true,
         "ticketLink": "",
         "myInterest": 7,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "id": "evt-us-open-tennis-finals",
+      "title": "US Open Tennis Finals Weekend",
+      "sport": "Tennis",
+      "competition": "US Open",
+      "date": "2026-09-13",
+      "startTime": "16:00",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Finals",
+      "tournamentId": "us-open",
+      "tournamentName": "US Open",
+      "tournamentStartDate": "2026-09-13",
+      "tournamentEndDate": "2026-09-13",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     },
     {
-      "id": "hosted-the-open-final-round",
-      "title": "The Open Championship Final Round",
-      "sport": "Golf",
-      "competition": "The Open Championship",
-      "date": "2027-07-18",
-      "startTime": "09:00",
       "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 6,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "US Open Cup"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "US Open Cup"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-us-open-cup-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-us-open-cup-final",
+      "title": "US Open Cup Final",
+      "sport": "Soccer",
+      "competition": "US Open Cup",
+      "date": "2026-09-23",
+      "startTime": "20:00",
+      "importance": 6,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final",
+      "tournamentId": "us-open-cup",
+      "tournamentName": "US Open Cup",
+      "tournamentStartDate": "2026-09-23",
+      "tournamentEndDate": "2026-09-23",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 6,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "MLB Playoffs"
+      ],
+      "favoriteTags": [
+        "Baseball",
+        "MLB Playoffs"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-mlb-wild-card-weekend",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-mlb-wild-card-weekend",
+      "title": "MLB Wild Card Weekend",
+      "sport": "Baseball",
+      "competition": "MLB Playoffs",
+      "date": "2026-10-03",
+      "startTime": "14:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Wild Card",
+      "tournamentId": "mlb-playoffs",
+      "tournamentName": "MLB Playoffs",
+      "tournamentStartDate": "2026-10-03",
+      "tournamentEndDate": "2026-10-03",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-baseball.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Supercars"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "Supercars"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-bathurst-1000",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-bathurst-1000",
+      "title": "Bathurst 1000",
+      "sport": "Racing",
+      "competition": "Supercars",
+      "date": "2026-10-11",
+      "startTime": "01:30",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Race",
+      "tournamentId": "supercars",
+      "tournamentName": "Supercars",
+      "tournamentStartDate": "2026-10-11",
+      "tournamentEndDate": "2026-10-11",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/64f67s1770108650.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "MLB Playoffs",
+        "World Series"
+      ],
+      "favoriteTags": [
+        "Baseball",
+        "MLB Playoffs",
+        "World Series"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-world-series-game-1",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-world-series-game-1",
+      "title": "World Series Game 1",
+      "sport": "Baseball",
+      "competition": "MLB Playoffs",
+      "date": "2026-10-23",
+      "startTime": "20:00",
       "importance": 9,
       "status": "Must-watch",
-      "venue": "TBD",
-      "location": "United Kingdom",
-      "tv": "NBC / Peacock",
-      "notes": "Hosted update example. Confirm course, start window, and broadcast details.",
+      "tournamentName": "World Series",
+      "tournamentStage": "Game 1",
+      "tournamentId": "world-series",
+      "tournamentStartDate": "2026-10-23",
+      "tournamentEndDate": "2026-10-23",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-baseball.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Circuit of the Americas",
+      "location": "Austin, TX",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Formula 1"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "Formula 1"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-f1-us-gp",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
       "trip": {
-        "distanceFromHome": "International",
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 9,
+        "friendInterest": 8,
+        "status": "Considering"
+      },
+      "id": "evt-f1-us-gp",
+      "title": "Formula 1 United States Grand Prix",
+      "sport": "Racing",
+      "competition": "Formula 1",
+      "date": "2026-10-25",
+      "startTime": "15:00",
+      "importance": 8,
+      "status": "Possible road trip",
+      "tournamentStage": "Race weekend",
+      "tournamentId": "formula-1",
+      "tournamentName": "Formula 1",
+      "tournamentStartDate": "2026-10-25",
+      "tournamentEndDate": "2026-10-25",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NASCAR Cup Series"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "NASCAR Cup Series"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-nascar-championship",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-nascar-championship",
+      "title": "NASCAR Cup Series Championship",
+      "sport": "Racing",
+      "competition": "NASCAR Cup Series",
+      "date": "2026-11-08",
+      "startTime": "15:00",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Championship race",
+      "tournamentId": "nascar-cup-series",
+      "tournamentName": "NASCAR Cup Series",
+      "tournamentStartDate": "2026-11-08",
+      "tournamentEndDate": "2026-11-08",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Boxing"
+      ],
+      "favoriteTags": [
+        "Combat Sports",
+        "Boxing"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-boxing-title-card",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-boxing-title-card",
+      "title": "Major Boxing Title Card",
+      "sport": "Combat Sports",
+      "competition": "Boxing",
+      "date": "2026-11-21",
+      "startTime": "21:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Title card",
+      "tournamentId": "boxing",
+      "tournamentName": "Boxing",
+      "tournamentStartDate": "2026-11-21",
+      "tournamentEndDate": "2026-11-21",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-combat.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "MLS"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "MLS"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-mls-cup",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-mls-cup",
+      "title": "MLS Cup",
+      "sport": "Soccer",
+      "competition": "MLS",
+      "date": "2026-12-05",
+      "startTime": "16:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final",
+      "tournamentId": "mls",
+      "tournamentName": "MLS",
+      "tournamentStartDate": "2026-12-05",
+      "tournamentEndDate": "2026-12-05",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/dqo6r91549878326.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "College Football Bowls"
+      ],
+      "favoriteTags": [
+        "Football",
+        "College Football Bowls"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-bowl-season",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-bowl-season",
+      "title": "College Football Bowl Weekend",
+      "sport": "Football",
+      "competition": "College Football Bowls",
+      "date": "2026-12-19",
+      "startTime": "12:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Bowl season",
+      "tournamentId": "college-football-bowls",
+      "tournamentName": "College Football Bowls",
+      "tournamentStartDate": "2026-12-19",
+      "tournamentEndDate": "2026-12-19",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-football.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "College Football Playoff"
+      ],
+      "favoriteTags": [
+        "Football",
+        "College Football Playoff"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-cfp-title",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-cfp-title",
+      "title": "College Football Playoff Championship",
+      "sport": "Football",
+      "competition": "College Football Playoff",
+      "date": "2027-01-18",
+      "startTime": "19:30",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentStage": "Championship",
+      "tournamentId": "college-football-playoff",
+      "tournamentName": "College Football Playoff",
+      "tournamentStartDate": "2027-01-18",
+      "tournamentEndDate": "2027-01-18",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-football.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Australian Open"
+      ],
+      "favoriteTags": [
+        "Tennis",
+        "Australian Open"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-australian-open-finals",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-australian-open-finals",
+      "title": "Australian Open Finals Weekend",
+      "sport": "Tennis",
+      "competition": "Australian Open",
+      "date": "2027-01-31",
+      "startTime": "03:30",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Finals",
+      "tournamentId": "australian-open",
+      "tournamentName": "Australian Open",
+      "tournamentStartDate": "2027-01-31",
+      "tournamentEndDate": "2027-01-31",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Daytona International Speedway",
+      "location": "Daytona Beach, FL",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "IMSA"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "IMSA"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-imsa-rolex-24",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
         "travelNotes": "",
         "hotelNeeded": true,
         "ticketLink": "",
         "myInterest": 8,
         "friendInterest": 7,
         "status": "Idea"
-      }
+      },
+      "id": "evt-imsa-rolex-24",
+      "title": "Rolex 24 at Daytona",
+      "sport": "Racing",
+      "competition": "IMSA",
+      "date": "2027-01-31",
+      "startTime": "13:30",
+      "importance": 8,
+      "status": "Possible road trip",
+      "tournamentStage": "Endurance race",
+      "tournamentId": "imsa",
+      "tournamentName": "IMSA",
+      "tournamentStartDate": "2027-01-31",
+      "tournamentEndDate": "2027-01-31",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/t3fpd41536244390.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 10,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NFL Playoffs",
+        "NFL Playoffs"
+      ],
+      "favoriteTags": [
+        "Football",
+        "NFL Playoffs",
+        "NFL Playoffs"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-super-bowl",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 9,
+        "friendInterest": 9,
+        "status": "Idea"
+      },
+      "id": "evt-super-bowl",
+      "title": "Super Bowl LXI",
+      "sport": "Football",
+      "competition": "NFL Playoffs",
+      "date": "2027-02-14",
+      "startTime": "18:30",
+      "importance": 10,
+      "status": "Must-watch",
+      "tournamentName": "NFL Playoffs",
+      "tournamentStage": "Championship",
+      "tournamentId": "nfl-playoffs",
+      "tournamentStartDate": "2027-02-14",
+      "tournamentEndDate": "2027-02-14",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-football.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NCAA Tournament",
+        "March Madness"
+      ],
+      "favoriteTags": [
+        "Basketball",
+        "NCAA Tournament",
+        "March Madness"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-march-madness-first-weekend",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-march-madness-first-weekend",
+      "title": "March Madness First Weekend",
+      "sport": "Basketball",
+      "competition": "NCAA Tournament",
+      "date": "2027-03-20",
+      "startTime": "12:00",
+      "importance": 9,
+      "status": "Good TV weekend",
+      "tournamentName": "March Madness",
+      "tournamentStage": "First weekend",
+      "tournamentId": "march-madness",
+      "tournamentStartDate": "2027-03-20",
+      "tournamentEndDate": "2027-03-20",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Circuit of the Americas",
+      "location": "Austin, TX",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "MotoGP"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "MotoGP"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-motogp-americas",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-motogp-americas",
+      "title": "MotoGP Grand Prix of the Americas",
+      "sport": "Racing",
+      "competition": "MotoGP",
+      "date": "2027-03-28",
+      "startTime": "15:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Race",
+      "tournamentId": "motogp",
+      "tournamentName": "MotoGP",
+      "tournamentStartDate": "2027-03-28",
+      "tournamentEndDate": "2027-03-28",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NCAA Tournament",
+        "March Madness"
+      ],
+      "favoriteTags": [
+        "Basketball",
+        "NCAA Tournament",
+        "March Madness"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-final-four",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-final-four",
+      "title": "Final Four Saturday",
+      "sport": "Basketball",
+      "competition": "NCAA Tournament",
+      "date": "2027-04-03",
+      "startTime": "18:00",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentName": "March Madness",
+      "tournamentStage": "Final Four",
+      "tournamentId": "march-madness",
+      "tournamentStartDate": "2027-04-03",
+      "tournamentEndDate": "2027-04-03",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Augusta National Golf Club",
+      "location": "Augusta, GA",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 10,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "The Masters"
+      ],
+      "favoriteTags": [
+        "Golf",
+        "The Masters"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-masters-final-round",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-masters-final-round",
+      "title": "The Masters Final Round",
+      "sport": "Golf",
+      "competition": "The Masters",
+      "date": "2027-04-11",
+      "startTime": "14:00",
+      "importance": 10,
+      "status": "Must-watch",
+      "tournamentStage": "Final round",
+      "tournamentId": "the-masters",
+      "tournamentName": "The Masters",
+      "tournamentStartDate": "2027-04-11",
+      "tournamentEndDate": "2027-04-11",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Churchill Downs",
+      "location": "Louisville, KY",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Triple Crown"
+      ],
+      "favoriteTags": [
+        "Horse Racing",
+        "Triple Crown"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-kentucky-derby",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-kentucky-derby",
+      "title": "Kentucky Derby",
+      "sport": "Horse Racing",
+      "competition": "Triple Crown",
+      "date": "2027-05-01",
+      "startTime": "18:45",
+      "importance": 8,
+      "status": "Possible road trip",
+      "tournamentStage": "Race",
+      "tournamentId": "triple-crown",
+      "tournamentName": "Triple Crown",
+      "tournamentStartDate": "2027-05-01",
+      "tournamentEndDate": "2027-05-01",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-horse-racing.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "FA Cup"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "FA Cup"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "hosted-fa-cup-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "hosted-fa-cup-final",
+      "title": "FA Cup Final",
+      "sport": "Soccer",
+      "competition": "FA Cup",
+      "date": "2027-05-15",
+      "startTime": "10:00",
+      "importance": 8,
+      "status": "Must-watch",
+      "tournamentStage": "Final",
+      "tournamentId": "fa-cup",
+      "tournamentName": "FA Cup",
+      "tournamentStartDate": "2027-05-15",
+      "tournamentEndDate": "2027-05-15",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 7,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "UEFA Conference League"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "UEFA Conference League"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-conference-league-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-conference-league-final",
+      "title": "Conference League Final",
+      "sport": "Soccer",
+      "competition": "UEFA Conference League",
+      "date": "2027-05-19",
+      "startTime": "15:00",
+      "importance": 7,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final",
+      "tournamentId": "uefa-conference-league",
+      "tournamentName": "UEFA Conference League",
+      "tournamentStartDate": "2027-05-19",
+      "tournamentEndDate": "2027-05-19",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 7,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/ymfo5j1718775759.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "PGA Championship"
+      ],
+      "favoriteTags": [
+        "Golf",
+        "PGA Championship"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-pga-championship",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-pga-championship",
+      "title": "PGA Championship Final Round",
+      "sport": "Golf",
+      "competition": "PGA Championship",
+      "date": "2027-05-23",
+      "startTime": "14:00",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final round",
+      "tournamentId": "pga-championship",
+      "tournamentName": "PGA Championship",
+      "tournamentStartDate": "2027-05-23",
+      "tournamentEndDate": "2027-05-23",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "UEFA Europa League"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "UEFA Europa League"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-europa-league-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-europa-league-final",
+      "title": "Europa League Final",
+      "sport": "Soccer",
+      "competition": "UEFA Europa League",
+      "date": "2027-05-26",
+      "startTime": "15:00",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Final",
+      "tournamentId": "uefa-europa-league",
+      "tournamentName": "UEFA Europa League",
+      "tournamentStartDate": "2027-05-26",
+      "tournamentEndDate": "2027-05-26",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 10,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "UEFA Champions League"
+      ],
+      "favoriteTags": [
+        "Soccer",
+        "UEFA Champions League"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-champions-league-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-champions-league-final",
+      "title": "Champions League Final",
+      "sport": "Soccer",
+      "competition": "UEFA Champions League",
+      "date": "2027-05-29",
+      "startTime": "15:00",
+      "importance": 10,
+      "status": "Must-watch",
+      "tournamentStartDate": "2026-09-15",
+      "tournamentEndDate": "2027-05-29",
+      "tournamentStage": "Final",
+      "tournamentId": "uefa-champions-league",
+      "tournamentName": "UEFA Champions League",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "Indianapolis Motor Speedway",
+      "location": "Speedway, IN",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 10,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "IndyCar"
+      ],
+      "favoriteTags": [
+        "Racing",
+        "IndyCar"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-indy-500",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": true,
+        "ticketLink": "",
+        "myInterest": 9,
+        "friendInterest": 8,
+        "status": "Considering"
+      },
+      "id": "evt-indy-500",
+      "title": "Indianapolis 500",
+      "sport": "Racing",
+      "competition": "IndyCar",
+      "date": "2027-05-30",
+      "startTime": "12:45",
+      "importance": 10,
+      "status": "Possible road trip",
+      "tournamentStage": "Race",
+      "tournamentId": "indycar",
+      "tournamentName": "IndyCar",
+      "tournamentStartDate": "2027-05-30",
+      "tournamentEndDate": "2027-05-30",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NBA Finals"
+      ],
+      "favoriteTags": [
+        "Basketball",
+        "NBA Finals"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-nba-finals-game-1",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-nba-finals-game-1",
+      "title": "NBA Finals Opening Window",
+      "sport": "Basketball",
+      "competition": "NBA Finals",
+      "date": "2027-06-03",
+      "startTime": "20:30",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentStage": "Finals",
+      "tournamentId": "nba-finals",
+      "tournamentName": "NBA Finals",
+      "tournamentStartDate": "2027-06-03",
+      "tournamentEndDate": "2027-06-03",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "NHL Playoffs",
+        "Stanley Cup Final"
+      ],
+      "favoriteTags": [
+        "Hockey",
+        "NHL Playoffs",
+        "Stanley Cup Final"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-stanley-cup-final",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-stanley-cup-final",
+      "title": "Stanley Cup Final Opening Window",
+      "sport": "Hockey",
+      "competition": "NHL Playoffs",
+      "date": "2027-06-05",
+      "startTime": "20:00",
+      "importance": 9,
+      "status": "Good TV weekend",
+      "tournamentName": "Stanley Cup Final",
+      "tournamentStage": "Final",
+      "tournamentId": "stanley-cup-final",
+      "tournamentStartDate": "2027-06-05",
+      "tournamentEndDate": "2027-06-05",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-hockey.svg",
+      "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png/tiny",
+      "logoSource": "local-sport-fallback, TheSportsDB",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "French Open"
+      ],
+      "favoriteTags": [
+        "Tennis",
+        "French Open"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-french-open-finals",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-french-open-finals",
+      "title": "French Open Finals Weekend",
+      "sport": "Tennis",
+      "competition": "French Open",
+      "date": "2027-06-06",
+      "startTime": "09:00",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Finals",
+      "tournamentId": "french-open",
+      "tournamentName": "French Open",
+      "tournamentStartDate": "2027-06-06",
+      "tournamentEndDate": "2027-06-06",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "The Open Championship"
+      ],
+      "favoriteTags": [
+        "Golf",
+        "The Open Championship"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "hosted-the-open-final-round",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "hosted-the-open-final-round",
+      "title": "The Open Championship Final Round",
+      "sport": "Golf",
+      "competition": "The Open Championship",
+      "date": "2027-07-18",
+      "startTime": "09:00",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentStage": "Final round",
+      "tournamentId": "the-open-championship",
+      "tournamentName": "The Open Championship",
+      "tournamentStartDate": "2027-07-18",
+      "tournamentEndDate": "2027-07-18",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z",
+      "channelLogo": "assets/logos/channels/nbc.svg"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 9,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Ryder Cup"
+      ],
+      "favoriteTags": [
+        "Golf",
+        "Ryder Cup"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-ryder-cup-sunday",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-ryder-cup-sunday",
+      "title": "Ryder Cup Sunday",
+      "sport": "Golf",
+      "competition": "Ryder Cup",
+      "date": "2027-09-26",
+      "startTime": "08:00",
+      "importance": 9,
+      "status": "Must-watch",
+      "tournamentStage": "Final day",
+      "tournamentId": "ryder-cup",
+      "tournamentName": "Ryder Cup",
+      "tournamentStartDate": "2027-09-26",
+      "tournamentEndDate": "2027-09-26",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 9,
+      "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
+    },
+    {
+      "timezone": "ET",
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 10,
+      "teams": [],
+      "participants": [],
+      "drivers": [],
+      "competitionTags": [
+        "Olympics"
+      ],
+      "favoriteTags": [
+        "Major Events",
+        "Olympics"
+      ],
+      "source": "curated/major-events",
+      "sourceId": "evt-summer-olympics-opening",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
+      "isAutoImported": true,
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
+      "group": "",
+      "homeTeam": "",
+      "awayTeam": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 7,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "id": "evt-summer-olympics-opening",
+      "title": "Summer Olympics Opening Ceremony",
+      "sport": "Major Events",
+      "competition": "Olympics",
+      "date": "2028-07-14",
+      "startTime": "20:00",
+      "importance": 10,
+      "status": "Must-watch",
+      "tournamentStage": "Opening ceremony",
+      "tournamentId": "olympics",
+      "tournamentName": "Olympics",
+      "tournamentStartDate": "2028-07-14",
+      "tournamentEndDate": "2028-07-14",
+      "tournamentStatus": "planned",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-major-events.svg",
+      "logoSource": "local-sport-fallback",
+      "logoUpdatedAt": "2026-06-16T04:59:22.118Z"
     }
   ],
   "automation": {
@@ -6155,6 +9623,19 @@
         "name": "OpenFootball World Cup JSON",
         "adapter": "sources/world-cup-2026.mjs",
         "eventCount": 104
+      },
+      {
+        "name": "Curated Major Event Windows",
+        "adapter": "sources/major-events.mjs",
+        "eventCount": 37
+      },
+      {
+        "name": "TheSportsDB Logo Registry",
+        "adapter": "sources/thesportsdb.mjs",
+        "eventCount": 0,
+        "leagueLogoCount": 29,
+        "teamLogoCount": 70,
+        "publicKeyUsed": true
       }
     ]
   }

@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.17.0
+Version 0.18.3
 
 # Completed Features
 
@@ -38,19 +38,34 @@ Version 0.17.0
 - Static hosting compatibility for GitHub Pages.
 - GitHub repository connection is active and working.
 - Local logo asset structure under `assets/logos/` with graceful fallback to text badges, sport icons, and flag emoji.
+- Generated `data/logo-registry.json` for sport, league, team, channel, and flag lookup.
+- TheSportsDB adapter for controlled league/team artwork in the Node update pipeline.
+- FlagCDN country flags for World Cup matchup tiles.
+- Local channel identifier SVGs for common broadcast/streaming labels.
+- Local sport fallback SVG marks.
+- Selective curated major-event windows beyond soccer.
+- Optional logo metadata fields: `sportLogo`, `competitionLogo`, `homeTeamLogo`, `awayTeamLogo`, `teamLogos`, `channelLogo`, `flagLogos`, `logoSource`, and `logoUpdatedAt`.
+- Optional active tournament metadata fields: `tournamentId`, `tournamentName`, `tournamentStartDate`, `tournamentEndDate`, `tournamentStage`, `tournamentStatus`, and `tournamentPriority`.
+- `DATA_SOURCES.md` source audit covering event, logo, TV, API-key, reliability, and limitation notes.
+- Real SCC crest image integrated into the sidebar brand area.
+- Real stadium banner image integrated as the compact page header background.
+- Stadium banner crop, overlay, and compact header height tuned so more stadium-light detail is visible while keeping the title left-aligned.
+- Reusable command-center color system for dashboard sections, stat tiles, quick filters, status badges, and broadcast labels.
+- Dashboard sections now have distinct accent identities: Today cyan, This Week blue, Keep-Free Weekends lime/gold, World Cup violet/blue, Must-Watch red, Watchlist orange/gold, and All Events cyan.
 
 # In Progress
 
-- Verifying the Version 0.17.0 visual polish pass and automated update workflow.
+- Verifying the Version 0.18.3 command-center color system and 0.18 data/logo foundation.
 - Continuing to tune the Sports Command Center dashboard for real watch-planning use.
-- Preparing GitHub Pages as the primary deployment path.
-- Continuing desktop visual matching against the approved Sports Command Center concept screenshot.
+- Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
 # Planned Features
 
 - Publish and verify the GitHub Pages version.
 - Add a clear GitHub Pages setup guide once the chosen publishing folder is final.
 - Improve World Cup source handling if a more complete no-key or secret-backed source becomes available.
+- Add more reliable non-soccer event source adapters where data quality supports watch planning.
+- Expand manual/local logo coverage for favorite teams, competitions, and channels.
 - Improve Weekend Score and watch priority after real use.
 - Add canonical team, driver, league, and competition IDs or suggestions.
 - Add more flexible calendar exports, such as selected events or all filtered events.
@@ -110,6 +125,10 @@ i-want-to-build-a-web/
 - Hosted updates add or replace events but intentionally do not delete local user-created events.
 - OpenFootball is a practical no-key source, but it is not guaranteed to be a complete live official feed for TV data, delays, or every late schedule change.
 - TV/streaming data is `TBD` for imported World Cup matches unless a source provides it.
+- Curated major-event windows are planning anchors and should be confirmed before travel, tickets, or broadcast decisions.
+- TheSportsDB free-tier rate limits can temporarily block fresh logo lookups; the updater preserves the existing registry when that happens.
+- Channel SVGs are controlled local identifiers, not scraped official broadcast logos.
+- Knockout placeholder teams do not have real flag assets until actual teams are known.
 - Favorite matching still uses text matching rather than canonical team or competition IDs.
 - No automated browser test suite exists yet.
 - GitHub Pages publishing settings still need to be finalized in the repository UI.
@@ -144,11 +163,34 @@ i-want-to-build-a-web/
 - Completed Version 0.16.6 by removing the detailed hosted update status block from the sidebar while keeping the compact Last Update card and update/check behavior.
 - Completed Version 0.17.0 as a final command-center visual polish pass: brighter cyan/blue palette, stronger stadium banner, improved SCC crest styling, preferred/default timezone display in compact rows, and condensed sidebar range labels.
 - No new event sources, scraping, backend, account system, or product subsystem was added in Version 0.17.0.
+- Completed Version 0.18.0 as the first real sports data and visual identity foundation.
+- Added `sources/thesportsdb.mjs`, `sources/logo-registry.mjs`, and `sources/major-events.mjs`.
+- Added `data/logo-registry.json` with league/team artwork from TheSportsDB where available, FlagCDN country flags, local channel identifiers, and local sport fallback marks.
+- Updated `scripts/update-events.mjs` to refresh World Cup matches, curated major events, the logo registry, and decorated event metadata.
+- Expanded hosted `events.json` from 107 to 141 events.
+- Added curated major-event windows for football, racing, baseball, basketball, hockey, tennis, golf, combat sports, horse racing, and major events.
+- Added optional logo and tournament metadata to imported events.
+- Updated compact event rows, World Cup tiles, Active Tournaments, Must-Watch, Watchlist, and All Events to resolve logos with safe fallbacks.
+- Added `DATA_SOURCES.md` and updated README/Roadmap/status documentation.
+- Confirmed repeated updater runs do not create duplicate events and do not rewrite files when TheSportsDB is rate-limited.
+- Completed Version 0.18.1 as a focused brand asset integration pass.
+- Integrated `assets/brand/scc-crest.png` in the sidebar and disabled the old CSS-generated crest.
+- Integrated `assets/brand/stadium-banner.png` as the compact header background.
+- Copied brand assets, logo registry, and updated app files into `outputs/sports-weekend-planner/`.
+- Confirmed the 0.18 data/logo pipeline remains intact: 141 events, 104 World Cup matches, 37 curated major-event windows, and no duplicate IDs.
+- Completed Version 0.18.2 as a focused header banner position polish pass.
+- Increased the compact header height within the requested range, moved the stadium banner crop upward, reduced the dark overlay, and kept the Sports Command Center title left-aligned.
+- Preserved event data, logo pipeline, SCC crest, dashboard layout, and existing update workflow.
+- Completed Version 0.18.3 as a focused command-center color system pass.
+- Added reusable color tokens for the dark broadcast-dashboard theme and light-mode counterparts.
+- Assigned distinct dashboard section accents for Today, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
+- Matched stat tile and quick filter chip colors to the approved concept direction while keeping the layout compact.
+- Refined status, Weekend Score, and channel badge color treatment without changing event data, logo registry, update pipeline, crest, or banner assets.
 
 # Next Recommended Steps
 
-1. Playtest the 0.17.0 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
-2. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
-3. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
-4. Test the compact dashboard, quick chips, Calendar, Weekends, Add/Edit/Delete, and hosted update button on desktop and phone widths.
+1. Playtest 0.18.3 on desktop and phone widths, focusing on section color identity, quick filter clarity, status badge readability, logo loading, World Cup flags, channel badges, and compact row height.
+2. Run the GitHub Action manually once and confirm it commits `events.json` and `data/logo-registry.json` only when data changes.
+3. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.
+4. Refine the shared event database workflow and Google Calendar export around filtered watchlists and keep-free weekends.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

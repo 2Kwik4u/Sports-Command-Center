@@ -12,9 +12,9 @@ The app should reduce sports schedule overload by surfacing major events, person
 
 # Current State
 
-Version 0.16.0 is a static HTML/CSS/JavaScript app that runs locally or on GitHub Pages. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and now includes a GitHub Actions pipeline that can refresh `events.json` from public structured sources.
+Version 0.18.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
 
-The first automated source adapter imports all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed.
+The current automated source adapter imports all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed. Version 0.18.0 also adds selective curated major-event windows beyond soccer, TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament metadata for future Active Tournament improvements.
 
 # Milestone 1 - Foundation
 
@@ -33,6 +33,11 @@ Completed or nearly completed:
 - GitHub repository connection.
 - GitHub Pages-compatible static structure.
 - Event validation helper.
+- Generated logo registry.
+- TheSportsDB artwork adapter.
+- FlagCDN World Cup flags.
+- Curated multi-sport major-event windows.
+- Optional logo and tournament metadata fields.
 
 # Milestone 2 - Core Experience
 
@@ -44,6 +49,10 @@ Minimum useful 1.0 release work:
 - Finish a desktop and mobile playtest of Dashboard, Calendar, Weekends, filters, add/edit/delete, import/export, and hosted updates.
 - Tune quick filters and dashboard section ordering based on real use.
 - Improve empty states and update status messaging where needed.
+- Improve favorite teams, drivers, leagues, and competitions so the calendar feels more personalized.
+- Improve Weekend Score and must-watch identification using the new event/source metadata.
+- Add a friend-friendly shared event database workflow for export/import/update habits.
+- Add Google Calendar export refinements for filtered watchlists and keep-free weekends.
 
 # Milestone 3 - Enhanced Experience
 
@@ -58,6 +67,8 @@ Usability and polish after the core hosted version works:
 - Add clearer event detail sections for watch info, personalization, source info, and optional trip info.
 - Add accessibility and keyboard navigation review.
 - Add PWA manifest, icons, service worker, and offline shell so the app can become installable on a phone.
+- Add richer logo coverage for manually curated favorite teams, leagues, and channels.
+- Improve Active Tournaments so it can rotate between World Cup, playoffs, majors, race weekends, and tournament windows.
 
 # Milestone 4 - Advanced Features
 
@@ -71,6 +82,7 @@ Later, once the app is reliable:
 - Favorite team/driver auto-imports.
 - Conflict detection for overlapping must-watch events.
 - Optional map view for serious trip candidates.
+- Optional ticket price tracking, hotel estimates, flight estimates, and travel budgets after the watch-planning product is stable.
 
 # Future Ideas
 
@@ -88,12 +100,13 @@ Later, once the app is reliable:
 - Split `app.js` into smaller modules when the static prototype grows too large.
 - Add a formal JSON schema for event validation.
 - Add source-specific tests for update adapters.
+- Add tests for logo registry generation and fallback behavior.
 - Add stale-event handling so postponed/canceled imported events can be marked instead of silently lingering.
 - Keep API secrets out of client code; use GitHub Actions secrets for any future authenticated source.
 - Keep GitHub Pages/static hosting as the default deployment path.
 
 # Current Priority
 
-1. Verify GitHub Pages publishing and hosted update behavior.
-2. Playtest Version 0.16.0 across desktop and mobile.
-3. Tune World Cup, quick filter, and Weekend Score behavior based on what feels useful.
+1. Playtest Version 0.18.0 across desktop and mobile, focusing on logos, flags, channel badges, and compact row height.
+2. Improve personalization: favorite teams/drivers/leagues, personal scoring, and must-watch/Weekend Score behavior.
+3. Refine the shared event database workflow and Google Calendar export now that hosted events cover more sports.

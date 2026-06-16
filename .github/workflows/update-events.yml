@@ -32,4 +32,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Auto-update sports events
-          file_pattern: events.json
+          file_pattern: events.json data/logo-registry.json

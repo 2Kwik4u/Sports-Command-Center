@@ -25,7 +25,11 @@ The long-term goal is a personalized sports command center that answers what to 
 - Visible hosted update status in the app.
 - GitHub Actions-based event update pipeline.
 - Full FIFA World Cup 2026 import from a no-key public structured source.
-- Local logo asset structure with fallbacks for future channel, league, team, and flag logos.
+- Generated `data/logo-registry.json` for sport, league, team, channel, and flag lookup.
+- TheSportsDB league/team artwork support through the Node update script.
+- FlagCDN country flags for World Cup matchup tiles.
+- Local channel identifier SVGs and sport fallback marks.
+- Selective curated major-event windows beyond soccer.
 
 ## Planned Features
 
@@ -42,6 +46,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Backend: none for the browser app.
 - Storage: browser `localStorage`.
 - Hosted shared data: static `events.json`.
+- Logo registry: static `data/logo-registry.json`.
 - Automation: GitHub Actions plus Node scripts.
 - Deployment target: GitHub Pages/static hosting.
 
@@ -56,12 +61,17 @@ i-want-to-build-a-web/
   styles.css
   app.js
   assets/logos/README.md
+  data/logo-registry.json
   events.json
+  DATA_SOURCES.md
   README.md
   ROADMAP.md
   PROJECT_STATUS.md
   CHANGELOG.md
   scripts/update-events.mjs
+  sources/logo-registry.mjs
+  sources/major-events.mjs
+  sources/thesportsdb.mjs
   sources/normalize-event.mjs
   sources/world-cup-2026.mjs
   work/local-static-server.cjs
@@ -104,16 +114,18 @@ The current automation model is:
 2. The workflow runs `node scripts/update-events.mjs`.
 3. The script fetches approved public structured event data.
 4. Source adapters normalize events into the app schema.
-5. Events merge into `events.json` by stable `id`.
-6. Validation runs with `node work/validate-events.cjs`.
-7. GitHub commits `events.json` only if it changed.
-8. The deployed static app fetches hosted `events.json` and merges updates into each user's local storage.
+5. The logo registry refreshes from controlled sources.
+6. Events are decorated with optional logo and tournament metadata.
+7. Events merge into `events.json` by stable `id`.
+8. Validation runs with `node work/validate-events.cjs`.
+9. GitHub commits changed data files only when needed.
+10. The deployed static app fetches hosted `events.json` and merges updates into each user's local storage.
 
 User-created local events are not deleted by automated updates.
 
 ## World Cup Import
 
-Version 0.16.0 includes a source adapter for FIFA World Cup 2026:
+Sports Command Center includes a source adapter for FIFA World Cup 2026:
 
 - Adapter: `sources/world-cup-2026.mjs`
 - Source: `https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json`
@@ -121,6 +133,12 @@ Version 0.16.0 includes a source adapter for FIFA World Cup 2026:
 - Metadata: source, sourceId, round, group, home/away teams, participants, result status, and score when available
 
 If TV/streaming data is not provided by the source, the app uses `TBD` and does not invent it.
+
+## Data and Logo Sources
+
+Version 0.18.0 adds `DATA_SOURCES.md` as the source audit. Current sources include OpenFootball for World Cup matches, curated major-event windows for selective multi-sport coverage, TheSportsDB for league/team artwork, FlagCDN for country flags, and local repo assets for channel identifiers and sport fallbacks.
+
+TheSportsDB calls happen only in `scripts/update-events.mjs`. The browser remains static and does not contain API secrets.
 
 ## Validation
 
@@ -145,9 +163,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.17.0`
+Current version: `0.18.0`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.17.0 is a final command-center visual polish pass with a brighter cyan/blue palette, stronger stadium banner, improved SCC crest styling, and preferred/default timezone display in compact rows.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, and the first real sports visual/data foundation. Version 0.18.0 adds the generated logo registry, TheSportsDB artwork adapter, FlagCDN flags, local channel/sport visual fallbacks, curated multi-sport major-event windows, and tournament metadata.
 
 ## Roadmap
 
@@ -167,7 +185,9 @@ The project is a usable static prototype with a refreshed Sports Command Center 
 - Hosted updates do not delete local user-created events.
 - OpenFootball is useful but not guaranteed to be an official live schedule source.
 - Imported World Cup TV data is `TBD` unless provided by a source.
-- Real logo assets are not bundled yet; the app currently falls back to styled badges, sport icons, and flag emoji.
+- Curated major-event windows should be confirmed before making travel, ticket, or broadcast decisions.
+- TheSportsDB free-tier rate limits can temporarily prevent logo refreshes; the updater preserves the existing registry when that happens.
+- Channel SVGs are controlled local identifiers, not scraped official broadcast logos.
 - Timezone display conversion is intentionally conservative and focused on known timezone labels and UTC offsets used by the current event data.
 - No automated browser test suite yet.
 - PWA installability is planned but not implemented.

@@ -83,12 +83,43 @@ function validateEvent(event, index) {
     "homeTeam",
     "awayTeam",
     "resultStatus",
-    "score"
+    "score",
+    "sportLogo",
+    "competitionLogo",
+    "homeTeamLogo",
+    "awayTeamLogo",
+    "channelLogo",
+    "logoSource",
+    "logoUpdatedAt",
+    "tournamentId",
+    "tournamentName",
+    "tournamentStartDate",
+    "tournamentEndDate",
+    "tournamentStage",
+    "tournamentStatus"
   ].forEach((field) => {
     if (!isOptionalString(event[field])) {
       errors.push(`${label}.${field} must be a string when provided.`);
     }
   });
+
+  ["teamLogos", "flagLogos"].forEach((field) => {
+    if (event[field] !== undefined && !isPlainObject(event[field])) {
+      errors.push(`${label}.${field} must be an object when provided.`);
+    }
+
+    if (isPlainObject(event[field])) {
+      Object.entries(event[field]).forEach(([key, value]) => {
+        if (typeof key !== "string" || typeof value !== "string") {
+          errors.push(`${label}.${field} must map strings to strings.`);
+        }
+      });
+    }
+  });
+
+  if (!isNumberInRange(event.tournamentPriority, 1, 10)) {
+    errors.push(`${label}.tournamentPriority must be a number from 1 to 10.`);
+  }
 
   if (event.isAutoImported !== undefined && typeof event.isAutoImported !== "boolean") {
     errors.push(`${label}.isAutoImported must be true or false when provided.`);

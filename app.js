@@ -1,9 +1,10 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.17.0";
+const APP_VERSION = "0.18.3";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
+const LOGO_REGISTRY_URL = "data/logo-registry.json";
 
 const sportStyles = {
   Soccer: ["#5eead4", "rgba(94, 234, 212, 0.16)", "rgba(94, 234, 212, 0.45)"],
@@ -20,10 +21,11 @@ const sportStyles = {
 };
 
 const statusStyles = {
-  "Must-watch": ["#fef08a", "rgba(250, 204, 21, 0.16)", "rgba(250, 204, 21, 0.46)"],
-  "Good TV weekend": ["#67e8f9", "rgba(34, 211, 238, 0.14)", "rgba(34, 211, 238, 0.38)"],
-  "Possible road trip": ["#fdba74", "rgba(251, 146, 60, 0.16)", "rgba(251, 146, 60, 0.42)"],
-  "Already attending": ["#86efac", "rgba(34, 197, 94, 0.14)", "rgba(34, 197, 94, 0.42)"],
+  "Must-watch": ["#ff6b78", "rgba(255, 81, 99, 0.16)", "rgba(255, 81, 99, 0.48)"],
+  "Good TV weekend": ["#67e8f9", "rgba(47, 247, 240, 0.14)", "rgba(47, 247, 240, 0.42)"],
+  "Possible road trip": ["#ffb15f", "rgba(255, 155, 61, 0.16)", "rgba(255, 155, 61, 0.45)"],
+  "Already attending": ["#a7f542", "rgba(167, 245, 66, 0.14)", "rgba(167, 245, 66, 0.42)"],
+  "Keep free": ["#ffd84d", "rgba(167, 245, 66, 0.15)", "rgba(255, 201, 67, 0.46)"],
   Skip: ["#cbd5e1", "rgba(148, 163, 184, 0.12)", "rgba(148, 163, 184, 0.35)"]
 };
 
@@ -92,7 +94,8 @@ const countryFlags = {
   Uzbekistan: "🇺🇿"
 };
 
-const logoAssets = {
+let logoRegistry = {
+  sports: {},
   channels: {},
   leagues: {},
   teams: {},
@@ -341,6 +344,22 @@ function normalizeEvent(event) {
     awayTeam: String(event.awayTeam || "").trim(),
     resultStatus: String(event.resultStatus || "").trim(),
     score: String(event.score || "").trim(),
+    sportLogo: String(event.sportLogo || "").trim(),
+    competitionLogo: String(event.competitionLogo || "").trim(),
+    homeTeamLogo: String(event.homeTeamLogo || "").trim(),
+    awayTeamLogo: String(event.awayTeamLogo || "").trim(),
+    teamLogos: normalizeStringMap(event.teamLogos),
+    channelLogo: String(event.channelLogo || "").trim(),
+    flagLogos: normalizeStringMap(event.flagLogos),
+    logoSource: String(event.logoSource || "").trim(),
+    logoUpdatedAt: String(event.logoUpdatedAt || "").trim(),
+    tournamentId: String(event.tournamentId || "").trim(),
+    tournamentName: String(event.tournamentName || "").trim(),
+    tournamentStartDate: String(event.tournamentStartDate || "").trim(),
+    tournamentEndDate: String(event.tournamentEndDate || "").trim(),
+    tournamentStage: String(event.tournamentStage || "").trim(),
+    tournamentStatus: String(event.tournamentStatus || "").trim(),
+    tournamentPriority: clamp(Number(event.tournamentPriority || event.importance || 1), 1, 10),
     trip: {
       ...defaultTrip(),
       ...(event.trip || {}),
@@ -484,6 +503,17 @@ function normalizeList(value) {
     .split(/[\n,;]/)
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function normalizeStringMap(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return {};
+  }
+
+  return Object.fromEntries(Object.entries(value)
+    .filter((entry) => typeof entry[0] === "string" && typeof entry[1] === "string")
+    .map(([key, item]) => [key, item.trim()])
+    .filter((entry) => entry[1]));
 }
 
 function listToText(value) {
@@ -732,20 +762,100 @@ function assetKey(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function logoAsset(type, value) {
-  const key = assetKey(value);
-
-  return logoAssets[type]?.[key] || "";
+function normalizeLogoRegistry(registry) {
+  return {
+    sports: registry?.sports || {},
+    channels: registry?.channels || {},
+    leagues: registry?.leagues || {},
+    teams: registry?.teams || {},
+    flags: registry?.flags || {}
+  };
 }
 
-function logoImage(type, value, className) {
-  const source = logoAsset(type, value);
-
-  if (!source) {
-    return "";
+async function loadLogoRegistry() {
+  if (!globalThis.fetch) {
+    return;
   }
 
-  return `<img class="${className}" src="${escapeHtml(source)}" alt="${escapeHtml(value)} logo">`;
+  try {
+    const response = await fetch(LOGO_REGISTRY_URL, { cache: "no-store" });
+
+    if (!response.ok) {
+      return;
+    }
+
+    logoRegistry = normalizeLogoRegistry(await response.json());
+    renderAll();
+  } catch {
+    logoRegistry = normalizeLogoRegistry(logoRegistry);
+  }
+}
+
+function logoAsset(bucket, value) {
+  const key = assetKey(value);
+
+  return logoRegistry[bucket]?.[key] || null;
+}
+
+function logoAssetUrl(bucket, value) {
+  return logoAsset(bucket, value)?.logo || "";
+}
+
+function eventTeamLogo(event, teamName) {
+  return event.teamLogos?.[teamName] || logoAssetUrl("teams", teamName);
+}
+
+function getSportLogo(event) {
+  return event.sportLogo || logoAssetUrl("sports", event.sport);
+}
+
+function getCompetitionLogo(event) {
+  return event.competitionLogo || logoAssetUrl("leagues", event.competition);
+}
+
+function getTeamLogo(teamName) {
+  return logoAssetUrl("teams", teamName);
+}
+
+function channelNames(value) {
+  const normalized = String(value || "TBD")
+    .replace(" / ESPN App", "")
+    .replace(/ESPN\+ PPV/gi, "ESPN+")
+    .replace(/Amazon Prime/gi, "Prime Video")
+    .split(/\s*\/\s*|\s*,\s*/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+
+  return normalized.length ? normalized : ["TBD"];
+}
+
+function getChannelLogo(tvValue) {
+  return channelNames(tvValue)
+    .map((channel) => logoAssetUrl("channels", channel))
+    .find(Boolean) || "";
+}
+
+function getFlagLogo(countryOrTeamName) {
+  return logoAssetUrl("flags", countryOrTeamName);
+}
+
+function getEventPrimaryLogo(event) {
+  const teamName = event.homeTeam || normalizeList(event.teams || event.participants)[0] || "";
+
+  return event.homeTeamLogo ||
+    eventTeamLogo(event, teamName) ||
+    getCompetitionLogo(event) ||
+    getSportLogo(event);
+}
+
+function logoImage(source, altText, className, fallbackMarkup = "") {
+  if (!source) {
+    return fallbackMarkup;
+  }
+
+  const fallback = fallbackMarkup ? `<span class="logo-fallback">${fallbackMarkup}</span>` : "";
+
+  return `<span class="logo-frame ${escapeHtml(className)}-frame"><img class="${escapeHtml(className)}" src="${escapeHtml(source)}" alt="${escapeHtml(altText)}" loading="lazy" decoding="async" onerror="this.closest('.logo-frame')?.classList.add('logo-failed')">${fallback}</span>`;
 }
 
 function cleanTimezone(value) {
@@ -840,36 +950,36 @@ function eventTimeParts(event) {
 }
 
 function primaryChannelLabel(value) {
-  const label = String(value || "TBD")
-    .replace(" / ESPN App", "")
-    .replace(" / Peacock", "")
-    .replace(" / Paramount+", "")
-    .replace("ESPN+ PPV", "ESPN+")
-    .trim() || "TBD";
+  const label = channelNames(value)[0] || "TBD";
   const shortLabel = label.includes("/") ? label.split("/")[0].trim() : label;
 
   return channelLabelMap[shortLabel] || shortLabel;
 }
 
-function channelBadge(value) {
+function channelBadge(value, event = {}) {
   const label = primaryChannelLabel(value);
-  const logo = logoImage("channels", label, "channel-logo");
+  const logo = logoImage(event.channelLogo || getChannelLogo(value), `${label} channel`, "channel-logo", escapeHtml(label));
 
   return `<span class="channel-badge">${logo || escapeHtml(label)}</span>`;
 }
 
 function competitionLogo(event) {
-  return logoImage("leagues", event.competition, "sport-logo") || "";
+  return logoImage(getCompetitionLogo(event), `${event.competition || event.sport} logo`, "sport-logo");
 }
 
 function sportMark(event) {
-  return competitionLogo(event) || `<span class="sport-disc">${sportIcons[event.sport] || "★"}</span>`;
+  const fallback = `<span class="sport-disc">${sportIcons[event.sport] || "*"}</span>`;
+  const source = getEventPrimaryLogo(event);
+
+  return logoImage(source, `${event.title || event.sport} logo`, "sport-logo", fallback);
 }
 
-function countryFlagMark(country) {
-  return logoImage("flags", country, "flag-logo") || `<span class="flag-emoji">${countryFlags[country] || "⚽"}</span>`;
-}
+function countryFlagMark(country, event = {}) {
+  const fallback = `<span class="flag-emoji">${countryFlags[country] || "*"}</span>`;
+  const source = event.flagLogos?.[country] || getFlagLogo(country);
 
+  return logoImage(source, `${country} flag`, "flag-logo", fallback);
+}
 function cappedListMarkup(items, limit, renderItem, emptyMessage, moreLabel, quickFilter = "") {
   if (!items.length) {
     return `<div class="empty-state">${escapeHtml(emptyMessage)}</div>`;
@@ -896,7 +1006,7 @@ function compactEventCard(event) {
         <strong>${escapeHtml(event.title)}</strong>
         <small>${escapeHtml(competitionLabel(event) || event.sport)}${event.score ? ` - ${escapeHtml(event.score)}` : ""}</small>
       </span>
-      ${channelBadge(event.tv)}
+      ${channelBadge(event.tv, event)}
     </button>
   `;
 }
@@ -977,7 +1087,7 @@ function renderMustWatchEvents(visibleEvents) {
 }
 
 function compactPriorityRow(event, variant = "star") {
-  const icon = variant === "fire" ? "🔥" : sportIcons[event.sport] || "★";
+  const icon = sportMark(event);
   const time = eventTimeParts(event);
 
   return `
@@ -988,7 +1098,7 @@ function compactPriorityRow(event, variant = "star") {
         <small>${escapeHtml(competitionLabel(event) || event.location || event.sport)}</small>
       </span>
       <span class="priority-date">${escapeHtml(formatDate(event.date))}<small>${escapeHtml(time.time)}</small></span>
-      ${channelBadge(event.tv)}
+      ${channelBadge(event.tv, event)}
     </button>
   `;
 }
@@ -1078,7 +1188,7 @@ function renderActiveTournaments(visibleEvents) {
   activeTournamentList.innerHTML = worldCupEvents.length
     ? `
       <div class="tournament-header-row">
-        <span class="trophy-mark">🏆</span>
+        <span class="trophy-mark">${competitionLogo(worldCupEvents[0]) || sportMark(worldCupEvents[0])}</span>
         <span>
           <strong>FIFA World Cup 2026</strong>
           <small>Jun 11 - Jul 19, 2026 - USA, Canada, Mexico</small>
@@ -1101,9 +1211,9 @@ function worldCupMatchTile(event) {
       <span>${escapeHtml(formatDate(event.date))} - ${escapeHtml(time.time)} ${escapeHtml(time.zone)}</span>
       <strong>${escapeHtml(event.group || event.round || "World Cup")}</strong>
       <div class="flag-matchup">
-        <span>${countryFlagMark(event.homeTeam)}<small>${escapeHtml(shortTeamName(event.homeTeam))}</small></span>
+        <span>${countryFlagMark(event.homeTeam, event)}<small>${escapeHtml(shortTeamName(event.homeTeam))}</small></span>
         <b>vs</b>
-        <span>${countryFlagMark(event.awayTeam)}<small>${escapeHtml(shortTeamName(event.awayTeam))}</small></span>
+        <span>${countryFlagMark(event.awayTeam, event)}<small>${escapeHtml(shortTeamName(event.awayTeam))}</small></span>
       </div>
     </button>
   `;
@@ -1177,11 +1287,11 @@ function eventRow(event) {
     <button class="event-row event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
       <span>${escapeHtml(formatDate(event.date))}</span>
       <span>${escapeHtml(time.time)}<small>${escapeHtml(time.zone)}</small></span>
-      <span><span class="row-icon">${sportIcons[event.sport] || "★"}</span>${escapeHtml(event.sport)}</span>
+      <span><span class="row-logo">${sportMark(event)}</span>${escapeHtml(event.sport)}</span>
       <span>${escapeHtml(event.competition || "Open")}${event.group ? ` <small>${escapeHtml(event.group)}</small>` : ""}</span>
       <span>${escapeHtml(event.title)}</span>
       <span>${escapeHtml(teams)}</span>
-      <span>${channelBadge(event.tv)}</span>
+      <span>${channelBadge(event.tv, event)}</span>
       <span class="row-importance">★ ${escapeHtml(event.importance)}</span>
       <span>${statusTag(event.status)}</span>
     </button>
@@ -2269,6 +2379,7 @@ renderSportFilterOptions();
 renderSettingsForm();
 renderQuickFilters();
 renderAll();
+loadLogoRegistry();
 wireNavigation();
 wireEventForm();
 wireFilters();

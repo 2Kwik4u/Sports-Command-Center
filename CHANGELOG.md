@@ -1,5 +1,47 @@
 # Changelog
 
+## 0.18.3
+
+- Added a reusable command-center color system for the Sports Command Center dashboard.
+- Assigned distinct section accent identities: Today cyan, This Week blue, Keep-Free Weekends lime/gold, World Cup / Active Tournaments violet/blue, Must-Watch red, Watchlist orange/gold, and All Events cyan.
+- Matched the six stat tiles to the section color system without making the tiles overly bright.
+- Updated quick filter chips with compact, controlled accent colors and clearer active/hover states.
+- Polished status, Weekend Score, channel badge, and source badge colors for better broadcast-dashboard readability.
+- Preserved dashboard layout, event data, logo registry, update pipeline, SCC crest, stadium banner asset, and existing app behavior.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
+## 0.18.2
+
+- Tuned the real stadium banner crop and positioning in the compact page header.
+- Reduced the dark overlay so more stadium-light detail is visible while keeping title text readable.
+- Slightly increased compact desktop header height within the requested range.
+- Preserved left-aligned title placement, compact Add Event placement, dashboard layout, event data, logo pipeline, and SCC crest.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
+## 0.18.1
+
+- Integrated the real SCC crest image into the sidebar brand area.
+- Integrated the real stadium banner image as the compact page header background.
+- Disabled the old CSS-generated sidebar crest so the real asset is the visible brand mark.
+- Copied the brand assets, logo registry, and updated root app files into `outputs/sports-weekend-planner/`.
+- Confirmed the Version 0.18 data/logo pipeline remains intact with 141 events, 104 World Cup matches, 37 curated major-event windows, and no duplicate event IDs.
+
+## 0.18.0
+
+- Added the first real sports data and visual identity foundation.
+- Added `data/logo-registry.json` as the generated browser lookup for sports, leagues, teams, channels, and flags.
+- Added TheSportsDB artwork support through `sources/thesportsdb.mjs`; API calls stay in the Node updater, not browser JavaScript.
+- Added FlagCDN country flags for World Cup match tiles.
+- Added local channel identifier SVGs and local sport fallback marks under `assets/logos/`.
+- Added `sources/major-events.mjs` with selective curated major-event windows beyond soccer.
+- Expanded hosted `events.json` from 107 to 141 events.
+- Added optional event logo fields and optional active tournament metadata fields.
+- Updated compact event rows, World Cup tiles, Active Tournaments, Must-Watch, Watchlist, and All Events to render logos with safe fallbacks.
+- Updated the event updater to refresh World Cup matches, curated major events, logo registry data, and decorated event metadata.
+- Updated validation for logo maps and tournament metadata.
+- Added `DATA_SOURCES.md` source audit.
+- Confirmed repeated updater runs do not create duplicate events or noisy rewrites when TheSportsDB is rate-limited.
+
 ## 0.17.0
 
 - Completed a final command-center visual polish pass.
