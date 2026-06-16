@@ -32,7 +32,7 @@
           <button class="nav-item" type="button" data-view="weekends"><span>⚖</span> Weekends</button>
           <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="all"><span>☷</span> Events</button>
           <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="favorites"><span>☆</span> Watchlist</button>
-          <button class="nav-item" type="button" data-sidebar-focus="settings"><span>⚙</span> Settings</button>
+          <button class="nav-item" type="button" data-view="settings"><span>⚙</span> Settings</button>
         </nav>
 
         <section class="filter-panel" aria-label="Event filters">
@@ -93,61 +93,14 @@
           </div>
         </section>
 
-        <section class="settings-panel" aria-label="App settings">
-          <h2>Settings</h2>
-          <label>
-            Theme
-            <select id="themeInput">
-              <option value="dark">Dark</option>
-              <option value="light">Light</option>
-              <option value="system">System</option>
-            </select>
-          </label>
-          <label>
-            Home base
-            <input id="homeBaseInput" placeholder="City, State">
-          </label>
-          <label>
-            Default timezone
-            <input id="defaultTimezoneInput" placeholder="ET">
-          </label>
-          <label>
-            Default TV service
-            <input id="defaultTvInput" placeholder="YouTube TV, ESPN+, Peacock">
-          </label>
-          <label>
-            Favorite sports
-            <textarea id="favoriteSportsInput" rows="2" placeholder="Soccer, Racing, Football"></textarea>
-          </label>
-          <label>
-            Favorite leagues and competitions
-            <textarea id="favoriteCompetitionsInput" rows="3" placeholder="Champions League, Formula 1, NFL"></textarea>
-          </label>
-          <label>
-            Favorite teams
-            <textarea id="favoriteTeamsInput" rows="2" placeholder="Arsenal, USMNT, Dodgers"></textarea>
-          </label>
-          <label>
-            Favorite drivers and athletes
-            <textarea id="favoriteDriversInput" rows="2" placeholder="Max Verstappen, Chase Elliott"></textarea>
-          </label>
-          <label class="checkbox-row">
-            <input id="autoUpdateInput" type="checkbox">
-            Auto-update hosted events
-          </label>
-          <label>
-            Update source
-            <input id="updateUrlInput" placeholder="events.json">
-          </label>
-          <button id="saveSettingsButton" class="secondary-button" type="button">Save Settings</button>
-          <button id="checkUpdatesButton" class="secondary-button" type="button">Check for Event Updates</button>
+        <section class="sidebar-footer" aria-label="App status">
           <div class="header-update-card sidebar-update-card">
             <span>Last update</span>
             <strong id="headerLastUpdate">Not checked yet</strong>
             <small id="headerUpdateHealth">Ready</small>
             <button id="headerCheckUpdatesButton" class="secondary-button compact-action" type="button">Check for Updates</button>
           </div>
-          <p id="settingsStatus" class="data-status">Settings stay on this device.</p>
+          <p class="data-status">Settings stay on this device.</p>
           <p id="appVersion" class="version-note">Version loading...</p>
         </section>
       </aside>
@@ -336,6 +289,66 @@
               <p>Events grouped Friday through Sunday.</p>
             </div>
             <div id="weekendList" class="weekend-list"></div>
+          </article>
+        </section>
+
+        <section id="settingsView" class="view">
+          <article class="panel settings-panel settings-view-panel" aria-label="App settings">
+            <div class="panel-heading">
+              <h3>Settings</h3>
+              <p>Personalize your watch calendar.</p>
+            </div>
+            <div class="settings-grid">
+              <label>
+                Theme
+                <select id="themeInput">
+                  <option value="dark">Dark</option>
+                  <option value="light">Light</option>
+                  <option value="system">System</option>
+                </select>
+              </label>
+              <label>
+                Home base
+                <input id="homeBaseInput" placeholder="City, State">
+              </label>
+              <label>
+                Default timezone
+                <input id="defaultTimezoneInput" placeholder="ET">
+              </label>
+              <label>
+                Default TV service
+                <input id="defaultTvInput" placeholder="YouTube TV, ESPN+, Peacock">
+              </label>
+              <label>
+                Favorite sports
+                <textarea id="favoriteSportsInput" rows="3" placeholder="Soccer, Racing, Football"></textarea>
+              </label>
+              <label>
+                Favorite leagues and competitions
+                <textarea id="favoriteCompetitionsInput" rows="3" placeholder="Champions League, Formula 1, NFL"></textarea>
+              </label>
+              <label>
+                Favorite teams
+                <textarea id="favoriteTeamsInput" rows="3" placeholder="Arsenal, USMNT, Dodgers"></textarea>
+              </label>
+              <label>
+                Favorite drivers and athletes
+                <textarea id="favoriteDriversInput" rows="3" placeholder="Max Verstappen, Chase Elliott"></textarea>
+              </label>
+              <label class="checkbox-row">
+                <input id="autoUpdateInput" type="checkbox">
+                Auto-update hosted events
+              </label>
+              <label>
+                Update source
+                <input id="updateUrlInput" placeholder="events.json">
+              </label>
+            </div>
+            <div class="settings-actions">
+              <button id="saveSettingsButton" class="primary-button" type="button">Save Settings</button>
+              <button id="checkUpdatesButton" class="secondary-button" type="button">Check for Event Updates</button>
+            </div>
+            <p id="settingsStatus" class="data-status">Settings stay on this device.</p>
           </article>
         </section>
       </main>

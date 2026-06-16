@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.3";
+const APP_VERSION = "0.16.4";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -1679,7 +1679,8 @@ function setActiveView(viewName, activeButton = null) {
   const subtitles = {
     dashboard: "WHAT TO WATCH NEXT",
     calendar: "MONTHLY CALENDAR",
-    weekends: "WEEKEND PLANNER"
+    weekends: "WEEKEND PLANNER",
+    settings: "APP SETTINGS"
   };
 
   document.querySelector("#pageTitle").textContent = "★ SPORTS COMMAND CENTER ★";

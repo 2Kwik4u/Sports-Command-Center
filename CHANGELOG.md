@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.16.4
+
+- Moved the full app settings form out of the sidebar and into a dedicated Settings view.
+- Changed the Settings sidebar item to open the main Settings tab.
+- Kept the sidebar focused on navigation, filters, share/update utilities, update status, and version.
+- Preserved settings save behavior, theme switching, hosted update controls, and version display.
+
 ## 0.16.3
 
 - Treated the generated Sports Command Center screenshot as the approved pixel-target design spec.

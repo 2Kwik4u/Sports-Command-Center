@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.3
+Version 0.16.4
 
 # Completed Features
 
@@ -17,6 +17,7 @@ Version 0.16.3
 - Add, edit, and delete events through a local modal form.
 - Event fields for sport, competition, date, time, timezone, importance, status, venue, location, TV/streaming, notes, personalization, and optional trip planning.
 - Dark, light, and system theme support.
+- Settings live in a dedicated Settings view instead of occupying the sidebar.
 - Favorite settings for sports, competitions, teams, drivers, and athletes.
 - Personal importance scoring and friend interest scoring.
 - Preference-aware event priority and Weekend Score logic.
@@ -39,7 +40,7 @@ Version 0.16.3
 
 # In Progress
 
-- Verifying the Version 0.16.3 visual match pass and automated update workflow.
+- Verifying the Version 0.16.4 settings layout cleanup and automated update workflow.
 - Continuing to tune the Sports Command Center dashboard for real watch-planning use.
 - Preparing GitHub Pages as the primary deployment path.
 - Continuing desktop visual matching against the approved Sports Command Center concept screenshot.
@@ -137,10 +138,11 @@ i-want-to-build-a-web/
 - Capped Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup match tiles at three visible items with `+ X more` rows.
 - Added a controlled local logo asset structure and rendering fallback layer for future channel, league, team, and flag images.
 - Moved the update status/check card to the lower sidebar near the version area and kept Add Event as a compact header action.
+- Completed Version 0.16.4 by moving the full settings form into the Settings tab so the sidebar stays focused on navigation, filters, sharing, update status, and version.
 
 # Next Recommended Steps
 
-1. Playtest the 0.16.3 Dashboard at a desktop viewport around 1536x1024 against the approved screenshot.
+1. Playtest the 0.16.4 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
 2. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
 3. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
 4. Test the compact dashboard, quick chips, Calendar, Weekends, Add/Edit/Delete, and hosted update button on desktop and phone widths.

@@ -16,7 +16,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
 - Automatic hiding of past events from Dashboard and Weekends.
 - Manual add/edit/delete event workflow.
-- Local settings, dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
+- Dedicated Settings view for dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
 - Event priority, personal importance, friend interest, must-watch detection, and Weekend Score.
 - JSON import/export with import preview.
 - Google Calendar-compatible `.ics` export.
@@ -144,9 +144,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.16.3`
+Current version: `0.16.4`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.3 is a pixel-target visual match pass that treats the generated command-center screenshot as the approved visual target while preserving the existing static HTML/CSS/JS app behavior.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.4 moves the full settings form into the Settings tab so the sidebar stays compact and closer to the approved command-center layout.
 
 ## Roadmap
 

@@ -2709,3 +2709,88 @@ body[data-theme="light"] .icon-button {
     grid-template-columns: 1fr;
   }
 }
+
+/* Version 0.16.4: move settings out of the sidebar rail. */
+.sidebar-footer {
+  display: grid;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.sidebar-footer .data-status {
+  margin: 0;
+  color: #d7e1d6;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.settings-view-panel {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-view-panel .panel-heading {
+  border-bottom-color: rgba(45, 212, 191, 0.22);
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+.settings-grid label {
+  gap: 7px;
+  color: #d7e1d6;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.settings-grid input,
+.settings-grid select,
+.settings-grid textarea {
+  min-height: 38px;
+  border-color: rgba(148, 163, 184, 0.28);
+  border-radius: 7px;
+  background: rgba(2, 8, 10, 0.62);
+  padding: 9px 10px;
+  font-size: 0.84rem;
+}
+
+.settings-grid .checkbox-row {
+  align-self: end;
+  min-height: 38px;
+}
+
+.settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 16px 14px;
+}
+
+.settings-actions .primary-button,
+.settings-actions .secondary-button {
+  min-height: 36px;
+}
+
+.settings-view-panel > .data-status {
+  margin: 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 12px 16px 14px;
+}
+
+@media (max-width: 760px) {
+  .sidebar-footer {
+    margin-top: 14px;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
