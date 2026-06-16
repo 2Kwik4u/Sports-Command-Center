@@ -12,9 +12,9 @@ The app should reduce sports schedule overload by surfacing major events, person
 
 # Current State
 
-Version 0.18.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
+Version 0.19.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
 
-The current automated source adapter imports all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed. Version 0.18.0 also adds selective curated major-event windows beyond soccer, TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament metadata for future Active Tournament improvements.
+The current automated source adapters import all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed, selective curated major-event windows, and 93 future 2026 racing schedule events from verified static JSON. The app also includes TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament/series metadata for future Active Tournament improvements.
 
 # Milestone 1 - Foundation
 
@@ -37,6 +37,7 @@ Completed or nearly completed:
 - TheSportsDB artwork adapter.
 - FlagCDN World Cup flags.
 - Curated multi-sport major-event windows.
+- Verified static 2026 racing schedule import.
 - Optional logo and tournament metadata fields.
 
 # Milestone 2 - Core Experience
@@ -80,6 +81,7 @@ Later, once the app is reliable:
 - Shared login/accounts.
 - Notifications for must-watch events and schedule changes.
 - Favorite team/driver auto-imports.
+- NFL and NCAA football source adapters after racing personalization is stable.
 - Conflict detection for overlapping must-watch events.
 - Optional map view for serious trip candidates.
 - Optional ticket price tracking, hotel estimates, flight estimates, and travel budgets after the watch-planning product is stable.
@@ -107,6 +109,6 @@ Later, once the app is reliable:
 
 # Current Priority
 
-1. Playtest Version 0.18.0 across desktop and mobile, focusing on logos, flags, channel badges, and compact row height.
-2. Improve personalization: favorite teams/drivers/leagues, personal scoring, and must-watch/Weekend Score behavior.
+1. Playtest Version 0.19.0 with racing-heavy weekends, Racing quick filter, Calendar, Weekends, and All Events.
+2. Improve personalization: favorite drivers/series/leagues, personal scoring, and must-watch/Weekend Score behavior.
 3. Refine the shared event database workflow and Google Calendar export now that hosted events cover more sports.

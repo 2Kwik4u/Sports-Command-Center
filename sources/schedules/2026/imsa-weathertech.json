@@ -1,0 +1,20 @@
+{
+  "seriesId": "imsa-weathertech",
+  "seriesName": "IMSA WeatherTech SportsCar Championship",
+  "sport": "Racing",
+  "competition": "IMSA WeatherTech SportsCar Championship",
+  "season": 2026,
+  "sourceName": "Official IMSA WeatherTech 2026 Schedule",
+  "sourceUrl": "https://www.imsa.com/weathertech/weathertech-2026-schedule/",
+  "officialSourceUrl": "https://www.imsa.com/competitors/2026-imsa-weathertech-sportscar-championship-event-information/",
+  "lastVerifiedAt": "2026-06-16",
+  "defaultDataStatus": "Verified static schedule; race start times and US TV are TBD.",
+  "events": [
+    {"raceNumber":6,"title":"Sahlen's Six Hours of The Glen","canonicalTitle":"watkins-glen-6-hour","date":"2026-06-28","weekendStartDate":"2026-06-25","weekendEndDate":"2026-06-28","startTime":"","timezone":"TBD","venue":"Watkins Glen International","location":"Watkins Glen, NY","tv":"TBD","importance":9,"status":"Must-watch","stage":"Round 6","eventType":"Endurance race","duration":"6 Hours","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."},
+    {"raceNumber":7,"title":"Chevrolet Grand Prix","canonicalTitle":"canadian-tire-motorsport-park","date":"2026-07-12","weekendStartDate":"2026-07-10","weekendEndDate":"2026-07-12","startTime":"","timezone":"TBD","venue":"Canadian Tire Motorsport Park","location":"Bowmanville, Ontario","tv":"TBD","importance":6,"status":"Good TV weekend","stage":"Round 7","eventType":"Race","duration":"2 Hours 40 Minutes","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."},
+    {"raceNumber":8,"title":"Motul SportsCar Endurance Grand Prix","canonicalTitle":"road-america-endurance-grand-prix","date":"2026-08-02","weekendStartDate":"2026-07-30","weekendEndDate":"2026-08-02","startTime":"","timezone":"TBD","venue":"Road America","location":"Elkhart Lake, WI","tv":"TBD","importance":8,"status":"Good TV weekend","stage":"Round 8","eventType":"Endurance race","duration":"6 Hours","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."},
+    {"raceNumber":9,"title":"Michelin GT Challenge at VIR","canonicalTitle":"vir","date":"2026-08-23","weekendStartDate":"2026-08-21","weekendEndDate":"2026-08-23","startTime":"","timezone":"TBD","venue":"VIRginia International Raceway","location":"Alton, VA","tv":"TBD","importance":6,"status":"Good TV weekend","stage":"Round 9","eventType":"Race","duration":"2 Hours 40 Minutes","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."},
+    {"raceNumber":10,"title":"TireRack.com Battle On The Bricks","canonicalTitle":"battle-on-the-bricks","date":"2026-09-20","weekendStartDate":"2026-09-18","weekendEndDate":"2026-09-20","startTime":"","timezone":"TBD","venue":"Indianapolis Motor Speedway","location":"Speedway, IN","tv":"TBD","importance":7,"status":"Good TV weekend","stage":"Round 10","eventType":"Race","duration":"2 Hours 40 Minutes","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."},
+    {"raceNumber":11,"title":"Motul Petit Le Mans","canonicalTitle":"petit-le-mans","date":"2026-10-03","weekendStartDate":"2026-09-30","weekendEndDate":"2026-10-03","startTime":"","timezone":"TBD","venue":"Michelin Raceway Road Atlanta","location":"Braselton, GA","tv":"TBD","importance":9,"status":"Must-watch","stage":"Season finale","eventType":"Endurance finale","duration":"10 Hours","sourceUrl":"https://www.imsa.com/weathertech/weathertech-2026-schedule/","lastVerifiedAt":"2026-06-16","dataStatus":"Date and duration confirmed; start time and TV TBD."}
+  ]
+}

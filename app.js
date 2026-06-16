@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.18.3";
+const APP_VERSION = "0.19.0";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
@@ -360,6 +360,13 @@ function normalizeEvent(event) {
     tournamentStage: String(event.tournamentStage || "").trim(),
     tournamentStatus: String(event.tournamentStatus || "").trim(),
     tournamentPriority: clamp(Number(event.tournamentPriority || event.importance || 1), 1, 10),
+    seriesId: String(event.seriesId || "").trim(),
+    seriesName: String(event.seriesName || "").trim(),
+    season: Number.isFinite(Number(event.season)) ? Number(event.season) : "",
+    raceNumber: Number.isFinite(Number(event.raceNumber)) ? Number(event.raceNumber) : "",
+    eventType: String(event.eventType || "").trim(),
+    radio: String(event.radio || "").trim(),
+    duration: String(event.duration || "").trim(),
     trip: {
       ...defaultTrip(),
       ...(event.trip || {}),
@@ -940,6 +947,15 @@ function eventTimeParts(event) {
     return {
       time: formatClockTime(`${targetDate.getUTCHours()}:${String(targetDate.getUTCMinutes()).padStart(2, "0")}`),
       zone: targetZone
+    };
+  }
+
+  if (!timeMatch) {
+    const fallbackZone = cleanTimezone(event.timezone || targetZone);
+
+    return {
+      time: "TBD",
+      zone: fallbackZone === "TBD" ? "" : fallbackZone
     };
   }
 

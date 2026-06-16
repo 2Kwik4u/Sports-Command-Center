@@ -96,7 +96,12 @@ function validateEvent(event, index) {
     "tournamentStartDate",
     "tournamentEndDate",
     "tournamentStage",
-    "tournamentStatus"
+    "tournamentStatus",
+    "seriesId",
+    "seriesName",
+    "eventType",
+    "radio",
+    "duration"
   ].forEach((field) => {
     if (!isOptionalString(event[field])) {
       errors.push(`${label}.${field} must be a string when provided.`);
@@ -119,6 +124,14 @@ function validateEvent(event, index) {
 
   if (!isNumberInRange(event.tournamentPriority, 1, 10)) {
     errors.push(`${label}.tournamentPriority must be a number from 1 to 10.`);
+  }
+
+  if (event.season !== undefined && (!Number.isInteger(event.season) || event.season < 1900 || event.season > 2200)) {
+    errors.push(`${label}.season must be a four-digit year when provided.`);
+  }
+
+  if (event.raceNumber !== undefined && (!Number.isInteger(event.raceNumber) || event.raceNumber < 1 || event.raceNumber > 200)) {
+    errors.push(`${label}.raceNumber must be a positive integer when provided.`);
   }
 
   if (event.isAutoImported !== undefined && typeof event.isAutoImported !== "boolean") {

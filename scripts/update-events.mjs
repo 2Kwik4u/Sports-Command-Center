@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { mergeEvents } from "../sources/normalize-event.mjs";
 import { buildLogoRegistry, decorateEventsWithLogos } from "../sources/logo-registry.mjs";
 import { fetchCuratedMajorEvents } from "../sources/major-events.mjs";
+import { fetchRacing2026Events } from "../sources/racing-2026.mjs";
 import { fetchTheSportsDbLogoRegistry } from "../sources/thesportsdb.mjs";
 import { fetchWorldCup2026Events } from "../sources/world-cup-2026.mjs";
 
@@ -74,8 +75,9 @@ async function main() {
     providerRegistry: providerLogoRegistry
   });
   const worldCupEvents = await fetchWorldCup2026Events();
+  const racingEvents = await fetchRacing2026Events();
   const curatedEvents = fetchCuratedMajorEvents();
-  const importedEvents = decorateEventsWithLogos([...worldCupEvents, ...curatedEvents], logoRegistry);
+  const importedEvents = decorateEventsWithLogos([...worldCupEvents, ...curatedEvents, ...racingEvents], logoRegistry);
   const { events: mergedEvents, summary } = mergeEvents(events, importedEvents);
   const decoratedEvents = sortEvents(decorateEventsWithLogos(mergedEvents, logoRegistry));
   const eventsChanged = JSON.stringify(sortEvents(events)) !== JSON.stringify(decoratedEvents);
@@ -102,6 +104,11 @@ async function main() {
               eventCount: curatedEvents.length
             },
             {
+              name: "Static 2026 Racing Schedules",
+              adapter: "sources/racing-2026.mjs",
+              eventCount: racingEvents.length
+            },
+            {
               name: "TheSportsDB Logo Registry",
               adapter: "sources/thesportsdb.mjs",
               eventCount: 0,
@@ -125,6 +132,7 @@ async function main() {
   console.log("Sports Command Center event update complete.");
   console.log(`World Cup events normalized: ${worldCupEvents.length}`);
   console.log(`Curated major events normalized: ${curatedEvents.length}`);
+  console.log(`Racing schedule events normalized: ${racingEvents.length}`);
   console.log(`TheSportsDB league logo entries: ${Object.keys(providerLogoRegistry.leagues || {}).length}`);
   console.log(`TheSportsDB team logo entries: ${Object.keys(providerLogoRegistry.teams || {}).length}`);
   console.log(`Logo registry written: ${registryWritten ? "yes" : "no changes"}`);

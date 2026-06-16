@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.19.0
+
+- Added verified static future 2026 racing schedule data for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, NASCAR Craftsman Truck Series, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech SportsCar Championship.
+- Added `sources/racing-2026.mjs` to normalize static racing schedule JSON into the existing event schema.
+- Added static racing schedule files under `sources/schedules/2026/`.
+- Wired racing imports into `scripts/update-events.mjs` while preserving World Cup, curated major-event windows, logo decoration, and merge-by-stable-ID behavior.
+- Expanded hosted `events.json` from 141 to 232 events: 93 racing events normalized, 91 new events added, and 2 older curated racing placeholders replaced by richer racing schedule rows.
+- Added optional racing metadata support for `seriesId`, `seriesName`, `season`, `raceNumber`, `eventType`, `radio`, and `duration`.
+- Kept imported racing importance as base/default priority only, leaving room for future favorite-aware and conflict-aware scoring.
+- Documented future NFL/NCAA football source-model groundwork without importing football schedules in this version.
+- Carried forward the pending 0.18.3 visual polish: centered status pills, continuous All Events border styling, and hidden stat-card mini bars.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.18.3
 
 - Added a reusable command-center color system for the Sports Command Center dashboard.

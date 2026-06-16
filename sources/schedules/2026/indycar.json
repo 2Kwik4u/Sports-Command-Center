@@ -1,0 +1,23 @@
+{
+  "seriesId": "indycar",
+  "seriesName": "IndyCar",
+  "sport": "Racing",
+  "competition": "IndyCar",
+  "season": 2026,
+  "sourceName": "Official IndyCar 2026 Schedule",
+  "sourceUrl": "https://www.indycar.com/Schedule",
+  "officialSourceUrl": "https://www.indycar.com/Schedule",
+  "lastVerifiedAt": "2026-06-16",
+  "defaultDataStatus": "Verified static schedule; start times and TV are subject to change.",
+  "events": [
+    {"raceNumber":10,"title":"XPEL Grand Prix at Road America","canonicalTitle":"road-america","date":"2026-06-21","startTime":"14:00","timezone":"ET","venue":"Road America","location":"Elkhart Lake, WI","tv":"FOX / FOX One","importance":8,"status":"Good TV weekend","stage":"Round 10","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":11,"title":"Honda Indy 200 at Mid-Ohio","canonicalTitle":"mid-ohio","date":"2026-07-05","startTime":"12:30","timezone":"ET","venue":"Mid-Ohio Sports Car Course","location":"Lexington, OH","tv":"FOX / FOX One","importance":5,"status":"Good TV weekend","stage":"Round 11","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":12,"title":"Borchetta Bourbon Music City Grand Prix","canonicalTitle":"music-city-grand-prix","date":"2026-07-19","startTime":"","timezone":"ET","venue":"Nashville Superspeedway","location":"Lebanon, TN","tv":"FOX / FOX One","importance":8,"status":"Good TV weekend","stage":"Round 12","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Date and TV confirmed; start time TBD."},
+    {"raceNumber":13,"title":"OnlyBulls Grand Prix of Portland","canonicalTitle":"portland","date":"2026-08-09","startTime":"16:00","timezone":"ET","venue":"Portland International Raceway","location":"Portland, OR","tv":"FOX / FOX One","importance":5,"status":"Good TV weekend","stage":"Round 13","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":14,"title":"Ontario Honda Dealers Indy at Markham","canonicalTitle":"markham","date":"2026-08-16","startTime":"12:00","timezone":"ET","venue":"Streets of Markham","location":"Markham, Ontario","tv":"FOX / FOX One","importance":8,"status":"Good TV weekend","stage":"Round 14","eventType":"Street race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":15,"title":"Freedom 250 Grand Prix of Washington, D.C.","canonicalTitle":"washington-dc","date":"2026-08-23","startTime":"","timezone":"ET","venue":"Streets of Washington","location":"Washington, DC","tv":"FOX / FOX One","importance":8,"status":"Possible road trip","stage":"Round 15","eventType":"Street race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Date and TV confirmed; start time TBD."},
+    {"raceNumber":16,"title":"Snap-on Makers and Fixers 250","canonicalTitle":"milwaukee-race-1","date":"2026-08-29","startTime":"14:30","timezone":"ET","venue":"Milwaukee Mile","location":"West Allis, WI","tv":"FOX / FOX One","importance":8,"status":"Good TV weekend","stage":"Round 16","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":17,"title":"Snap-on Milwaukee Mile 250","canonicalTitle":"milwaukee-race-2","date":"2026-08-30","startTime":"13:00","timezone":"ET","venue":"Milwaukee Mile","location":"West Allis, WI","tv":"FOX / FOX One","importance":8,"status":"Good TV weekend","stage":"Round 17","eventType":"Race","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."},
+    {"raceNumber":18,"title":"WeatherTech Raceway Laguna Seca","canonicalTitle":"laguna-seca","date":"2026-09-06","startTime":"14:30","timezone":"ET","venue":"WeatherTech Raceway Laguna Seca","location":"Monterey, CA","tv":"FOX / FOX One","importance":9,"status":"Must-watch","stage":"Season finale","eventType":"Season finale","sourceUrl":"https://www.indycar.com/Schedule","lastVerifiedAt":"2026-06-16","dataStatus":"Verified static schedule; TV/start time subject to change."}
+  ]
+}

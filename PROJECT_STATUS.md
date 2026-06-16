@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.18.3
+Version 0.19.0
 
 # Completed Features
 
@@ -34,6 +34,10 @@ Version 0.18.3
 - GitHub Actions workflow for scheduled/manual event updates.
 - `scripts/update-events.mjs` to fetch, normalize, merge, and write hosted events.
 - World Cup 2026 source adapter that imports all 104 FIFA World Cup matches from OpenFootball's public no-key JSON feed.
+- Full future 2026 racing schedule import for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, NASCAR Craftsman Truck Series, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech SportsCar Championship.
+- Static racing schedule JSON files under `sources/schedules/2026/`.
+- Grouped racing source adapter at `sources/racing-2026.mjs`.
+- Racing imports use deterministic stable IDs, series metadata, base importance values, and source verification metadata.
 - Event validation script covering required fields, stable IDs, duplicate IDs, optional metadata, and imported source metadata.
 - Static hosting compatibility for GitHub Pages.
 - GitHub repository connection is active and working.
@@ -55,8 +59,8 @@ Version 0.18.3
 
 # In Progress
 
-- Verifying the Version 0.18.3 command-center color system and 0.18 data/logo foundation.
-- Continuing to tune the Sports Command Center dashboard for real watch-planning use.
+- Playtesting Version 0.19.0 racing schedule expansion across Dashboard, Calendar, Weekends, Events, and Racing quick filter.
+- Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
 # Planned Features
@@ -64,7 +68,7 @@ Version 0.18.3
 - Publish and verify the GitHub Pages version.
 - Add a clear GitHub Pages setup guide once the chosen publishing folder is final.
 - Improve World Cup source handling if a more complete no-key or secret-backed source becomes available.
-- Add more reliable non-soccer event source adapters where data quality supports watch planning.
+- Tune racing schedule source maintenance after real playtesting.
 - Expand manual/local logo coverage for favorite teams, competitions, and channels.
 - Improve Weekend Score and watch priority after real use.
 - Add canonical team, driver, league, and competition IDs or suggestions.
@@ -105,6 +109,9 @@ i-want-to-build-a-web/
   scripts/
     update-events.mjs
   sources/
+    racing-2026.mjs
+    schedules/
+      2026/
     normalize-event.mjs
     world-cup-2026.mjs
   outputs/
@@ -125,6 +132,8 @@ i-want-to-build-a-web/
 - Hosted updates add or replace events but intentionally do not delete local user-created events.
 - OpenFootball is a practical no-key source, but it is not guaranteed to be a complete live official feed for TV data, delays, or every late schedule change.
 - TV/streaming data is `TBD` for imported World Cup matches unless a source provides it.
+- Some racing imports have confirmed dates but `TBD` start times or TV/streaming when official sources do not provide reliable data yet.
+- Static racing schedule JSON should be re-verified when official schedules, race names, TV windows, or start times change.
 - Curated major-event windows are planning anchors and should be confirmed before travel, tickets, or broadcast decisions.
 - TheSportsDB free-tier rate limits can temporarily block fresh logo lookups; the updater preserves the existing registry when that happens.
 - Channel SVGs are controlled local identifiers, not scraped official broadcast logos.
@@ -186,11 +195,18 @@ i-want-to-build-a-web/
 - Assigned distinct dashboard section accents for Today, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
 - Matched stat tile and quick filter chip colors to the approved concept direction while keeping the layout compact.
 - Refined status, Weekend Score, and channel badge color treatment without changing event data, logo registry, update pipeline, crest, or banner assets.
+- Completed Version 0.19.0 as the first full racing schedule expansion.
+- Added future 2026 racing schedules for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, NASCAR Craftsman Truck Series, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech SportsCar Championship.
+- Added 93 normalized racing schedule events to the updater; 91 were new and 2 replaced older curated racing placeholders.
+- Expanded hosted `events.json` to 232 events with no duplicate IDs.
+- Preserved World Cup import, curated major-event windows, logo registry, hosted update flow, localStorage behavior, and current visual styling.
+- Documented future NFL/NCAA football source-model groundwork without importing football schedules in this version.
+- Carried forward the pending 0.18.3 visual polish: centered status pills, continuous All Events border styling, and hidden stat-card mini bars.
 
 # Next Recommended Steps
 
-1. Playtest 0.18.3 on desktop and phone widths, focusing on section color identity, quick filter clarity, status badge readability, logo loading, World Cup flags, channel badges, and compact row height.
-2. Run the GitHub Action manually once and confirm it commits `events.json` and `data/logo-registry.json` only when data changes.
-3. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.
-4. Refine the shared event database workflow and Google Calendar export around filtered watchlists and keep-free weekends.
+1. Playtest 0.19.0 with the Racing quick filter, Calendar, Weekends, and All Events views to confirm the new racing density feels useful.
+2. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
+3. Tune Weekend Score and must-watch logic so racing-heavy weekends rank well without overwhelming other sports.
+4. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

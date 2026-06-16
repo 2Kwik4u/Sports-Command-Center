@@ -8,6 +8,7 @@ Sports Command Center uses controlled, documented sources only. The app does not
 |---|---|---:|---:|---|---|---|
 | OpenFootball World Cup JSON | Soccer | Yes | No | No | None | Imports all FIFA World Cup 2026 matches from structured public JSON. TV remains `TBD` unless manually curated later. |
 | Curated Major Event Windows | Multi-sport | Yes | No | Limited/manual only | None | Adds selective finals, playoff windows, races, majors, and tournament weekends. These are watch-planning anchors, not complete league schedules. |
+| Static 2026 Racing Schedules | Racing | Yes | No | Partial | None | Version 0.19.0 adds verified future 2026 schedules for NASCAR Cup, NASCAR O'Reilly, NASCAR Trucks, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech. Official sources are used where practical, with static JSON to avoid brittle live scraping. |
 | TheSportsDB v1 | Multi-sport | Limited | Yes | Limited | Public key `123` or `THESPORTSDB_API_KEY` | Used in Version 0.18.0 for league and team artwork. Schedule/TV endpoints are documented but not reliable enough yet for broad imports on the free tier. |
 | FlagCDN | World Cup countries | No | Flags only | No | None | Provides country flag PNGs for World Cup matchup tiles. Emoji remains the fallback for missing/placeholder teams. |
 | Local repo assets | Channels and sport fallbacks | No | Yes | No | None | Stores local channel identifiers and sport fallback marks in `assets/logos/`. These are controlled local assets, not scraped official broadcast logos. |
@@ -18,6 +19,14 @@ Sports Command Center uses controlled, documented sources only. The app does not
 
 - 104 FIFA World Cup 2026 matches from OpenFootball.
 - 37 curated major-event windows across soccer, football, racing, baseball, basketball, hockey, tennis, golf, combat sports, horse racing, and major events.
+- 93 future 2026 racing schedule events from verified static JSON:
+  - 20 NASCAR Cup Series events.
+  - 16 NASCAR O'Reilly Auto Parts Series events.
+  - 13 NASCAR Craftsman Truck Series events.
+  - 15 Formula 1 events.
+  - 9 IndyCar events.
+  - 14 MotoGP events.
+  - 6 IMSA WeatherTech SportsCar Championship events.
 
 The app intentionally does not import every regular-season game. Sports Command Center is a watch-planning app, so the update pipeline prioritizes:
 
@@ -66,6 +75,43 @@ If a future source requires a private key, it should be configured as a GitHub A
 - The curated major-event source is intentionally transparent. It provides planning windows and must be confirmed before travel, tickets, or broadcast decisions.
 - TV/streaming data is not invented. If the source does not provide reliable TV data, the app displays `TBD`.
 - Knockout placeholders such as `W73`, `1A`, or `3A/B/C/D/F` may not have flag assets until teams are known.
+- Racing start times and TV are only included when the verified source provides them. F1, MotoGP, and IMSA currently include several `TBD` time/TV values.
+
+## Racing Schedule Maintenance
+
+Version 0.19.0 uses verified static JSON rather than live scraping. Update these files when official racing schedules, race names, TV windows, or start times change:
+
+```text
+sources/schedules/2026/nascar-cup.json
+sources/schedules/2026/nascar-oreilly.json
+sources/schedules/2026/nascar-trucks.json
+sources/schedules/2026/formula-1.json
+sources/schedules/2026/indycar.json
+sources/schedules/2026/motogp.json
+sources/schedules/2026/imsa-weathertech.json
+```
+
+Then run:
+
+```bash
+node scripts/update-events.mjs
+node work/validate-events.cjs
+```
+
+The grouped adapter `sources/racing-2026.mjs` normalizes those static files into the app schema and keeps IDs deterministic.
+
+## Future Football Groundwork
+
+NFL and NCAA football are not imported in Version 0.19.0. Future support should fit the same source-adapter model and may add optional fields such as:
+
+- `week`
+- `homeTeam`
+- `awayTeam`
+- `conference`
+- `bowlName`
+- `playoffRound`
+- `broadcast`
+- `rankings`
 
 ## Adding Local Logos Later
 

@@ -3577,8 +3577,14 @@ body[data-theme="light"] .quick-chip:hover {
 }
 
 .status-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
   font-weight: 950;
   letter-spacing: 0.01em;
+  line-height: 1.12;
+  text-align: center;
 }
 
 .channel-badge,
@@ -3645,10 +3651,13 @@ body:not([data-theme="light"]) .quick-filter-bar .quick-chip:hover {
   color: var(--chip-accent);
 }
 
-/* Keep the six dashboard module borders continuous instead of corner-lit. */
+/* Keep the dashboard module borders continuous instead of corner-lit. */
 .dashboard-stack .panel,
+.event-list-panel,
 body:not([data-theme="light"]) .dashboard-stack .panel,
-body[data-theme="light"] .dashboard-stack .panel {
+body:not([data-theme="light"]) .event-list-panel,
+body[data-theme="light"] .dashboard-stack .panel,
+body[data-theme="light"] .event-list-panel {
   border: 1px solid var(--section-accent, var(--brand-cyan));
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.018),
@@ -3657,12 +3666,19 @@ body[data-theme="light"] .dashboard-stack .panel {
 }
 
 .dashboard-stack .panel::before,
-.dashboard-stack .panel::after {
+.dashboard-stack .panel::after,
+.event-list-panel::before,
+.event-list-panel::after {
   display: none;
 }
 
-body[data-theme="light"] .dashboard-stack .panel {
+body[data-theme="light"] .dashboard-stack .panel,
+body[data-theme="light"] .event-list-panel {
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.62),
     0 14px 30px rgba(24, 36, 48, 0.11);
+}
+
+.stat-card::after {
+  display: none;
 }

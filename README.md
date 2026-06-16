@@ -25,6 +25,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Visible hosted update status in the app.
 - GitHub Actions-based event update pipeline.
 - Full FIFA World Cup 2026 import from a no-key public structured source.
+- Verified future 2026 racing schedule import for NASCAR Cup, NASCAR O'Reilly, NASCAR Trucks, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech.
 - Generated `data/logo-registry.json` for sport, league, team, channel, and flag lookup.
 - TheSportsDB league/team artwork support through the Node update script.
 - FlagCDN country flags for World Cup matchup tiles.
@@ -71,9 +72,11 @@ i-want-to-build-a-web/
   scripts/update-events.mjs
   sources/logo-registry.mjs
   sources/major-events.mjs
+  sources/racing-2026.mjs
   sources/thesportsdb.mjs
   sources/normalize-event.mjs
   sources/world-cup-2026.mjs
+  sources/schedules/2026/
   work/local-static-server.cjs
   work/validate-events.cjs
 ```
@@ -134,9 +137,23 @@ Sports Command Center includes a source adapter for FIFA World Cup 2026:
 
 If TV/streaming data is not provided by the source, the app uses `TBD` and does not invent it.
 
+## Racing Schedule Import
+
+Version 0.19.0 adds verified future 2026 racing schedules:
+
+- NASCAR Cup Series: 20 events.
+- NASCAR O'Reilly Auto Parts Series: 16 events.
+- NASCAR Craftsman Truck Series: 13 events.
+- Formula 1: 15 events.
+- IndyCar: 9 events.
+- MotoGP: 14 events.
+- IMSA WeatherTech SportsCar Championship: 6 events.
+
+The source files live in `sources/schedules/2026/` and are normalized by `sources/racing-2026.mjs`. TV/streaming and start times remain `TBD` when reliable source data is not available.
+
 ## Data and Logo Sources
 
-Version 0.18.0 adds `DATA_SOURCES.md` as the source audit. Current sources include OpenFootball for World Cup matches, curated major-event windows for selective multi-sport coverage, TheSportsDB for league/team artwork, FlagCDN for country flags, and local repo assets for channel identifiers and sport fallbacks.
+Version 0.19.0 uses `DATA_SOURCES.md` as the source audit. Current sources include OpenFootball for World Cup matches, verified static racing schedules, curated major-event windows for selective multi-sport coverage, TheSportsDB for league/team artwork, FlagCDN for country flags, and local repo assets for channel identifiers and sport fallbacks.
 
 TheSportsDB calls happen only in `scripts/update-events.mjs`. The browser remains static and does not contain API secrets.
 
@@ -163,9 +180,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.18.0`
+Current version: `0.19.0`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, and the first real sports visual/data foundation. Version 0.18.0 adds the generated logo registry, TheSportsDB artwork adapter, FlagCDN flags, local channel/sport visual fallbacks, curated multi-sport major-event windows, and tournament metadata.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, and expanded racing coverage. Version 0.19.0 adds verified future racing schedules while keeping the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 
@@ -185,6 +202,7 @@ The project is a usable static prototype with a command-center dashboard, hosted
 - Hosted updates do not delete local user-created events.
 - OpenFootball is useful but not guaranteed to be an official live schedule source.
 - Imported World Cup TV data is `TBD` unless provided by a source.
+- Some imported racing start times and TV/streaming values are `TBD` when official or verified source data is not available.
 - Curated major-event windows should be confirmed before making travel, ticket, or broadcast decisions.
 - TheSportsDB free-tier rate limits can temporarily prevent logo refreshes; the updater preserves the existing registry when that happens.
 - Channel SVGs are controlled local identifiers, not scraped official broadcast logos.
