@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.16.6";
+const APP_VERSION = "0.17.0";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 
@@ -762,6 +762,39 @@ function cleanTimezone(value) {
   return timezoneMap[timezone] || timezone.replace(/^UTC([+-])0?(\d+)$/, "UTC$1$2");
 }
 
+function preferredTimezoneLabel() {
+  return cleanTimezone(settings.defaultTimezone || "ET") || "ET";
+}
+
+function isDateInUsDst(dateValue) {
+  const date = parseDate(dateValue);
+  const month = date.getMonth();
+
+  return month >= 2 && month <= 10;
+}
+
+function offsetForTimezone(value, dateValue) {
+  const timezone = cleanTimezone(value).toUpperCase();
+  const utcOffset = timezone.match(/^UTC([+-])(\d{1,2})$/);
+
+  if (utcOffset) {
+    const direction = utcOffset[1] === "+" ? 1 : -1;
+    return direction * Number(utcOffset[2]) * 60;
+  }
+
+  const daylight = isDateInUsDst(dateValue);
+  const offsets = {
+    ET: daylight ? -240 : -300,
+    CT: daylight ? -300 : -360,
+    MT: daylight ? -360 : -420,
+    PT: daylight ? -420 : -480,
+    UTC: 0,
+    GMT: 0
+  };
+
+  return Object.prototype.hasOwnProperty.call(offsets, timezone) ? offsets[timezone] : null;
+}
+
 function formatClockTime(value) {
   const match = String(value || "").match(/^(\d{1,2}):(\d{2})/);
 
@@ -778,9 +811,31 @@ function formatClockTime(value) {
 }
 
 function eventTimeParts(event) {
+  const timeMatch = String(event.startTime || "").match(/^(\d{1,2}):(\d{2})/);
+  const sourceOffset = offsetForTimezone(event.timezone, event.date);
+  const targetZone = preferredTimezoneLabel();
+  const targetOffset = offsetForTimezone(targetZone, event.date);
+
+  if (timeMatch && sourceOffset !== null && targetOffset !== null) {
+    const eventDate = parseDate(event.date);
+    const sourceUtc = Date.UTC(
+      eventDate.getFullYear(),
+      eventDate.getMonth(),
+      eventDate.getDate(),
+      Number(timeMatch[1]),
+      Number(timeMatch[2])
+    ) - (sourceOffset * 60 * 1000);
+    const targetDate = new Date(sourceUtc + (targetOffset * 60 * 1000));
+
+    return {
+      time: formatClockTime(`${targetDate.getUTCHours()}:${String(targetDate.getUTCMinutes()).padStart(2, "0")}`),
+      zone: targetZone
+    };
+  }
+
   return {
     time: formatClockTime(event.startTime),
-    zone: cleanTimezone(event.timezone)
+    zone: cleanTimezone(event.timezone || targetZone)
   };
 }
 
@@ -868,6 +923,7 @@ function eventCard(event) {
   const favoriteMatches = favoriteMatchDetails(event);
   const matchup = matchupLabel(event);
   const competitionText = competitionLabel(event);
+  const time = eventTimeParts(event);
 
   return `
     <button class="event-card event-button" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
@@ -880,7 +936,7 @@ function eventCard(event) {
             ${statusTag(event.status)}
             ${competitionText ? `<span>${escapeHtml(competitionText)}</span>` : ""}
             <span>${formatDate(event.date)}</span>
-            <span>${escapeHtml(event.startTime || "Time TBD")} ${escapeHtml(event.timezone || "")}</span>
+            <span>${escapeHtml(time.time)} ${escapeHtml(time.zone)}</span>
             <span>${escapeHtml(event.tv || "TV TBD")}</span>
             ${event.score ? `<span>Score ${escapeHtml(event.score)}</span>` : ""}
             <span>Personal ${event.personalImportance}/10</span>
@@ -1386,7 +1442,7 @@ function renderCalendar(visibleEvents) {
           <button class="calendar-event" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
             ${sportTag(event.sport)}
             <strong>${escapeHtml(event.title)}</strong>
-            <span>${escapeHtml(event.startTime || "Time TBD")} ${escapeHtml(event.timezone || "")} - Priority ${eventWatchPriority(event)}</span>
+            <span>${escapeHtml(eventTimeParts(event).time)} ${escapeHtml(eventTimeParts(event).zone)} - Priority ${eventWatchPriority(event)}</span>
           </button>
         `).join("")}
       </article>
@@ -1672,7 +1728,7 @@ function setActiveView(viewName, activeButton = null) {
     settings: "APP SETTINGS"
   };
 
-  document.querySelector("#pageTitle").textContent = "★ SPORTS COMMAND CENTER ★";
+  document.querySelector("#pageTitle").innerHTML = `<span class="title-star">★</span> SPORTS COMMAND CENTER <span class="title-star">★</span>`;
   document.querySelector("#pageSubtitle").textContent = subtitles[viewName] || "WHAT TO WATCH NEXT";
 }
 

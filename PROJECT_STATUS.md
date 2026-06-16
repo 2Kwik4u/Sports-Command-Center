@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.16.6
+Version 0.17.0
 
 # Completed Features
 
@@ -24,6 +24,7 @@ Version 0.16.6
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
 - Dashboard sections for Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
 - Compact dashboard panels cap Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles so the first screen stays dense.
+- Compact event rows display times in the preferred/default timezone where possible, using ET by default.
 - JSON import/export for sharing event databases.
 - Import preview showing added, replaced, and unchanged events.
 - Google Calendar-compatible `.ics` export for high-priority filtered events and selected weekends.
@@ -40,7 +41,7 @@ Version 0.16.6
 
 # In Progress
 
-- Verifying the Version 0.16.6 sidebar update-status cleanup and automated update workflow.
+- Verifying the Version 0.17.0 visual polish pass and automated update workflow.
 - Continuing to tune the Sports Command Center dashboard for real watch-planning use.
 - Preparing GitHub Pages as the primary deployment path.
 - Continuing desktop visual matching against the approved Sports Command Center concept screenshot.
@@ -141,10 +142,12 @@ i-want-to-build-a-web/
 - Completed Version 0.16.4 by moving the full settings form into the Settings tab so the sidebar stays focused on navigation, filters, sharing, update status, and version.
 - Completed Version 0.16.5 by removing inactive header icon buttons and leaving Add Event as the only header action.
 - Completed Version 0.16.6 by removing the detailed hosted update status block from the sidebar while keeping the compact Last Update card and update/check behavior.
+- Completed Version 0.17.0 as a final command-center visual polish pass: brighter cyan/blue palette, stronger stadium banner, improved SCC crest styling, preferred/default timezone display in compact rows, and condensed sidebar range labels.
+- No new event sources, scraping, backend, account system, or product subsystem was added in Version 0.17.0.
 
 # Next Recommended Steps
 
-1. Playtest the 0.16.6 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
+1. Playtest the 0.17.0 Dashboard and Settings tab at a desktop viewport around 1536x1024 against the approved screenshot direction.
 2. Enable GitHub Pages for the repository and decide whether it should publish from the project root or `outputs/sports-weekend-planner`.
 3. Run the GitHub Action manually once from the Actions tab and confirm it produces no duplicate World Cup events.
 4. Test the compact dashboard, quick chips, Calendar, Weekends, Add/Edit/Delete, and hosted update button on desktop and phone widths.

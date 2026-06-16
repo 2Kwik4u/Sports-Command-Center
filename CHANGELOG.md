@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.17.0
+
+- Completed a final command-center visual polish pass.
+- Adjusted the dark palette toward a brighter cyan/blue sports-broadcast look with cleaner contrast.
+- Improved the compact stadium banner with stronger light clusters, beams, and broadcast atmosphere.
+- Polished the SCC crest styling with brighter teal outlines, depth, and stronger badge contrast.
+- Updated compact event time display to prefer the user's default timezone, ET by default, without mutating stored event data.
+- Condensed the sidebar range-filter labels so the label and current number sit on one line with the number highlighted.
+- Preserved the existing static app behavior and did not add new product systems or event sources.
+
 ## 0.16.6
 
 - Removed the detailed hosted update status block from the sidebar Event updates section.

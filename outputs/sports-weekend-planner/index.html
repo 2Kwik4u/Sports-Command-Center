@@ -56,15 +56,13 @@
               <option value="Possible road trip">Road trip candidate</option>
             </select>
           </label>
-          <label>
-            Minimum importance
+          <label class="range-filter-label">
+            <span class="filter-label-row">Minimum importance <span id="importanceValue">1+</span></span>
             <input id="importanceFilter" type="range" min="1" max="10" value="1">
-            <span id="importanceValue">1+</span>
           </label>
-          <label>
-            Minimum personal score
+          <label class="range-filter-label">
+            <span class="filter-label-row">Minimum personal score <span id="personalScoreValue">1+</span></span>
             <input id="personalScoreFilter" type="range" min="1" max="10" value="1">
-            <span id="personalScoreValue">1+</span>
           </label>
           <label class="checkbox-row">
             <input id="favoritesFilter" type="checkbox">
@@ -101,7 +99,7 @@
       <main class="main-content">
         <header class="page-header">
           <div>
-            <h2 id="pageTitle">★ SPORTS COMMAND CENTER ★</h2>
+            <h2 id="pageTitle"><span class="title-star">★</span> SPORTS COMMAND CENTER <span class="title-star">★</span></h2>
             <p id="pageSubtitle" class="page-subtitle">WHAT TO WATCH NEXT</p>
           </div>
           <div class="header-actions">

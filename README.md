@@ -18,6 +18,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Manual add/edit/delete event workflow.
 - Dedicated Settings view for dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
 - Event priority, personal importance, friend interest, must-watch detection, and Weekend Score.
+- Compact event rows display in the preferred/default timezone where possible, using ET by default.
 - JSON import/export with import preview.
 - Google Calendar-compatible `.ics` export.
 - Hosted `events.json` update flow.
@@ -144,9 +145,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.16.6`
+Current version: `0.17.0`
 
-The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.16.6 removes the detailed hosted update status block from the sidebar while keeping the compact Last Update card.
+The project is a usable static prototype with a refreshed Sports Command Center dashboard and a first automated event update pipeline. Version 0.17.0 is a final command-center visual polish pass with a brighter cyan/blue palette, stronger stadium banner, improved SCC crest styling, and preferred/default timezone display in compact rows.
 
 ## Roadmap
 
@@ -167,6 +168,7 @@ The project is a usable static prototype with a refreshed Sports Command Center 
 - OpenFootball is useful but not guaranteed to be an official live schedule source.
 - Imported World Cup TV data is `TBD` unless provided by a source.
 - Real logo assets are not bundled yet; the app currently falls back to styled badges, sport icons, and flag emoji.
+- Timezone display conversion is intentionally conservative and focused on known timezone labels and UTC offsets used by the current event data.
 - No automated browser test suite yet.
 - PWA installability is planned but not implemented.
 
