@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-17T07:26:26.690Z",
+  "updatedAt": "2026-06-17T20:30:49.261Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -1678,8 +1678,8 @@
       "stage": "Matchday 7",
       "round": "Matchday 7",
       "group": "Group K",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
