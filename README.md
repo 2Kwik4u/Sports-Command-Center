@@ -182,9 +182,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.19.3`
+Current version: `0.20.0`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, and polished stat tile icons. Version 0.19.3 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, polished stat tile icons, and a Calendar view that now matches the SCC broadcast-dashboard direction. Version 0.20.0 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 

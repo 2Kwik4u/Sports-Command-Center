@@ -6,11 +6,13 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.19.3
+Version 0.20.0
 
 # Completed Features
 
 - Dashboard, calendar, and weekend planner views.
+- Calendar view opens on the current real month by default, while still allowing Previous/Next historical browsing.
+- Calendar view now uses the SCC broadcast-dashboard visual system: dark navy/charcoal day cells, cyan-blue framing, compact event chips, current-day emphasis, and priority-event highlighting.
 - Dashboard hides events whose dates have already passed.
 - Weekend planner hides events whose dates have already passed.
 - Calendar can still show past events when browsing historical months.
@@ -62,7 +64,7 @@ Version 0.19.3
 
 # In Progress
 
-- Playtesting Version 0.19.3 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.20.0 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -211,10 +213,15 @@ i-want-to-build-a-web/
 - Added a local FIFA World Cup 2026 SVG under `assets/logos/leagues/` and registered it as a manual local league asset.
 - Completed Version 0.19.3 as a focused top stat tile icon polish pass.
 - Replaced weak top-row stat tile placeholders with centered inline SVG icons while preserving the dashboard layout and accent color system.
+- Completed Version 0.19.4 as a focused Calendar view bug fix.
+- Calendar now starts on the current real month when opened instead of the old hard-coded May 2026 month.
+- Completed Version 0.20.0 as a focused Calendar visual/layout revamp.
+- Replaced the Calendar's green/olive day blocks with premium SCC broadcast styling, cleaner weekday/toolbars, compact event chips, current-day styling, and priority-event emphasis.
+- Preserved static architecture, event data, hosted updates, localStorage behavior, GitHub Actions, filters, month navigation, and event modal behavior.
 
 # Next Recommended Steps
 
-1. Playtest 0.19.3 with the Dashboard, Racing quick filter, Calendar, Weekends, and All Events views to confirm the new racing density and polished stat tiles feel useful.
+1. Playtest 0.20.0 with the Dashboard, Calendar, Racing quick filter, Weekends, and All Events views to confirm the Calendar revamp feels consistent with the SCC dashboard.
 2. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 3. Tune Weekend Score and must-watch logic so racing-heavy weekends rank well without overwhelming other sports.
 4. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.

@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.20.0
+
+- Revamped the Calendar view to match the newer Sports Command Center broadcast-dashboard visual direction.
+- Replaced the old green/olive calendar day surfaces with dark navy/charcoal glass panels, cyan-blue framing, and subtle grid glow.
+- Added safe visual day-state hooks for current day, outside-month days, weekends, days with events, and days with high-priority events.
+- Restyled Calendar event buttons as compact broadcast chips with sport accent rails, tighter typography, and clearer priority treatment.
+- Preserved Calendar navigation, filtering, event modal behavior, static hosting compatibility, localStorage behavior, hosted updates, and event data.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
+## 0.19.4
+
+- Fixed the Calendar view so opening the Calendar tab starts on the current real month instead of the old hard-coded May 2026 month.
+- Kept Previous/Next month navigation working after the Calendar tab opens.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.19.3
 
 - Replaced the six top stat tile placeholder/emoji icons with compact inline SVG dashboard icons.

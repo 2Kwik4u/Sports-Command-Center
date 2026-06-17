@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.19.3";
+const APP_VERSION = "0.20.0";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
@@ -196,7 +196,7 @@ const starterEvents = [
 
 let events = loadEvents();
 let settings = loadSettings();
-let visibleMonth = new Date(2026, 4, 1);
+let visibleMonth = currentCalendarMonth();
 let pendingImportEvents = [];
 let pendingImportSummary = null;
 let activeQuickFilter = "all";
@@ -425,6 +425,11 @@ function eventDateTime(event) {
 function startOfToday() {
   const today = new Date();
   return new Date(today.getFullYear(), today.getMonth(), today.getDate());
+}
+
+function currentCalendarMonth() {
+  const today = new Date();
+  return new Date(today.getFullYear(), today.getMonth(), 1);
 }
 
 function isUpcomingEvent(event) {
@@ -1580,6 +1585,7 @@ function renderCalendar(visibleEvents) {
   const month = visibleMonth.getMonth();
   const firstDayOfMonth = new Date(year, month, 1);
   const firstVisibleDay = addDays(firstDayOfMonth, -firstDayOfMonth.getDay());
+  const today = startOfToday();
   const calendarDays = [];
 
   calendarMonthLabel.textContent = visibleMonth.toLocaleDateString(undefined, {
@@ -1590,18 +1596,32 @@ function renderCalendar(visibleEvents) {
   for (let index = 0; index < 42; index += 1) {
     const day = addDays(firstVisibleDay, index);
     const dayEvents = visibleEvents.filter((event) => sameCalendarDay(parseDate(event.date), day));
-    const outsideMonthClass = day.getMonth() === month ? "" : "outside-month";
+    const hasPriorityEvents = dayEvents.some((event) => event.status === "Must-watch" || eventWatchPriority(event) >= 28);
+    const dayClasses = [
+      "calendar-day",
+      day.getMonth() === month ? "" : "outside-month",
+      sameCalendarDay(day, today) ? "is-today" : "",
+      day.getDay() === 0 || day.getDay() === 6 ? "is-weekend" : "",
+      dayEvents.length ? "has-events" : "",
+      hasPriorityEvents ? "has-priority-events" : ""
+    ].filter(Boolean).join(" ");
 
     calendarDays.push(`
-      <article class="calendar-day ${outsideMonthClass}">
+      <article class="${dayClasses}">
         <div class="day-number">${day.getDate()}</div>
-        ${dayEvents.map((event) => `
-          <button class="calendar-event" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
-            ${sportTag(event.sport)}
-            <strong>${escapeHtml(event.title)}</strong>
-            <span>${escapeHtml(eventTimeParts(event).time)} ${escapeHtml(eventTimeParts(event).zone)} - Priority ${eventWatchPriority(event)}</span>
-          </button>
-        `).join("")}
+        ${dayEvents.map((event) => {
+          const priority = eventWatchPriority(event);
+          const priorityClass = event.status === "Must-watch" || priority >= 28 ? "priority-calendar-event" : "";
+          const time = eventTimeParts(event);
+
+          return `
+            <button class="calendar-event ${priorityClass}" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+              ${sportTag(event.sport)}
+              <strong>${escapeHtml(event.title)}</strong>
+              <span class="calendar-event-meta">${escapeHtml(time.time)} ${escapeHtml(time.zone)} - Priority ${priority}</span>
+            </button>
+          `;
+        }).join("")}
       </article>
     `);
   }
@@ -1868,6 +1888,10 @@ function renderUpdateStatus() {
 }
 
 function setActiveView(viewName, activeButton = null) {
+  if (viewName === "calendar") {
+    visibleMonth = currentCalendarMonth();
+  }
+
   document.querySelectorAll(".nav-item").forEach((button) => {
     button.classList.toggle("active", activeButton ? button === activeButton : button.dataset.view === viewName);
   });
