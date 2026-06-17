@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.20.0";
+const APP_VERSION = "0.20.1";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
@@ -632,6 +632,77 @@ function priorityLabel(event) {
   return reasons.length ? reasons.join(", ") : "general sports priority";
 }
 
+function interestScore(value, fallback = 6) {
+  const number = Number(value);
+
+  return Number.isFinite(number) ? clamp(number, 1, 10) : fallback;
+}
+
+function eventInterestProfile(event) {
+  const personalFallback = interestScore(event.personalImportance, interestScore(event.importance, 6));
+  const myInterest = interestScore(event.trip?.myInterest, personalFallback);
+  const friendInterest = interestScore(event.trip?.friendInterest, 6);
+  const sharedScore = Math.round((myInterest + friendInterest) / 2);
+  const gap = Math.abs(myInterest - friendInterest);
+  let label = "Worth a text";
+  let tone = "steady";
+
+  if (sharedScore >= 9 && gap <= 1) {
+    label = "Both all-in";
+    tone = "lock";
+  } else if (sharedScore >= 8 && gap <= 2) {
+    label = "Shared lock";
+    tone = "strong";
+  } else if (myInterest >= 8 && friendInterest <= 5) {
+    label = "Sell the friend";
+    tone = "split";
+  } else if (friendInterest >= 8 && myInterest <= 5) {
+    label = "Friend pull";
+    tone = "split";
+  } else if (sharedScore <= 4) {
+    label = "Low overlap";
+    tone = "low";
+  }
+
+  return {
+    myInterest,
+    friendInterest,
+    sharedScore,
+    gap,
+    label,
+    tone
+  };
+}
+
+function weekendInterestSummary(weekendEvents) {
+  const profiles = weekendEvents.map(eventInterestProfile);
+  const sharedAverage = profiles.length
+    ? Math.round(profiles.reduce((total, profile) => total + profile.sharedScore, 0) / profiles.length)
+    : 0;
+  const lockCount = profiles.filter((profile) => profile.sharedScore >= 8 && profile.gap <= 2).length;
+  const highFriendCount = profiles.filter((profile) => profile.friendInterest >= 8).length;
+  let topIndex = 0;
+
+  profiles.forEach((profile, index) => {
+    const currentBest = profiles[topIndex];
+    const betterSharedScore = profile.sharedScore > currentBest.sharedScore;
+    const sameSharedBetterPriority = profile.sharedScore === currentBest.sharedScore &&
+      eventWatchPriority(weekendEvents[index]) > eventWatchPriority(weekendEvents[topIndex]);
+
+    if (betterSharedScore || sameSharedBetterPriority) {
+      topIndex = index;
+    }
+  });
+
+  return {
+    sharedAverage,
+    lockCount,
+    highFriendCount,
+    topEvent: weekendEvents[topIndex],
+    topProfile: profiles[topIndex]
+  };
+}
+
 function isMustWatchEvent(event) {
   return event.status === "Must-watch" ||
     event.importance >= 9 ||
@@ -1079,6 +1150,74 @@ function eventCard(event) {
         </div>
         <span class="importance" title="Watch priority">${eventWatchPriority(event)}</span>
       </div>
+    </button>
+  `;
+}
+
+function sharedInterestMarkup(event) {
+  const profile = eventInterestProfile(event);
+
+  return `
+    <span class="shared-interest-card shared-${profile.tone}" style="--my-interest: ${profile.myInterest * 10}%; --friend-interest: ${profile.friendInterest * 10}%; --shared-interest: ${profile.sharedScore * 10}%;">
+      <span class="shared-interest-head">
+        <span>Shared read</span>
+        <strong>${profile.sharedScore}/10</strong>
+      </span>
+      <span class="shared-interest-bars">
+        <span class="interest-meter me-meter">
+          <span>Me</span>
+          <i><b></b></i>
+          <strong>${profile.myInterest}</strong>
+        </span>
+        <span class="interest-meter friend-meter">
+          <span>Friend</span>
+          <i><b></b></i>
+          <strong>${profile.friendInterest}</strong>
+        </span>
+      </span>
+      <span class="shared-interest-label">${escapeHtml(profile.label)}</span>
+    </span>
+  `;
+}
+
+function weekendEventCard(event) {
+  const favoriteMatches = favoriteMatchDetails(event);
+  const matchup = matchupLabel(event);
+  const competitionText = competitionLabel(event);
+  const time = eventTimeParts(event);
+  const profile = eventInterestProfile(event);
+  const priority = eventWatchPriority(event);
+  const reason = isMustWatchEvent(event)
+    ? mustWatchReason(event)
+    : priorityLabel(event);
+
+  return `
+    <button class="weekend-event-row event-button shared-${profile.tone}" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+      <span class="weekend-event-logo">${sportMark(event)}</span>
+      <span class="weekend-event-main">
+        <span class="weekend-event-tags">
+          ${sportTag(event.sport)}
+          ${statusTag(event.status)}
+          ${event.isAutoImported ? `<span class="source-pill">Auto</span>` : ""}
+        </span>
+        <strong>${escapeHtml(event.title)}</strong>
+        ${matchup && matchup !== event.title ? `<small class="event-matchup">${escapeHtml(matchup)}</small>` : ""}
+        <span class="weekend-event-meta">
+          ${competitionText ? `<span>${escapeHtml(competitionText)}</span>` : ""}
+          <span>${formatDate(event.date)}</span>
+          <span>${escapeHtml(time.time)} ${escapeHtml(time.zone)}</span>
+          <span>${escapeHtml(event.tv || "TV TBD")}</span>
+          ${event.score ? `<span>Score ${escapeHtml(event.score)}</span>` : ""}
+        </span>
+        ${(favoriteMatches.length || isMustWatchEvent(event) || profile.sharedScore >= 8)
+          ? `<span class="weekend-event-reason">${escapeHtml(reason)}</span>`
+          : ""}
+      </span>
+      ${sharedInterestMarkup(event)}
+      <span class="weekend-priority-badge">
+        <small>Priority</small>
+        <strong>${priority}</strong>
+      </span>
     </button>
   `;
 }
@@ -1663,21 +1802,41 @@ function renderWeekends(visibleEvents) {
     .map(([fridayValue, weekendEvents]) => {
       const friday = parseDate(fridayValue);
       const sunday = addDays(friday, 2);
-      const details = weekendScoreDetails(weekendEvents);
+      const sortedEvents = [...weekendEvents].sort((a, b) => a.date.localeCompare(b.date) || eventWatchPriority(b) - eventWatchPriority(a));
+      const details = weekendScoreDetails(sortedEvents);
+      const interestSummary = weekendInterestSummary(sortedEvents);
+      const topEventLabel = interestSummary.topEvent
+        ? `${interestSummary.topEvent.title} (${interestSummary.topProfile.sharedScore}/10)`
+        : "No shared pick yet";
 
       return `
-        <article class="weekend-card" style="${sportAccentStyle(weekendEvents[0]?.sport)}">
-          <h4>${formatDateObject(friday)} - ${formatDateObject(sunday)} - Weekend score ${details.score}</h4>
-          <div class="event-meta">
-            <span class="score-label">${escapeHtml(weekendScoreLabel(details))}</span>
-            <span>${escapeHtml(weekendScoreSummary(details))}</span>
+        <article class="weekend-card weekend-command-card" style="${sportAccentStyle(sortedEvents[0]?.sport)}">
+          <div class="weekend-command-header">
+            <div class="weekend-title-block">
+              <span class="weekend-kicker">Weekend board</span>
+              <h4>${formatDateObject(friday)} - ${formatDateObject(sunday)}</h4>
+              <div class="weekend-signal-row">
+                <span class="score-label">${escapeHtml(weekendScoreLabel(details))}</span>
+                <span>${escapeHtml(weekendScoreSummary(details))}</span>
+              </div>
+              <div class="weekend-command-actions">
+                <button class="secondary-button compact-action" type="button" data-export-weekend="${escapeHtml(fridayValue)}">Export Weekend Calendar</button>
+              </div>
+            </div>
+            <div class="weekend-score-box" aria-label="Weekend score">
+              <span>Weekend Score</span>
+              <strong>${details.score}</strong>
+              <small>${details.eventsCount} event${details.eventsCount === 1 ? "" : "s"} / ${details.sportCount} sport${details.sportCount === 1 ? "" : "s"}</small>
+            </div>
+            <div class="weekend-shared-box">
+              <span>Shared Interest</span>
+              <strong>${interestSummary.sharedAverage}/10 avg</strong>
+              <small>${interestSummary.lockCount} shared lock${interestSummary.lockCount === 1 ? "" : "s"} - ${interestSummary.highFriendCount} friend high-interest</small>
+              <em>Top overlap: ${escapeHtml(topEventLabel)}</em>
+            </div>
           </div>
-          <button class="secondary-button compact-action" type="button" data-export-weekend="${escapeHtml(fridayValue)}">Export Weekend Calendar</button>
-          <div class="weekend-events">
-            ${weekendEvents
-              .sort((a, b) => a.date.localeCompare(b.date))
-              .map(eventCard)
-              .join("")}
+          <div class="weekend-events weekend-command-events">
+            ${sortedEvents.map(weekendEventCard).join("")}
           </div>
         </article>
       `;

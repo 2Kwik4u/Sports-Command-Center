@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.20.1
+
+- Revamped the Weekends view to match the newer Sports Command Center dashboard and Calendar visual direction.
+- Replaced the older stacked weekend cards with SCC command-board panels showing Weekend Score, event counts, sport variety, shared-interest average, shared locks, friend high-interest count, and top overlap.
+- Added compact weekend event rows with sport logos/fallback marks, status/source pills, event metadata, priority badges, and a dedicated shared-interest card.
+- Added per-event "Me" and "Friend" interest bars plus overlap labels such as Shared lock, Worth a text, Sell the friend, Friend pull, and Low overlap.
+- Preserved weekend exports, event modal opening from weekend rows, filters, event data, hosted updates, localStorage behavior, static hosting compatibility, and GitHub Actions.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.20.0
 
 - Revamped the Calendar view to match the newer Sports Command Center broadcast-dashboard visual direction.

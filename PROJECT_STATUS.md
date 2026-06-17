@@ -6,11 +6,12 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.20.0
+Version 0.20.1
 
 # Completed Features
 
 - Dashboard, calendar, and weekend planner views.
+- Weekend Planner now uses a premium SCC command-board layout with shared-interest scoring for each event.
 - Calendar view opens on the current real month by default, while still allowing Previous/Next historical browsing.
 - Calendar view now uses the SCC broadcast-dashboard visual system: dark navy/charcoal day cells, cyan-blue framing, compact event chips, current-day emphasis, and priority-event highlighting.
 - Dashboard hides events whose dates have already passed.
@@ -22,6 +23,7 @@ Version 0.20.0
 - Settings live in a dedicated Settings view instead of occupying the sidebar.
 - Favorite settings for sports, competitions, teams, drivers, and athletes.
 - Personal importance scoring and friend interest scoring.
+- Weekends display "Me", "Friend", and shared-interest readouts so two people can quickly spot overlap.
 - Preference-aware event priority and Weekend Score logic.
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
 - All Events dashboard table pagination for filtered lists longer than 10 rows.
@@ -64,7 +66,7 @@ Version 0.20.0
 
 # In Progress
 
-- Playtesting Version 0.20.0 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.20.1 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -218,11 +220,15 @@ i-want-to-build-a-web/
 - Completed Version 0.20.0 as a focused Calendar visual/layout revamp.
 - Replaced the Calendar's green/olive day blocks with premium SCC broadcast styling, cleaner weekday/toolbars, compact event chips, current-day styling, and priority-event emphasis.
 - Preserved static architecture, event data, hosted updates, localStorage behavior, GitHub Actions, filters, month navigation, and event modal behavior.
+- Completed Version 0.20.1 as a focused Weekends view makeover.
+- Reworked Weekend Planner cards into SCC command-board panels with weekend score, shared-interest summary, top-overlap callout, and denser broadcast-style event rows.
+- Added per-event shared-interest bars for "Me" and "Friend" plus readable overlap labels such as Shared lock, Worth a text, and Low overlap.
+- Preserved static architecture, event data, hosted updates, localStorage behavior, GitHub Actions, filters, weekend exports, and event modal behavior.
 
 # Next Recommended Steps
 
-1. Playtest 0.20.0 with the Dashboard, Calendar, Racing quick filter, Weekends, and All Events views to confirm the Calendar revamp feels consistent with the SCC dashboard.
-2. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
-3. Tune Weekend Score and must-watch logic so racing-heavy weekends rank well without overwhelming other sports.
+1. Playtest 0.20.1 with a friend-focused lens: confirm the Weekends tab makes shared-interest decisions faster.
+2. Tune the default friend-interest assumptions for auto-imported events if the Weekends tab feels too uniformly "worth a text."
+3. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 4. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.
