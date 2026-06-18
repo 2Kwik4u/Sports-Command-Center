@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.21.2
+Version 0.21.3
 
 # Completed Features
 
@@ -27,6 +27,8 @@ Version 0.21.2
 - Weekends display "Me", "Friend", and shared-interest readouts so two people can quickly spot overlap.
 - Preference-aware event priority and Weekend Score logic.
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
+- Dashboard `View all` links and capped `+ X more` rows now drill into the dedicated Events board with matching board filters.
+- Keep-Free Weekends Dashboard drill-downs intentionally open the Weekends planner because those rows represent weekend summaries rather than a flat event list.
 - All Events dashboard table pagination for filtered lists longer than 10 rows.
 - All Events Date & Time sorting now orders same-day events by timezone-aware start time.
 - All Events Dashboard rows now show Event / Location with a title line, muted existing venue/location line, and compact participant identities for duplicate matchup rows.
@@ -71,7 +73,7 @@ Version 0.21.2
 
 # In Progress
 
-- Playtesting Version 0.21.2 across Dashboard, Events, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.21.3 across Dashboard drill-downs, Events board filters, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -159,6 +161,11 @@ i-want-to-build-a-web/
 
 # Recent Changes
 
+- Completed Version 0.21.3 as a Dashboard-to-Events drill-down navigation pass.
+- Added Events board drill-downs for Dashboard Today / Next 24 Hours, This Week, World Cup, Must-Watch, and Watchlist summary actions.
+- Routed Keep-Free Weekends Dashboard summary actions to the Weekends planner instead of overbuilding a weekend-specific Events filter.
+- Converted Dashboard `View all` labels into accessible buttons with hover and focus styling.
+- Preserved Dashboard quick chips, sidebar filters, Events search/filter/sort behavior, event modals, hosted updates, localStorage behavior, and static hosting compatibility.
 - Completed Version 0.21.2 as a focused NASCAR series logo integration pass.
 - Added local NASCAR Cup, O'Reilly, and Craftsman Truck Series identifiers under `assets/logos/leagues/`.
 - Registered those NASCAR series identifiers in the generated logo registry as manual local league assets.
@@ -252,8 +259,8 @@ i-want-to-build-a-web/
 
 # Next Recommended Steps
 
-1. Playtest 0.21.2 on Dashboard and Events with Racing filtered: confirm NASCAR Cup, O'Reilly, and Craftsman Truck Series marks appear where expected.
-2. Confirm Event / Location rows stay readable and participant identities reduce duplicate matchup text.
-3. Playtest the Events board on desktop and phone widths, especially search/date range/quick chips and event-card tapping.
+1. Playtest 0.21.3 Dashboard drill-downs on desktop and phone widths: Today, This Week, World Cup, Must-Watch, Watchlist, and Keep-Free Weekends.
+2. Confirm Events board search/date range/quick chips/sort still behave correctly after arriving from Dashboard drill-downs.
+3. Confirm Event / Location rows stay readable and participant identities reduce duplicate matchup text.
 4. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.21.2";
+const APP_VERSION = "0.21.3";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
@@ -1361,14 +1361,29 @@ function countryFlagMark(country, event = {}) {
 
   return logoImage(source, `${country} flag`, "flag-logo", fallback);
 }
-function cappedListMarkup(items, limit, renderItem, emptyMessage, moreLabel, quickFilter = "") {
+function actionAttributeMarkup(attributes = "") {
+  if (!attributes) {
+    return "";
+  }
+
+  if (typeof attributes === "string") {
+    return ` data-quick-filter="${escapeHtml(attributes)}"`;
+  }
+
+  return Object.entries(attributes)
+    .filter(([, value]) => value !== undefined && value !== null && value !== "")
+    .map(([name, value]) => ` ${name}="${escapeHtml(value)}"`)
+    .join("");
+}
+
+function cappedListMarkup(items, limit, renderItem, emptyMessage, moreLabel, actionAttributes = "") {
   if (!items.length) {
     return `<div class="empty-state">${escapeHtml(emptyMessage)}</div>`;
   }
 
   const shownItems = items.slice(0, limit);
   const remainingCount = Math.max(items.length - shownItems.length, 0);
-  const moreAttributes = quickFilter ? ` data-quick-filter="${escapeHtml(quickFilter)}"` : "";
+  const moreAttributes = actionAttributeMarkup(actionAttributes);
   const moreRow = remainingCount
     ? `<button class="more-row" type="button"${moreAttributes}>+ ${remainingCount} more ${escapeHtml(moreLabel)}</button>`
     : "";
@@ -1531,7 +1546,7 @@ function renderMustWatchEvents(visibleEvents) {
     (event) => compactPriorityRow(event, "fire"),
     "No must-watch events match the current filters.",
     "must-watch events",
-    "must-watch"
+    { "data-events-drilldown": "must-watch" }
   );
 }
 
@@ -1601,7 +1616,7 @@ function renderTodayEvents(visibleEvents) {
     compactEventCard,
     "Nothing urgent in the next 24 hours.",
     "events",
-    "today"
+    { "data-events-drilldown": "today" }
   );
 }
 
@@ -1617,7 +1632,7 @@ function renderThisWeekEvents(visibleEvents) {
     compactEventCard,
     "No events this week match the current filters.",
     "events",
-    "week"
+    { "data-events-drilldown": "week" }
   );
 }
 
@@ -1647,7 +1662,7 @@ function renderActiveTournaments(visibleEvents) {
       <div class="world-cup-match-grid">
         ${nextWorldCupEvents.slice(0, 3).map(worldCupMatchTile).join("")}
       </div>
-      <button class="link-button" type="button" data-quick-filter="world-cup">View full World Cup schedule →</button>
+      <button class="link-button" type="button" data-events-drilldown="world-cup">View full World Cup schedule →</button>
     `
     : `<div class="empty-state">No World Cup or automated tournament events match the current filters.</div>`;
 }
@@ -1974,7 +1989,7 @@ function renderPersonalWatchList(visibleEvents) {
     (event) => compactPriorityRow(event, "star"),
     "No personalized watchlist events match the current filters.",
     "watchlist events",
-    "favorites"
+    { "data-events-drilldown": "watchlist" }
   );
 }
 
@@ -2125,7 +2140,8 @@ function renderBestWeekends(visibleEvents) {
     3,
     weekendScoreRow,
     "No scored weekends match the current filters.",
-    "weekends"
+    "weekends",
+    { "data-weekends-drilldown": "keep-free" }
   );
 }
 
@@ -2494,6 +2510,66 @@ function setActiveView(viewName, activeButton = null) {
 
   document.querySelector("#pageTitle").innerHTML = `<span class="title-star">★</span> SPORTS COMMAND CENTER <span class="title-star">★</span>`;
   document.querySelector("#pageSubtitle").textContent = subtitles[viewName] || "WHAT TO WATCH NEXT";
+}
+
+function selectControlValue(selector, value) {
+  const control = document.querySelector(selector);
+
+  if (!control || value === undefined) {
+    return;
+  }
+
+  const hasOption = [...control.options].some((option) => option.value === value);
+
+  if (hasOption) {
+    control.value = value;
+  }
+}
+
+function scrollMainContentToTop() {
+  const mainContent = document.querySelector(".main-content");
+
+  if (mainContent?.scrollTo) {
+    mainContent.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function dashboardEventsDrilldownConfig(kind) {
+  const configs = {
+    today: { dateRange: "today", quickFilter: "all", sort: "date" },
+    week: { dateRange: "week", quickFilter: "all", sort: "date" },
+    "world-cup": { dateRange: "upcoming", quickFilter: "world-cup", sort: "date" },
+    "must-watch": { dateRange: "upcoming", quickFilter: "must-watch", sort: "must-watch" },
+    watchlist: { dateRange: "upcoming", quickFilter: "favorites", sort: "priority" }
+  };
+
+  return configs[kind] || configs.today;
+}
+
+function openEventsBoardView(kind) {
+  const config = dashboardEventsDrilldownConfig(kind);
+  const searchInput = document.querySelector("#eventsPageSearchInput");
+
+  if (searchInput) {
+    searchInput.value = "";
+  }
+
+  selectControlValue("#eventsDateRangeInput", config.dateRange);
+  selectControlValue("#eventsPageSortInput", config.sort);
+  eventsPageQuickFilter = config.quickFilter;
+  resetEventsPage();
+  setActiveView("events");
+  renderAll();
+  scrollMainContentToTop();
+}
+
+function openWeekendsPlannerView() {
+  setActiveView("weekends");
+  renderAll();
+  scrollMainContentToTop();
 }
 
 function wireNavigation() {
@@ -3073,6 +3149,20 @@ function wireEventForm() {
   document.querySelector("#eventForm").addEventListener("submit", handleEventSubmit);
 
   document.body.addEventListener("click", (event) => {
+    const eventsDrilldownButton = event.target.closest("[data-events-drilldown]");
+
+    if (eventsDrilldownButton) {
+      openEventsBoardView(eventsDrilldownButton.dataset.eventsDrilldown);
+      return;
+    }
+
+    const weekendsDrilldownButton = event.target.closest("[data-weekends-drilldown]");
+
+    if (weekendsDrilldownButton) {
+      openWeekendsPlannerView();
+      return;
+    }
+
     const quickFilterButton = event.target.closest("[data-quick-filter]");
 
     if (quickFilterButton) {

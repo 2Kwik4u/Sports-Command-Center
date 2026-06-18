@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.21.3
+
+- Added Dashboard drill-down navigation from capped `+ X more` rows into the dedicated Events board.
+- Made Today / Next 24 Hours, This Week, World Cup, Must-Watch, and Watchlist Dashboard actions open Events with the matching date range, quick chip, sort mode, and reset pagination.
+- Made Keep-Free Weekends Dashboard actions intentionally open the Weekends planner because those rows summarize weekends rather than individual event lists.
+- Converted Dashboard `View all` labels into real buttons with hover and keyboard focus styling.
+- Preserved Dashboard quick chips, sidebar filters, Events search/filter/sort behavior, event modals, hosted updates, localStorage behavior, and static hosting compatibility.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.21.2
 
 - Added local NASCAR series identifiers for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, and NASCAR Craftsman Truck Series.

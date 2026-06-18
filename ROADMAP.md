@@ -12,7 +12,7 @@ The app should reduce sports schedule overload by surfacing major events, person
 
 # Current State
 
-Version 0.21.2 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
+Version 0.21.3 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
 
 The current automated source adapters import all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed, selective curated major-event windows, and 93 future 2026 racing schedule events from verified static JSON. The app also includes TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament/series metadata for future Active Tournament improvements.
 
@@ -28,7 +28,7 @@ Completed or nearly completed:
 
 - Static app structure.
 - Dashboard, dedicated Events board, calendar, and weekend planner.
-- Mobile-friendly Events page with grouped agenda cards, board-specific filters, watch-priority sorting, and shared-interest readouts.
+- Mobile-friendly Events page with grouped agenda cards, board-specific filters, watch-priority sorting, shared-interest readouts, and Dashboard drill-down navigation.
 - Manual add/edit/delete event workflow.
 - Filters and quick dashboard chips.
 - Local settings and theme support.
@@ -116,6 +116,6 @@ Later, once the app is reliable:
 
 # Current Priority
 
-1. Playtest Version 0.21.0 with the dedicated Events board on desktop and phone-width screens.
+1. Playtest Version 0.21.3 with Dashboard drill-downs into the dedicated Events board on desktop and phone-width screens.
 2. Tune Events board filters and sorting based on real use, especially Watchlist, TV TBD, and Watch Priority.
 3. Improve personalization: favorite drivers/series/leagues, personal scoring, must-watch detection, and Weekend Score behavior.

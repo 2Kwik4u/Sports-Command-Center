@@ -15,6 +15,8 @@ The long-term goal is a personalized sports command center that answers what to 
 - Dedicated Events page with search, date range, quick filters, watch-priority sorting, grouped agenda cards, shared-interest readouts, and a mobile-friendly stacked card layout.
 - Compact dashboard panels with capped event lists and `+ X more` rows.
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
+- Dashboard `View all` links and `+ X more` rows drill into the dedicated Events board with matching filters for Today, This Week, World Cup, Must-Watch, and Watchlist.
+- Keep-Free Weekends Dashboard drill-downs open the Weekends planner because those summaries are weekend-level decisions.
 - All Events table pagination for filtered lists longer than 10 rows.
 - Dashboard All Events rows with Event / Location display and compact participant identities when matchup text would otherwise repeat.
 - Automatic hiding of past events from Dashboard and Weekends.
@@ -198,9 +200,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.21.2`
+Current version: `0.21.3`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, and clearer Dashboard All Events rows. Version 0.21.2 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, clearer Dashboard All Events rows, and Dashboard drill-down navigation into the Events board. Version 0.21.3 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 

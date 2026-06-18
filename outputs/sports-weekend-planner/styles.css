@@ -516,6 +516,39 @@ body[data-theme="light"] .panel {
   font-size: 0.86rem;
 }
 
+.panel-link {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 850;
+  margin: 4px 0 0;
+  padding: 2px 0;
+  text-align: right;
+}
+
+.panel-link:hover,
+.panel-link:focus-visible,
+.more-row[data-events-drilldown]:hover,
+.more-row[data-events-drilldown]:focus-visible,
+.more-row[data-weekends-drilldown]:hover,
+.more-row[data-weekends-drilldown]:focus-visible,
+.link-button[data-events-drilldown]:hover,
+.link-button[data-events-drilldown]:focus-visible {
+  color: var(--brand-cyan);
+  text-decoration: underline;
+}
+
+.panel-link:focus-visible,
+.more-row[data-events-drilldown]:focus-visible,
+.more-row[data-weekends-drilldown]:focus-visible,
+.link-button[data-events-drilldown]:focus-visible {
+  outline: 2px solid var(--brand-cyan);
+  outline-offset: 2px;
+}
+
 .event-list,
 .compact-list,
 .sport-summary,
@@ -3416,6 +3449,7 @@ body:not([data-theme="light"]) .panel-heading h3 {
 }
 
 .panel-heading p,
+.panel-link,
 .more-row,
 .link-button {
   color: var(--section-accent, var(--brand-cyan));
