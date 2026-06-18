@@ -10,8 +10,9 @@ The long-term goal is a personalized sports command center that answers what to 
 
 ## Current Features
 
-- Dashboard, calendar, and weekend planner views.
+- Dashboard, dedicated Events board, calendar, and weekend planner views.
 - Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events dashboard sections.
+- Dedicated Events page with search, date range, quick filters, watch-priority sorting, grouped agenda cards, shared-interest readouts, and a mobile-friendly stacked card layout.
 - Compact dashboard panels with capped event lists and `+ X more` rows.
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
 - All Events table pagination for filtered lists longer than 10 rows.
@@ -57,6 +58,12 @@ The browser app does not require API secrets. Future authenticated sources shoul
 
 ## Project Structure
 
+Canonical local project root:
+
+```text
+C:\Users\tookw\Documents\Codex\2026-05-29\Eric's Labs\i-want-to-build-a-web
+```
+
 ```text
 i-want-to-build-a-web/
   .github/workflows/update-events.yml
@@ -87,6 +94,12 @@ i-want-to-build-a-web/
 
 No package install is required.
 
+From the canonical project root:
+
+```bash
+cd "C:\Users\tookw\Documents\Codex\2026-05-29\Eric's Labs\i-want-to-build-a-web"
+```
+
 Run locally with the included static server:
 
 ```bash
@@ -103,13 +116,14 @@ http://localhost:8000
 
 1. Open the app.
 2. Use Dashboard to decide what to watch soon and which weekends matter.
-3. Use Calendar for month browsing.
-4. Use Weekends to compare Friday-Sunday clusters.
-5. Use Add Event or click an event card to edit local events.
-6. Use filters and quick chips to narrow the planning view.
-7. Use Check for Event Updates to merge hosted `events.json` updates into local storage.
-8. Use JSON export/import to share a local calendar with a friend.
-9. Use Google Calendar export for high-priority events or selected weekends.
+3. Use Events for a searchable agenda board with date ranges, quick filters, watch priority, TV status, and shared-interest readouts.
+4. Use Calendar for month browsing.
+5. Use Weekends to compare Friday-Sunday clusters.
+6. Use Add Event or click an event card to edit local events.
+7. Use filters and quick chips to narrow the planning view.
+8. Use Check for Event Updates to merge hosted `events.json` updates into local storage.
+9. Use JSON export/import to share a local calendar with a friend.
+10. Use Google Calendar export for high-priority events, selected weekends, or the current Events board.
 
 ## Automated Event Updates
 
@@ -182,9 +196,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.20.0`
+Current version: `0.21.0`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, polished stat tile icons, and a Calendar view that now matches the SCC broadcast-dashboard direction. Version 0.20.0 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, polished Calendar and Weekends views, and a dedicated mobile-friendly Events board. Version 0.21.0 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 

@@ -1,11 +1,25 @@
 # Changelog
 
+## 0.21.0
+
+- Added a dedicated Events page instead of sending the Events navigation item back to the Dashboard table.
+- Added an Events command board with local search, date ranges, quick chips, watch-priority sorting, grouped date sections, and compact agenda cards.
+- Added shared-interest readouts to Events cards so two people can quickly compare "Me" and "Friend" interest per event.
+- Added mobile-friendly Events page behavior with stacked agenda cards instead of a wide table as the primary phone experience.
+- Added an Events board `.ics` export for the current Events board result set.
+- Preserved Dashboard All Events pagination, Dashboard/Calendar/Weekends behavior, event data, hosted update flow, localStorage behavior, GitHub Actions, and static hosting compatibility.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.20.1
 
 - Revamped the Weekends view to match the newer Sports Command Center dashboard and Calendar visual direction.
 - Replaced the older stacked weekend cards with SCC command-board panels showing Weekend Score, event counts, sport variety, shared-interest average, shared locks, friend high-interest count, and top overlap.
 - Added compact weekend event rows with sport logos/fallback marks, status/source pills, event metadata, priority badges, and a dedicated shared-interest card.
 - Added per-event "Me" and "Friend" interest bars plus overlap labels such as Shared lock, Worth a text, Sell the friend, Friend pull, and Low overlap.
+- Moved shared event data controls from the sidebar into the Settings tab.
+- Renamed the All Events date sort to Date & Time and made it sort same-day events by timezone-aware start time.
+- Added `AGENTS.md` repo guidance and documented the canonical local project root.
+- Archived the stale pre-move local contents and replaced the old project path contents with pointer files that identify the canonical repo.
 - Preserved weekend exports, event modal opening from weekend rows, filters, event data, hosted updates, localStorage behavior, static hosting compatibility, and GitHub Actions.
 - Synced the maintained `outputs/sports-weekend-planner/` app copy.
 

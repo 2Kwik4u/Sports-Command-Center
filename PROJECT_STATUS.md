@@ -6,11 +6,12 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.20.1
+Version 0.21.0
 
 # Completed Features
 
-- Dashboard, calendar, and weekend planner views.
+- Dashboard, dedicated Events board, calendar, and weekend planner views.
+- Dedicated Events page with its own event-board controls, grouped agenda cards, watch-priority sorting, shared-interest readouts, and mobile-friendly stacked cards.
 - Weekend Planner now uses a premium SCC command-board layout with shared-interest scoring for each event.
 - Calendar view opens on the current real month by default, while still allowing Previous/Next historical browsing.
 - Calendar view now uses the SCC broadcast-dashboard visual system: dark navy/charcoal day cells, cyan-blue framing, compact event chips, current-day emphasis, and priority-event highlighting.
@@ -27,10 +28,12 @@ Version 0.20.1
 - Preference-aware event priority and Weekend Score logic.
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
 - All Events dashboard table pagination for filtered lists longer than 10 rows.
+- All Events Date & Time sorting now orders same-day events by timezone-aware start time.
 - Dashboard sections for Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
 - Compact dashboard panels cap Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles so the first screen stays dense.
 - Compact event rows display times in the preferred/default timezone where possible, using ET by default.
 - JSON import/export for sharing event databases.
+- Shared JSON import/export and Google Calendar export controls now live in the Settings tab instead of the sidebar.
 - Import preview showing added, replaced, and unchanged events.
 - Google Calendar-compatible `.ics` export for high-priority filtered events and selected weekends.
 - Hosted `events.json` update flow that merges events into local storage by stable `id`.
@@ -66,7 +69,7 @@ Version 0.20.1
 
 # In Progress
 
-- Playtesting Version 0.20.1 across Dashboard, Calendar, Weekends, Events, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.21.0 across Dashboard, Events, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -85,6 +88,8 @@ Version 0.20.1
 
 # Architecture
 
+- Canonical local project root: `C:\Users\tookw\Documents\Codex\2026-05-29\Eric's Labs\i-want-to-build-a-web`.
+- The older local path `C:\Users\tookw\Documents\Codex\2026-05-29\i-want-to-build-a-web` is maintained only as a pointer folder to the canonical root.
 - Frontend: plain HTML, CSS, and JavaScript.
 - Browser storage: `localStorage` for user events and settings.
 - Hosted data source: static `events.json`.
@@ -152,6 +157,14 @@ i-want-to-build-a-web/
 
 # Recent Changes
 
+- Completed Version 0.21.0 as a dedicated Events page revamp.
+- Added an Events command board with local search, date range controls, quick chips, watch-priority sorting, grouped date sections, sport/logo identity, TV badges, priority scores, and shared Me/Friend interest readouts.
+- Added mobile-first Events page behavior with stacked agenda cards instead of relying on the wide Dashboard table as the primary phone experience.
+- Added an Events board `.ics` export that exports the current Events board result set.
+- Preserved Dashboard All Events pagination, event data, hosted updates, localStorage behavior, GitHub Actions, and static hosting compatibility.
+- Added `AGENTS.md` as the repo-level guidance file for AI agents and automation tools.
+- Made the `Eric's Labs\i-want-to-build-a-web` folder the documented canonical local project root.
+- Archived the stale pre-move contents and replaced the old project path contents with pointer files that identify the canonical repo.
 - Updated to Version 0.16.0.
 - Rebranded UI language toward Sports Command Center.
 - Added a more energetic scoreboard/stadium-light visual direction.
@@ -223,12 +236,14 @@ i-want-to-build-a-web/
 - Completed Version 0.20.1 as a focused Weekends view makeover.
 - Reworked Weekend Planner cards into SCC command-board panels with weekend score, shared-interest summary, top-overlap callout, and denser broadcast-style event rows.
 - Added per-event shared-interest bars for "Me" and "Friend" plus readable overlap labels such as Shared lock, Worth a text, and Low overlap.
+- Moved shared event data controls out of the sidebar and into the Settings tab so the left rail stays focused on navigation, filters, update status, and version.
+- Renamed the All Events sort option to Date & Time and fixed same-day sorting to respect timezone-aware event start time.
 - Preserved static architecture, event data, hosted updates, localStorage behavior, GitHub Actions, filters, weekend exports, and event modal behavior.
 
 # Next Recommended Steps
 
-1. Playtest 0.20.1 with a friend-focused lens: confirm the Weekends tab makes shared-interest decisions faster.
-2. Tune the default friend-interest assumptions for auto-imported events if the Weekends tab feels too uniformly "worth a text."
-3. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
-4. Start the personalization milestone: favorite teams/drivers/leagues, personal scoring, must-watch detection, and Weekend Score improvements.
+1. Playtest 0.21.0 on desktop and phone widths, especially Events search/date range/quick chips and event-card tapping.
+2. Tune the Events board filters after real use, especially TV TBD, Watchlist, and Watch Priority sorting.
+3. Tune the default friend-interest assumptions for auto-imported events if shared-interest readouts feel too uniform.
+4. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

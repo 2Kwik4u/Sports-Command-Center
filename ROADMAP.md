@@ -12,16 +12,23 @@ The app should reduce sports schedule overload by surfacing major events, person
 
 # Current State
 
-Version 0.19.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
+Version 0.21.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
 
 The current automated source adapters import all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed, selective curated major-event windows, and 93 future 2026 racing schedule events from verified static JSON. The app also includes TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament/series metadata for future Active Tournament improvements.
+
+Canonical local project root:
+
+```text
+C:\Users\tookw\Documents\Codex\2026-05-29\Eric's Labs\i-want-to-build-a-web
+```
 
 # Milestone 1 - Foundation
 
 Completed or nearly completed:
 
 - Static app structure.
-- Dashboard, calendar, and weekend planner.
+- Dashboard, dedicated Events board, calendar, and weekend planner.
+- Mobile-friendly Events page with grouped agenda cards, board-specific filters, watch-priority sorting, and shared-interest readouts.
 - Manual add/edit/delete event workflow.
 - Filters and quick dashboard chips.
 - Local settings and theme support.
@@ -47,7 +54,7 @@ Minimum useful 1.0 release work:
 - Enable and verify GitHub Pages hosting.
 - Confirm deployed `/events.json` can be fetched and merged by the app.
 - Run the GitHub Action manually and verify it does not create duplicate events.
-- Finish a desktop and mobile playtest of Dashboard, Calendar, Weekends, filters, add/edit/delete, import/export, and hosted updates.
+- Finish a desktop and mobile playtest of Dashboard, Events, Calendar, Weekends, filters, add/edit/delete, import/export, and hosted updates.
 - Tune quick filters and dashboard section ordering based on real use.
 - Improve empty states and update status messaging where needed.
 - Improve favorite teams, drivers, leagues, and competitions so the calendar feels more personalized.
@@ -109,6 +116,6 @@ Later, once the app is reliable:
 
 # Current Priority
 
-1. Playtest Version 0.19.0 with racing-heavy weekends, Racing quick filter, Calendar, Weekends, and All Events.
-2. Improve personalization: favorite drivers/series/leagues, personal scoring, and must-watch/Weekend Score behavior.
-3. Refine the shared event database workflow and Google Calendar export now that hosted events cover more sports.
+1. Playtest Version 0.21.0 with the dedicated Events board on desktop and phone-width screens.
+2. Tune Events board filters and sorting based on real use, especially Watchlist, TV TBD, and Watch Priority.
+3. Improve personalization: favorite drivers/series/leagues, personal scoring, must-watch detection, and Weekend Score behavior.

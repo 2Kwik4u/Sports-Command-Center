@@ -1,11 +1,12 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.20.1";
+const APP_VERSION = "0.21.0";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
 const EVENT_LIST_PAGE_SIZE = 10;
+const EVENTS_PAGE_BATCH_SIZE = 30;
 
 const sportStyles = {
   Soccer: ["#5eead4", "rgba(94, 234, 212, 0.16)", "rgba(94, 234, 212, 0.45)"],
@@ -201,6 +202,8 @@ let pendingImportEvents = [];
 let pendingImportSummary = null;
 let activeQuickFilter = "all";
 let eventListPage = 1;
+let eventsPageQuickFilter = "all";
+let eventsPageVisibleCount = EVENTS_PAGE_BATCH_SIZE;
 
 function loadEvents() {
   const savedEvents = localStorage.getItem(STORAGE_KEY);
@@ -413,9 +416,23 @@ function formatDateObject(date) {
 
 function eventDateTime(event) {
   const date = parseDate(event.date);
+  const timeMatch = String(event.startTime || "").match(/^(\d{1,2}):(\d{2})/);
 
-  if (event.startTime) {
-    const [hours, minutes] = event.startTime.split(":").map(Number);
+  if (timeMatch) {
+    const sourceOffset = offsetForTimezone(event.timezone, event.date);
+    const hours = Number(timeMatch[1]);
+    const minutes = Number(timeMatch[2]);
+
+    if (sourceOffset !== null) {
+      return new Date(Date.UTC(
+        date.getFullYear(),
+        date.getMonth(),
+        date.getDate(),
+        hours,
+        minutes
+      ) - (sourceOffset * 60 * 1000));
+    }
+
     date.setHours(hours || 0, minutes || 0);
   }
 
@@ -818,6 +835,166 @@ function getQuickFilteredEvents(sourceEvents) {
   }
 
   return sourceEvents;
+}
+
+function compareEventsByDateTime(a, b) {
+  return eventDateTime(a) - eventDateTime(b) || a.title.localeCompare(b.title);
+}
+
+function resetEventsPage() {
+  eventsPageVisibleCount = EVENTS_PAGE_BATCH_SIZE;
+}
+
+function searchableEventText(event) {
+  return [
+    event.title,
+    event.sport,
+    event.competition,
+    event.venue,
+    event.location,
+    event.tv,
+    event.status,
+    event.notes,
+    event.personalImportance,
+    event.stage,
+    event.round,
+    event.group,
+    event.homeTeam,
+    event.awayTeam,
+    event.seriesName,
+    event.eventType,
+    ...(event.teams || []),
+    ...(event.participants || []),
+    ...(event.drivers || []),
+    ...(event.competitionTags || []),
+    ...(event.favoriteTags || [])
+  ].join(" ").toLowerCase();
+}
+
+function thisWeekendStart() {
+  const today = startOfToday();
+  const daysUntilFriday = (5 - today.getDay() + 7) % 7;
+
+  return new Date(today.getFullYear(), today.getMonth(), today.getDate() + daysUntilFriday);
+}
+
+function isThisWeekendEvent(event) {
+  const eventDate = parseDate(event.date);
+  const weekendStart = thisWeekendStart();
+  const weekendEnd = new Date(weekendStart);
+
+  weekendEnd.setDate(weekendStart.getDate() + 3);
+
+  return eventDate >= weekendStart && eventDate < weekendEnd;
+}
+
+function isCurrentMonthEvent(event) {
+  const eventDate = parseDate(event.date);
+  const today = startOfToday();
+
+  return eventDate.getFullYear() === today.getFullYear() &&
+    eventDate.getMonth() === today.getMonth() &&
+    eventDate >= today;
+}
+
+function isTbdTvEvent(event) {
+  const tv = String(event.tv || "").trim().toLowerCase();
+
+  return !tv || tv === "tbd" || tv === "tv tbd";
+}
+
+function watchlistEvent(event) {
+  return isMustWatchEvent(event) || hasFavoriteMatch(event) || event.personalImportance >= 8 || eventInterestProfile(event).sharedScore >= 8;
+}
+
+function filterEventsPageByDateRange(sourceEvents) {
+  const range = document.querySelector("#eventsDateRangeInput")?.value || "upcoming";
+
+  if (range === "today") {
+    return sourceEvents.filter((event) => isWithinDays(event, 1));
+  }
+
+  if (range === "week") {
+    return sourceEvents.filter((event) => isWithinDays(event, 7));
+  }
+
+  if (range === "weekend") {
+    return sourceEvents.filter(isThisWeekendEvent);
+  }
+
+  if (range === "thirty") {
+    return sourceEvents.filter((event) => isWithinDays(event, 30));
+  }
+
+  if (range === "month") {
+    return sourceEvents.filter(isCurrentMonthEvent);
+  }
+
+  return sourceEvents;
+}
+
+function filterEventsPageByQuickFilter(sourceEvents) {
+  if (eventsPageQuickFilter === "must-watch") {
+    return sourceEvents.filter(isMustWatchEvent);
+  }
+
+  if (eventsPageQuickFilter === "favorites") {
+    return sourceEvents.filter(watchlistEvent);
+  }
+
+  if (eventsPageQuickFilter === "world-cup") {
+    return sourceEvents.filter((event) => event.competition === "FIFA World Cup");
+  }
+
+  if (eventsPageQuickFilter === "racing") {
+    return sourceEvents.filter((event) => event.sport === "Racing");
+  }
+
+  if (eventsPageQuickFilter === "soccer") {
+    return sourceEvents.filter((event) => event.sport === "Soccer");
+  }
+
+  if (eventsPageQuickFilter === "tbd-tv") {
+    return sourceEvents.filter(isTbdTvEvent);
+  }
+
+  return sourceEvents;
+}
+
+function getEventsPageEvents(visibleEvents, upcomingEvents) {
+  const range = document.querySelector("#eventsDateRangeInput")?.value || "upcoming";
+  const searchTerm = document.querySelector("#eventsPageSearchInput")?.value.trim().toLowerCase() || "";
+  const baseEvents = range === "all" ? visibleEvents : upcomingEvents;
+  const dateRangeEvents = filterEventsPageByDateRange(baseEvents);
+  const quickFilteredEvents = filterEventsPageByQuickFilter(dateRangeEvents);
+
+  return quickFilteredEvents.filter((event) => !searchTerm || searchableEventText(event).includes(searchTerm));
+}
+
+function sortEventsPageEvents(sourceEvents) {
+  const sortMode = document.querySelector("#eventsPageSortInput")?.value || "date";
+
+  return [...sourceEvents].sort((a, b) => {
+    if (sortMode === "priority") {
+      return eventWatchPriority(b) - eventWatchPriority(a) || compareEventsByDateTime(a, b);
+    }
+
+    if (sortMode === "must-watch") {
+      return Number(isMustWatchEvent(b)) - Number(isMustWatchEvent(a)) ||
+        eventWatchPriority(b) - eventWatchPriority(a) ||
+        compareEventsByDateTime(a, b);
+    }
+
+    if (sortMode === "sport") {
+      return a.sport.localeCompare(b.sport) || compareEventsByDateTime(a, b);
+    }
+
+    if (sortMode === "competition") {
+      return String(a.competition || "").localeCompare(String(b.competition || "")) || compareEventsByDateTime(a, b);
+    }
+
+    return compareEventsByDateTime(a, b);
+  });
 }
 
 function competitionLabel(event) {
@@ -1405,14 +1582,14 @@ function renderEvents(visibleEvents) {
   const sortMode = document.querySelector("#eventSortInput")?.value || "date";
   const sortedEvents = [...visibleEvents].sort((a, b) => {
     if (sortMode === "importance") {
-      return eventWatchPriority(b) - eventWatchPriority(a);
+      return eventWatchPriority(b) - eventWatchPriority(a) || compareEventsByDateTime(a, b);
     }
 
     if (sortMode === "sport") {
-      return a.sport.localeCompare(b.sport) || a.date.localeCompare(b.date);
+      return a.sport.localeCompare(b.sport) || compareEventsByDateTime(a, b);
     }
 
-    return a.date.localeCompare(b.date);
+    return compareEventsByDateTime(a, b);
   });
   const eventList = document.querySelector("#eventList");
   const totalPages = Math.max(1, Math.ceil(sortedEvents.length / EVENT_LIST_PAGE_SIZE));
@@ -1468,6 +1645,139 @@ function renderEventPagination(totalEvents, totalPages) {
 
 function resetEventListPage() {
   eventListPage = 1;
+}
+
+function renderEventsPage(visibleEvents, upcomingEvents) {
+  const agendaList = document.querySelector("#eventsAgendaList");
+
+  if (!agendaList) {
+    return;
+  }
+
+  const filteredEvents = getEventsPageEvents(visibleEvents, upcomingEvents);
+  const sortedEvents = sortEventsPageEvents(filteredEvents);
+  const visibleRows = sortedEvents.slice(0, eventsPageVisibleCount);
+  const baseCount = (document.querySelector("#eventsDateRangeInput")?.value || "upcoming") === "all"
+    ? visibleEvents.length
+    : upcomingEvents.length;
+
+  renderEventsPageStats(upcomingEvents);
+  renderEventsPageQuickFilters();
+
+  document.querySelector("#eventsBoardSummary").textContent = baseCount
+    ? `${filteredEvents.length} of ${baseCount} matching events are on this board. Use the chips and date range to tune the list.`
+    : "No events match the current sidebar filters yet.";
+  document.querySelector("#eventsPageSummary").textContent = sortedEvents.length
+    ? `Showing ${visibleRows.length} of ${sortedEvents.length} events`
+    : "No events match the current Events board controls.";
+
+  agendaList.innerHTML = visibleRows.length
+    ? renderEventsAgendaGroups(visibleRows)
+    : `<div class="empty-state">No events match this Events board view.</div>`;
+
+  renderEventsPagePagination(sortedEvents.length);
+}
+
+function renderEventsPageStats(upcomingEvents) {
+  const setText = (selector, value) => {
+    const element = document.querySelector(selector);
+
+    if (element) {
+      element.textContent = value;
+    }
+  };
+
+  setText("#eventsBoardUpcoming", upcomingEvents.length);
+  setText("#eventsBoardNext7", upcomingEvents.filter((event) => isWithinDays(event, 7)).length);
+  setText("#eventsBoardWeekend", upcomingEvents.filter(isThisWeekendEvent).length);
+  setText("#eventsBoardMustWatch", upcomingEvents.filter(isMustWatchEvent).length);
+  setText("#eventsBoardFavorites", upcomingEvents.filter(watchlistEvent).length);
+  setText("#eventsBoardTbdTv", upcomingEvents.filter(isTbdTvEvent).length);
+}
+
+function renderEventsPageQuickFilters() {
+  document.querySelectorAll("[data-events-filter]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.eventsFilter === eventsPageQuickFilter);
+  });
+}
+
+function renderEventsPagePagination(totalEvents) {
+  const pagination = document.querySelector("#eventsPagePagination");
+  const moreButton = document.querySelector("#eventsPageMoreButton");
+
+  if (!pagination || !moreButton) {
+    return;
+  }
+
+  pagination.hidden = totalEvents <= eventsPageVisibleCount;
+  moreButton.textContent = `Load ${Math.min(EVENTS_PAGE_BATCH_SIZE, Math.max(0, totalEvents - eventsPageVisibleCount))} More Events`;
+}
+
+function renderEventsAgendaGroups(sourceEvents) {
+  const groups = sourceEvents.reduce((groupedEvents, event) => {
+    if (!groupedEvents.has(event.date)) {
+      groupedEvents.set(event.date, []);
+    }
+
+    groupedEvents.get(event.date).push(event);
+    return groupedEvents;
+  }, new Map());
+
+  return [...groups.entries()].map(([date, dateEvents]) => `
+    <section class="events-date-group">
+      <div class="events-date-heading">
+        <span>${escapeHtml(formatDateObject(parseDate(date)))}</span>
+        <small>${dateEvents.length} event${dateEvents.length === 1 ? "" : "s"}</small>
+      </div>
+      <div class="events-agenda-day">
+        ${dateEvents.map(eventsAgendaCard).join("")}
+      </div>
+    </section>
+  `).join("");
+}
+
+function eventsAgendaCard(event) {
+  const matchup = matchupLabel(event);
+  const competitionText = competitionLabel(event);
+  const time = eventTimeParts(event);
+  const profile = eventInterestProfile(event);
+  const priority = eventWatchPriority(event);
+  const reason = isMustWatchEvent(event)
+    ? mustWatchReason(event)
+    : priorityLabel(event);
+
+  return `
+    <button class="events-agenda-card event-button shared-${profile.tone}" type="button" data-event-id="${escapeHtml(event.id)}" style="${sportAccentStyle(event.sport)}">
+      <span class="events-agenda-time">
+        <strong>${escapeHtml(time.time)}</strong>
+        <small>${escapeHtml(time.zone)}</small>
+      </span>
+      <span class="events-agenda-logo">${sportMark(event)}</span>
+      <span class="events-agenda-main">
+        <span class="events-agenda-tags">
+          ${sportTag(event.sport)}
+          ${statusTag(event.status)}
+          ${event.isAutoImported ? `<span class="source-pill">Auto</span>` : ""}
+        </span>
+        <strong>${escapeHtml(event.title)}</strong>
+        ${matchup && matchup !== event.title ? `<small class="event-matchup">${escapeHtml(matchup)}</small>` : ""}
+        <span class="events-agenda-meta">
+          ${competitionText ? `<span>${escapeHtml(competitionText)}</span>` : ""}
+          ${event.location ? `<span>${escapeHtml(event.location)}</span>` : ""}
+          ${event.score ? `<span>Score ${escapeHtml(event.score)}</span>` : ""}
+          <span>${channelBadge(event.tv, event)}</span>
+        </span>
+        ${(hasFavoriteMatch(event) || isMustWatchEvent(event) || profile.sharedScore >= 8)
+          ? `<span class="events-agenda-reason">${escapeHtml(reason)}</span>`
+          : ""}
+      </span>
+      <span class="events-agenda-shared">${sharedInterestMarkup(event)}</span>
+      <span class="events-agenda-priority">
+        <small>Priority</small>
+        <strong>${priority}</strong>
+      </span>
+    </button>
+  `;
 }
 
 function eventRow(event) {
@@ -1992,6 +2302,7 @@ function renderAll() {
   renderActiveTournaments(dashboardEvents);
   renderMustWatchEvents(dashboardEvents);
   renderEvents(dashboardEvents);
+  renderEventsPage(visibleEvents, upcomingEvents);
   renderBestWeekends(dashboardEvents);
   renderSportSummary(dashboardEvents);
   renderPersonalWatchList(dashboardEvents);
@@ -2063,6 +2374,7 @@ function setActiveView(viewName, activeButton = null) {
 
   const subtitles = {
     dashboard: "WHAT TO WATCH NEXT",
+    events: "EVENT BOARD",
     calendar: "MONTHLY CALENDAR",
     weekends: "WEEKEND PLANNER",
     settings: "APP SETTINGS"
@@ -2132,6 +2444,7 @@ function clearFilters() {
   document.querySelector("#roadTripFilter").checked = false;
   activeQuickFilter = "all";
   resetEventListPage();
+  resetEventsPage();
   renderQuickFilters();
   renderAll();
 }
@@ -2276,6 +2589,23 @@ function exportCalendarEvents() {
     calendarEvents,
     "sports-weekend-planner-calendar",
     `Exported ${calendarEvents.length} high-priority event${calendarEvents.length === 1 ? "" : "s"} for Google Calendar.`
+  );
+}
+
+function exportEventsPageCalendar() {
+  const visibleEvents = getFilteredEvents();
+  const upcomingEvents = getUpcomingEvents(visibleEvents);
+  const calendarEvents = sortEventsPageEvents(getEventsPageEvents(visibleEvents, upcomingEvents));
+
+  if (!calendarEvents.length) {
+    setDataStatus("No events match the current Events board controls.");
+    return;
+  }
+
+  downloadCalendarEvents(
+    calendarEvents,
+    "sports-command-center-events-board",
+    `Exported ${calendarEvents.length} Events board event${calendarEvents.length === 1 ? "" : "s"} for Google Calendar.`
   );
 }
 
@@ -2576,6 +2906,7 @@ function wireFilters() {
   filterControls.forEach((control) => {
     control.addEventListener("input", () => {
       resetEventListPage();
+      resetEventsPage();
       document.querySelector("#importanceValue").textContent = `${document.querySelector("#importanceFilter").value}+`;
       document.querySelector("#personalScoreValue").textContent = `${document.querySelector("#personalScoreFilter").value}+`;
       renderAll();
@@ -2583,6 +2914,43 @@ function wireFilters() {
   });
 
   document.querySelector("#clearFiltersButton").addEventListener("click", clearFilters);
+}
+
+function wireEventsPageControls() {
+  [
+    document.querySelector("#eventsPageSearchInput"),
+    document.querySelector("#eventsDateRangeInput"),
+    document.querySelector("#eventsPageSortInput")
+  ].forEach((control) => {
+    control?.addEventListener("input", () => {
+      resetEventsPage();
+      renderAll();
+    });
+  });
+
+  document.querySelectorAll("[data-events-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      eventsPageQuickFilter = button.dataset.eventsFilter || "all";
+      resetEventsPage();
+      renderAll();
+    });
+  });
+
+  document.querySelector("#eventsPageClearButton")?.addEventListener("click", () => {
+    document.querySelector("#eventsPageSearchInput").value = "";
+    document.querySelector("#eventsDateRangeInput").value = "upcoming";
+    document.querySelector("#eventsPageSortInput").value = "date";
+    eventsPageQuickFilter = "all";
+    resetEventsPage();
+    renderAll();
+  });
+
+  document.querySelector("#eventsPageMoreButton")?.addEventListener("click", () => {
+    eventsPageVisibleCount += EVENTS_PAGE_BATCH_SIZE;
+    renderAll();
+  });
+
+  document.querySelector("#eventsBoardExportButton")?.addEventListener("click", exportEventsPageCalendar);
 }
 
 function wireEventForm() {
@@ -2598,6 +2966,7 @@ function wireEventForm() {
     if (quickFilterButton) {
       activeQuickFilter = quickFilterButton.dataset.quickFilter || "all";
       resetEventListPage();
+      resetEventsPage();
       renderQuickFilters();
       renderAll();
       return;
@@ -2627,6 +2996,7 @@ loadLogoRegistry();
 wireNavigation();
 wireEventForm();
 wireFilters();
+wireEventsPageControls();
 wireImportExport();
 wireSettings();
 

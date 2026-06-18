@@ -31,7 +31,7 @@
           <button class="nav-item active" type="button" data-view="dashboard"><span>⌂</span> Dashboard</button>
           <button class="nav-item" type="button" data-view="calendar"><span>▦</span> Calendar</button>
           <button class="nav-item" type="button" data-view="weekends"><span>⚖</span> Weekends</button>
-          <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="all"><span>☷</span> Events</button>
+          <button class="nav-item" type="button" data-view="events"><span>☷</span> Events</button>
           <button class="nav-item" type="button" data-view="dashboard" data-nav-filter="favorites"><span>☆</span> Watchlist</button>
           <button class="nav-item" type="button" data-view="settings"><span>⚙</span> Settings</button>
         </nav>
@@ -74,15 +74,6 @@
             Road trip candidates only
           </label>
           <button id="clearFiltersButton" class="secondary-button" type="button">Clear Filters</button>
-        </section>
-
-        <section class="data-panel" aria-label="Share event data">
-          <h2>Event updates</h2>
-          <button id="exportButton" class="secondary-button" type="button">Export Shared JSON</button>
-          <button id="importButton" class="secondary-button" type="button">Import JSON</button>
-          <button id="calendarExportButton" class="secondary-button" type="button">Export Google Calendar</button>
-          <input id="importFileInput" type="file" accept="application/json,.json" hidden>
-          <p id="dataStatus" class="data-status">Share JSON for the app, or export high-priority events to calendar.</p>
         </section>
 
         <section class="sidebar-footer" aria-label="App status">
@@ -285,7 +276,7 @@
                 <div class="table-actions">
                   <label class="sort-control">Sort by
                     <select id="eventSortInput">
-                      <option value="date">Date</option>
+                      <option value="date">Date &amp; Time</option>
                       <option value="importance">Importance</option>
                       <option value="sport">Sport</option>
                     </select>
@@ -298,6 +289,96 @@
                 <button id="eventPreviousPageButton" class="secondary-button compact-action" type="button">Previous</button>
                 <span id="eventPageCount">Page 1 of 1</span>
                 <button id="eventNextPageButton" class="secondary-button compact-action" type="button">Next</button>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section id="eventsView" class="view">
+          <section class="events-command-board" aria-label="Events command board">
+            <div class="events-board-intro">
+              <div>
+                <p class="scoreboard-label">Event board</p>
+                <h3>Shared sports agenda</h3>
+                <p id="eventsBoardSummary">Browse upcoming events with watch priority, TV info, and shared interest signals.</p>
+              </div>
+              <button id="eventsBoardExportButton" class="secondary-button compact-action" type="button">Export .ics</button>
+            </div>
+
+            <section class="events-board-stats" aria-label="Events page summary">
+              <article class="events-board-stat">
+                <span>Upcoming</span>
+                <strong id="eventsBoardUpcoming">0</strong>
+              </article>
+              <article class="events-board-stat">
+                <span>Next 7 days</span>
+                <strong id="eventsBoardNext7">0</strong>
+              </article>
+              <article class="events-board-stat">
+                <span>This weekend</span>
+                <strong id="eventsBoardWeekend">0</strong>
+              </article>
+              <article class="events-board-stat">
+                <span>Must-watch</span>
+                <strong id="eventsBoardMustWatch">0</strong>
+              </article>
+              <article class="events-board-stat">
+                <span>Watchlist</span>
+                <strong id="eventsBoardFavorites">0</strong>
+              </article>
+              <article class="events-board-stat">
+                <span>TV TBD</span>
+                <strong id="eventsBoardTbdTv">0</strong>
+              </article>
+            </section>
+
+            <section class="events-board-controls" aria-label="Event board controls">
+              <label class="events-search-control">
+                Search events
+                <input id="eventsPageSearchInput" type="search" placeholder="Team, race, competition, channel">
+              </label>
+              <label>
+                Date range
+                <select id="eventsDateRangeInput">
+                  <option value="upcoming">Upcoming</option>
+                  <option value="today">Today / 24 hours</option>
+                  <option value="week">Next 7 days</option>
+                  <option value="weekend">This weekend</option>
+                  <option value="thirty">Next 30 days</option>
+                  <option value="month">This month</option>
+                  <option value="all">All matching</option>
+                </select>
+              </label>
+              <label>
+                Sort by
+                <select id="eventsPageSortInput">
+                  <option value="date">Date &amp; Time</option>
+                  <option value="priority">Watch priority</option>
+                  <option value="must-watch">Must-watch first</option>
+                  <option value="sport">Sport</option>
+                  <option value="competition">Competition</option>
+                </select>
+              </label>
+              <button id="eventsPageClearButton" class="secondary-button compact-action" type="button">Reset Board</button>
+              <div class="events-board-chips" aria-label="Event board quick filters">
+                <button class="events-board-chip active" type="button" data-events-filter="all">All</button>
+                <button class="events-board-chip" type="button" data-events-filter="must-watch">Must-watch</button>
+                <button class="events-board-chip" type="button" data-events-filter="favorites">Watchlist</button>
+                <button class="events-board-chip" type="button" data-events-filter="world-cup">World Cup</button>
+                <button class="events-board-chip" type="button" data-events-filter="racing">Racing</button>
+                <button class="events-board-chip" type="button" data-events-filter="soccer">Soccer</button>
+                <button class="events-board-chip" type="button" data-events-filter="tbd-tv">TV TBD</button>
+              </div>
+            </section>
+
+            <article class="panel events-agenda-panel">
+              <div class="panel-heading">
+                <h3>Upcoming Agenda</h3>
+                <p id="eventsPageSummary">Showing matching events.</p>
+              </div>
+              <div id="eventsAgendaList" class="events-agenda-list"></div>
+              <div id="eventsPagePagination" class="event-pagination" hidden>
+                <button id="eventsPageMoreButton" class="secondary-button compact-action" type="button">Load More Events</button>
               </div>
             </article>
           </section>
@@ -383,6 +464,18 @@
                 <input id="updateUrlInput" placeholder="events.json">
               </label>
             </div>
+            <section class="settings-share-panel" aria-label="Share event data">
+              <div>
+                <h4>Share event data</h4>
+                <p id="dataStatus" class="data-status">Share JSON for the app, or export high-priority events to calendar.</p>
+              </div>
+              <div class="settings-share-actions">
+                <button id="exportButton" class="secondary-button" type="button">Export Shared JSON</button>
+                <button id="importButton" class="secondary-button" type="button">Import JSON</button>
+                <button id="calendarExportButton" class="secondary-button" type="button">Export Google Calendar</button>
+                <input id="importFileInput" type="file" accept="application/json,.json" hidden>
+              </div>
+            </section>
             <div class="settings-actions">
               <button id="saveSettingsButton" class="primary-button" type="button">Save Settings</button>
               <button id="checkUpdatesButton" class="secondary-button" type="button">Check for Event Updates</button>
