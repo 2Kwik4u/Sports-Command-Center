@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T21:45:23.705Z",
+  "updatedAt": "2026-06-18T18:33:45.062Z",
   "sources": [
     {
       "name": "TheSportsDB",
@@ -261,6 +261,33 @@
       "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4346",
       "aliasOf": "American Major League Soccer"
     },
+    "nascar-craftsman-truck-series": {
+      "name": "NASCAR Craftsman Truck Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-craftsman-truck-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier"
+    },
+    "nascar-cup-series": {
+      "name": "NASCAR Cup Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-cup-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier"
+    },
+    "nascar-o-reilly-auto-parts-series": {
+      "name": "NASCAR O'Reilly Auto Parts Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-oreilly-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier"
+    },
     "nba": {
       "name": "NBA",
       "sport": "Basketball",
@@ -451,6 +478,86 @@
       "logoUpdatedAt": "",
       "sourceUrl": "https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id=4424",
       "aliasOf": "MLB"
+    },
+    "nascar-trucks": {
+      "name": "NASCAR Trucks",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-craftsman-truck-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR Craftsman Truck Series"
+    },
+    "craftsman-truck-series": {
+      "name": "Craftsman Truck Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-craftsman-truck-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR Craftsman Truck Series"
+    },
+    "truck-series": {
+      "name": "Truck Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-craftsman-truck-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR Craftsman Truck Series"
+    },
+    "nascar-cup": {
+      "name": "NASCAR Cup",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-cup-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR Cup Series"
+    },
+    "cup-series": {
+      "name": "Cup Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-cup-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR Cup Series"
+    },
+    "nascar-o-reilly": {
+      "name": "NASCAR O'Reilly",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-oreilly-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR O'Reilly Auto Parts Series"
+    },
+    "o-reilly-auto-parts-series": {
+      "name": "O'Reilly Auto Parts Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-oreilly-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR O'Reilly Auto Parts Series"
+    },
+    "o-reilly-series": {
+      "name": "O'Reilly Series",
+      "manual": true,
+      "logoUpdatedAt": "",
+      "sport": "Racing",
+      "logo": "assets/logos/leagues/nascar-oreilly-series.svg",
+      "source": "manual",
+      "logoSource": "local-styled-series-identifier",
+      "aliasOf": "NASCAR O'Reilly Auto Parts Series"
     }
   },
   "teams": {

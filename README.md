@@ -16,6 +16,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Compact dashboard panels with capped event lists and `+ X more` rows.
 - Dashboard quick chips for Today, This Week, This Month, World Cup, Favorites, Must-watch, Racing, and Soccer.
 - All Events table pagination for filtered lists longer than 10 rows.
+- Dashboard All Events rows with Event / Location display and compact participant identities when matchup text would otherwise repeat.
 - Automatic hiding of past events from Dashboard and Weekends.
 - Manual add/edit/delete event workflow.
 - Dedicated Settings view for dark/light/system themes, favorite sports/competitions/teams/drivers, and update preferences.
@@ -33,6 +34,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - FlagCDN country flags for World Cup matchup tiles.
 - Local channel identifier SVGs and sport fallback marks.
 - Local FIFA World Cup 2026 mark for World Cup event cards and rows.
+- Local NASCAR Cup, O'Reilly, and Craftsman Truck Series identifiers for racing event cards and rows.
 - Selective curated major-event windows beyond soccer.
 
 ## Planned Features
@@ -196,9 +198,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.21.0`
+Current version: `0.21.2`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, polished Calendar and Weekends views, and a dedicated mobile-friendly Events board. Version 0.21.0 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, and clearer Dashboard All Events rows. Version 0.21.2 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 

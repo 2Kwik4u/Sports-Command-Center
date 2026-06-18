@@ -1,7 +1,7 @@
 const STORAGE_KEY = "sports-weekend-planner-events-step-1";
 const SETTINGS_KEY = "sports-weekend-planner-settings";
 const SEED_VERSION_KEY = "sports-weekend-planner-seed-version";
-const APP_VERSION = "0.21.0";
+const APP_VERSION = "0.21.2";
 const CURRENT_SEED_VERSION = 2;
 const DEFAULT_UPDATE_URL = "events.json";
 const LOGO_REGISTRY_URL = "data/logo-registry.json";
@@ -1015,6 +1015,116 @@ function matchupLabel(event) {
   return participants.join(", ");
 }
 
+function meaningfulLocationValue(value) {
+  const text = String(value || "").trim();
+  const lowerText = text.toLowerCase();
+
+  if (!text || ["tbd", "location tbd", "venue tbd", "not set", "n/a"].includes(lowerText)) {
+    return "";
+  }
+
+  return text;
+}
+
+function eventLocationParts(event) {
+  const parts = [meaningfulLocationValue(event.location), meaningfulLocationValue(event.venue)]
+    .filter(Boolean);
+  const seen = new Set();
+
+  return parts.filter((part) => {
+    const key = part.toLowerCase();
+
+    if (seen.has(key)) {
+      return false;
+    }
+
+    seen.add(key);
+    return true;
+  });
+}
+
+function eventLocationMarkup(event) {
+  const parts = eventLocationParts(event);
+
+  if (!parts.length) {
+    return "Location TBD";
+  }
+
+  return parts.map(escapeHtml).join(' <span class="location-separator">&middot;</span> ');
+}
+
+function comparableEventText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function titleContainsParticipantText(event, participantText) {
+  const title = comparableEventText(event.title);
+  const participants = comparableEventText(participantText);
+
+  return Boolean(title && participants && (title === participants || title.includes(participants)));
+}
+
+function participantLogoMark(event, participant) {
+  if (event.flagLogos?.[participant] || getFlagLogo(participant) || countryFlags[participant]) {
+    return countryFlagMark(participant, event);
+  }
+
+  const logo = eventTeamLogo(event, participant);
+
+  return logo ? logoImage(logo, `${participant} logo`, "sport-logo") : "";
+}
+
+function participantIdentityMarkup(event) {
+  const participants = event.homeTeam && event.awayTeam
+    ? [event.homeTeam, event.awayTeam]
+    : normalizeList(event.participants || event.teams).slice(0, 2);
+
+  if (participants.length < 2) {
+    return "";
+  }
+
+  const [first, second] = participants;
+
+  return `
+    <span class="compact-participants">
+      <span class="participant-side participant-side-home">
+        ${participantLogoMark(event, first)}
+        <small>${escapeHtml(shortTeamName(first))}</small>
+      </span>
+      <b>vs</b>
+      <span class="participant-side participant-side-away">
+        <small>${escapeHtml(shortTeamName(second))}</small>
+        ${participantLogoMark(event, second)}
+      </span>
+    </span>
+  `;
+}
+
+function eventParticipantsMarkup(event) {
+  const participants = normalizeList(event.participants || event.teams);
+  const participantText = matchupLabel(event) || participants.join(", ") || "TBD";
+  const compactMarkup = participantIdentityMarkup(event);
+
+  if (compactMarkup && titleContainsParticipantText(event, participantText)) {
+    return compactMarkup;
+  }
+
+  if (participants.length === 1 && (getCompetitionLogo(event) || getSportLogo(event))) {
+    return `
+      <span class="series-participant">
+        ${competitionLogo(event) || sportMark(event)}
+        <span>${escapeHtml(participants[0])}</span>
+      </span>
+    `;
+  }
+
+  return escapeHtml(participantText);
+}
+
 function assetKey(value) {
   return String(value || "")
     .toLowerCase()
@@ -1614,7 +1724,7 @@ function renderEvents(visibleEvents) {
           <span>Time</span>
           <span>Sport</span>
           <span>Competition</span>
-          <span>Event</span>
+          <span>Event / Location</span>
           <span>Teams / Participants</span>
           <span>TV / Streaming</span>
           <span>Importance</span>
@@ -1781,7 +1891,6 @@ function eventsAgendaCard(event) {
 }
 
 function eventRow(event) {
-  const teams = matchupLabel(event) || normalizeList(event.participants || event.teams).join(", ") || "TBD";
   const time = eventTimeParts(event);
 
   return `
@@ -1790,8 +1899,11 @@ function eventRow(event) {
       <span>${escapeHtml(time.time)}<small>${escapeHtml(time.zone)}</small></span>
       <span><span class="row-logo">${sportMark(event)}</span>${escapeHtml(event.sport)}</span>
       <span>${escapeHtml(event.competition || "Open")}${event.group ? ` <small>${escapeHtml(event.group)}</small>` : ""}</span>
-      <span>${escapeHtml(event.title)}</span>
-      <span>${escapeHtml(teams)}</span>
+      <span class="event-title-cell">
+        <strong>${escapeHtml(event.title)}</strong>
+        <small>${eventLocationMarkup(event)}</small>
+      </span>
+      <span>${eventParticipantsMarkup(event)}</span>
       <span>${channelBadge(event.tv, event)}</span>
       <span class="row-importance">★ ${escapeHtml(event.importance)}</span>
       <span>${statusTag(event.status)}</span>

@@ -5204,3 +5204,127 @@ body[data-theme="light"] .events-agenda-card {
     justify-content: center;
   }
 }
+
+/* Version 0.21.1: Dashboard All Events row clarity. */
+.event-title-cell {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.event-title-cell strong,
+.event-title-cell small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-title-cell strong {
+  color: var(--text-main, #f8fafc);
+  font-size: inherit;
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.event-title-cell small {
+  color: var(--text-muted, var(--muted));
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.location-separator {
+  color: rgba(148, 163, 184, 0.55);
+  margin: 0 3px;
+}
+
+.compact-participants,
+.participant-side {
+  display: inline-flex;
+  align-items: center;
+}
+
+.compact-participants {
+  gap: 6px;
+  max-width: 100%;
+  min-width: 0;
+  color: var(--text-main, #f8fafc);
+  white-space: nowrap;
+}
+
+.compact-participants b {
+  color: var(--text-muted, var(--muted));
+  font-size: 0.58rem;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.participant-side {
+  gap: 4px;
+  min-width: 0;
+}
+
+.participant-side small {
+  display: inline;
+  margin: 0;
+  color: var(--text-main, #f8fafc);
+  font-size: 0.66rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.compact-participants .flag-logo-frame {
+  width: 22px;
+  height: 15px;
+}
+
+.compact-participants .sport-logo-frame {
+  width: 18px;
+  height: 18px;
+}
+
+.series-participant {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.series-participant .logo-frame {
+  flex: 0 0 auto;
+}
+
+.series-participant .sport-logo-frame {
+  width: 34px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.series-participant .sport-logo {
+  border-radius: 5px;
+  padding: 0;
+}
+
+.series-participant .logo-fallback {
+  font-size: 0.58rem;
+}
+
+.series-participant span:last-child {
+  overflow: hidden;
+  color: var(--text-main, #f8fafc);
+  font-size: 0.7rem;
+  font-weight: 850;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-theme="light"] .event-title-cell strong,
+body[data-theme="light"] .compact-participants,
+body[data-theme="light"] .participant-side small,
+body[data-theme="light"] .series-participant span:last-child {
+  color: var(--text-main, #17202a);
+}

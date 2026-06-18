@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.21.2
+
+- Added local NASCAR series identifiers for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, and NASCAR Craftsman Truck Series.
+- Registered the NASCAR series assets as manual local league assets so the logo registry preserves them during future updates.
+- Refreshed `data/logo-registry.json` and decorated existing NASCAR events with the matching `competitionLogo` metadata.
+- Updated single-participant Dashboard rows so NASCAR series entries render with the applicable series mark instead of plain text when available.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy, hosted `events.json`, logo registry, and new league assets.
+
+## 0.21.1
+
+- Renamed the Dashboard All Events table column from `Event` to `Event / Location`.
+- Updated Dashboard All Events rows so the primary line shows the event title and the muted secondary line shows existing location and/or venue data.
+- Added `Location TBD` only when no useful venue/location value exists.
+- Reduced duplicate matchup text by rendering compact participant identities with flags/logos/abbreviations when the event title already repeats the matchup.
+- Preserved event data shape, hosted update behavior, localStorage behavior, Dashboard pagination, and static hosting compatibility.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy.
+
 ## 0.21.0
 
 - Added a dedicated Events page instead of sending the Events navigation item back to the Dashboard table.

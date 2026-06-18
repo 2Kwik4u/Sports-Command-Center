@@ -94,6 +94,24 @@ const LOCAL_LEAGUES = {
     source: "manual",
     logoSource: "Wikimedia Commons local asset",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:2026_FIFA_World_Cup_emblem_(with_wordmark).svg"
+  },
+  "NASCAR Cup Series": {
+    sport: "Racing",
+    logo: "assets/logos/leagues/nascar-cup-series.svg",
+    source: "manual",
+    logoSource: "local-styled-series-identifier"
+  },
+  "NASCAR O'Reilly Auto Parts Series": {
+    sport: "Racing",
+    logo: "assets/logos/leagues/nascar-oreilly-series.svg",
+    source: "manual",
+    logoSource: "local-styled-series-identifier"
+  },
+  "NASCAR Craftsman Truck Series": {
+    sport: "Racing",
+    logo: "assets/logos/leagues/nascar-craftsman-truck-series.svg",
+    source: "manual",
+    logoSource: "local-styled-series-identifier"
   }
 };
 
@@ -105,6 +123,9 @@ const LEAGUE_ALIASES = {
   "formula-1": ["F1"],
   "imsa-sportscar-championship": ["IMSA"],
   "mlb": ["MLB Playoffs", "World Series"],
+  "nascar-craftsman-truck-series": ["NASCAR Trucks", "Craftsman Truck Series", "Truck Series"],
+  "nascar-cup-series": ["NASCAR Cup", "Cup Series"],
+  "nascar-o-reilly-auto-parts-series": ["NASCAR O'Reilly", "O'Reilly Auto Parts Series", "O'Reilly Series"],
   "nba": ["NBA Finals"],
   "nfl": ["NFL Regular Season", "NFL Playoffs", "Super Bowl"],
   "nhl": ["NHL Playoffs", "Stanley Cup Final"],

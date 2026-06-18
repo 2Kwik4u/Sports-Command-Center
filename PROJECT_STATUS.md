@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.21.0
+Version 0.21.2
 
 # Completed Features
 
@@ -29,6 +29,7 @@ Version 0.21.0
 - Quick dashboard filters for today, this week, this month, World Cup, favorites, must-watch, racing, and soccer.
 - All Events dashboard table pagination for filtered lists longer than 10 rows.
 - All Events Date & Time sorting now orders same-day events by timezone-aware start time.
+- All Events Dashboard rows now show Event / Location with a title line, muted existing venue/location line, and compact participant identities for duplicate matchup rows.
 - Dashboard sections for Today / Next 24 Hours, This Week, Keep-Free Weekends, World Cup / Active Tournaments, Must-Watch Events, Watchlist, and All Events.
 - Compact dashboard panels cap Today, This Week, Keep-Free Weekends, Must-Watch Events, Watchlist, and World Cup tiles so the first screen stays dense.
 - Compact event rows display times in the preferred/default timezone where possible, using ET by default.
@@ -56,6 +57,7 @@ Version 0.21.0
 - Local channel identifier SVGs for common broadcast/streaming labels.
 - Local sport fallback SVG marks.
 - Local FIFA World Cup 2026 league mark for World Cup event cards and rows.
+- Local NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, and NASCAR Craftsman Truck Series identifiers for racing event cards and rows.
 - Selective curated major-event windows beyond soccer.
 - Optional logo metadata fields: `sportLogo`, `competitionLogo`, `homeTeamLogo`, `awayTeamLogo`, `teamLogos`, `channelLogo`, `flagLogos`, `logoSource`, and `logoUpdatedAt`.
 - Optional active tournament metadata fields: `tournamentId`, `tournamentName`, `tournamentStartDate`, `tournamentEndDate`, `tournamentStage`, `tournamentStatus`, and `tournamentPriority`.
@@ -69,7 +71,7 @@ Version 0.21.0
 
 # In Progress
 
-- Playtesting Version 0.21.0 across Dashboard, Events, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.21.2 across Dashboard, Events, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -157,6 +159,14 @@ i-want-to-build-a-web/
 
 # Recent Changes
 
+- Completed Version 0.21.2 as a focused NASCAR series logo integration pass.
+- Added local NASCAR Cup, O'Reilly, and Craftsman Truck Series identifiers under `assets/logos/leagues/`.
+- Registered those NASCAR series identifiers in the generated logo registry as manual local league assets.
+- Refreshed hosted events so NASCAR rows include the appropriate `competitionLogo` metadata without changing the event schema.
+- Updated Dashboard participant cells so single-participant series rows can show the series mark plus label.
+- Completed Version 0.21.1 as a focused Dashboard All Events table clarity pass.
+- Renamed the All Events table Event column to Event / Location and added a secondary muted location/venue line using only existing event fields.
+- Added compact participant identity rendering for duplicate matchup rows so World Cup rows do not repeat the exact same matchup text in adjacent columns.
 - Completed Version 0.21.0 as a dedicated Events page revamp.
 - Added an Events command board with local search, date range controls, quick chips, watch-priority sorting, grouped date sections, sport/logo identity, TV badges, priority scores, and shared Me/Friend interest readouts.
 - Added mobile-first Events page behavior with stacked agenda cards instead of relying on the wide Dashboard table as the primary phone experience.
@@ -242,8 +252,8 @@ i-want-to-build-a-web/
 
 # Next Recommended Steps
 
-1. Playtest 0.21.0 on desktop and phone widths, especially Events search/date range/quick chips and event-card tapping.
-2. Tune the Events board filters after real use, especially TV TBD, Watchlist, and Watch Priority sorting.
-3. Tune the default friend-interest assumptions for auto-imported events if shared-interest readouts feel too uniform.
+1. Playtest 0.21.2 on Dashboard and Events with Racing filtered: confirm NASCAR Cup, O'Reilly, and Craftsman Truck Series marks appear where expected.
+2. Confirm Event / Location rows stay readable and participant identities reduce duplicate matchup text.
+3. Playtest the Events board on desktop and phone widths, especially search/date range/quick chips and event-card tapping.
 4. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 5. Start the PWA milestone when the web version feels stable enough to install on a phone.

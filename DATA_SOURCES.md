@@ -11,7 +11,7 @@ Sports Command Center uses controlled, documented sources only. The app does not
 | Static 2026 Racing Schedules | Racing | Yes | No | Partial | None | Version 0.19.0 adds verified future 2026 schedules for NASCAR Cup, NASCAR O'Reilly, NASCAR Trucks, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech. Official sources are used where practical, with static JSON to avoid brittle live scraping. |
 | TheSportsDB v1 | Multi-sport | Limited | Yes | Limited | Public key `123` or `THESPORTSDB_API_KEY` | Used in Version 0.18.0 for league and team artwork. Schedule/TV endpoints are documented but not reliable enough yet for broad imports on the free tier. |
 | FlagCDN | World Cup countries | No | Flags only | No | None | Provides country flag PNGs for World Cup matchup tiles. Emoji remains the fallback for missing/placeholder teams. |
-| Local repo assets | Channels and sport fallbacks | No | Yes | No | None | Stores local channel identifiers and sport fallback marks in `assets/logos/`. These are controlled local assets, not scraped official broadcast logos. |
+| Local repo assets | Channels, sport fallbacks, and selected league/series identifiers | No | Yes | No | None | Stores local channel identifiers, sport fallback marks, and selected local series/tournament identifiers in `assets/logos/`. These are controlled local assets, not scraped official broadcast logos. |
 | Wikimedia Commons local league asset | FIFA World Cup | No | Yes | No | None | Stores a locally downloaded FIFA World Cup 2026 SVG in `assets/logos/leagues/` for World Cup event branding. The source page lists the SVG as a public-domain text logo with trademark cautions. |
 
 ## Current Event Coverage
@@ -46,12 +46,14 @@ Current registry buckets:
 
 - `sports`: local fallback marks.
 - `leagues`: TheSportsDB league/series artwork where available.
-- `leagues`: local manually verified tournament marks such as FIFA World Cup 2026.
+- `leagues`: local manually verified tournament and series marks such as FIFA World Cup 2026, NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, and NASCAR Craftsman Truck Series.
 - `teams`: TheSportsDB team/club/constructor badges where available.
 - `channels`: local styled channel identifiers for common TV and streaming services.
 - `flags`: FlagCDN country flag PNGs.
 
 Missing logos are expected. The browser falls back to sport marks, styled channel text, flag emoji, or compact text badges.
+
+The NASCAR series identifiers are local Sports Command Center-styled SVG assets stored under `assets/logos/leagues/`. They are controlled local identifiers for app navigation and row recognition, not scraped official logo downloads.
 
 ## API Key Handling
 
