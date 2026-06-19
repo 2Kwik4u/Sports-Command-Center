@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.22.0
+
+- Added PWA/Home Screen metadata for Sports Command Center using `manifest.webmanifest`.
+- Added iPhone-friendly Apple mobile web app metadata and touch icon links.
+- Generated padded SCC Home Screen icons from the local crest asset under `assets/icons/`.
+- Revised the Home Screen icon set to use the SCC crest directly on a simple dark background, without the extra border, oval, or decorative frame treatment.
+- Kept Version 0.22.0 manifest/icons-only with no service worker, avoiding cache risk around hosted `events.json` updates.
+- Preserved existing `fetch(..., { cache: "no-store" })` hosted update behavior.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy, manifest, and icons.
+- Added README instructions for Graham to add SCC to an iPhone Home Screen from Safari.
+
 ## 0.21.3
 
 - Added Dashboard drill-down navigation from capped `+ X more` rows into the dedicated Events board.

@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.21.3
+Version 0.22.0
 
 # Completed Features
 
@@ -52,6 +52,8 @@ Version 0.21.3
 - Event validation script covering required fields, stable IDs, duplicate IDs, optional metadata, and imported source metadata.
 - Static hosting compatibility for GitHub Pages.
 - GitHub repository connection is active and working.
+- PWA/Home Screen metadata for install-like iPhone use from Safari.
+- Local padded SCC crest app icons under `assets/icons/` for Apple touch icon and PWA manifest use.
 - Local logo asset structure under `assets/logos/` with graceful fallback to text badges, sport icons, and flag emoji.
 - Generated `data/logo-registry.json` for sport, league, team, channel, and flag lookup.
 - TheSportsDB adapter for controlled league/team artwork in the Node update pipeline.
@@ -73,7 +75,7 @@ Version 0.21.3
 
 # In Progress
 
-- Playtesting Version 0.21.3 across Dashboard drill-downs, Events board filters, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.22.0 across iPhone Home Screen metadata, Dashboard drill-downs, Events board filters, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -87,7 +89,7 @@ Version 0.21.3
 - Improve Weekend Score and watch priority after real use.
 - Add canonical team, driver, league, and competition IDs or suggestions.
 - Add more flexible calendar exports, such as selected events or all filtered events.
-- Add PWA installability for phone home-screen use.
+- Add an optional offline shell/service worker later if hosted update caching can remain safe.
 - Future optional integrations: Google Calendar sync, shared login/accounts, notifications, map view, ticket tracking, and travel estimates.
 
 # Architecture
@@ -112,7 +114,9 @@ i-want-to-build-a-web/
   styles.css
   app.js
   events.json
+  manifest.webmanifest
   assets/
+    icons/
     logos/
       channels/
       flags/
@@ -157,10 +161,17 @@ i-want-to-build-a-web/
 - Favorite matching still uses text matching rather than canonical team or competition IDs.
 - No automated browser test suite exists yet.
 - GitHub Pages publishing settings still need to be finalized in the repository UI.
-- PWA installability is planned but not implemented.
+- iPhone Home Screen installability uses manifest and Apple metadata; offline mode is not implemented yet.
 
 # Recent Changes
 
+- Completed Version 0.22.0 as a manifest/icons-only iPhone Home Screen installability pass.
+- Added `manifest.webmanifest`, Apple mobile web app metadata, theme color, and SCC icon links.
+- Generated padded SCC crest icons under `assets/icons/` so the iOS rounded-square crop keeps the crest readable.
+- Revised the final v0.22.0 icon set to use the SCC crest directly on a simple dark background, without the earlier border, oval, or extra decorative frame.
+- Did not add a service worker in Version 0.22.0, preserving hosted `events.json` update behavior and avoiding cache risk.
+- Added README instructions for Graham to add SCC to an iPhone Home Screen from Safari.
+- Synced the maintained `outputs/sports-weekend-planner/` manifest, icons, and app files.
 - Completed Version 0.21.3 as a Dashboard-to-Events drill-down navigation pass.
 - Added Events board drill-downs for Dashboard Today / Next 24 Hours, This Week, World Cup, Must-Watch, and Watchlist summary actions.
 - Routed Keep-Free Weekends Dashboard summary actions to the Weekends planner instead of overbuilding a weekend-specific Events filter.
@@ -259,8 +270,8 @@ i-want-to-build-a-web/
 
 # Next Recommended Steps
 
-1. Playtest 0.21.3 Dashboard drill-downs on desktop and phone widths: Today, This Week, World Cup, Must-Watch, Watchlist, and Keep-Free Weekends.
-2. Confirm Events board search/date range/quick chips/sort still behave correctly after arriving from Dashboard drill-downs.
-3. Confirm Event / Location rows stay readable and participant identities reduce duplicate matchup text.
+1. Verify the hosted GitHub Pages URL on an actual iPhone: Safari, Share, Add to Home Screen, launch from the SCC icon.
+2. Confirm hosted event updates still fetch fresh `events.json` after Home Screen installation.
+3. Playtest Dashboard drill-downs and the Events board on desktop and phone widths.
 4. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
-5. Start the PWA milestone when the web version feels stable enough to install on a phone.
+5. Consider an offline shell/service worker only after testing the no-cache hosted update path on the installed app.

@@ -37,12 +37,13 @@ The long-term goal is a personalized sports command center that answers what to 
 - Local channel identifier SVGs and sport fallback marks.
 - Local FIFA World Cup 2026 mark for World Cup event cards and rows.
 - Local NASCAR Cup, O'Reilly, and Craftsman Truck Series identifiers for racing event cards and rows.
+- iPhone Home Screen support with PWA metadata, Apple mobile web app tags, and padded SCC crest app icons.
 - Selective curated major-event windows beyond soccer.
 
 ## Planned Features
 
 - GitHub Pages deployment verification.
-- PWA installability for phone home-screen use.
+- Optional offline shell/service worker after hosted update caching is proven safe.
 - Additional event source adapters.
 - More flexible calendar export options.
 - Stronger favorite/team/competition matching.
@@ -75,6 +76,8 @@ i-want-to-build-a-web/
   styles.css
   app.js
   assets/logos/README.md
+  assets/icons/
+  manifest.webmanifest
   data/logo-registry.json
   events.json
   DATA_SOURCES.md
@@ -115,6 +118,18 @@ Then open:
 ```text
 http://localhost:8000
 ```
+
+## Add to iPhone Home Screen
+
+For Graham or anyone using the hosted app on iPhone:
+
+1. Open the Sports Command Center link in Safari.
+2. Tap the Share button.
+3. Choose Add to Home Screen.
+4. Name it Sports Command Center or SCC.
+5. Tap Add.
+
+The Home Screen version uses the SCC app icon and opens in a standalone app-style view. Version 0.22.0 does not add offline caching, notifications, or background updates.
 
 ## Usage
 
@@ -200,9 +215,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.21.3`
+Current version: `0.22.0`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, clearer Dashboard All Events rows, and Dashboard drill-down navigation into the Events board. Version 0.21.3 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, clearer Dashboard All Events rows, Dashboard drill-down navigation into the Events board, and iPhone Home Screen install support. Version 0.22.0 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 
@@ -215,6 +230,7 @@ The project is a usable static prototype with a command-center dashboard, hosted
 - Exported JSON can contain personal notes and should be shared thoughtfully.
 - API keys must not be placed in browser JavaScript.
 - Future authenticated data sources should use GitHub Actions secrets.
+- Version 0.22.0 does not add a service worker, so hosted event updates are not intercepted by a local app cache.
 
 ## Known Limitations
 
@@ -228,7 +244,7 @@ The project is a usable static prototype with a command-center dashboard, hosted
 - Channel SVGs are controlled local identifiers, not scraped official broadcast logos.
 - Timezone display conversion is intentionally conservative and focused on known timezone labels and UTC offsets used by the current event data.
 - No automated browser test suite yet.
-- PWA installability is planned but not implemented.
+- Home Screen installability is metadata/icon based; offline mode is not implemented yet.
 
 ## Development Philosophy
 
