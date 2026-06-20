@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-19T07:25:55.139Z",
+  "updatedAt": "2026-06-20T06:40:11.580Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -2122,8 +2122,8 @@
       "stage": "Matchday 9",
       "round": "Matchday 9",
       "group": "Group C",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "3-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -2270,8 +2270,8 @@
       "stage": "Matchday 9",
       "round": "Matchday 9",
       "group": "Group C",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -2344,8 +2344,8 @@
       "stage": "Matchday 9",
       "round": "Matchday 9",
       "group": "Group D",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -2418,8 +2418,8 @@
       "stage": "Matchday 9",
       "round": "Matchday 9",
       "group": "Group D",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "2-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -16410,7 +16410,7 @@
       {
         "name": "Static 2026 Racing Schedules",
         "adapter": "sources/racing-2026.mjs",
-        "eventCount": 93
+        "eventCount": 92
       },
       {
         "name": "TheSportsDB Logo Registry",
