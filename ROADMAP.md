@@ -12,9 +12,9 @@ The app should reduce sports schedule overload by surfacing major events, person
 
 # Current State
 
-Version 0.22.0 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
+Version 0.22.1 is a static HTML/CSS/JavaScript app that runs locally or on static hosting. It stores user data in `localStorage`, fetches hosted event updates from `events.json`, and includes a GitHub Actions-compatible pipeline that can refresh `events.json` and `data/logo-registry.json` from controlled sources.
 
-The current automated source adapters import all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed, selective curated major-event windows, and 93 future 2026 racing schedule events from verified static JSON. The app also includes TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament/series metadata for future Active Tournament improvements.
+The current automated source adapters import all 104 FIFA World Cup 2026 matches from OpenFootball's no-key public JSON feed, apply exact FOX/FS1 channel assignments from a curated FOX Sports mapping where available, import selective curated major-event windows, and import future 2026 racing schedule events from verified static JSON. The app also includes TheSportsDB league/team artwork, FlagCDN country flags, local channel identifiers, and optional tournament/series metadata for future Active Tournament improvements.
 
 Canonical local project root:
 
@@ -44,6 +44,7 @@ Completed or nearly completed:
 - Generated logo registry.
 - TheSportsDB artwork adapter.
 - FlagCDN World Cup flags.
+- Exact FOX/FS1 World Cup channel assignments where the curated FOX Sports mapping has a reliable match.
 - Curated multi-sport major-event windows.
 - Verified static 2026 racing schedule import.
 - Optional logo and tournament metadata fields.
@@ -117,6 +118,6 @@ Later, once the app is reliable:
 
 # Current Priority
 
-1. Verify Version 0.22.0 on an actual iPhone Home Screen install from the hosted GitHub Pages URL.
-2. Confirm hosted updates still fetch fresh `events.json` from the installed Home Screen app.
+1. Playtest Version 0.22.1 World Cup TV badges across Dashboard, Events, Calendar, and Weekends.
+2. Verify the Home Screen install from the hosted GitHub Pages URL on an actual iPhone.
 3. Tune Events board filters and sorting based on real use, especially Watchlist, TV TBD, and Watch Priority.

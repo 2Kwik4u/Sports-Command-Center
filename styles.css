@@ -5362,3 +5362,21 @@ body[data-theme="light"] .participant-side small,
 body[data-theme="light"] .series-participant span:last-child {
   color: var(--text-main, #17202a);
 }
+
+/* Dashboard All Events status pill polish. */
+.events-table-head span:last-child,
+.event-row > span:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.events-table .status-tag {
+  box-sizing: border-box;
+  width: 102px;
+  min-width: 102px;
+  min-height: 32px;
+  padding: 4px 10px;
+  line-height: 1.05;
+  text-align: center;
+  white-space: normal;
+}

@@ -6,7 +6,8 @@ Sports Command Center uses controlled, documented sources only. The app does not
 
 | Source | Sports Covered | Events | Logos | TV Data | API Key | Notes |
 |---|---|---:|---:|---|---|---|
-| OpenFootball World Cup JSON | Soccer | Yes | No | No | None | Imports all FIFA World Cup 2026 matches from structured public JSON. TV remains `TBD` unless manually curated later. |
+| OpenFootball World Cup JSON | Soccer | Yes | No | No | None | Imports all FIFA World Cup 2026 matches from structured public JSON. |
+| FOX Sports World Cup broadcast schedule | Soccer | No | No | Yes | None | Version 0.22.1 adds exact `FOX` / `FS1` assignments for matching World Cup rows from a curated static mapping at `sources/schedules/2026/world-cup-tv.json`. Missing or uncertain matches remain `TBD`. |
 | Curated Major Event Windows | Multi-sport | Yes | No | Limited/manual only | None | Adds selective finals, playoff windows, races, majors, and tournament weekends. These are watch-planning anchors, not complete league schedules. |
 | Static 2026 Racing Schedules | Racing | Yes | No | Partial | None | Version 0.19.0 adds verified future 2026 schedules for NASCAR Cup, NASCAR O'Reilly, NASCAR Trucks, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech. Official sources are used where practical, with static JSON to avoid brittle live scraping. |
 | TheSportsDB v1 | Multi-sport | Limited | Yes | Limited | Public key `123` or `THESPORTSDB_API_KEY` | Used in Version 0.18.0 for league and team artwork. Schedule/TV endpoints are documented but not reliable enough yet for broad imports on the free tier. |
@@ -19,6 +20,7 @@ Sports Command Center uses controlled, documented sources only. The app does not
 `events.json` currently includes:
 
 - 104 FIFA World Cup 2026 matches from OpenFootball.
+- 67 FIFA World Cup 2026 matches with exact FOX/FS1 channel assignments from the curated FOX Sports schedule mapping.
 - 37 curated major-event windows across soccer, football, racing, baseball, basketball, hockey, tennis, golf, combat sports, horse racing, and major events.
 - 93 future 2026 racing schedule events from verified static JSON:
   - 20 NASCAR Cup Series events.
@@ -78,6 +80,8 @@ If a future source requires a private key, it should be configured as a GitHub A
 - TheSportsDB free tier has rate limits and endpoint limits. The updater preserves the existing logo registry if a logo refresh is rate-limited.
 - The curated major-event source is intentionally transparent. It provides planning windows and must be confirmed before travel, tickets, or broadcast decisions.
 - TV/streaming data is not invented. If the source does not provide reliable TV data, the app displays `TBD`.
+- The World Cup TV mapping stores only exact English-language `FOX` or `FS1` assignments from the FOX Sports schedule. FOX One streaming references are documented in the mapping source note but are not added to per-event `tv` values in Version 0.22.1.
+- The FIFA World Cup third-place match remains `TBD` in Version 0.22.1 because the checked FOX Sports schedule page did not provide a distinct exact channel row for that match.
 - Knockout placeholders such as `W73`, `1A`, or `3A/B/C/D/F` may not have flag assets until teams are known.
 - Racing start times and TV are only included when the verified source provides them. F1, MotoGP, and IMSA currently include several `TBD` time/TV values.
 

@@ -6,7 +6,7 @@ Travel planning remains available as a secondary event detail, but the primary p
 
 # Current Version
 
-Version 0.22.0
+Version 0.22.1
 
 # Completed Features
 
@@ -45,6 +45,7 @@ Version 0.22.0
 - GitHub Actions workflow for scheduled/manual event updates.
 - `scripts/update-events.mjs` to fetch, normalize, merge, and write hosted events.
 - World Cup 2026 source adapter that imports all 104 FIFA World Cup matches from OpenFootball's public no-key JSON feed.
+- Static FOX Sports World Cup TV mapping that assigns exact `FOX` or `FS1` values to matching World Cup events.
 - Full future 2026 racing schedule import for NASCAR Cup Series, NASCAR O'Reilly Auto Parts Series, NASCAR Craftsman Truck Series, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech SportsCar Championship.
 - Static racing schedule JSON files under `sources/schedules/2026/`.
 - Grouped racing source adapter at `sources/racing-2026.mjs`.
@@ -75,7 +76,7 @@ Version 0.22.0
 
 # In Progress
 
-- Playtesting Version 0.22.0 across iPhone Home Screen metadata, Dashboard drill-downs, Events board filters, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
+- Playtesting Version 0.22.1 across World Cup TV badges, iPhone Home Screen metadata, Dashboard drill-downs, Events board filters, Calendar, Weekends, Watchlist, Settings, and Racing quick filter.
 - Continuing to tune Sports Command Center around real watch-planning use.
 - Preparing the next personalization milestone around favorites, personal scoring, Weekend Score, and must-watch detection.
 
@@ -151,7 +152,7 @@ i-want-to-build-a-web/
 - The app does not yet have a shared backend; each browser has its own local database.
 - Hosted updates add or replace events but intentionally do not delete local user-created events.
 - OpenFootball is a practical no-key source, but it is not guaranteed to be a complete live official feed for TV data, delays, or every late schedule change.
-- TV/streaming data is `TBD` for imported World Cup matches unless a source provides it.
+- World Cup TV/streaming data uses exact FOX/FS1 assignments where the curated FOX Sports schedule mapping matches the imported event; missing or uncertain assignments remain `TBD`.
 - Some racing imports have confirmed dates but `TBD` start times or TV/streaming when official sources do not provide reliable data yet.
 - Static racing schedule JSON should be re-verified when official schedules, race names, TV windows, or start times change.
 - Curated major-event windows are planning anchors and should be confirmed before travel, tickets, or broadcast decisions.
@@ -165,6 +166,12 @@ i-want-to-build-a-web/
 
 # Recent Changes
 
+- Completed Version 0.22.1 as a focused World Cup TV/channel assignment pass.
+- Added `sources/schedules/2026/world-cup-tv.json` with exact FOX/FS1 assignments from FOX Sports' published schedule.
+- Updated `sources/world-cup-2026.mjs` so matching World Cup imports receive `FOX` or `FS1` while uncertain rows remain `TBD`.
+- Refreshed hosted `events.json`; 67 World Cup matches now have exact FOX/FS1 channel assignments, 37 remain `TBD`, and no duplicate IDs were introduced.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy and hosted data.
+- Carried forward the focused Dashboard All Events status pill polish so `Must-watch` badges align with the other compact status pills.
 - Completed Version 0.22.0 as a manifest/icons-only iPhone Home Screen installability pass.
 - Added `manifest.webmanifest`, Apple mobile web app metadata, theme color, and SCC icon links.
 - Generated padded SCC crest icons under `assets/icons/` so the iOS rounded-square crop keeps the crest readable.
@@ -270,8 +277,8 @@ i-want-to-build-a-web/
 
 # Next Recommended Steps
 
-1. Verify the hosted GitHub Pages URL on an actual iPhone: Safari, Share, Add to Home Screen, launch from the SCC icon.
-2. Confirm hosted event updates still fetch fresh `events.json` after Home Screen installation.
-3. Playtest Dashboard drill-downs and the Events board on desktop and phone widths.
+1. Playtest World Cup rows across Dashboard, Events, Calendar, and Weekends to confirm FOX/FS1 badges appear where expected.
+2. Verify the hosted GitHub Pages URL on an actual iPhone: Safari, Share, Add to Home Screen, launch from the SCC icon.
+3. Confirm hosted event updates still fetch fresh `events.json` after Home Screen installation.
 4. Re-check racing TV/start-time metadata as official listings update, especially F1, MotoGP, and IMSA.
 5. Consider an offline shell/service worker only after testing the no-cache hosted update path on the installed app.

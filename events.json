@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-21T20:02:24.385Z",
+  "updatedAt": "2026-06-21T21:25:28.528Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -2901,7 +2901,7 @@
       "status": "Good TV weekend",
       "venue": "Los Angeles (Inglewood)",
       "location": "Los Angeles (Inglewood)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 11, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Belgium",
@@ -2929,14 +2929,14 @@
       "sourceId": "fifa-world-cup-2026-group-g-matchday-11-belgium-v-iran-2026-06-21",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 11",
       "round": "Matchday 11",
       "group": "Group G",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -2958,9 +2958,10 @@
         "Belgium": "https://flagcdn.com/w40/be.png",
         "Iran": "https://flagcdn.com/w40/ir.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "motogp-2026-czechia-grand-prix-2026-06-21",
@@ -3047,7 +3048,7 @@
       "status": "Good TV weekend",
       "venue": "Vancouver",
       "location": "Vancouver",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 11, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "New Zealand",
@@ -3075,9 +3076,9 @@
       "sourceId": "fifa-world-cup-2026-group-g-matchday-11-new-zealand-v-egypt-2026-06-21",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 11",
       "round": "Matchday 11",
       "group": "Group G",
@@ -3104,9 +3105,10 @@
         "New Zealand": "https://flagcdn.com/w40/nz.png",
         "Egypt": "https://flagcdn.com/w40/eg.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-11-spain-v-saudi-arabia-2026-06-21",
@@ -3121,7 +3123,7 @@
       "status": "Good TV weekend",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 11, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Spain",
@@ -3149,9 +3151,9 @@
       "sourceId": "fifa-world-cup-2026-group-h-matchday-11-spain-v-saudi-arabia-2026-06-21",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 11",
       "round": "Matchday 11",
       "group": "Group H",
@@ -3178,9 +3180,10 @@
         "Spain": "https://flagcdn.com/w40/es.png",
         "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-11-uruguay-v-cape-verde-2026-06-21",
@@ -3195,7 +3198,7 @@
       "status": "Good TV weekend",
       "venue": "Miami (Miami Gardens)",
       "location": "Miami (Miami Gardens)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 11, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Uruguay",
@@ -3223,9 +3226,9 @@
       "sourceId": "fifa-world-cup-2026-group-h-matchday-11-uruguay-v-cape-verde-2026-06-21",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 11",
       "round": "Matchday 11",
       "group": "Group H",
@@ -3252,9 +3255,10 @@
         "Uruguay": "https://flagcdn.com/w40/uy.png",
         "Cape Verde": "https://flagcdn.com/w40/cv.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "indycar-2026-road-america-2026-06-21",
@@ -3342,7 +3346,7 @@
       "status": "Good TV weekend",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 12, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Argentina",
@@ -3370,9 +3374,9 @@
       "sourceId": "fifa-world-cup-2026-group-j-matchday-12-argentina-v-austria-2026-06-22",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 12",
       "round": "Matchday 12",
       "group": "Group J",
@@ -3399,9 +3403,10 @@
         "Argentina": "https://flagcdn.com/w40/ar.png",
         "Austria": "https://flagcdn.com/w40/at.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-12-france-v-iraq-2026-06-22",
@@ -3416,7 +3421,7 @@
       "status": "Good TV weekend",
       "venue": "Philadelphia",
       "location": "Philadelphia",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 12, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "France",
@@ -3444,9 +3449,9 @@
       "sourceId": "fifa-world-cup-2026-group-i-matchday-12-france-v-iraq-2026-06-22",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 12",
       "round": "Matchday 12",
       "group": "Group I",
@@ -3473,9 +3478,10 @@
         "France": "https://flagcdn.com/w40/fr.png",
         "Iraq": "https://flagcdn.com/w40/iq.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-12-jordan-v-algeria-2026-06-22",
@@ -3490,7 +3496,7 @@
       "status": "Good TV weekend",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "location": "San Francisco Bay Area (Santa Clara)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 12, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Jordan",
@@ -3518,9 +3524,9 @@
       "sourceId": "fifa-world-cup-2026-group-j-matchday-12-jordan-v-algeria-2026-06-22",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 12",
       "round": "Matchday 12",
       "group": "Group J",
@@ -3547,9 +3553,10 @@
         "Jordan": "https://flagcdn.com/w40/jo.png",
         "Algeria": "https://flagcdn.com/w40/dz.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-12-norway-v-senegal-2026-06-22",
@@ -3564,7 +3571,7 @@
       "status": "Good TV weekend",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 12, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Norway",
@@ -3592,9 +3599,9 @@
       "sourceId": "fifa-world-cup-2026-group-i-matchday-12-norway-v-senegal-2026-06-22",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 12",
       "round": "Matchday 12",
       "group": "Group I",
@@ -3621,9 +3628,10 @@
         "Norway": "https://flagcdn.com/w40/no.png",
         "Senegal": "https://flagcdn.com/w40/sn.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-13-colombia-v-dr-congo-2026-06-23",
@@ -3638,7 +3646,7 @@
       "status": "Good TV weekend",
       "venue": "Guadalajara (Zapopan)",
       "location": "Guadalajara (Zapopan)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 13, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Colombia",
@@ -3666,9 +3674,9 @@
       "sourceId": "fifa-world-cup-2026-group-k-matchday-13-colombia-v-dr-congo-2026-06-23",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 13",
       "round": "Matchday 13",
       "group": "Group K",
@@ -3695,9 +3703,10 @@
         "Colombia": "https://flagcdn.com/w40/co.png",
         "DR Congo": "https://flagcdn.com/w40/cd.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-13-england-v-ghana-2026-06-23",
@@ -3712,7 +3721,7 @@
       "status": "Good TV weekend",
       "venue": "Boston (Foxborough)",
       "location": "Boston (Foxborough)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 13, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "England",
@@ -3740,9 +3749,9 @@
       "sourceId": "fifa-world-cup-2026-group-l-matchday-13-england-v-ghana-2026-06-23",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 13",
       "round": "Matchday 13",
       "group": "Group L",
@@ -3769,9 +3778,10 @@
         "England": "https://flagcdn.com/w40/gb-eng.png",
         "Ghana": "https://flagcdn.com/w40/gh.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-13-panama-v-croatia-2026-06-23",
@@ -3786,7 +3796,7 @@
       "status": "Good TV weekend",
       "venue": "Toronto",
       "location": "Toronto",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 13, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Panama",
@@ -3814,9 +3824,9 @@
       "sourceId": "fifa-world-cup-2026-group-l-matchday-13-panama-v-croatia-2026-06-23",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 13",
       "round": "Matchday 13",
       "group": "Group L",
@@ -3843,9 +3853,10 @@
         "Panama": "https://flagcdn.com/w40/pa.png",
         "Croatia": "https://flagcdn.com/w40/hr.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-13-portugal-v-uzbekistan-2026-06-23",
@@ -3860,7 +3871,7 @@
       "status": "Good TV weekend",
       "venue": "Houston",
       "location": "Houston",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 13, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Portugal",
@@ -3888,9 +3899,9 @@
       "sourceId": "fifa-world-cup-2026-group-k-matchday-13-portugal-v-uzbekistan-2026-06-23",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 13",
       "round": "Matchday 13",
       "group": "Group K",
@@ -3917,9 +3928,10 @@
         "Portugal": "https://flagcdn.com/w40/pt.png",
         "Uzbekistan": "https://flagcdn.com/w40/uz.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-14-bosnia-and-herzegovina-v-qatar-2026-06-24",
@@ -3934,7 +3946,7 @@
       "status": "Good TV weekend",
       "venue": "Seattle",
       "location": "Seattle",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 14, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Bosnia & Herzegovina",
@@ -3962,9 +3974,9 @@
       "sourceId": "fifa-world-cup-2026-group-b-matchday-14-bosnia-and-herzegovina-v-qatar-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group B",
@@ -3991,9 +4003,10 @@
         "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png",
         "Qatar": "https://flagcdn.com/w40/qa.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-14-czech-republic-v-mexico-2026-06-24",
@@ -4008,7 +4021,7 @@
       "status": "Good TV weekend",
       "venue": "Mexico City",
       "location": "Mexico City",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 14, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Czech Republic",
@@ -4036,9 +4049,9 @@
       "sourceId": "fifa-world-cup-2026-group-a-matchday-14-czech-republic-v-mexico-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group A",
@@ -4065,9 +4078,10 @@
         "Czech Republic": "https://flagcdn.com/w40/cz.png",
         "Mexico": "https://flagcdn.com/w40/mx.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-14-morocco-v-haiti-2026-06-24",
@@ -4082,7 +4096,7 @@
       "status": "Good TV weekend",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 14, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Morocco",
@@ -4110,9 +4124,9 @@
       "sourceId": "fifa-world-cup-2026-group-c-matchday-14-morocco-v-haiti-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group C",
@@ -4139,9 +4153,10 @@
         "Morocco": "https://flagcdn.com/w40/ma.png",
         "Haiti": "https://flagcdn.com/w40/ht.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-c-matchday-14-scotland-v-brazil-2026-06-24",
@@ -4156,7 +4171,7 @@
       "status": "Good TV weekend",
       "venue": "Miami (Miami Gardens)",
       "location": "Miami (Miami Gardens)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 14, Group C. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Scotland",
@@ -4184,9 +4199,9 @@
       "sourceId": "fifa-world-cup-2026-group-c-matchday-14-scotland-v-brazil-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group C",
@@ -4213,9 +4228,10 @@
         "Scotland": "https://flagcdn.com/w40/gb-sct.png",
         "Brazil": "https://flagcdn.com/w40/br.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-a-matchday-14-south-africa-v-south-korea-2026-06-24",
@@ -4230,7 +4246,7 @@
       "status": "Good TV weekend",
       "venue": "Monterrey (Guadalupe)",
       "location": "Monterrey (Guadalupe)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 14, Group A. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "South Africa",
@@ -4258,9 +4274,9 @@
       "sourceId": "fifa-world-cup-2026-group-a-matchday-14-south-africa-v-south-korea-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group A",
@@ -4287,9 +4303,10 @@
         "South Africa": "https://flagcdn.com/w40/za.png",
         "South Korea": "https://flagcdn.com/w40/kr.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-b-matchday-14-switzerland-v-canada-2026-06-24",
@@ -4304,7 +4321,7 @@
       "status": "Good TV weekend",
       "venue": "Vancouver",
       "location": "Vancouver",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 14, Group B. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Switzerland",
@@ -4332,9 +4349,9 @@
       "sourceId": "fifa-world-cup-2026-group-b-matchday-14-switzerland-v-canada-2026-06-24",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 14",
       "round": "Matchday 14",
       "group": "Group B",
@@ -4361,9 +4378,10 @@
         "Switzerland": "https://flagcdn.com/w40/ch.png",
         "Canada": "https://flagcdn.com/w40/ca.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-15-curacao-v-ivory-coast-2026-06-25",
@@ -4378,7 +4396,7 @@
       "status": "Good TV weekend",
       "venue": "Philadelphia",
       "location": "Philadelphia",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 15, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Curaçao",
@@ -4406,9 +4424,9 @@
       "sourceId": "fifa-world-cup-2026-group-e-matchday-15-curacao-v-ivory-coast-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group E",
@@ -4435,9 +4453,10 @@
         "Curaçao": "https://flagcdn.com/w40/cw.png",
         "Ivory Coast": "https://flagcdn.com/w40/ci.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-e-matchday-15-ecuador-v-germany-2026-06-25",
@@ -4452,7 +4471,7 @@
       "status": "Good TV weekend",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 15, Group E. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Ecuador",
@@ -4480,9 +4499,9 @@
       "sourceId": "fifa-world-cup-2026-group-e-matchday-15-ecuador-v-germany-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group E",
@@ -4509,9 +4528,10 @@
         "Ecuador": "https://flagcdn.com/w40/ec.png",
         "Germany": "https://flagcdn.com/w40/de.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-15-japan-v-sweden-2026-06-25",
@@ -4526,7 +4546,7 @@
       "status": "Good TV weekend",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 15, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Japan",
@@ -4554,9 +4574,9 @@
       "sourceId": "fifa-world-cup-2026-group-f-matchday-15-japan-v-sweden-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group F",
@@ -4583,9 +4603,10 @@
         "Japan": "https://flagcdn.com/w40/jp.png",
         "Sweden": "https://flagcdn.com/w40/se.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-15-paraguay-v-australia-2026-06-25",
@@ -4600,7 +4621,7 @@
       "status": "Good TV weekend",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "location": "San Francisco Bay Area (Santa Clara)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 15, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Paraguay",
@@ -4628,9 +4649,9 @@
       "sourceId": "fifa-world-cup-2026-group-d-matchday-15-paraguay-v-australia-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group D",
@@ -4657,9 +4678,10 @@
         "Paraguay": "https://flagcdn.com/w40/py.png",
         "Australia": "https://flagcdn.com/w40/au.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-f-matchday-15-tunisia-v-netherlands-2026-06-25",
@@ -4674,7 +4696,7 @@
       "status": "Good TV weekend",
       "venue": "Kansas City",
       "location": "Kansas City",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 15, Group F. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Tunisia",
@@ -4702,9 +4724,9 @@
       "sourceId": "fifa-world-cup-2026-group-f-matchday-15-tunisia-v-netherlands-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group F",
@@ -4731,9 +4753,10 @@
         "Tunisia": "https://flagcdn.com/w40/tn.png",
         "Netherlands": "https://flagcdn.com/w40/nl.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-d-matchday-15-turkey-v-usa-2026-06-25",
@@ -4748,7 +4771,7 @@
       "status": "Must-watch",
       "venue": "Los Angeles (Inglewood)",
       "location": "Los Angeles (Inglewood)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 15, Group D. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Turkey",
@@ -4776,9 +4799,9 @@
       "sourceId": "fifa-world-cup-2026-group-d-matchday-15-turkey-v-usa-2026-06-25",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group D",
@@ -4805,9 +4828,10 @@
         "Turkey": "https://flagcdn.com/w40/tr.png",
         "USA": "https://flagcdn.com/w40/us.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-16-cape-verde-v-saudi-arabia-2026-06-26",
@@ -4822,7 +4846,7 @@
       "status": "Good TV weekend",
       "venue": "Houston",
       "location": "Houston",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 16, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Cape Verde",
@@ -4850,9 +4874,9 @@
       "sourceId": "fifa-world-cup-2026-group-h-matchday-16-cape-verde-v-saudi-arabia-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group H",
@@ -4879,9 +4903,10 @@
         "Cape Verde": "https://flagcdn.com/w40/cv.png",
         "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-16-egypt-v-iran-2026-06-26",
@@ -4896,7 +4921,7 @@
       "status": "Good TV weekend",
       "venue": "Seattle",
       "location": "Seattle",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 16, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Egypt",
@@ -4924,9 +4949,9 @@
       "sourceId": "fifa-world-cup-2026-group-g-matchday-16-egypt-v-iran-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group G",
@@ -4953,9 +4978,10 @@
         "Egypt": "https://flagcdn.com/w40/eg.png",
         "Iran": "https://flagcdn.com/w40/ir.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-g-matchday-16-new-zealand-v-belgium-2026-06-26",
@@ -4970,7 +4996,7 @@
       "status": "Good TV weekend",
       "venue": "Vancouver",
       "location": "Vancouver",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 16, Group G. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "New Zealand",
@@ -4998,9 +5024,9 @@
       "sourceId": "fifa-world-cup-2026-group-g-matchday-16-new-zealand-v-belgium-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group G",
@@ -5027,9 +5053,10 @@
         "New Zealand": "https://flagcdn.com/w40/nz.png",
         "Belgium": "https://flagcdn.com/w40/be.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-16-norway-v-france-2026-06-26",
@@ -5044,7 +5071,7 @@
       "status": "Good TV weekend",
       "venue": "Boston (Foxborough)",
       "location": "Boston (Foxborough)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 16, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Norway",
@@ -5072,9 +5099,9 @@
       "sourceId": "fifa-world-cup-2026-group-i-matchday-16-norway-v-france-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group I",
@@ -5101,9 +5128,10 @@
         "Norway": "https://flagcdn.com/w40/no.png",
         "France": "https://flagcdn.com/w40/fr.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-i-matchday-16-senegal-v-iraq-2026-06-26",
@@ -5118,7 +5146,7 @@
       "status": "Good TV weekend",
       "venue": "Toronto",
       "location": "Toronto",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 16, Group I. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Senegal",
@@ -5146,9 +5174,9 @@
       "sourceId": "fifa-world-cup-2026-group-i-matchday-16-senegal-v-iraq-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group I",
@@ -5175,9 +5203,10 @@
         "Senegal": "https://flagcdn.com/w40/sn.png",
         "Iraq": "https://flagcdn.com/w40/iq.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-h-matchday-16-uruguay-v-spain-2026-06-26",
@@ -5192,7 +5221,7 @@
       "status": "Good TV weekend",
       "venue": "Guadalajara (Zapopan)",
       "location": "Guadalajara (Zapopan)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 16, Group H. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Uruguay",
@@ -5220,9 +5249,9 @@
       "sourceId": "fifa-world-cup-2026-group-h-matchday-16-uruguay-v-spain-2026-06-26",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 16",
       "round": "Matchday 16",
       "group": "Group H",
@@ -5249,9 +5278,10 @@
         "Uruguay": "https://flagcdn.com/w40/uy.png",
         "Spain": "https://flagcdn.com/w40/es.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-17-algeria-v-austria-2026-06-27",
@@ -5266,7 +5296,7 @@
       "status": "Good TV weekend",
       "venue": "Kansas City",
       "location": "Kansas City",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 17, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Algeria",
@@ -5294,9 +5324,9 @@
       "sourceId": "fifa-world-cup-2026-group-j-matchday-17-algeria-v-austria-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group J",
@@ -5323,9 +5353,10 @@
         "Algeria": "https://flagcdn.com/w40/dz.png",
         "Austria": "https://flagcdn.com/w40/at.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-17-colombia-v-portugal-2026-06-27",
@@ -5340,7 +5371,7 @@
       "status": "Good TV weekend",
       "venue": "Miami (Miami Gardens)",
       "location": "Miami (Miami Gardens)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 17, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Colombia",
@@ -5368,9 +5399,9 @@
       "sourceId": "fifa-world-cup-2026-group-k-matchday-17-colombia-v-portugal-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group K",
@@ -5397,9 +5428,10 @@
         "Colombia": "https://flagcdn.com/w40/co.png",
         "Portugal": "https://flagcdn.com/w40/pt.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-17-croatia-v-ghana-2026-06-27",
@@ -5414,7 +5446,7 @@
       "status": "Good TV weekend",
       "venue": "Philadelphia",
       "location": "Philadelphia",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 17, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Croatia",
@@ -5442,9 +5474,9 @@
       "sourceId": "fifa-world-cup-2026-group-l-matchday-17-croatia-v-ghana-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group L",
@@ -5471,9 +5503,10 @@
         "Croatia": "https://flagcdn.com/w40/hr.png",
         "Ghana": "https://flagcdn.com/w40/gh.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-k-matchday-17-dr-congo-v-uzbekistan-2026-06-27",
@@ -5488,7 +5521,7 @@
       "status": "Good TV weekend",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Matchday 17, Group K. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "DR Congo",
@@ -5516,9 +5549,9 @@
       "sourceId": "fifa-world-cup-2026-group-k-matchday-17-dr-congo-v-uzbekistan-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group K",
@@ -5545,9 +5578,10 @@
         "DR Congo": "https://flagcdn.com/w40/cd.png",
         "Uzbekistan": "https://flagcdn.com/w40/uz.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-j-matchday-17-jordan-v-argentina-2026-06-27",
@@ -5562,7 +5596,7 @@
       "status": "Good TV weekend",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 17, Group J. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Jordan",
@@ -5590,9 +5624,9 @@
       "sourceId": "fifa-world-cup-2026-group-j-matchday-17-jordan-v-argentina-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group J",
@@ -5619,9 +5653,10 @@
         "Jordan": "https://flagcdn.com/w40/jo.png",
         "Argentina": "https://flagcdn.com/w40/ar.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-group-l-matchday-17-panama-v-england-2026-06-27",
@@ -5636,7 +5671,7 @@
       "status": "Good TV weekend",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Matchday 17, Group L. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Panama",
@@ -5664,9 +5699,9 @@
       "sourceId": "fifa-world-cup-2026-group-l-matchday-17-panama-v-england-2026-06-27",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group L",
@@ -5693,9 +5728,10 @@
         "Panama": "https://flagcdn.com/w40/pa.png",
         "England": "https://flagcdn.com/w40/gb-eng.png"
       },
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "nascar-oreilly-2026-sonoma-2026-06-27",
@@ -5783,7 +5819,7 @@
       "status": "Must-watch",
       "venue": "Los Angeles (Inglewood)",
       "location": "Los Angeles (Inglewood)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "2A",
@@ -5809,9 +5845,9 @@
       "sourceId": "73",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -5834,9 +5870,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "f1-2026-austrian-grand-prix-2026-06-28",
@@ -6141,7 +6178,7 @@
       "status": "Must-watch",
       "venue": "Houston",
       "location": "Houston",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1C",
@@ -6167,9 +6204,9 @@
       "sourceId": "76",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6192,9 +6229,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-074",
@@ -6209,7 +6247,7 @@
       "status": "Must-watch",
       "venue": "Boston (Foxborough)",
       "location": "Boston (Foxborough)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1E",
@@ -6235,9 +6273,9 @@
       "sourceId": "74",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6260,9 +6298,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-075",
@@ -6277,7 +6316,7 @@
       "status": "Must-watch",
       "venue": "Monterrey (Guadalupe)",
       "location": "Monterrey (Guadalupe)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1F",
@@ -6303,9 +6342,9 @@
       "sourceId": "75",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6328,9 +6367,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-079",
@@ -6345,7 +6385,7 @@
       "status": "Must-watch",
       "venue": "Mexico City",
       "location": "Mexico City",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1A",
@@ -6371,9 +6411,9 @@
       "sourceId": "79",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6396,9 +6436,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-077",
@@ -6413,7 +6454,7 @@
       "status": "Must-watch",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1I",
@@ -6439,9 +6480,9 @@
       "sourceId": "77",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6464,9 +6505,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-078",
@@ -6481,7 +6523,7 @@
       "status": "Must-watch",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "2E",
@@ -6507,9 +6549,9 @@
       "sourceId": "78",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6532,9 +6574,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-081",
@@ -6549,7 +6592,7 @@
       "status": "Must-watch",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "location": "San Francisco Bay Area (Santa Clara)",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1D",
@@ -6575,9 +6618,9 @@
       "sourceId": "81",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6600,9 +6643,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-082",
@@ -6617,7 +6661,7 @@
       "status": "Must-watch",
       "venue": "Seattle",
       "location": "Seattle",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1G",
@@ -6643,9 +6687,9 @@
       "sourceId": "82",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6668,9 +6712,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-080",
@@ -6685,7 +6730,7 @@
       "status": "Must-watch",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1L",
@@ -6711,9 +6756,9 @@
       "sourceId": "80",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6736,9 +6781,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-085",
@@ -6753,7 +6799,7 @@
       "status": "Must-watch",
       "venue": "Vancouver",
       "location": "Vancouver",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1B",
@@ -6779,9 +6825,9 @@
       "sourceId": "85",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6804,9 +6850,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-084",
@@ -6821,7 +6868,7 @@
       "status": "Must-watch",
       "venue": "Los Angeles (Inglewood)",
       "location": "Los Angeles (Inglewood)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1H",
@@ -6847,9 +6894,9 @@
       "sourceId": "84",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6872,9 +6919,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-083",
@@ -6889,7 +6937,7 @@
       "status": "Must-watch",
       "venue": "Toronto",
       "location": "Toronto",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "2K",
@@ -6915,9 +6963,9 @@
       "sourceId": "83",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -6940,9 +6988,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-086",
@@ -6957,7 +7006,7 @@
       "status": "Must-watch",
       "venue": "Miami (Miami Gardens)",
       "location": "Miami (Miami Gardens)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1J",
@@ -6983,9 +7032,9 @@
       "sourceId": "86",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -7008,9 +7057,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-087",
@@ -7025,7 +7075,7 @@
       "status": "Must-watch",
       "venue": "Kansas City",
       "location": "Kansas City",
-      "tv": "TBD",
+      "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "1K",
@@ -7051,9 +7101,9 @@
       "sourceId": "87",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -7076,9 +7126,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-088",
@@ -7093,7 +7144,7 @@
       "status": "Must-watch",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "2D",
@@ -7119,9 +7170,9 @@
       "sourceId": "88",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
@@ -7144,9 +7195,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "nascar-oreilly-2026-chicagoland-2026-07-04",
@@ -7234,7 +7286,7 @@
       "status": "Must-watch",
       "venue": "Houston",
       "location": "Houston",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W73",
@@ -7260,9 +7312,9 @@
       "sourceId": "90",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7285,9 +7337,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-089",
@@ -7302,7 +7355,7 @@
       "status": "Must-watch",
       "venue": "Philadelphia",
       "location": "Philadelphia",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W74",
@@ -7328,9 +7381,9 @@
       "sourceId": "89",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7353,9 +7406,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "f1-2026-british-grand-prix-2026-07-05",
@@ -7589,7 +7643,7 @@
       "status": "Must-watch",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W76",
@@ -7615,9 +7669,9 @@
       "sourceId": "91",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7640,9 +7694,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-092",
@@ -7657,7 +7712,7 @@
       "status": "Must-watch",
       "venue": "Mexico City",
       "location": "Mexico City",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W79",
@@ -7683,9 +7738,9 @@
       "sourceId": "92",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7708,9 +7763,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-094",
@@ -7725,7 +7781,7 @@
       "status": "Must-watch",
       "venue": "Seattle",
       "location": "Seattle",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W81",
@@ -7751,9 +7807,9 @@
       "sourceId": "94",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7776,9 +7832,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-093",
@@ -7793,7 +7850,7 @@
       "status": "Must-watch",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W83",
@@ -7819,9 +7876,9 @@
       "sourceId": "93",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7844,9 +7901,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-096",
@@ -7861,7 +7919,7 @@
       "status": "Must-watch",
       "venue": "Vancouver",
       "location": "Vancouver",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W85",
@@ -7887,9 +7945,9 @@
       "sourceId": "96",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7912,9 +7970,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-095",
@@ -7929,7 +7988,7 @@
       "status": "Must-watch",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W86",
@@ -7955,9 +8014,9 @@
       "sourceId": "95",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Round of 16",
       "round": "Round of 16",
       "group": "",
@@ -7980,9 +8039,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-097",
@@ -7997,7 +8057,7 @@
       "status": "Must-watch",
       "venue": "Boston (Foxborough)",
       "location": "Boston (Foxborough)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W89",
@@ -8023,9 +8083,9 @@
       "sourceId": "97",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Quarter-final",
       "round": "Quarter-final",
       "group": "",
@@ -8048,9 +8108,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-098",
@@ -8065,7 +8126,7 @@
       "status": "Must-watch",
       "venue": "Los Angeles (Inglewood)",
       "location": "Los Angeles (Inglewood)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W93",
@@ -8091,9 +8152,9 @@
       "sourceId": "98",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Quarter-final",
       "round": "Quarter-final",
       "group": "",
@@ -8116,9 +8177,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "nascar-oreilly-2026-echopark-atlanta-2026-07-11",
@@ -8280,7 +8342,7 @@
       "status": "Must-watch",
       "venue": "Miami (Miami Gardens)",
       "location": "Miami (Miami Gardens)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W91",
@@ -8306,9 +8368,9 @@
       "sourceId": "99",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Quarter-final",
       "round": "Quarter-final",
       "group": "",
@@ -8331,9 +8393,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-100",
@@ -8348,7 +8411,7 @@
       "status": "Must-watch",
       "venue": "Kansas City",
       "location": "Kansas City",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W95",
@@ -8374,9 +8437,9 @@
       "sourceId": "100",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Quarter-final",
       "round": "Quarter-final",
       "group": "",
@@ -8399,9 +8462,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "imsa-weathertech-2026-canadian-tire-motorsport-park-2026-07-12",
@@ -8692,7 +8756,7 @@
       "status": "Must-watch",
       "venue": "Dallas (Arlington)",
       "location": "Dallas (Arlington)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Semi-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W97",
@@ -8718,9 +8782,9 @@
       "sourceId": "101",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Semi-final",
       "round": "Semi-final",
       "group": "",
@@ -8743,9 +8807,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-102",
@@ -8760,7 +8825,7 @@
       "status": "Must-watch",
       "venue": "Atlanta",
       "location": "Atlanta",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Semi-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W99",
@@ -8786,9 +8851,9 @@
       "sourceId": "102",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Semi-final",
       "round": "Semi-final",
       "group": "",
@@ -8811,9 +8876,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "nascar-trucks-2026-north-wilkesboro-2026-07-18",
@@ -9116,7 +9182,7 @@
       "status": "Must-watch",
       "venue": "New York/New Jersey (East Rutherford)",
       "location": "New York/New Jersey (East Rutherford)",
-      "tv": "TBD",
+      "tv": "FOX",
       "notes": "Final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "W101",
@@ -9142,9 +9208,9 @@
       "sourceId": "104",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
-      "lastVerifiedAt": "",
+      "lastVerifiedAt": "2026-06-21",
       "isAutoImported": true,
-      "dataStatus": "Imported",
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
       "stage": "Final",
       "round": "Final",
       "group": "",
@@ -9167,9 +9233,10 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "nascar-cup-2026-north-wilkesboro-2026-07-19",

@@ -30,6 +30,7 @@ The long-term goal is a personalized sports command center that answers what to 
 - Visible hosted update status in the app.
 - GitHub Actions-based event update pipeline.
 - Full FIFA World Cup 2026 import from a no-key public structured source.
+- Exact FOX/FS1 TV assignments for World Cup matches where the documented FOX Sports schedule provides a matching row.
 - Verified future 2026 racing schedule import for NASCAR Cup, NASCAR O'Reilly, NASCAR Trucks, Formula 1, IndyCar, MotoGP, and IMSA WeatherTech.
 - Generated `data/logo-registry.json` for sport, league, team, channel, and flag lookup.
 - TheSportsDB league/team artwork support through the Node update script.
@@ -167,10 +168,11 @@ Sports Command Center includes a source adapter for FIFA World Cup 2026:
 
 - Adapter: `sources/world-cup-2026.mjs`
 - Source: `https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json`
+- TV source: `sources/schedules/2026/world-cup-tv.json`, curated from FOX Sports' published World Cup broadcast schedule
 - Imported events: 104 matches
 - Metadata: source, sourceId, round, group, home/away teams, participants, result status, and score when available
 
-If TV/streaming data is not provided by the source, the app uses `TBD` and does not invent it.
+When the curated TV mapping has an exact matching row, World Cup events display `FOX` or `FS1`. If an exact assignment is missing or uncertain, the app uses `TBD` and does not invent it.
 
 ## Racing Schedule Import
 
@@ -215,9 +217,9 @@ The workflow also runs on a schedule. It is intentionally safe for static hostin
 
 ## Current Status
 
-Current version: `0.22.0`
+Current version: `0.22.1`
 
-The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, clearer Dashboard All Events rows, Dashboard drill-down navigation into the Events board, and iPhone Home Screen install support. Version 0.22.0 keeps the static GitHub Pages-friendly architecture.
+The project is a usable static prototype with a command-center dashboard, hosted event updates, a real sports visual/data foundation, expanded racing coverage, NASCAR series identifiers, World Cup FOX/FS1 TV assignments where documented, polished Calendar and Weekends views, a dedicated mobile-friendly Events board, clearer Dashboard All Events rows, Dashboard drill-down navigation into the Events board, and iPhone Home Screen install support. Version 0.22.1 keeps the static GitHub Pages-friendly architecture.
 
 ## Roadmap
 
@@ -237,7 +239,7 @@ The project is a usable static prototype with a command-center dashboard, hosted
 - No shared backend or real-time sync.
 - Hosted updates do not delete local user-created events.
 - OpenFootball is useful but not guaranteed to be an official live schedule source.
-- Imported World Cup TV data is `TBD` unless provided by a source.
+- Imported World Cup TV data uses exact FOX/FS1 values when the curated FOX Sports mapping has a matching row; missing or uncertain assignments remain `TBD`.
 - Some imported racing start times and TV/streaming values are `TBD` when official or verified source data is not available.
 - Curated major-event windows should be confirmed before making travel, ticket, or broadcast decisions.
 - TheSportsDB free-tier rate limits can temporarily prevent logo refreshes; the updater preserves the existing registry when that happens.

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.22.1
+
+- Added a static curated FIFA World Cup 2026 TV mapping at `sources/schedules/2026/world-cup-tv.json`.
+- Updated the World Cup adapter so exact FOX Sports schedule rows apply `FOX` or `FS1` to matching World Cup events.
+- Refreshed `events.json`; 67 World Cup matches now have exact FOX/FS1 channel assignments and unmatched/uncertain matches remain `TBD`.
+- Preserved deterministic event IDs, event schema, hosted update behavior, logo fallbacks, localStorage behavior, and static GitHub Pages compatibility.
+- Documented the FOX Sports TV/channel source and limitations in `DATA_SOURCES.md`.
+- Synced the maintained `outputs/sports-weekend-planner/` app copy and hosted data.
+- Polished Dashboard All Events status pills so `Must-watch` badges match the other compact status pills more closely.
+
 ## 0.22.0
 
 - Added PWA/Home Screen metadata for Sports Command Center using `manifest.webmanifest`.

@@ -1,3 +1,5 @@
+import fs from "node:fs/promises";
+
 import {
   importanceForSoccerTournamentRound,
   parseSourceTime,
@@ -9,6 +11,12 @@ import {
 
 export const WORLD_CUP_2026_SOURCE_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
+export const WORLD_CUP_2026_TV_SCHEDULE_URL = new URL(
+  "./schedules/2026/world-cup-tv.json",
+  import.meta.url
+);
+
+const SUPPORTED_TV_ASSIGNMENTS = new Set(["FOX", "FS1"]);
 
 function stableMatchId(match) {
   const teams = [match.team1, match.team2].filter(Boolean).join("-v-");
@@ -34,8 +42,41 @@ function notesForMatch(match, sourceLabel) {
   return parts.filter(Boolean).join(" ");
 }
 
+async function readWorldCupTvSchedule(scheduleUrl = WORLD_CUP_2026_TV_SCHEDULE_URL) {
+  const raw = await fs.readFile(scheduleUrl, "utf8");
+  const schedule = JSON.parse(raw);
+  const assignments = Array.isArray(schedule.assignments) ? schedule.assignments : [];
+
+  return {
+    ...schedule,
+    assignments
+  };
+}
+
+function buildTvAssignmentMap(schedule) {
+  return schedule.assignments.reduce((assignments, assignment) => {
+    const eventId = String(assignment.eventId || "").trim();
+    const tv = String(assignment.tv || "").trim().toUpperCase();
+
+    if (!eventId || !SUPPORTED_TV_ASSIGNMENTS.has(tv)) {
+      return assignments;
+    }
+
+    assignments.set(eventId, {
+      tv,
+      sourceName: schedule.sourceName || "",
+      sourceUrl: schedule.sourceUrl || "",
+      lastVerifiedAt: schedule.lastVerifiedAt || ""
+    });
+
+    return assignments;
+  }, new Map());
+}
+
 export async function fetchWorldCup2026Events(options = {}) {
   const sourceUrl = options.sourceUrl || WORLD_CUP_2026_SOURCE_URL;
+  const tvSchedule = await readWorldCupTvSchedule(options.tvScheduleUrl);
+  const tvAssignments = buildTvAssignmentMap(tvSchedule);
   const response = await fetch(sourceUrl, { headers: { "User-Agent": "Sports-Command-Center-Updater" } });
 
   if (!response.ok) {
@@ -55,6 +96,7 @@ export async function fetchWorldCup2026Events(options = {}) {
     const id = match.num
       ? `fifa-world-cup-2026-match-${String(match.num).padStart(3, "0")}`
       : stableMatchId(match);
+    const tvAssignment = tvAssignments.get(id);
 
     return {
       id,
@@ -71,7 +113,7 @@ export async function fetchWorldCup2026Events(options = {}) {
       status,
       venue: match.ground || "TBD",
       location: match.ground || "TBD",
-      tv: "TBD",
+      tv: tvAssignment?.tv || "TBD",
       notes: notesForMatch(match, sourceLabel),
       teams,
       participants: teams,
@@ -90,9 +132,9 @@ export async function fetchWorldCup2026Events(options = {}) {
       sourceId: String(match.num || stableMatchId(match)),
       sourceUrl,
       sourceUpdatedAt,
-      lastVerifiedAt: sourceUpdatedAt,
+      lastVerifiedAt: tvAssignment?.lastVerifiedAt || sourceUpdatedAt,
       isAutoImported: true,
-      dataStatus: "Imported",
+      dataStatus: tvAssignment ? `Imported; TV verified by ${tvAssignment.sourceName}.` : "Imported",
       stage: match.round || "",
       round: match.round || "",
       group: match.group || "",
