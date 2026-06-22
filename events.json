@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-22T07:39:57.880Z",
+  "updatedAt": "2026-06-22T16:01:38.695Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -6235,75 +6235,6 @@
       "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
-      "id": "fifa-world-cup-2026-match-074",
-      "title": "1E vs 3A/B/C/D/F",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-06-29",
-      "startTime": "16:30",
-      "timezone": "UTC-4",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Boston (Foxborough)",
-      "location": "Boston (Foxborough)",
-      "tv": "FS1",
-      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "1E",
-        "3A/B/C/D/F"
-      ],
-      "participants": [
-        "1E",
-        "3A/B/C/D/F"
-      ],
-      "homeTeam": "1E",
-      "awayTeam": "3A/B/C/D/F",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 32"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 32"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "74",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 32",
-      "round": "Round of 32",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 32",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fs1.svg"
-    },
-    {
       "id": "fifa-world-cup-2026-match-075",
       "title": "1F vs 2C",
       "sport": "Soccer",
@@ -6373,30 +6304,30 @@
       "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
-      "id": "fifa-world-cup-2026-match-079",
-      "title": "1A vs 3C/E/F/H/I",
+      "id": "fifa-world-cup-2026-match-074",
+      "title": "Germany vs 3A/B/C/D/F",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
-      "date": "2026-06-30",
-      "startTime": "19:00",
-      "timezone": "UTC-6",
+      "date": "2026-06-29",
+      "startTime": "16:30",
+      "timezone": "UTC-4",
       "importance": 8,
       "personalImportance": 8,
       "status": "Must-watch",
-      "venue": "Mexico City",
-      "location": "Mexico City",
+      "venue": "Boston (Foxborough)",
+      "location": "Boston (Foxborough)",
       "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1A",
-        "3C/E/F/H/I"
+        "Germany",
+        "3A/B/C/D/F"
       ],
       "participants": [
-        "1A",
-        "3C/E/F/H/I"
+        "Germany",
+        "3A/B/C/D/F"
       ],
-      "homeTeam": "1A",
-      "awayTeam": "3C/E/F/H/I",
+      "homeTeam": "Germany",
+      "awayTeam": "3A/B/C/D/F",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6408,7 +6339,7 @@
         "Round of 32"
       ],
       "source": "openfootball/worldcup.json",
-      "sourceId": "79",
+      "sourceId": "74",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
       "lastVerifiedAt": "2026-06-21",
@@ -6436,10 +6367,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fs1.svg"
+      "channelLogo": "assets/logos/channels/fs1.svg",
+      "flagLogos": {
+        "Germany": "https://flagcdn.com/w40/de.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-077",
@@ -6580,30 +6514,30 @@
       "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
-      "id": "fifa-world-cup-2026-match-081",
-      "title": "1D vs 3B/E/F/I/J",
+      "id": "fifa-world-cup-2026-match-079",
+      "title": "Mexico vs 3C/E/F/H/I",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
-      "date": "2026-07-01",
-      "startTime": "17:00",
-      "timezone": "UTC-7",
+      "date": "2026-06-30",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
       "importance": 8,
       "personalImportance": 8,
       "status": "Must-watch",
-      "venue": "San Francisco Bay Area (Santa Clara)",
-      "location": "San Francisco Bay Area (Santa Clara)",
+      "venue": "Mexico City",
+      "location": "Mexico City",
       "tv": "FS1",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1D",
-        "3B/E/F/I/J"
+        "Mexico",
+        "3C/E/F/H/I"
       ],
       "participants": [
-        "1D",
-        "3B/E/F/I/J"
+        "Mexico",
+        "3C/E/F/H/I"
       ],
-      "homeTeam": "1D",
-      "awayTeam": "3B/E/F/I/J",
+      "homeTeam": "Mexico",
+      "awayTeam": "3C/E/F/H/I",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6615,7 +6549,7 @@
         "Round of 32"
       ],
       "source": "openfootball/worldcup.json",
-      "sourceId": "81",
+      "sourceId": "79",
       "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
       "sourceUpdatedAt": "",
       "lastVerifiedAt": "2026-06-21",
@@ -6643,10 +6577,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fs1.svg"
+      "channelLogo": "assets/logos/channels/fs1.svg",
+      "flagLogos": {
+        "Mexico": "https://flagcdn.com/w40/mx.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-082",
@@ -6785,6 +6722,78 @@
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
+    },
+    {
+      "id": "fifa-world-cup-2026-match-081",
+      "title": "USA vs 3B/E/F/I/J",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-01",
+      "startTime": "17:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "location": "San Francisco Bay Area (Santa Clara)",
+      "tv": "FS1",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "USA",
+        "3B/E/F/I/J"
+      ],
+      "participants": [
+        "USA",
+        "3B/E/F/I/J"
+      ],
+      "homeTeam": "USA",
+      "awayTeam": "3B/E/F/I/J",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "81",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg",
+      "flagLogos": {
+        "USA": "https://flagcdn.com/w40/us.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-085",
