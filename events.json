@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-26T06:19:45.538Z",
+  "updatedAt": "2026-06-26T13:21:13.903Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -6170,80 +6170,8 @@
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
-      "id": "fifa-world-cup-2026-match-075",
-      "title": "1F vs Morocco",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-06-29",
-      "startTime": "19:00",
-      "timezone": "UTC-6",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Monterrey (Guadalupe)",
-      "location": "Monterrey (Guadalupe)",
-      "tv": "FOX",
-      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "1F",
-        "Morocco"
-      ],
-      "participants": [
-        "1F",
-        "Morocco"
-      ],
-      "homeTeam": "1F",
-      "awayTeam": "Morocco",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 32"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 32"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "75",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 32",
-      "round": "Round of 32",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 32",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg",
-      "flagLogos": {
-        "Morocco": "https://flagcdn.com/w40/ma.png"
-      }
-    },
-    {
       "id": "fifa-world-cup-2026-match-076",
-      "title": "Brazil vs 2F",
+      "title": "Brazil vs Japan",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-29",
@@ -6258,14 +6186,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Brazil",
-        "2F"
+        "Japan"
       ],
       "participants": [
         "Brazil",
-        "2F"
+        "Japan"
       ],
       "homeTeam": "Brazil",
-      "awayTeam": "2F",
+      "awayTeam": "Japan",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6310,7 +6238,8 @@
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Brazil": "https://flagcdn.com/w40/br.png"
+        "Brazil": "https://flagcdn.com/w40/br.png",
+        "Japan": "https://flagcdn.com/w40/jp.png"
       }
     },
     {
@@ -6386,6 +6315,79 @@
       }
     },
     {
+      "id": "fifa-world-cup-2026-match-075",
+      "title": "Netherlands vs Morocco",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-06-29",
+      "startTime": "19:00",
+      "timezone": "UTC-6",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Monterrey (Guadalupe)",
+      "location": "Monterrey (Guadalupe)",
+      "tv": "FOX",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Netherlands",
+        "Morocco"
+      ],
+      "participants": [
+        "Netherlands",
+        "Morocco"
+      ],
+      "homeTeam": "Netherlands",
+      "awayTeam": "Morocco",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "75",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Netherlands": "https://flagcdn.com/w40/nl.png",
+        "Morocco": "https://flagcdn.com/w40/ma.png"
+      }
+    },
+    {
       "id": "fifa-world-cup-2026-match-077",
       "title": "1I vs 3C/D/F/G/H",
       "sport": "Soccer",
@@ -6456,7 +6458,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-078",
-      "title": "2E vs 2I",
+      "title": "Ivory Coast vs 2I",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-30",
@@ -6470,14 +6472,14 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "2E",
+        "Ivory Coast",
         "2I"
       ],
       "participants": [
-        "2E",
+        "Ivory Coast",
         "2I"
       ],
-      "homeTeam": "2E",
+      "homeTeam": "Ivory Coast",
       "awayTeam": "2I",
       "competitionTags": [
         "FIFA World Cup",
@@ -6518,10 +6520,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Ivory Coast": "https://flagcdn.com/w40/ci.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-079",
@@ -7155,7 +7160,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-088",
-      "title": "2D vs 2G",
+      "title": "Australia vs 2G",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-03",
@@ -7169,14 +7174,14 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "2D",
+        "Australia",
         "2G"
       ],
       "participants": [
-        "2D",
+        "Australia",
         "2G"
       ],
-      "homeTeam": "2D",
+      "homeTeam": "Australia",
       "awayTeam": "2G",
       "competitionTags": [
         "FIFA World Cup",
@@ -7217,10 +7222,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Australia": "https://flagcdn.com/w40/au.png"
+      }
     },
     {
       "id": "nascar-oreilly-2026-chicagoland-2026-07-04",
