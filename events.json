@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-25T20:22:24.055Z",
+  "updatedAt": "2026-06-26T06:19:45.538Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -4430,8 +4430,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group E",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-2",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -4505,8 +4505,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group E",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "2-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -4580,8 +4580,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group F",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -4655,8 +4655,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group D",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -4730,8 +4730,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group F",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-3",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -4805,8 +4805,8 @@
       "stage": "Matchday 15",
       "round": "Matchday 15",
       "group": "Group D",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "3-2",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
