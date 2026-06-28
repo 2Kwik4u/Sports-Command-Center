@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-18T20:39:18.704Z",
+  "updatedAt": "2026-06-28T12:44:07.181Z",
   "sources": [
     {
       "name": "TheSportsDB",
@@ -917,7 +917,7 @@
       "name": "Chelsea",
       "sport": "Soccer",
       "league": "English Premier League",
-      "logo": "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png/tiny",
+      "logo": "https://www.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png/tiny",
       "providerId": "133610",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",

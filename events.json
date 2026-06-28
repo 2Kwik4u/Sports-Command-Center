@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-28T06:36:25.255Z",
+  "updatedAt": "2026-06-28T12:44:07.238Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -74,7 +74,7 @@
         "South Africa": "https://flagcdn.com/w40/za.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -148,7 +148,7 @@
         "Czech Republic": "https://flagcdn.com/w40/cz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -222,7 +222,7 @@
         "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -296,7 +296,7 @@
         "Paraguay": "https://flagcdn.com/w40/py.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -370,7 +370,7 @@
         "Turkey": "https://flagcdn.com/w40/tr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -444,7 +444,7 @@
         "Morocco": "https://flagcdn.com/w40/ma.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -518,7 +518,7 @@
         "Scotland": "https://flagcdn.com/w40/gb-sct.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -592,7 +592,7 @@
         "Switzerland": "https://flagcdn.com/w40/ch.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -666,7 +666,7 @@
         "Curaçao": "https://flagcdn.com/w40/cw.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -740,7 +740,7 @@
         "Ecuador": "https://flagcdn.com/w40/ec.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -814,7 +814,7 @@
         "Japan": "https://flagcdn.com/w40/jp.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -888,7 +888,7 @@
         "Tunisia": "https://flagcdn.com/w40/tn.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -962,7 +962,7 @@
         "Egypt": "https://flagcdn.com/w40/eg.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1036,7 +1036,7 @@
         "New Zealand": "https://flagcdn.com/w40/nz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1110,7 +1110,7 @@
         "Uruguay": "https://flagcdn.com/w40/uy.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1184,7 +1184,7 @@
         "Cape Verde": "https://flagcdn.com/w40/cv.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1258,7 +1258,7 @@
         "Algeria": "https://flagcdn.com/w40/dz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1332,7 +1332,7 @@
         "Jordan": "https://flagcdn.com/w40/jo.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1406,7 +1406,7 @@
         "Senegal": "https://flagcdn.com/w40/sn.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1480,7 +1480,7 @@
         "Norway": "https://flagcdn.com/w40/no.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1554,7 +1554,7 @@
         "Croatia": "https://flagcdn.com/w40/hr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1628,7 +1628,7 @@
         "Panama": "https://flagcdn.com/w40/pa.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1702,7 +1702,7 @@
         "DR Congo": "https://flagcdn.com/w40/cd.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1776,7 +1776,7 @@
         "Colombia": "https://flagcdn.com/w40/co.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1850,7 +1850,7 @@
         "Qatar": "https://flagcdn.com/w40/qa.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1924,7 +1924,7 @@
         "South Africa": "https://flagcdn.com/w40/za.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -1998,7 +1998,7 @@
         "South Korea": "https://flagcdn.com/w40/kr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2072,7 +2072,7 @@
         "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2146,7 +2146,7 @@
         "Haiti": "https://flagcdn.com/w40/ht.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2294,7 +2294,7 @@
         "Morocco": "https://flagcdn.com/w40/ma.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2368,7 +2368,7 @@
         "Paraguay": "https://flagcdn.com/w40/py.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2442,7 +2442,7 @@
         "Australia": "https://flagcdn.com/w40/au.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2516,7 +2516,7 @@
         "Curaçao": "https://flagcdn.com/w40/cw.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2590,7 +2590,7 @@
         "Ivory Coast": "https://flagcdn.com/w40/ci.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2664,7 +2664,7 @@
         "Sweden": "https://flagcdn.com/w40/se.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2738,7 +2738,7 @@
         "Japan": "https://flagcdn.com/w40/jp.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -2959,7 +2959,7 @@
         "Iran": "https://flagcdn.com/w40/ir.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -3106,7 +3106,7 @@
         "Egypt": "https://flagcdn.com/w40/eg.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -3181,7 +3181,7 @@
         "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3256,7 +3256,7 @@
         "Cape Verde": "https://flagcdn.com/w40/cv.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -3404,7 +3404,7 @@
         "Austria": "https://flagcdn.com/w40/at.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3479,7 +3479,7 @@
         "Iraq": "https://flagcdn.com/w40/iq.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3554,7 +3554,7 @@
         "Algeria": "https://flagcdn.com/w40/dz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -3629,7 +3629,7 @@
         "Senegal": "https://flagcdn.com/w40/sn.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3704,7 +3704,7 @@
         "DR Congo": "https://flagcdn.com/w40/cd.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -3779,7 +3779,7 @@
         "Ghana": "https://flagcdn.com/w40/gh.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3854,7 +3854,7 @@
         "Croatia": "https://flagcdn.com/w40/hr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -3929,7 +3929,7 @@
         "Uzbekistan": "https://flagcdn.com/w40/uz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4004,7 +4004,7 @@
         "Qatar": "https://flagcdn.com/w40/qa.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4079,7 +4079,7 @@
         "Mexico": "https://flagcdn.com/w40/mx.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4154,7 +4154,7 @@
         "Haiti": "https://flagcdn.com/w40/ht.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4229,7 +4229,7 @@
         "Brazil": "https://flagcdn.com/w40/br.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4304,7 +4304,7 @@
         "South Korea": "https://flagcdn.com/w40/kr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4379,7 +4379,7 @@
         "Canada": "https://flagcdn.com/w40/ca.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4454,7 +4454,7 @@
         "Ivory Coast": "https://flagcdn.com/w40/ci.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4529,7 +4529,7 @@
         "Germany": "https://flagcdn.com/w40/de.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4604,7 +4604,7 @@
         "Sweden": "https://flagcdn.com/w40/se.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4679,7 +4679,7 @@
         "Australia": "https://flagcdn.com/w40/au.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4754,7 +4754,7 @@
         "Netherlands": "https://flagcdn.com/w40/nl.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4829,7 +4829,7 @@
         "USA": "https://flagcdn.com/w40/us.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -4904,7 +4904,7 @@
         "Saudi Arabia": "https://flagcdn.com/w40/sa.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -4979,7 +4979,7 @@
         "Iran": "https://flagcdn.com/w40/ir.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -5054,7 +5054,7 @@
         "Belgium": "https://flagcdn.com/w40/be.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5129,7 +5129,7 @@
         "France": "https://flagcdn.com/w40/fr.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5204,7 +5204,7 @@
         "Iraq": "https://flagcdn.com/w40/iq.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -5279,7 +5279,7 @@
         "Spain": "https://flagcdn.com/w40/es.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5354,7 +5354,7 @@
         "Austria": "https://flagcdn.com/w40/at.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -5429,7 +5429,7 @@
         "Portugal": "https://flagcdn.com/w40/pt.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5504,7 +5504,7 @@
         "Ghana": "https://flagcdn.com/w40/gh.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -5579,7 +5579,7 @@
         "Uzbekistan": "https://flagcdn.com/w40/uz.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg"
     },
@@ -5654,7 +5654,7 @@
         "Argentina": "https://flagcdn.com/w40/ar.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5729,7 +5729,7 @@
         "England": "https://flagcdn.com/w40/gb-eng.png"
       },
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -5877,7 +5877,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-netherlands-grand-prix-2026-06-28",
@@ -5949,7 +5949,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "imsa-weathertech-2026-watkins-glen-6-hour-2026-06-28",
@@ -6021,7 +6021,7 @@
       "duration": "6 Hours",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "fifa-world-cup-2026-match-073",
@@ -6088,7 +6088,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
@@ -6166,7 +6166,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -6234,7 +6234,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
@@ -6244,7 +6244,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-074",
-      "title": "Germany vs 3A/B/C/D/F",
+      "title": "Germany vs Paraguay",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-29",
@@ -6259,14 +6259,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Germany",
-        "3A/B/C/D/F"
+        "Paraguay"
       ],
       "participants": [
         "Germany",
-        "3A/B/C/D/F"
+        "Paraguay"
       ],
       "homeTeam": "Germany",
-      "awayTeam": "3A/B/C/D/F",
+      "awayTeam": "Paraguay",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6307,11 +6307,12 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "flagLogos": {
-        "Germany": "https://flagcdn.com/w40/de.png"
+        "Germany": "https://flagcdn.com/w40/de.png",
+        "Paraguay": "https://flagcdn.com/w40/py.png"
       }
     },
     {
@@ -6379,7 +6380,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
@@ -6389,7 +6390,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-077",
-      "title": "1I vs 3C/D/F/G/H",
+      "title": "France vs Sweden",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-30",
@@ -6403,15 +6404,15 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1I",
-        "3C/D/F/G/H"
+        "France",
+        "Sweden"
       ],
       "participants": [
-        "1I",
-        "3C/D/F/G/H"
+        "France",
+        "Sweden"
       ],
-      "homeTeam": "1I",
-      "awayTeam": "3C/D/F/G/H",
+      "homeTeam": "France",
+      "awayTeam": "Sweden",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6451,14 +6452,18 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "France": "https://flagcdn.com/w40/fr.png",
+        "Sweden": "https://flagcdn.com/w40/se.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-078",
-      "title": "Ivory Coast vs 2I",
+      "title": "Ivory Coast vs Norway",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-30",
@@ -6473,14 +6478,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Ivory Coast",
-        "2I"
+        "Norway"
       ],
       "participants": [
         "Ivory Coast",
-        "2I"
+        "Norway"
       ],
       "homeTeam": "Ivory Coast",
-      "awayTeam": "2I",
+      "awayTeam": "Norway",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6521,16 +6526,17 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Ivory Coast": "https://flagcdn.com/w40/ci.png"
+        "Ivory Coast": "https://flagcdn.com/w40/ci.png",
+        "Norway": "https://flagcdn.com/w40/no.png"
       }
     },
     {
       "id": "fifa-world-cup-2026-match-079",
-      "title": "Mexico vs 3C/E/F/H/I",
+      "title": "Mexico vs Ecuador",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-06-30",
@@ -6545,14 +6551,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Mexico",
-        "3C/E/F/H/I"
+        "Ecuador"
       ],
       "participants": [
         "Mexico",
-        "3C/E/F/H/I"
+        "Ecuador"
       ],
       "homeTeam": "Mexico",
-      "awayTeam": "3C/E/F/H/I",
+      "awayTeam": "Ecuador",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6593,16 +6599,17 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "flagLogos": {
-        "Mexico": "https://flagcdn.com/w40/mx.png"
+        "Mexico": "https://flagcdn.com/w40/mx.png",
+        "Ecuador": "https://flagcdn.com/w40/ec.png"
       }
     },
     {
       "id": "fifa-world-cup-2026-match-082",
-      "title": "1G vs 3A/E/H/I/J",
+      "title": "Belgium vs Senegal",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-01",
@@ -6616,15 +6623,15 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1G",
-        "3A/E/H/I/J"
+        "Belgium",
+        "Senegal"
       ],
       "participants": [
-        "1G",
-        "3A/E/H/I/J"
+        "Belgium",
+        "Senegal"
       ],
-      "homeTeam": "1G",
-      "awayTeam": "3A/E/H/I/J",
+      "homeTeam": "Belgium",
+      "awayTeam": "Senegal",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6664,14 +6671,18 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Belgium": "https://flagcdn.com/w40/be.png",
+        "Senegal": "https://flagcdn.com/w40/sn.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-080",
-      "title": "1L vs 3E/H/I/J/K",
+      "title": "England vs DR Congo",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-01",
@@ -6685,15 +6696,15 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1L",
-        "3E/H/I/J/K"
+        "England",
+        "DR Congo"
       ],
       "participants": [
-        "1L",
-        "3E/H/I/J/K"
+        "England",
+        "DR Congo"
       ],
-      "homeTeam": "1L",
-      "awayTeam": "3E/H/I/J/K",
+      "homeTeam": "England",
+      "awayTeam": "DR Congo",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6733,14 +6744,18 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "England": "https://flagcdn.com/w40/gb-eng.png",
+        "DR Congo": "https://flagcdn.com/w40/cd.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-081",
-      "title": "USA vs 3B/E/F/I/J",
+      "title": "USA vs Bosnia & Herzegovina",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-01",
@@ -6755,14 +6770,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "USA",
-        "3B/E/F/I/J"
+        "Bosnia & Herzegovina"
       ],
       "participants": [
         "USA",
-        "3B/E/F/I/J"
+        "Bosnia & Herzegovina"
       ],
       "homeTeam": "USA",
-      "awayTeam": "3B/E/F/I/J",
+      "awayTeam": "Bosnia & Herzegovina",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6803,85 +6818,17 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "flagLogos": {
-        "USA": "https://flagcdn.com/w40/us.png"
+        "USA": "https://flagcdn.com/w40/us.png",
+        "Bosnia & Herzegovina": "https://flagcdn.com/w40/ba.png"
       }
     },
     {
-      "id": "fifa-world-cup-2026-match-084",
-      "title": "1H vs 2J",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-02",
-      "startTime": "12:00",
-      "timezone": "UTC-7",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Los Angeles (Inglewood)",
-      "location": "Los Angeles (Inglewood)",
-      "tv": "FOX",
-      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "1H",
-        "2J"
-      ],
-      "participants": [
-        "1H",
-        "2J"
-      ],
-      "homeTeam": "1H",
-      "awayTeam": "2J",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 32"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 32"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "84",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 32",
-      "round": "Round of 32",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 32",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
-    },
-    {
       "id": "fifa-world-cup-2026-match-083",
-      "title": "2K vs 2L",
+      "title": "Portugal vs Croatia",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-02",
@@ -6895,15 +6842,15 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "2K",
-        "2L"
+        "Portugal",
+        "Croatia"
       ],
       "participants": [
-        "2K",
-        "2L"
+        "Portugal",
+        "Croatia"
       ],
-      "homeTeam": "2K",
-      "awayTeam": "2L",
+      "homeTeam": "Portugal",
+      "awayTeam": "Croatia",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -6943,14 +6890,91 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Portugal": "https://flagcdn.com/w40/pt.png",
+        "Croatia": "https://flagcdn.com/w40/hr.png"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-084",
+      "title": "Spain vs Austria",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-02",
+      "startTime": "12:00",
+      "timezone": "UTC-7",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Los Angeles (Inglewood)",
+      "location": "Los Angeles (Inglewood)",
+      "tv": "FOX",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Spain",
+        "Austria"
+      ],
+      "participants": [
+        "Spain",
+        "Austria"
+      ],
+      "homeTeam": "Spain",
+      "awayTeam": "Austria",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "84",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Spain": "https://flagcdn.com/w40/es.png",
+        "Austria": "https://flagcdn.com/w40/at.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-085",
-      "title": "Switzerland vs 3E/F/G/I/J",
+      "title": "Switzerland vs Algeria",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-02",
@@ -6965,14 +6989,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Switzerland",
-        "3E/F/G/I/J"
+        "Algeria"
       ],
       "participants": [
         "Switzerland",
-        "3E/F/G/I/J"
+        "Algeria"
       ],
       "homeTeam": "Switzerland",
-      "awayTeam": "3E/F/G/I/J",
+      "awayTeam": "Algeria",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7013,16 +7037,17 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "flagLogos": {
-        "Switzerland": "https://flagcdn.com/w40/ch.png"
+        "Switzerland": "https://flagcdn.com/w40/ch.png",
+        "Algeria": "https://flagcdn.com/w40/dz.png"
       }
     },
     {
       "id": "fifa-world-cup-2026-match-086",
-      "title": "1J vs 2H",
+      "title": "Argentina vs Cape Verde",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-03",
@@ -7036,15 +7061,15 @@
       "tv": "FOX",
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "1J",
-        "2H"
+        "Argentina",
+        "Cape Verde"
       ],
       "participants": [
-        "1J",
-        "2H"
+        "Argentina",
+        "Cape Verde"
       ],
-      "homeTeam": "1J",
-      "awayTeam": "2H",
+      "homeTeam": "Argentina",
+      "awayTeam": "Cape Verde",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7084,83 +7109,18 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
-    },
-    {
-      "id": "fifa-world-cup-2026-match-087",
-      "title": "1K vs 3D/E/I/J/L",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-03",
-      "startTime": "20:30",
-      "timezone": "UTC-5",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Kansas City",
-      "location": "Kansas City",
-      "tv": "FS1",
-      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "1K",
-        "3D/E/I/J/L"
-      ],
-      "participants": [
-        "1K",
-        "3D/E/I/J/L"
-      ],
-      "homeTeam": "1K",
-      "awayTeam": "3D/E/I/J/L",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 32"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 32"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "87",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 32",
-      "round": "Round of 32",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 32",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fs1.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Argentina": "https://flagcdn.com/w40/ar.png",
+        "Cape Verde": "https://flagcdn.com/w40/cv.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-088",
-      "title": "Australia vs 2G",
+      "title": "Australia vs Egypt",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-03",
@@ -7175,14 +7135,14 @@
       "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Australia",
-        "2G"
+        "Egypt"
       ],
       "participants": [
         "Australia",
-        "2G"
+        "Egypt"
       ],
       "homeTeam": "Australia",
-      "awayTeam": "2G",
+      "awayTeam": "Egypt",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7223,11 +7183,85 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Australia": "https://flagcdn.com/w40/au.png"
+        "Australia": "https://flagcdn.com/w40/au.png",
+        "Egypt": "https://flagcdn.com/w40/eg.png"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-087",
+      "title": "Colombia vs Ghana",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-03",
+      "startTime": "20:30",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "FS1",
+      "notes": "Round of 32. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Colombia",
+        "Ghana"
+      ],
+      "participants": [
+        "Colombia",
+        "Ghana"
+      ],
+      "homeTeam": "Colombia",
+      "awayTeam": "Ghana",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 32"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 32"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "87",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 32",
+      "round": "Round of 32",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 32",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fs1.svg",
+      "flagLogos": {
+        "Colombia": "https://flagcdn.com/w40/co.png",
+        "Ghana": "https://flagcdn.com/w40/gh.png"
       }
     },
     {
@@ -7300,7 +7334,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -7368,7 +7402,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -7437,7 +7471,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -7512,7 +7546,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-chicagoland-2026-07-05",
@@ -7584,7 +7618,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -7658,7 +7692,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "fifa-world-cup-2026-match-091",
@@ -7725,7 +7759,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -7794,7 +7828,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -7863,7 +7897,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -7932,7 +7966,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8001,7 +8035,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8070,7 +8104,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8139,7 +8173,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8208,7 +8242,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8282,7 +8316,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -8356,7 +8390,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -8424,7 +8458,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8493,7 +8527,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8567,7 +8601,7 @@
       "duration": "2 Hours 40 Minutes",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-german-grand-prix-2026-07-12",
@@ -8639,7 +8673,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-echopark-atlanta-2026-07-12",
@@ -8711,7 +8745,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -8771,7 +8805,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "fifa-world-cup-2026-match-101",
@@ -8838,7 +8872,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8907,7 +8941,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -8982,7 +9016,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -9050,7 +9084,7 @@
       "tournamentPriority": 6,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
     },
     {
@@ -9124,7 +9158,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "indycar-2026-music-city-grand-prix-2026-07-19",
@@ -9197,7 +9231,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "fifa-world-cup-2026-match-104",
@@ -9264,7 +9298,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg"
     },
@@ -9338,7 +9372,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -9412,7 +9446,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -9485,7 +9519,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -9558,7 +9592,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -9632,7 +9666,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "imsa-weathertech-2026-road-america-endurance-grand-prix-2026-08-02",
@@ -9704,7 +9738,7 @@
       "duration": "6 Hours",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-oreilly-2026-iowa-2026-08-08",
@@ -9776,7 +9810,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -9849,7 +9883,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-iowa-2026-08-09",
@@ -9921,7 +9955,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -9995,7 +10029,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-trucks-2026-richmond-2026-08-14",
@@ -10068,7 +10102,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -10141,7 +10175,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -10204,7 +10238,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "channelLogo": "assets/logos/channels/nbc.svg"
     },
     {
@@ -10264,7 +10298,7 @@
       "tournamentPriority": 7,
       "sportLogo": "assets/logos/fallbacks/sport-combat.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "indycar-2026-markham-2026-08-16",
@@ -10337,7 +10371,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-trucks-2026-new-hampshire-2026-08-22",
@@ -10410,7 +10444,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -10483,7 +10517,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -10557,7 +10591,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "indycar-2026-washington-dc-2026-08-23",
@@ -10630,7 +10664,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "imsa-weathertech-2026-vir-2026-08-23",
@@ -10702,7 +10736,7 @@
       "duration": "2 Hours 40 Minutes",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-oreilly-2026-daytona-summer-2026-08-28",
@@ -10774,7 +10808,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -10848,7 +10882,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/nbc.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -10922,7 +10956,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-aragon-grand-prix-2026-08-30",
@@ -10994,7 +11028,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -11053,7 +11087,7 @@
       "tournamentPriority": 6,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "indycar-2026-milwaukee-race-2-2026-08-30",
@@ -11126,7 +11160,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-oreilly-2026-darlington-playoff-2026-09-05",
@@ -11198,7 +11232,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -11258,7 +11292,7 @@
       "tournamentPriority": 7,
       "sportLogo": "assets/logos/fallbacks/sport-major-events.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-southern-500-2026-09-06",
@@ -11330,7 +11364,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -11404,7 +11438,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "indycar-2026-laguna-seca-2026-09-06",
@@ -11477,7 +11511,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -11539,7 +11573,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-football.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-oreilly-2026-world-wide-technology-raceway-2026-09-12",
@@ -11611,7 +11645,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -11684,7 +11718,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -11757,7 +11791,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-spanish-grand-prix-madrid-2026-09-13",
@@ -11830,7 +11864,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -11889,7 +11923,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-trucks-2026-bristol-playoff-2026-09-17",
@@ -11962,7 +11996,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -12035,7 +12069,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -12108,7 +12142,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -12181,7 +12215,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "imsa-weathertech-2026-battle-on-the-bricks-2026-09-20",
@@ -12253,7 +12287,7 @@
       "duration": "2 Hours 40 Minutes",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -12312,7 +12346,7 @@
       "tournamentPriority": 6,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-azerbaijan-grand-prix-2026-09-26",
@@ -12385,7 +12419,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-trucks-2026-kansas-playoff-2026-09-26",
@@ -12458,7 +12492,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -12531,7 +12565,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -12604,7 +12638,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -12665,7 +12699,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-baseball.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "imsa-weathertech-2026-petit-le-mans-2026-10-03",
@@ -12737,7 +12771,7 @@
       "duration": "10 Hours",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-japanese-grand-prix-2026-10-04",
@@ -12809,7 +12843,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-las-vegas-playoff-2026-10-04",
@@ -12881,7 +12915,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -12955,7 +12989,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -13028,7 +13062,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -13101,7 +13135,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -13162,7 +13196,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/64f67s1770108650.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-indonesian-grand-prix-2026-10-11",
@@ -13234,7 +13268,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-singapore-grand-prix-2026-10-11",
@@ -13307,7 +13341,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-trucks-2026-phoenix-playoff-2026-10-16",
@@ -13380,7 +13414,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -13453,7 +13487,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -13526,7 +13560,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -13600,7 +13634,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -13663,7 +13697,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-baseball.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-oreilly-2026-talladega-playoff-2026-10-24",
@@ -13735,7 +13769,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -13808,7 +13842,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "TBD",
@@ -13877,7 +13911,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "seriesId": "f1",
       "seriesName": "Formula 1",
       "season": 2026,
@@ -13957,7 +13991,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/nbc.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -14031,7 +14065,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -14104,7 +14138,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -14177,7 +14211,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-mexico-city-grand-prix-2026-11-01",
@@ -14250,7 +14284,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "nascar-cup-2026-martinsville-playoff-2026-11-01",
@@ -14323,7 +14357,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/nbc.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-cup-series.svg"
     },
     {
@@ -14397,7 +14431,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "channelLogo": "assets/logos/channels/fs1.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-craftsman-truck-series.svg"
     },
     {
@@ -14470,7 +14504,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
     },
     {
@@ -14539,7 +14573,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "seriesId": "nascar-cup",
       "seriesName": "NASCAR Cup Series",
       "season": 2026,
@@ -14620,7 +14654,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-sao-paulo-grand-prix-2026-11-08",
@@ -14693,7 +14727,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-las-vegas-grand-prix-2026-11-21",
@@ -14766,7 +14800,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -14825,7 +14859,7 @@
       "tournamentPriority": 7,
       "sportLogo": "assets/logos/fallbacks/sport-combat.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-portuguese-grand-prix-2026-11-22",
@@ -14897,7 +14931,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-qatar-grand-prix-2026-11-29",
@@ -14970,7 +15004,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "motogp-2026-valencia-grand-prix-2026-11-29",
@@ -15042,7 +15076,7 @@
       "duration": "",
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15102,7 +15136,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/dqo6r91549878326.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "id": "f1-2026-abu-dhabi-grand-prix-2026-12-06",
@@ -15175,7 +15209,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15234,7 +15268,7 @@
       "tournamentPriority": 7,
       "sportLogo": "assets/logos/fallbacks/sport-football.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15293,7 +15327,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-football.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15352,7 +15386,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15412,7 +15446,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/t3fpd41536244390.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15474,7 +15508,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-football.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15535,7 +15569,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15594,7 +15628,7 @@
       "tournamentPriority": 7,
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15655,7 +15689,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15714,7 +15748,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15773,7 +15807,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-horse-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15832,7 +15866,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15892,7 +15926,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/ymfo5j1718775759.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -15951,7 +15985,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16010,7 +16044,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16070,7 +16104,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16129,7 +16163,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16189,7 +16223,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-basketball.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16251,7 +16285,7 @@
       "sportLogo": "assets/logos/fallbacks/sport-hockey.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png/tiny",
       "logoSource": "local-sport-fallback, TheSportsDB",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16310,7 +16344,7 @@
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-tennis.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16369,7 +16403,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "channelLogo": "assets/logos/channels/nbc.svg"
     },
     {
@@ -16429,7 +16463,7 @@
       "tournamentPriority": 9,
       "sportLogo": "assets/logos/fallbacks/sport-golf.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
       "timezone": "ET",
@@ -16488,7 +16522,7 @@
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-major-events.svg",
       "logoSource": "local-sport-fallback",
-      "logoUpdatedAt": "2026-06-18T20:39:18.704Z"
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     }
   ],
   "automation": {
