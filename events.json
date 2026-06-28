@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-27T06:01:04.647Z",
+  "updatedAt": "2026-06-28T06:36:25.255Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -5330,8 +5330,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group J",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "3-3",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -5405,8 +5405,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group K",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -5480,8 +5480,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group L",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "2-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -5555,8 +5555,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group K",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "3-1",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -5630,8 +5630,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group J",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-3",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -5705,8 +5705,8 @@
       "stage": "Matchday 17",
       "round": "Matchday 17",
       "group": "Group L",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "0-2",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -16507,7 +16507,7 @@
       {
         "name": "Static 2026 Racing Schedules",
         "adapter": "sources/racing-2026.mjs",
-        "eventCount": 88
+        "eventCount": 87
       },
       {
         "name": "TheSportsDB Logo Registry",
