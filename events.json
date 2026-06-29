@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-06-29T07:03:09.470Z",
+  "updatedAt": "2026-06-29T14:53:11.294Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -7265,6 +7265,78 @@
       }
     },
     {
+      "id": "fifa-world-cup-2026-match-090",
+      "title": "Canada vs W75",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-04",
+      "startTime": "12:00",
+      "timezone": "UTC-5",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Houston",
+      "location": "Houston",
+      "tv": "FOX",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Canada",
+        "W75"
+      ],
+      "participants": [
+        "Canada",
+        "W75"
+      ],
+      "homeTeam": "Canada",
+      "awayTeam": "W75",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "90",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Canada": "https://flagcdn.com/w40/ca.png"
+      }
+    },
+    {
       "id": "nascar-oreilly-2026-chicagoland-2026-07-04",
       "title": "Chicagoland O'Reilly Race",
       "sport": "Racing",
@@ -7336,75 +7408,6 @@
       "logoSource": "local-sport-fallback, local-styled-series-identifier",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/nascar-oreilly-series.svg"
-    },
-    {
-      "id": "fifa-world-cup-2026-match-090",
-      "title": "W73 vs W75",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-04",
-      "startTime": "12:00",
-      "timezone": "UTC-5",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Houston",
-      "location": "Houston",
-      "tv": "FOX",
-      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "W73",
-        "W75"
-      ],
-      "participants": [
-        "W73",
-        "W75"
-      ],
-      "homeTeam": "W73",
-      "awayTeam": "W75",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 16"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 16"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "90",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 16",
-      "round": "Round of 16",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 16",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-089",
