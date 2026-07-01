@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-01T06:43:40.127Z",
+  "updatedAt": "2026-07-01T13:41:26.385Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -6579,8 +6579,8 @@
       "stage": "Round of 32",
       "round": "Round of 32",
       "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "2-0",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -7266,7 +7266,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-090",
-      "title": "Canada vs W75",
+      "title": "Canada vs Morocco",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-04",
@@ -7281,14 +7281,14 @@
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Canada",
-        "W75"
+        "Morocco"
       ],
       "participants": [
         "Canada",
-        "W75"
+        "Morocco"
       ],
       "homeTeam": "Canada",
-      "awayTeam": "W75",
+      "awayTeam": "Morocco",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7333,7 +7333,8 @@
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Canada": "https://flagcdn.com/w40/ca.png"
+        "Canada": "https://flagcdn.com/w40/ca.png",
+        "Morocco": "https://flagcdn.com/w40/ma.png"
       }
     },
     {
@@ -7411,7 +7412,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-089",
-      "title": "W74 vs W77",
+      "title": "Paraguay vs France",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-04",
@@ -7425,15 +7426,15 @@
       "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W74",
-        "W77"
+        "Paraguay",
+        "France"
       ],
       "participants": [
-        "W74",
-        "W77"
+        "Paraguay",
+        "France"
       ],
-      "homeTeam": "W74",
-      "awayTeam": "W77",
+      "homeTeam": "Paraguay",
+      "awayTeam": "France",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7473,10 +7474,87 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Paraguay": "https://flagcdn.com/w40/py.png",
+        "France": "https://flagcdn.com/w40/fr.png"
+      }
+    },
+    {
+      "id": "fifa-world-cup-2026-match-091",
+      "title": "Brazil vs Norway",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-05",
+      "startTime": "16:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "location": "New York/New Jersey (East Rutherford)",
+      "tv": "FOX",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Brazil",
+        "Norway"
+      ],
+      "participants": [
+        "Brazil",
+        "Norway"
+      ],
+      "homeTeam": "Brazil",
+      "awayTeam": "Norway",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "91",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Brazil": "https://flagcdn.com/w40/br.png",
+        "Norway": "https://flagcdn.com/w40/no.png"
+      }
     },
     {
       "id": "f1-2026-british-grand-prix-2026-07-05",
@@ -7698,77 +7776,8 @@
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z"
     },
     {
-      "id": "fifa-world-cup-2026-match-091",
-      "title": "W76 vs W78",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-05",
-      "startTime": "16:00",
-      "timezone": "UTC-4",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "New York/New Jersey (East Rutherford)",
-      "location": "New York/New Jersey (East Rutherford)",
-      "tv": "FOX",
-      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "W76",
-        "W78"
-      ],
-      "participants": [
-        "W76",
-        "W78"
-      ],
-      "homeTeam": "W76",
-      "awayTeam": "W78",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 16"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 16"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "91",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 16",
-      "round": "Round of 16",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 16",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
-    },
-    {
       "id": "fifa-world-cup-2026-match-092",
-      "title": "W79 vs W80",
+      "title": "Mexico vs W80",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-05",
@@ -7782,14 +7791,14 @@
       "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W79",
+        "Mexico",
         "W80"
       ],
       "participants": [
-        "W79",
+        "Mexico",
         "W80"
       ],
-      "homeTeam": "W79",
+      "homeTeam": "Mexico",
       "awayTeam": "W80",
       "competitionTags": [
         "FIFA World Cup",
@@ -7830,10 +7839,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Mexico": "https://flagcdn.com/w40/mx.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-094",
