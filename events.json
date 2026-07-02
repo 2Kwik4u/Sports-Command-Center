@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-02T06:09:03.473Z",
+  "updatedAt": "2026-07-02T13:08:33.428Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -7777,7 +7777,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-092",
-      "title": "Mexico vs W80",
+      "title": "Mexico vs England",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-05",
@@ -7792,14 +7792,14 @@
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Mexico",
-        "W80"
+        "England"
       ],
       "participants": [
         "Mexico",
-        "W80"
+        "England"
       ],
       "homeTeam": "Mexico",
-      "awayTeam": "W80",
+      "awayTeam": "England",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7844,12 +7844,13 @@
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Mexico": "https://flagcdn.com/w40/mx.png"
+        "Mexico": "https://flagcdn.com/w40/mx.png",
+        "England": "https://flagcdn.com/w40/gb-eng.png"
       }
     },
     {
       "id": "fifa-world-cup-2026-match-094",
-      "title": "W81 vs W82",
+      "title": "USA vs Belgium",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-06",
@@ -7863,15 +7864,15 @@
       "tv": "FOX",
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W81",
-        "W82"
+        "USA",
+        "Belgium"
       ],
       "participants": [
-        "W81",
-        "W82"
+        "USA",
+        "Belgium"
       ],
-      "homeTeam": "W81",
-      "awayTeam": "W82",
+      "homeTeam": "USA",
+      "awayTeam": "Belgium",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -7911,10 +7912,14 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "USA": "https://flagcdn.com/w40/us.png",
+        "Belgium": "https://flagcdn.com/w40/be.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-093",
