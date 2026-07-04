@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-04T05:54:35.700Z",
+  "updatedAt": "2026-07-04T12:19:01.921Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -7995,8 +7995,81 @@
       }
     },
     {
+      "id": "fifa-world-cup-2026-match-095",
+      "title": "Argentina vs Egypt",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-07",
+      "startTime": "12:00",
+      "timezone": "UTC-4",
+      "importance": 8,
+      "personalImportance": 8,
+      "status": "Must-watch",
+      "venue": "Atlanta",
+      "location": "Atlanta",
+      "tv": "FOX",
+      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Argentina",
+        "Egypt"
+      ],
+      "participants": [
+        "Argentina",
+        "Egypt"
+      ],
+      "homeTeam": "Argentina",
+      "awayTeam": "Egypt",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Round of 16"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Round of 16"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "95",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Round of 16",
+      "round": "Round of 16",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 8,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Round of 16",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 8,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Argentina": "https://flagcdn.com/w40/ar.png",
+        "Egypt": "https://flagcdn.com/w40/eg.png"
+      }
+    },
+    {
       "id": "fifa-world-cup-2026-match-096",
-      "title": "Switzerland vs W87",
+      "title": "Switzerland vs Colombia",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-07",
@@ -8011,14 +8084,14 @@
       "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Switzerland",
-        "W87"
+        "Colombia"
       ],
       "participants": [
         "Switzerland",
-        "W87"
+        "Colombia"
       ],
       "homeTeam": "Switzerland",
-      "awayTeam": "W87",
+      "awayTeam": "Colombia",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -8063,77 +8136,9 @@
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Switzerland": "https://flagcdn.com/w40/ch.png"
+        "Switzerland": "https://flagcdn.com/w40/ch.png",
+        "Colombia": "https://flagcdn.com/w40/co.png"
       }
-    },
-    {
-      "id": "fifa-world-cup-2026-match-095",
-      "title": "W86 vs W88",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-07",
-      "startTime": "12:00",
-      "timezone": "UTC-4",
-      "importance": 8,
-      "personalImportance": 8,
-      "status": "Must-watch",
-      "venue": "Atlanta",
-      "location": "Atlanta",
-      "tv": "FOX",
-      "notes": "Round of 16. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "W86",
-        "W88"
-      ],
-      "participants": [
-        "W86",
-        "W88"
-      ],
-      "homeTeam": "W86",
-      "awayTeam": "W88",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Round of 16"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Round of 16"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "95",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Round of 16",
-      "round": "Round of 16",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 8,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Round of 16",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 8,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "fifa-world-cup-2026-match-097",
