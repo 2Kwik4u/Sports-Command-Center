@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-05T06:14:26.808Z",
+  "updatedAt": "2026-07-05T19:41:50.940Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -8142,7 +8142,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-097",
-      "title": "W89 vs W90",
+      "title": "France vs Morocco",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-09",
@@ -8156,15 +8156,15 @@
       "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W89",
-        "W90"
+        "France",
+        "Morocco"
       ],
       "participants": [
-        "W89",
-        "W90"
+        "France",
+        "Morocco"
       ],
-      "homeTeam": "W89",
-      "awayTeam": "W90",
+      "homeTeam": "France",
+      "awayTeam": "Morocco",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -8204,10 +8204,14 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "France": "https://flagcdn.com/w40/fr.png",
+        "Morocco": "https://flagcdn.com/w40/ma.png"
+      }
     },
     {
       "id": "fifa-world-cup-2026-match-098",
