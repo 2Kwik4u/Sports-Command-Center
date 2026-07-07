@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-07T06:17:52.217Z",
+  "updatedAt": "2026-07-07T13:26:49.577Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -8215,7 +8215,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-098",
-      "title": "W93 vs W94",
+      "title": "Spain vs Belgium",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-10",
@@ -8229,15 +8229,15 @@
       "tv": "FOX",
       "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W93",
-        "W94"
+        "Spain",
+        "Belgium"
       ],
       "participants": [
-        "W93",
-        "W94"
+        "Spain",
+        "Belgium"
       ],
-      "homeTeam": "W93",
-      "awayTeam": "W94",
+      "homeTeam": "Spain",
+      "awayTeam": "Belgium",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -8277,10 +8277,14 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Spain": "https://flagcdn.com/w40/es.png",
+        "Belgium": "https://flagcdn.com/w40/be.png"
+      }
     },
     {
       "id": "nascar-oreilly-2026-echopark-atlanta-2026-07-11",
