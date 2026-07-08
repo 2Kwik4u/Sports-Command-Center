@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-08T05:30:25.679Z",
+  "updatedAt": "2026-07-08T12:52:25.813Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -8287,6 +8287,79 @@
       }
     },
     {
+      "id": "fifa-world-cup-2026-match-100",
+      "title": "Argentina vs Switzerland",
+      "sport": "Soccer",
+      "competition": "FIFA World Cup",
+      "date": "2026-07-11",
+      "startTime": "20:00",
+      "timezone": "UTC-5",
+      "importance": 10,
+      "personalImportance": 10,
+      "status": "Must-watch",
+      "venue": "Kansas City",
+      "location": "Kansas City",
+      "tv": "FOX",
+      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
+      "teams": [
+        "Argentina",
+        "Switzerland"
+      ],
+      "participants": [
+        "Argentina",
+        "Switzerland"
+      ],
+      "homeTeam": "Argentina",
+      "awayTeam": "Switzerland",
+      "competitionTags": [
+        "FIFA World Cup",
+        "World Cup 2026",
+        "Quarter-final"
+      ],
+      "favoriteTags": [
+        "World Cup",
+        "Soccer",
+        "Quarter-final"
+      ],
+      "source": "openfootball/worldcup.json",
+      "sourceId": "100",
+      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "2026-06-21",
+      "isAutoImported": true,
+      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
+      "stage": "Quarter-final",
+      "round": "Quarter-final",
+      "group": "",
+      "resultStatus": "Scheduled",
+      "score": "",
+      "trip": {
+        "distanceFromHome": "",
+        "travelNotes": "",
+        "hotelNeeded": false,
+        "ticketLink": "",
+        "myInterest": 10,
+        "friendInterest": 7,
+        "status": "Idea"
+      },
+      "tournamentId": "fifa-world-cup-2026",
+      "tournamentName": "FIFA World Cup 2026",
+      "tournamentStartDate": "2026-06-11",
+      "tournamentEndDate": "2026-07-19",
+      "tournamentStage": "Quarter-final",
+      "tournamentStatus": "active-window",
+      "tournamentPriority": 10,
+      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
+      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Argentina": "https://flagcdn.com/w40/ar.png",
+        "Switzerland": "https://flagcdn.com/w40/ch.png"
+      }
+    },
+    {
       "id": "nascar-oreilly-2026-echopark-atlanta-2026-07-11",
       "title": "Focused Health 250",
       "sport": "Racing",
@@ -8505,75 +8578,6 @@
         "Norway": "https://flagcdn.com/w40/no.png",
         "England": "https://flagcdn.com/w40/gb-eng.png"
       }
-    },
-    {
-      "id": "fifa-world-cup-2026-match-100",
-      "title": "W95 vs W96",
-      "sport": "Soccer",
-      "competition": "FIFA World Cup",
-      "date": "2026-07-11",
-      "startTime": "20:00",
-      "timezone": "UTC-5",
-      "importance": 10,
-      "personalImportance": 10,
-      "status": "Must-watch",
-      "venue": "Kansas City",
-      "location": "Kansas City",
-      "tv": "FOX",
-      "notes": "Quarter-final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
-      "teams": [
-        "W95",
-        "W96"
-      ],
-      "participants": [
-        "W95",
-        "W96"
-      ],
-      "homeTeam": "W95",
-      "awayTeam": "W96",
-      "competitionTags": [
-        "FIFA World Cup",
-        "World Cup 2026",
-        "Quarter-final"
-      ],
-      "favoriteTags": [
-        "World Cup",
-        "Soccer",
-        "Quarter-final"
-      ],
-      "source": "openfootball/worldcup.json",
-      "sourceId": "100",
-      "sourceUrl": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-      "sourceUpdatedAt": "",
-      "lastVerifiedAt": "2026-06-21",
-      "isAutoImported": true,
-      "dataStatus": "Imported; TV verified by FOX Sports FIFA World Cup 2026 broadcast schedule.",
-      "stage": "Quarter-final",
-      "round": "Quarter-final",
-      "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
-      "trip": {
-        "distanceFromHome": "",
-        "travelNotes": "",
-        "hotelNeeded": false,
-        "ticketLink": "",
-        "myInterest": 10,
-        "friendInterest": 7,
-        "status": "Idea"
-      },
-      "tournamentId": "fifa-world-cup-2026",
-      "tournamentName": "FIFA World Cup 2026",
-      "tournamentStartDate": "2026-06-11",
-      "tournamentEndDate": "2026-07-19",
-      "tournamentStage": "Quarter-final",
-      "tournamentStatus": "active-window",
-      "tournamentPriority": 10,
-      "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
-      "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
     },
     {
       "id": "imsa-weathertech-2026-canadian-tire-motorsport-park-2026-07-12",
