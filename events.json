@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-15T05:09:23.417Z",
+  "updatedAt": "2026-07-15T12:43:30.047Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -9077,7 +9077,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-103",
-      "title": "L101 vs L102",
+      "title": "France vs L102",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-18",
@@ -9091,14 +9091,14 @@
       "tv": "TBD",
       "notes": "Match for third place. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "L101",
+        "France",
         "L102"
       ],
       "participants": [
-        "L101",
+        "France",
         "L102"
       ],
-      "homeTeam": "L101",
+      "homeTeam": "France",
       "awayTeam": "L102",
       "competitionTags": [
         "FIFA World Cup",
@@ -9139,9 +9139,12 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 6,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
-      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg"
+      "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
+      "flagLogos": {
+        "France": "https://flagcdn.com/w40/fr.png"
+      }
     },
     {
       "id": "f1-2026-belgian-grand-prix-2026-07-19",
@@ -9291,7 +9294,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-104",
-      "title": "W101 vs W102",
+      "title": "Spain vs W102",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-19",
@@ -9305,14 +9308,14 @@
       "tv": "FOX",
       "notes": "Final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
-        "W101",
+        "Spain",
         "W102"
       ],
       "participants": [
-        "W101",
+        "Spain",
         "W102"
       ],
-      "homeTeam": "W101",
+      "homeTeam": "Spain",
       "awayTeam": "W102",
       "competitionTags": [
         "FIFA World Cup",
@@ -9353,10 +9356,13 @@
       "tournamentStatus": "active-window",
       "tournamentPriority": 10,
       "sportLogo": "assets/logos/fallbacks/sport-soccer.svg",
-      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, Wikimedia Commons local asset, local-styled-channel-identifier, FlagCDN",
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
-      "channelLogo": "assets/logos/channels/fox.svg"
+      "channelLogo": "assets/logos/channels/fox.svg",
+      "flagLogos": {
+        "Spain": "https://flagcdn.com/w40/es.png"
+      }
     },
     {
       "id": "nascar-cup-2026-north-wilkesboro-2026-07-19",
