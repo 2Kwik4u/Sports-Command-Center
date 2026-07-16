@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-07-15T12:43:30.047Z",
+  "updatedAt": "2026-07-16T05:18:59.316Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -8973,8 +8973,8 @@
       "stage": "Semi-final",
       "round": "Semi-final",
       "group": "",
-      "resultStatus": "Scheduled",
-      "score": "",
+      "resultStatus": "Final",
+      "score": "1-2",
       "trip": {
         "distanceFromHome": "",
         "travelNotes": "",
@@ -9077,7 +9077,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-103",
-      "title": "France vs L102",
+      "title": "France vs England",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-18",
@@ -9092,14 +9092,14 @@
       "notes": "Match for third place. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "France",
-        "L102"
+        "England"
       ],
       "participants": [
         "France",
-        "L102"
+        "England"
       ],
       "homeTeam": "France",
-      "awayTeam": "L102",
+      "awayTeam": "England",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -9143,7 +9143,8 @@
       "logoUpdatedAt": "2026-06-28T12:44:07.181Z",
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "flagLogos": {
-        "France": "https://flagcdn.com/w40/fr.png"
+        "France": "https://flagcdn.com/w40/fr.png",
+        "England": "https://flagcdn.com/w40/gb-eng.png"
       }
     },
     {
@@ -9294,7 +9295,7 @@
     },
     {
       "id": "fifa-world-cup-2026-match-104",
-      "title": "Spain vs W102",
+      "title": "Spain vs Argentina",
       "sport": "Soccer",
       "competition": "FIFA World Cup",
       "date": "2026-07-19",
@@ -9309,14 +9310,14 @@
       "notes": "Final. Imported by the automated event updater. Source: World Cup 2026. Confirm TV/streaming details before match day.",
       "teams": [
         "Spain",
-        "W102"
+        "Argentina"
       ],
       "participants": [
         "Spain",
-        "W102"
+        "Argentina"
       ],
       "homeTeam": "Spain",
-      "awayTeam": "W102",
+      "awayTeam": "Argentina",
       "competitionTags": [
         "FIFA World Cup",
         "World Cup 2026",
@@ -9361,7 +9362,8 @@
       "competitionLogo": "assets/logos/leagues/fifa-world-cup.svg",
       "channelLogo": "assets/logos/channels/fox.svg",
       "flagLogos": {
-        "Spain": "https://flagcdn.com/w40/es.png"
+        "Spain": "https://flagcdn.com/w40/es.png",
+        "Argentina": "https://flagcdn.com/w40/ar.png"
       }
     },
     {
