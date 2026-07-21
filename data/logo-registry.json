@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-28T12:44:07.181Z",
+  "updatedAt": "2026-07-21T19:50:41.194Z",
   "sources": [
     {
       "name": "TheSportsDB",
@@ -620,7 +620,7 @@
       "name": "Aston Villa",
       "sport": "Soccer",
       "league": "English Premier League",
-      "logo": "https://r2.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png/tiny",
+      "logo": "https://www.thesportsdb.com/images/media/team/badge/97mehy1784645865.png/tiny",
       "providerId": "133601",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",
