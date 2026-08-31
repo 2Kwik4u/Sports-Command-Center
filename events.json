@@ -16605,7 +16605,7 @@
       {
         "name": "Static 2026 Racing Schedules",
         "adapter": "sources/racing-2026.mjs",
-        "eventCount": 50
+        "eventCount": 48
       },
       {
         "name": "TheSportsDB Logo Registry",
