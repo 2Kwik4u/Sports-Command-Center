@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-09-09T20:55:37.472Z",
+  "updatedAt": "2026-10-26T07:44:50.047Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -13909,40 +13909,31 @@
       "logoUpdatedAt": "2026-09-09T20:55:37.418Z"
     },
     {
-      "timezone": "TBD",
+      "timezone": "ET",
       "venue": "Circuit of the Americas",
       "location": "Austin, TX",
       "tv": "TBD",
-      "notes": "Verified 2026 racing schedule import. Date confirmed; start time and US TV TBD.",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
       "personalImportance": 8,
       "teams": [],
-      "participants": [
-        "Formula 1"
-      ],
+      "participants": [],
       "drivers": [],
       "competitionTags": [
-        "Formula 1",
-        "Circuit of the Americas",
-        "Round 19",
-        "Grand Prix"
+        "Formula 1"
       ],
       "favoriteTags": [
         "Racing",
-        "Formula 1",
-        "Formula 1",
-        "Formula 1 United States Grand Prix",
-        "Circuit of the Americas",
-        "Austin, TX"
+        "Formula 1"
       ],
-      "source": "static/racing-2026",
-      "sourceId": "f1-2026-united-states-grand-prix-2026-10-25",
-      "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "sourceUpdatedAt": "2026-06-16",
-      "lastVerifiedAt": "2026-06-16",
+      "source": "curated/major-events",
+      "sourceId": "evt-f1-us-gp",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
       "isAutoImported": true,
-      "dataStatus": "Date confirmed; start time and US TV TBD.",
-      "stage": "Round 19",
-      "round": "Round 19",
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
       "group": "",
       "homeTeam": "",
       "awayTeam": "",
@@ -13950,27 +13941,27 @@
       "score": "",
       "trip": {
         "distanceFromHome": "",
-        "travelNotes": "Road trip candidate from the verified racing schedule. Confirm tickets, travel timing, and lodging before planning.",
+        "travelNotes": "",
         "hotelNeeded": true,
         "ticketLink": "",
-        "myInterest": 8,
+        "myInterest": 9,
         "friendInterest": 8,
-        "status": "Idea"
+        "status": "Considering"
       },
       "id": "evt-f1-us-gp",
       "title": "Formula 1 United States Grand Prix",
       "sport": "Racing",
       "competition": "Formula 1",
       "date": "2026-10-25",
-      "startTime": "",
+      "startTime": "15:00",
       "importance": 8,
       "status": "Possible road trip",
-      "tournamentStage": "Round 19",
-      "tournamentId": "f1-2026",
-      "tournamentName": "Formula 1 2026 Season",
-      "tournamentStartDate": "2026-10-23",
+      "tournamentStage": "Race weekend",
+      "tournamentId": "formula-1",
+      "tournamentName": "Formula 1",
+      "tournamentStartDate": "2026-10-25",
       "tournamentEndDate": "2026-10-25",
-      "tournamentStatus": "scheduled",
+      "tournamentStatus": "planned",
       "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
       "competitionLogo": "https://r2.thesportsdb.com/images/media/league/badge/g8cofl1513623681.png/tiny",
@@ -16605,7 +16596,7 @@
       {
         "name": "Static 2026 Racing Schedules",
         "adapter": "sources/racing-2026.mjs",
-        "eventCount": 18
+        "eventCount": 15
       },
       {
         "name": "TheSportsDB Logo Registry",
