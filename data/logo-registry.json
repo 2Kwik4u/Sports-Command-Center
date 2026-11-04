@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T09:28:19.772Z",
+  "updatedAt": "2026-11-04T18:38:55.418Z",
   "sources": [
     {
       "name": "TheSportsDB",
@@ -362,7 +362,7 @@
     "nfl": {
       "name": "NFL",
       "sport": "American Football",
-      "logo": "https://www.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
       "providerId": "4391",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",
@@ -372,7 +372,7 @@
     "nfl-playoffs": {
       "name": "NFL Playoffs",
       "sport": "American Football",
-      "logo": "https://www.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
       "providerId": "4391",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",
@@ -383,7 +383,7 @@
     "nfl-regular-season": {
       "name": "NFL Regular Season",
       "sport": "American Football",
-      "logo": "https://www.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
       "providerId": "4391",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",
@@ -467,7 +467,7 @@
     "super-bowl": {
       "name": "Super Bowl",
       "sport": "American Football",
-      "logo": "https://www.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
+      "logo": "https://r2.thesportsdb.com/images/media/league/badge/0z0j131793688031.png/tiny",
       "providerId": "4391",
       "source": "TheSportsDB",
       "logoSource": "TheSportsDB",
