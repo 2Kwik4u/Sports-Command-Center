@@ -1,7 +1,7 @@
 {
   "app": "Sports Command Center",
   "version": 2,
-  "updatedAt": "2026-11-04T18:38:55.496Z",
+  "updatedAt": "2026-11-09T09:43:43.454Z",
   "events": [
     {
       "id": "fifa-world-cup-2026-group-a-matchday-1-mexico-v-south-africa-2026-06-11",
@@ -14564,39 +14564,30 @@
     },
     {
       "timezone": "ET",
-      "venue": "Homestead-Miami Speedway",
-      "location": "Homestead, FL",
-      "tv": "NBC",
-      "notes": "Verified 2026 racing schedule import. Verified static schedule; TV/start time subject to change.",
-      "personalImportance": 10,
+      "venue": "TBD",
+      "location": "TBD",
+      "tv": "TBD",
+      "notes": "Curated major-event planning window. Confirm exact date, venue, participants, and broadcast before relying on it.",
+      "personalImportance": 8,
       "teams": [],
-      "participants": [
-        "NASCAR Cup Series"
-      ],
+      "participants": [],
       "drivers": [],
       "competitionTags": [
-        "NASCAR Cup Series",
-        "Homestead-Miami Speedway",
-        "Championship",
-        "Championship race"
+        "NASCAR Cup Series"
       ],
       "favoriteTags": [
         "Racing",
-        "NASCAR Cup Series",
-        "NASCAR Cup Series",
-        "NASCAR Cup Series Championship",
-        "Homestead-Miami Speedway",
-        "Homestead, FL"
+        "NASCAR Cup Series"
       ],
-      "source": "static/racing-2026",
-      "sourceId": "nascar-cup-2026-championship-2026-11-08",
-      "sourceUrl": "https://www.jayski.com/nascar-cup-series/2026-nascar-cup-series-schedule/",
-      "sourceUpdatedAt": "2026-06-16",
-      "lastVerifiedAt": "2026-06-16",
+      "source": "curated/major-events",
+      "sourceId": "evt-nascar-championship",
+      "sourceUrl": "DATA_SOURCES.md#curated-major-event-windows",
+      "sourceUpdatedAt": "",
+      "lastVerifiedAt": "",
       "isAutoImported": true,
-      "dataStatus": "Verified static schedule; TV/start time subject to change.",
-      "stage": "Championship",
-      "round": "Championship",
+      "dataStatus": "Curated",
+      "stage": "",
+      "round": "",
       "group": "",
       "homeTeam": "",
       "awayTeam": "",
@@ -14607,8 +14598,8 @@
         "travelNotes": "",
         "hotelNeeded": false,
         "ticketLink": "",
-        "myInterest": 10,
-        "friendInterest": 10,
+        "myInterest": 7,
+        "friendInterest": 7,
         "status": "Idea"
       },
       "id": "evt-nascar-championship",
@@ -14617,17 +14608,17 @@
       "competition": "NASCAR Cup Series",
       "date": "2026-11-08",
       "startTime": "15:00",
-      "importance": 10,
-      "status": "Must-watch",
-      "tournamentStage": "Championship",
-      "tournamentId": "nascar-cup-2026",
-      "tournamentName": "NASCAR Cup Series 2026 Season",
+      "importance": 8,
+      "status": "Good TV weekend",
+      "tournamentStage": "Championship race",
+      "tournamentId": "nascar-cup-series",
+      "tournamentName": "NASCAR Cup Series",
       "tournamentStartDate": "2026-11-08",
       "tournamentEndDate": "2026-11-08",
-      "tournamentStatus": "scheduled",
-      "tournamentPriority": 10,
+      "tournamentStatus": "planned",
+      "tournamentPriority": 8,
       "sportLogo": "assets/logos/fallbacks/sport-racing.svg",
-      "logoSource": "local-sport-fallback, local-styled-series-identifier, local-styled-channel-identifier",
+      "logoSource": "local-sport-fallback, local-styled-series-identifier",
       "logoUpdatedAt": "2026-11-04T18:38:55.418Z",
       "seriesId": "nascar-cup",
       "seriesName": "NASCAR Cup Series",
@@ -16596,7 +16587,7 @@
       {
         "name": "Static 2026 Racing Schedules",
         "adapter": "sources/racing-2026.mjs",
-        "eventCount": 8
+        "eventCount": 5
       },
       {
         "name": "TheSportsDB Logo Registry",
